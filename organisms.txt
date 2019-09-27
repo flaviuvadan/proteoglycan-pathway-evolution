@@ -1,0 +1,22 @@
+
+		Bone
+Mammal		Mus musculus
+Reptile		Anolis carolinensis
+
+		Cartilage
+Mammal		
+Reptile
+
+		Neither
+Mammal
+Reptile
+
+		Used to have bone
+Mammal
+Reptile
+
+Bone = organisms that make bone
+Cartilage = organisms that make cartilage
+Neither = organisms that do not make bone or cartilage
+Used to have bone = organisms that used to have bone but now product cartilage
+
