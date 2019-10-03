@@ -1,5 +1,10 @@
 # Documentation of project progress (changelog)
 
+## Oct 2, 2019
+- curated gene Ensembl IDs list
+- added orthologs package
+- implemented Collector for calls to Ensembl
+
 ## Sep 21, 2019
 - took the gene list form Brian and stored it in `genes.txt`
 - used a pipe to clean up the list from the format:
