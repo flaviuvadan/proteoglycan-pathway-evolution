@@ -2,7 +2,7 @@ import csv
 import requests
 import os
 
-from src.orthologs import exceptions
+from src import exceptions
 
 
 class Collector:
@@ -10,18 +10,17 @@ class Collector:
 
     GENE_ID_IDX = 1
 
-    def __init__(self, gene_filename):
+    def __init__(self, gene_file_path):
         """
-        Collector
-        :param gene_filename: name of the file containing gene names
+        Constructor
+        :param gene_file_path: path to the file containing gene names
         """
-        self.gene_filename = gene_filename
+        self.gene_file_path = gene_file_path
         self.gene_ids = self.load()
 
     def load(self):
-        """ Loads the genes in the class gene_filename """
-        full_path = os.path.join(os.pardir, "data", self.gene_filename)
-        with open(full_path, 'r') as gene_file:
+        """ Loads the genes in the class gene_ids """
+        with open(self.gene_file_path, 'r') as gene_file:
             csv_reader = csv.reader(gene_file, delimiter=',')
             for gene in csv_reader:
                 yield gene[self.GENE_ID_IDX]
@@ -54,5 +53,6 @@ class Collector:
 
 
 if __name__ == "__main__":
-    collector = Collector("genes.txt")
+    gene_file_path = os.path.join(os.pardir, "data", "genes.txt")
+    collector = Collector(gene_file_path)
     collector.collect()
