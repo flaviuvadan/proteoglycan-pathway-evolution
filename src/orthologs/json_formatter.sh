@@ -13,3 +13,4 @@ fi
 cat ${gene_filename} | jq . > ${gene_filename}.temp
 rm ${gene_filename}
 mv ${gene_filename}.temp ${gene_filename}
+mv ${gene_filename} ../data/orthologs

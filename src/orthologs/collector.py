@@ -1,6 +1,5 @@
 import csv
 import requests
-import json
 import os
 
 from src.orthologs import exceptions
@@ -21,7 +20,8 @@ class Collector:
 
     def load(self):
         """ Loads the genes in the class gene_filename """
-        with open(self.gene_filename, 'r') as gene_file:
+        full_path = os.path.join(os.pardir, "data", self.gene_filename)
+        with open(full_path, 'r') as gene_file:
             csv_reader = csv.reader(gene_file, delimiter=',')
             for gene in csv_reader:
                 yield gene[self.GENE_ID_IDX]
@@ -32,6 +32,7 @@ class Collector:
         :param gene_id: Ensembl ID of the gene
         :return: Ensembl URL
         """
+        # https://rest.ensembl.org/documentation/info/homology_ensemblgene
         return "https://rest.ensembl.org/homology/id/{}?type=orthologues;sequence=dna;cigar_line=0".format(gene_id)
 
     def collect(self):
@@ -46,11 +47,9 @@ class Collector:
                     raise exceptions.OrthologRequestException(message)
                 out.write(req.text)
                 self.format(out.name)
-                break
 
     def format(self, gene_filename):
         """ Invokes the json_formatter script with the given gene_filename """
-        print("invoking json_formatter")
         os.system("bash json_formatter.sh {}".format(gene_filename))
 
 
