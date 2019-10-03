@@ -47,25 +47,34 @@ class Curator:
                 if not homologies:
                     raise exceptions.EmptyOrthologData("gene {} ortholog homologies not found".format(gene_id))
                 for homology in homologies:
-                    source = homology.get('source')
-                    if not source:
-                        raise exceptions.EmptyHomologyInformation("gene {} ortholog has no source".format(gene_id))
-                    target = homology.get('target')
-                    if not target:
-                        raise exceptions.EmptyHomologyInformation("gene {} ortholog has no target".format(gene_id))
-                    source_species = source.get('species')
-                    if not source_species:
-                        raise exceptions.EmptyHomologyInformation(
-                            "gene {} ortholog has not source target".format(gene_id))
-                    target_species = target.get('species')
-                    if not target_species:
-                        raise exceptions.EmptyHomologyInformation(
-                            "gene {} ortholog has not source species".format(gene_id))
-                    # we only need to get all the unique organisms
+                    source_species, target_species = self.parse_homologies(homology)
                     organisms[source_species] = 1
                     organisms[target_species] = 1
             self.create_organisms_file(gene_id, organisms)
             break
+
+    def parse_homologies(self, homology):
+        """
+        Parses the homologies dictionary of the orthologs of a gene to get the source and target species
+        :param dict homology: information of a gene
+        :return: source species, target species
+        """
+        source = homology.get('source')
+        if not source:
+            raise exceptions.EmptyHomologyInformation("gene {} ortholog has no source".format(gene_id))
+        target = homology.get('target')
+        if not target:
+            raise exceptions.EmptyHomologyInformation("gene {} ortholog has no target".format(gene_id))
+        source_species = source.get('species')
+        if not source_species:
+            raise exceptions.EmptyHomologyInformation(
+                "gene {} ortholog has not source target".format(gene_id))
+        target_species = target.get('species')
+        if not target_species:
+            raise exceptions.EmptyHomologyInformation(
+                "gene {} ortholog has not source species".format(gene_id))
+        # we only need to get all the unique organisms
+        return source_species, target_species
 
     def get_organisms_file_path(self, gene_id):
         """ Builds the file path to the organisms file of the given gene ID """
