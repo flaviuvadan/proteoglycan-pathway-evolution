@@ -51,7 +51,6 @@ class Curator:
                     organisms[source_species] = 1
                     organisms[target_species] = 1
             self.create_organisms_file(gene_id, organisms)
-            break
 
     def parse_homologies(self, homology):
         """
