@@ -1,0 +1,134 @@
+homo sapiens
+pan paniscus
+pan troglodytes
+gorilla gorilla
+pongo abelii
+nomascus leucogenys
+macaca fascicularis
+rhinopithecus roxellana
+papio anubis
+macaca mulatta
+colobus angolensis palliatus
+rhinopithecus bieti
+macaca nemestrina
+cercocebus atys
+chlorocebus sabaeus
+piliocolobus tephrosceles
+callithrix jacchus
+aotus nancymaae
+saimiri boliviensis boliviensis
+cebus capucinus
+carlito syrichta
+otolemur garnettii
+microcebus murinus
+propithecus coquereli
+prolemur simus
+tupaia belangeri
+mesocricetus auratus
+microtus ochrogaster
+octodon degus
+ictidomys tridecemlineatus
+dipodomys ordii
+spermophilus dauricus
+nannospalax galili
+meriones unguiculatus
+jaculus jaculus
+cricetulus griseus chok1gshd
+rattus norvegicus
+oryctolagus cuniculus
+cavia aperea
+cavia porcellus
+heterocephalus glaber male
+cricetulus griseus crigri
+mus musculus
+heterocephalus glaber female
+fukomys damarensis
+ochotona princeps
+chinchilla lanigera
+mus caroli
+mus spretus
+mus pahari
+urocitellus parryii
+castor canadensis
+mus spicilegus
+cricetulus griseus picr
+marmota marmota marmota
+peromyscus maniculatus bairdii
+sus scrofa
+bos taurus hybrid
+ursus maritimus
+bos taurus
+vicugna pacos
+canis familiaris
+mustela putorius furo
+ailuropoda melanoleuca
+ursus americanus
+pteropus vampyrus
+sorex araneus
+panthera pardus
+canis lupus dingo
+equus caballus
+vulpes vulpes
+panthera tigris altaica
+erinaceus europaeus
+capra hircus
+bos indicus hybrid
+myotis lucifugus
+felis catus
+equus asinus asinus
+ovis aries
+tursiops truncatus
+neovison vison
+bison bison bison
+procavia capensis
+echinops telfairi
+loxodonta africana
+choloepus hoffmanni
+dasypus novemcinctus
+monodelphis domestica
+sarcophilus harrisii
+phascolarctos cinereus
+notamacropus eugenii
+vombatus ursinus
+ornithorhynchus anatinus
+bos mutus
+apteryx rowi
+calidris pugnax
+coturnix japonica
+cyanistes caeruleus
+anser brachyrhynchus
+parus major
+zonotrichia albicollis
+salvator merianae
+mandrillus leucophaeus
+theropithecus gelada
+numida meleagris
+anolis carolinensis
+gopherus agassizii
+apteryx haastii
+taeniopygia guttata
+pelodiscus sinensis
+crocodylus porosus
+anas platyrhynchos platyrhynchos
+notechis scutatus
+dromaius novaehollandiae
+chelonoidis abingdonii
+manacus vitellinus
+lepidothrix coronata
+lonchura striata domestica
+gallus gallus
+ficedula albicollis
+calidris pygmaea
+nothoprocta perdicaria
+apteryx owenii
+chrysemys picta bellii
+melopsittacus undulatus
+serinus canaria
+pogona vitticeps
+meleagris gallopavo
+sphenodon punctatus
+junco hyemalis
+latimeria chalumnae
+scleropages formosus
+erpetoichthys calabaricus
+callorhinchus milii

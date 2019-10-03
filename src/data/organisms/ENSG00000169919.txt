@@ -1,0 +1,198 @@
+homo sapiens
+pan troglodytes
+gorilla gorilla
+pan paniscus
+pongo abelii
+theropithecus gelada
+piliocolobus tephrosceles
+mandrillus leucophaeus
+macaca fascicularis
+nomascus leucogenys
+macaca nemestrina
+rhinopithecus roxellana
+macaca mulatta
+cercocebus atys
+chlorocebus sabaeus
+papio anubis
+rhinopithecus bieti
+colobus angolensis palliatus
+saimiri boliviensis boliviensis
+aotus nancymaae
+callithrix jacchus
+cebus capucinus
+castor canadensis
+canis lupus dingo
+ovis aries
+erinaceus europaeus
+neovison vison
+choloepus hoffmanni
+bos taurus hybrid
+vulpes vulpes
+oryctolagus cuniculus
+chinchilla lanigera
+microcebus murinus
+marmota marmota marmota
+fukomys damarensis
+myotis lucifugus
+sus scrofa
+ochotona princeps
+ursus americanus
+heterocephalus glaber male
+ictidomys tridecemlineatus
+vicugna pacos
+octodon degus
+carlito syrichta
+capra hircus
+prolemur simus
+felis catus
+sorex araneus
+dasypus novemcinctus
+pteropus vampyrus
+tursiops truncatus
+tupaia belangeri
+panthera tigris altaica
+canis familiaris
+bos mutus
+bos indicus hybrid
+cavia porcellus
+bos taurus
+otolemur garnettii
+urocitellus parryii
+ailuropoda melanoleuca
+equus caballus
+ursus maritimus
+bison bison bison
+equus asinus asinus
+heterocephalus glaber female
+mustela putorius furo
+cavia aperea
+propithecus coquereli
+panthera pardus
+procavia capensis
+echinops telfairi
+loxodonta africana
+mus musculus
+meriones unguiculatus
+cricetulus griseus picr
+rattus norvegicus
+mesocricetus auratus
+cricetulus griseus chok1gshd
+microtus ochrogaster
+jaculus jaculus
+mus spicilegus
+nannospalax galili
+dipodomys ordii
+cricetulus griseus crigri
+mus caroli
+mus spretus
+mus pahari
+peromyscus maniculatus bairdii
+phascolarctos cinereus
+monodelphis domestica
+vombatus ursinus
+sarcophilus harrisii
+notamacropus eugenii
+ornithorhynchus anatinus
+serinus canaria
+crocodylus porosus
+pogona vitticeps
+numida meleagris
+junco hyemalis
+chrysemys picta bellii
+calidris pugnax
+lepidothrix coronata
+calidris pygmaea
+anser brachyrhynchus
+apteryx owenii
+lonchura striata domestica
+anolis carolinensis
+parus major
+gopherus agassizii
+zonotrichia albicollis
+coturnix japonica
+dromaius novaehollandiae
+melopsittacus undulatus
+manacus vitellinus
+chelonoidis abingdonii
+meleagris gallopavo
+gallus gallus
+nothoprocta perdicaria
+apteryx rowi
+pelodiscus sinensis
+sphenodon punctatus
+taeniopygia guttata
+apteryx haastii
+notechis scutatus
+cyanistes caeruleus
+salvator merianae
+anas platyrhynchos platyrhynchos
+ficedula albicollis
+latimeria chalumnae
+labrus bergylta
+maylandia zebra
+poecilia reticulata
+xiphophorus maculatus
+acanthochromis polyacanthus
+scleropages formosus
+neolamprologus brichardi
+hucho hucho
+parambassis ranga
+kryptolebias marmoratus
+astyanax mexicanus pachon
+takifugu rubripes
+gambusia affinis
+gasterosteus aculeatus
+oryzias latipes
+lepisosteus oculatus
+poecilia formosa
+astatotilapia calliptera
+seriola lalandi dorsalis
+cynoglossus semilaevis
+pygocentrus nattereri
+fundulus heteroclitus
+haplochromis burtoni
+seriola dumerili
+astyanax mexicanus
+anabas testudineus
+tetraodon nigroviridis
+betta splendens
+danio rerio
+electrophorus electricus
+amphiprion percula
+oryzias melastigma
+monopterus albus
+mastacembelus armatus
+clupea harengus
+oryzias latipes hsok
+pundamilia nyererei
+oryzias latipes hni
+poecilia mexicana
+gouania willdenowi
+lates calcarifer
+xiphophorus couchianus
+hippocampus comes
+paramormyrops kingsleyae
+oreochromis niloticus
+denticeps clupeoides
+erpetoichthys calabaricus
+mola mola
+poecilia latipinna
+cottoperca gobio
+stegastes partitus
+amphilophus citrinellus
+ictalurus punctatus
+periophthalmus magnuspinnatus
+scophthalmus maximus
+esox lucius
+amphiprion ocellaris
+gadus morhua
+cyprinodon variegatus
+larimichthys crocea
+xenopus tropicalis
+callorhinchus milii
+petromyzon marinus
+ciona savignyi
+ciona intestinalis
+eptatretus burgeri
+caenorhabditis elegans
+drosophila melanogaster

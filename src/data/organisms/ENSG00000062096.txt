@@ -1,0 +1,124 @@
+homo sapiens
+ciona savignyi
+drosophila melanogaster
+ciona intestinalis
+caenorhabditis elegans
+scophthalmus maximus
+astyanax mexicanus pachon
+poecilia reticulata
+labrus bergylta
+acanthochromis polyacanthus
+parambassis ranga
+tetraodon nigroviridis
+maylandia zebra
+electrophorus electricus
+anabas testudineus
+hucho hucho
+takifugu rubripes
+pundamilia nyererei
+danio rerio
+astyanax mexicanus
+xiphophorus maculatus
+mola mola
+denticeps clupeoides
+gadus morhua
+cyprinodon variegatus
+fundulus heteroclitus
+stegastes partitus
+betta splendens
+gouania willdenowi
+hippocampus comes
+poecilia latipinna
+amphilophus citrinellus
+haplochromis burtoni
+neolamprologus brichardi
+amphiprion percula
+seriola dumerili
+poecilia formosa
+monopterus albus
+oryzias latipes hsok
+lates calcarifer
+larimichthys crocea
+kryptolebias marmoratus
+mastacembelus armatus
+pygocentrus nattereri
+clupea harengus
+cottoperca gobio
+esox lucius
+petromyzon marinus
+oryzias latipes
+cynoglossus semilaevis
+gambusia affinis
+seriola lalandi dorsalis
+poecilia mexicana
+oreochromis niloticus
+amphiprion ocellaris
+oryzias melastigma
+periophthalmus magnuspinnatus
+ictalurus punctatus
+gasterosteus aculeatus
+astatotilapia calliptera
+oryzias latipes hni
+salvator merianae
+lepisosteus oculatus
+callorhinchus milii
+gopherus agassizii
+scleropages formosus
+chrysemys picta bellii
+sphenodon punctatus
+latimeria chalumnae
+paramormyrops kingsleyae
+erpetoichthys calabaricus
+chelonoidis abingdonii
+pelodiscus sinensis
+notechis scutatus
+eptatretus burgeri
+xiphophorus couchianus
+pogona vitticeps
+anolis carolinensis
+pan paniscus
+pan troglodytes
+gorilla gorilla
+pongo abelii
+nomascus leucogenys
+cercocebus atys
+rhinopithecus roxellana
+colobus angolensis palliatus
+mandrillus leucophaeus
+papio anubis
+macaca fascicularis
+macaca mulatta
+rhinopithecus bieti
+macaca nemestrina
+chlorocebus sabaeus
+theropithecus gelada
+saimiri boliviensis boliviensis
+aotus nancymaae
+callithrix jacchus
+cebus capucinus
+otolemur garnettii
+tupaia belangeri
+equus asinus asinus
+ursus americanus
+mustela putorius furo
+canis familiaris
+canis lupus dingo
+sus scrofa
+panthera pardus
+felis catus
+ursus maritimus
+equus caballus
+myotis lucifugus
+ailuropoda melanoleuca
+vulpes vulpes
+vicugna pacos
+panthera tigris altaica
+neovison vison
+choloepus hoffmanni
+procavia capensis
+loxodonta africana
+phascolarctos cinereus
+monodelphis domestica
+vombatus ursinus
+sarcophilus harrisii
+notamacropus eugenii

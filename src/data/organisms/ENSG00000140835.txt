@@ -1,0 +1,86 @@
+homo sapiens
+ciona savignyi
+drosophila melanogaster
+ciona intestinalis
+pan paniscus
+pan troglodytes
+gorilla gorilla
+pongo abelii
+macaca mulatta
+cercocebus atys
+chlorocebus sabaeus
+piliocolobus tephrosceles
+theropithecus gelada
+mandrillus leucophaeus
+macaca nemestrina
+macaca fascicularis
+papio anubis
+callithrix jacchus
+otolemur garnettii
+prolemur simus
+microcebus murinus
+tupaia belangeri
+spermophilus dauricus
+fukomys damarensis
+chinchilla lanigera
+oryctolagus cuniculus
+rattus norvegicus
+meriones unguiculatus
+jaculus jaculus
+ictidomys tridecemlineatus
+heterocephalus glaber female
+cricetulus griseus chok1gshd
+heterocephalus glaber male
+mus spicilegus
+cavia porcellus
+cricetulus griseus picr
+cavia aperea
+mus musculus
+mus caroli
+mus pahari
+mus spretus
+urocitellus parryii
+castor canadensis
+marmota marmota marmota
+peromyscus maniculatus bairdii
+canis lupus dingo
+neovison vison
+ursus americanus
+bos mutus
+canis familiaris
+bos indicus hybrid
+bos taurus
+panthera tigris altaica
+mustela putorius furo
+vulpes vulpes
+bison bison bison
+pteropus vampyrus
+capra hircus
+sus scrofa
+felis catus
+ursus maritimus
+myotis lucifugus
+equus caballus
+erinaceus europaeus
+ovis aries
+ailuropoda melanoleuca
+equus asinus asinus
+bos taurus hybrid
+panthera pardus
+echinops telfairi
+choloepus hoffmanni
+loxodonta africana
+dasypus novemcinctus
+dipodomys ordii
+sorex araneus
+phascolarctos cinereus
+vombatus ursinus
+monodelphis domestica
+sarcophilus harrisii
+ornithorhynchus anatinus
+crocodylus porosus
+notechis scutatus
+anolis carolinensis
+salvator merianae
+pogona vitticeps
+xenopus tropicalis
