@@ -16,3 +16,8 @@ class EmptyOrthologData(PGException):
 class EmptyHomologyInformation(PGException):
     """ An exception used for handling empty homology information - this should rarely be the case, if ever """
     pass
+
+
+class EmptySquence(PGException):
+    """ An exception used for handling empty sequences in the Ensembl API response """
+    pass

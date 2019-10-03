@@ -9,6 +9,7 @@ class Curator:
     """ Curator is responsible for loading the 51 genes of interest, reading their orthologs, and parsing their
     Ensembl results with the intention to create file with unique organisms for those genes """
 
+    GENE_NAME_IDX = 0
     GENE_ID_IDX = 1
 
     def __init__(self, gene_file_path):
@@ -17,14 +18,14 @@ class Curator:
         :param gene_file_path: name of the file containing gene names
         """
         self.gene_file_path = gene_file_path
-        self.gene_ids = self.load_genes()
+        self.genes = self.load_genes()
 
     def load_genes(self):
         """ Loads the genes into the class gene_ids """
         with open(self.gene_file_path, 'r') as gene_file:
             csv_reader = csv.reader(gene_file, delimiter=',')
             for gene in csv_reader:
-                yield gene[self.GENE_ID_IDX]
+                yield (gene[self.GENE_NAME_IDX], gene[self.GENE_ID_IDX])
 
     def build_gene_file_path(self, gene_id):
         """
@@ -36,7 +37,9 @@ class Curator:
 
     def curate(self):
         """ Curates organisms """
-        for gene_id in self.gene_ids:
+        for gene in self.genes:
+            gene_id = gene[self.GENE_ID_IDX]
+            gene_name = gene[self.GENE_NAME_IDX]
             organisms = {}
             with open(self.build_gene_file_path(gene_id), "r") as orthologs:
                 loaded = json.load(orthologs)
@@ -47,14 +50,17 @@ class Curator:
                 if not homologies:
                     raise exceptions.EmptyOrthologData("gene {} ortholog homologies not found".format(gene_id))
                 for homology in homologies:
-                    source_species, target_species = self.parse_homologies(homology)
-                    organisms[source_species] = 1
-                    organisms[target_species] = 1
-            self.create_organisms_file(gene_id, organisms)
+                    source_species, source_seq, target_species, target_seq = self.parse_homologies(gene_id, homology)
+                    # want to keep seqs around for multiple sequence alignment
+                    organisms[source_species] = source_seq
+                    organisms[target_species] = target_seq
+            self.create_organisms_file(gene_name, gene_id, organisms)
 
-    def parse_homologies(self, homology):
+    def parse_homologies(self, gene_id, homology):
         """
-        Parses the homologies dictionary of the orthologs of a gene to get the source and target species
+        Parses the homologies dictionary of the orthologs of a gene to get the source and target species, along with
+        their sequences
+        :param str gene_id: Ensembl ID of the gene
         :param dict homology: information of a gene
         :return: source species, target species
         """
@@ -72,23 +78,29 @@ class Curator:
         if not target_species:
             raise exceptions.EmptyHomologyInformation(
                 "gene {} ortholog has not source species".format(gene_id))
-        # we only need to get all the unique organisms
-        return source_species, target_species
+        source_seq = source.get('align_seq')
+        if not source_seq:
+            raise exceptions.EmptySquence("gene {} source seq not found".format(gene_id))
+        target_seq = target.get('align_seq')
+        if not target_seq:
+            raise exceptions.EmptySquence("gene {} target seq not found".format(gene_id))
+        return source_species, source_seq, target_species, target_seq
 
-    def get_organisms_file_path(self, gene_id):
-        """ Builds the file path to the organisms file of the given gene ID """
-        return os.path.join(os.pardir, "data", "organisms", "{}.txt".format(gene_id))
+    def get_organisms_file_path(self, gene_name, gene_id):
+        """ Builds the file path to the organisms file of the given gene name and gene ID """
+        return os.path.join(os.pardir, "data", "organisms", "{}_{}.txt".format(gene_name, gene_id))
 
-    def create_organisms_file(self, gene_id, organisms):
+    def create_organisms_file(self, gene_name, gene_id, organisms):
         """
         Creates the organisms files associated with the orthologs of a gene
+        :param str gene_name: name of the gene being processed
         :param str gene_id: Ensembl ID of the gene
         :param dict organisms: dictionary of organisms keyed on species
         """
-        organisms_file_path = self.get_organisms_file_path(gene_id)
+        organisms_file_path = self.get_organisms_file_path(gene_name, gene_id)
         with open(organisms_file_path, 'w') as out:
-            for species in organisms.keys():
-                out.write(species.replace("_", " ") + "\n")
+            for species, sequence in organisms.items():
+                out.write("{}:{}\n".format(species, sequence.replace("-", "")))
 
 
 if __name__ == "__main__":

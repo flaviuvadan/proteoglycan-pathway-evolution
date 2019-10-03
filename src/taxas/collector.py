@@ -42,7 +42,13 @@ class Collector:
                         organisms[o] = organisms.get(o) + 1
         return organisms
 
+    def collect(self):
+        """ Collects taxa information from GBIF (https://www.gbif.org/developer/species) """
+        print("would collect")
+        pass
+
 
 if __name__ == "__main__":
     gene_file_path = os.path.join(os.pardir, "data", "genes.txt")
     collector = Collector(gene_file_path)
+    collector.collect()
