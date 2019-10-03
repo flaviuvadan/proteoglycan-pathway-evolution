@@ -1,5 +1,9 @@
 # Documentation of project progress (changelog)
 
+## Oct 3, 2019
+- moved exceptions out of orthologs package
+- create curator package to parse homology information
+
 ## Oct 2, 2019
 - curated gene Ensembl IDs list
 - added orthologs package
