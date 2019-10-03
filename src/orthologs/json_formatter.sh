@@ -10,6 +10,6 @@ if [[ -z ${gene_filename} ]]; then
     exit 1
 fi
 
-cat ${gene_filename} | jq . > ${gene_filename}.ensembl
+cat ${gene_filename} | jq . > ${gene_filename}.temp
 rm ${gene_filename}
-mv ${gene_filename}.ensembl ${gene_filename}
+mv ${gene_filename}.temp ${gene_filename}
