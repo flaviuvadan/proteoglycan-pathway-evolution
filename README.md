@@ -1,4 +1,4 @@
-## BINF400 Project Documentation
+## Proteoglycan pathway evolution analysis
 
 The objective of the project is to identify how a set of genes (see `genes.txt`) relates to cartilage production in 
-multiple organisms (see `organisms.txt`)
+multiple organisms (see `organisms.txt`).
