@@ -4,7 +4,7 @@ class PGException(Exception):
 
 
 class OrthologRequestException(PGException):
-    """ An exception used for handling Ensembl API non-200 calls """
+    """ An exception used for handling Ensembl API non-200 responses """
     pass
 
 
@@ -21,3 +21,6 @@ class EmptyHomologyInformation(PGException):
 class EmptySquence(PGException):
     """ An exception used for handling empty sequences in the Ensembl API response """
     pass
+
+class SpeciesRequestException(PGException):
+    """ An exception used for handling GBIF API non-200 responses """

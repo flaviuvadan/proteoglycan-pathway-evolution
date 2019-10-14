@@ -4,6 +4,7 @@
 - used EBI's Kalign to perform multiple sequence alignments for all genes
 - added a test parser script for writing MSAs as single lines (will not use yet as they are challenging to interpret if 
 written on single lines)
+- built the taxa collector and collected organisms' information
 
 ## Oct 3, 2019
 - moved exceptions out of orthologs package
@@ -46,12 +47,6 @@ echo "gene1, gene2" | tr ',\s' '\n'
 - explored the [Ensembl Species Tree](https://uswest.ensembl.org/info/about/speciestree.html) to identify what organisms to use in the project (see `organisms.txt`)
 - found the [REST documentation of Ensembl](https://rest.ensembl.org/documentation/info/homology_ensemblgene)
 - since the objective at the start of the project is to find genomes of species that host the genes of interest, all the project has to do at the start is find the Ensembl IDs of the genes of interest and use `GET homology/id/:id` to get orthologs (the response includes organisms, which can then be grouped into bone/cartilage/neither/used to have bone)
-
-#### Questions
-- what if we run a BLAST for each gene to get a bunch of organisms, whatever they are
-- take the results from 1 and  intersect them with organisms known to make bone, cartilage only, etc
-- clean up the results from 2 by further sub-dividing the categories into sub-sets of organisms that are evolutionarily related based on phylogeny (Ensembl tree is a good resource for this and I am sure there are other for validation as well). This will probably increase the likelihood of us finding orthologs since, based on the phylogeny structure used, they should already be orthologs;
-By not limiting the study to mammals, reptiles, and cartilagenous fish, it might help the validity of the study. I think using only two organisms per category (based on my current understanding) would limit validity
 
 #### Potential programs to write
 - parse the list of genes to get orthologs of each one, including species (using an Ensembl API);
