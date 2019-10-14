@@ -2,6 +2,8 @@
 
 ## Oct 13, 2019
 - used EBI's Kalign to perform multiple sequence alignments for all genes
+- added a test parser script for writing MSAs as single lines (will not use yet as they are challenging to interpret if 
+written on single lines)
 
 ## Oct 3, 2019
 - moved exceptions out of orthologs package
