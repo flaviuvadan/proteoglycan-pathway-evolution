@@ -1,5 +1,8 @@
 # Documentation of project progress (changelog)
 
+## Oct 13, 2019
+- used EBI's Kalign to perform multiple sequence alignments for all genes
+
 ## Oct 3, 2019
 - moved exceptions out of orthologs package
 - create curator package to parse homology information

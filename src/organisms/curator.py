@@ -100,7 +100,9 @@ class Curator:
         organisms_file_path = self.get_organisms_file_path(gene_name, gene_id)
         with open(organisms_file_path, 'w') as out:
             for species, sequence in organisms.items():
-                out.write("{}:{}\n".format(species, sequence.replace("-", "")))
+                # no point in having the dashes (-) from the alignment as the seqs for Homo Sapiens get overwritten
+                # and we have to re-compute the pair-wise alignment again, anyway
+                out.write(">{}\n{}\n".format(species, sequence.replace("-", "")))
 
 
 if __name__ == "__main__":
