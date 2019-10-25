@@ -1,6 +1,4 @@
-CLUSTAL O(1.2.4) multiple sequence alignment
-
-
+CLUSTAL O(1.2.3) multiple sequence alignment
 drosophila_melanogaster               ------------------------------------------------------------
 ciona_savignyi                        ------------------------------------------------------------
 ciona_intestinalis                    -------------------------------------AT-----------------ATGG
