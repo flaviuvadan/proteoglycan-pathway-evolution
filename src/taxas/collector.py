@@ -14,6 +14,9 @@ class Collector:
     GENE_ID_IDX = 1
     GENE_NAME_IDX = 0
 
+    FREQ_KEY = "freq"
+    GENE_IDS_KEY = "genes"
+
     def __init__(self, gene_file_path):
         """
         Constructor
@@ -47,10 +50,28 @@ class Collector:
                         continue
                     clean_o = o.replace(">", "", 1).replace("_", " ").title()
                     if not organisms.get(clean_o):
-                        organisms[clean_o] = 1
+                        organisms[clean_o] = {self.FREQ_KEY: 1, self.GENE_IDS_KEY: [gene]}
                     else:
-                        organisms[clean_o] = organisms.get(clean_o) + 1
+                        organisms[clean_o][self.FREQ_KEY] = organisms[clean_o][self.FREQ_KEY] + 1
+                        organisms[clean_o][self.GENE_IDS_KEY].append(gene)
         return organisms
+
+    def get_gene_frequencies(self):
+        """ Builds a file containing the gene frequencies of each organism """
+        with open("gene_frequencies.txt", "w") as freqs:
+            freqs.write("Organism,Gene Frequency\n")
+            for org, data in self.organisms.items():
+                freqs.write("{},{}\n".format(org, data.get(self.FREQ_KEY)))
+
+    def get_organisms_genes(self):
+        """ Builds a file containing the genes exhibited by each organism """
+        with open("organisms_genes.txt", "w") as freqs:
+            freqs.write("Organism,Genes\n")
+            for org, data in self.organisms.items():
+                genes = ""
+                for gene in data.get(self.GENE_IDS_KEY):
+                    genes = genes + "{} ".format(gene[self.GENE_NAME_IDX])
+                freqs.write("{},{}\n".format(org, genes))
 
     def collect(self):
         """ Collects taxa information from GBIF (https://www.gbif.org/developer/species) """
@@ -100,3 +121,5 @@ if __name__ == "__main__":
     gene_file_path = os.path.join(os.pardir, "data", "genes.txt")
     collector = Collector(gene_file_path)
     collector.collect()
+    collector.get_organisms_genes()
+    collector.get_gene_frequencies()

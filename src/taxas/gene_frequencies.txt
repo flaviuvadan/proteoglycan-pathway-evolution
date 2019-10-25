@@ -1,0 +1,200 @@
+Organism,Gene Frequency
+Homo Sapiens,51
+Pan Troglodytes,47
+Pan Paniscus,47
+Gorilla Gorilla,47
+Pongo Abelii,49
+Nomascus Leucogenys,48
+Colobus Angolensis Palliatus,46
+Theropithecus Gelada,48
+Papio Anubis,49
+Macaca Nemestrina,48
+Macaca Fascicularis,50
+Macaca Mulatta,50
+Mandrillus Leucophaeus,49
+Rhinopithecus Roxellana,48
+Cercocebus Atys,48
+Rhinopithecus Bieti,47
+Saimiri Boliviensis Boliviensis,45
+Cebus Capucinus,49
+Aotus Nancymaae,48
+Callithrix Jacchus,48
+Oryctolagus Cuniculus,45
+Carlito Syrichta,38
+Tupaia Belangeri,40
+Ochotona Princeps,42
+Peromyscus Maniculatus Bairdii,46
+Piliocolobus Tephrosceles,47
+Cricetulus Griseus Chok1Gshd,45
+Marmota Marmota Marmota,43
+Heterocephalus Glaber Male,46
+Microtus Ochrogaster,44
+Ursus Maritimus,42
+Mesocricetus Auratus,42
+Spermophilus Dauricus,39
+Jaculus Jaculus,44
+Chinchilla Lanigera,49
+Nannospalax Galili,44
+Octodon Degus,46
+Castor Canadensis,45
+Mus Musculus,46
+Fukomys Damarensis,44
+Cricetulus Griseus Crigri,43
+Prolemur Simus,47
+Heterocephalus Glaber Female,48
+Panthera Tigris Altaica,44
+Ictidomys Tridecemlineatus,47
+Neovison Vison,48
+Cavia Porcellus,48
+Microcebus Murinus,44
+Equus Asinus Asinus,48
+Mus Spicilegus,45
+Panthera Pardus,47
+Dipodomys Ordii,43
+Propithecus Coquereli,44
+Cavia Aperea,41
+Rattus Norvegicus,47
+Mus Spretus,46
+Mus Pahari,46
+Mus Caroli,46
+Urocitellus Parryii,49
+Meriones Unguiculatus,46
+Cricetulus Griseus Picr,46
+Otolemur Garnettii,48
+Loxodonta Africana,47
+Procavia Capensis,43
+Equus Caballus,48
+Mustela Putorius Furo,48
+Felis Catus,49
+Sus Scrofa,48
+Bison Bison Bison,46
+Pteropus Vampyrus,45
+Tursiops Truncatus,44
+Bos Taurus,48
+Canis Familiaris,46
+Bos Taurus Hybrid,46
+Ailuropoda Melanoleuca,47
+Vulpes Vulpes,46
+Ovis Aries,47
+Bos Mutus,44
+Ursus Americanus,42
+Canis Lupus Dingo,49
+Capra Hircus,48
+Myotis Lucifugus,40
+Bos Indicus Hybrid,48
+Sorex Araneus,25
+Dasypus Novemcinctus,49
+Echinops Telfairi,36
+Erinaceus Europaeus,37
+Denticeps Clupeoides,46
+Choloepus Hoffmanni,33
+Monodelphis Domestica,48
+Sarcophilus Harrisii,47
+Notamacropus Eugenii,45
+Vombatus Ursinus,48
+Ornithorhynchus Anatinus,34
+Anas Platyrhynchos Platyrhynchos,46
+Chelonoidis Abingdonii,49
+Pogona Vitticeps,50
+Apteryx Haastii,46
+Sphenodon Punctatus,42
+Coturnix Japonica,46
+Numida Meleagris,46
+Pelodiscus Sinensis,48
+Gopherus Agassizii,48
+Taeniopygia Guttata,44
+Nothoprocta Perdicaria,45
+Manacus Vitellinus,44
+Cyanistes Caeruleus,42
+Salvator Merianae,51
+Anser Brachyrhynchus,46
+Apteryx Owenii,45
+Lonchura Striata Domestica,46
+Meleagris Gallopavo,43
+Anolis Carolinensis,48
+Junco Hyemalis,43
+Parus Major,46
+Zonotrichia Albicollis,40
+Ficedula Albicollis,46
+Crocodylus Porosus,44
+Gallus Gallus,45
+Apteryx Rowi,46
+Dromaius Novaehollandiae,46
+Calidris Pugnax,45
+Chrysemys Picta Bellii,49
+Notechis Scutatus,49
+Lepidothrix Coronata,45
+Melopsittacus Undulatus,47
+Hippocampus Comes,46
+Calidris Pygmaea,46
+Xenopus Tropicalis,46
+Betta Splendens,47
+Astyanax Mexicanus Pachon,49
+Pundamilia Nyererei,47
+Oryzias Latipes Hsok,45
+Stegastes Partitus,47
+Hucho Hucho,48
+Acanthochromis Polyacanthus,49
+Oryzias Latipes Hni,46
+Callorhinchus Milii,50
+Oreochromis Niloticus,48
+Clupea Harengus,46
+Periophthalmus Magnuspinnatus,48
+Haplochromis Burtoni,48
+Latimeria Chalumnae,49
+Amphiprion Ocellaris,48
+Kryptolebias Marmoratus,47
+Oryzias Latipes,46
+Cyprinodon Variegatus,47
+Astyanax Mexicanus,49
+Poecilia Mexicana,48
+Seriola Dumerili,48
+Scleropages Formosus,50
+Lates Calcarifer,48
+Seriola Lalandi Dorsalis,48
+Anabas Testudineus,47
+Takifugu Rubripes,46
+Neolamprologus Brichardi,48
+Larimichthys Crocea,49
+Mola Mola,46
+Cynoglossus Semilaevis,47
+Gouania Willdenowi,45
+Fundulus Heteroclitus,48
+Labrus Bergylta,49
+Scophthalmus Maximus,47
+Xiphophorus Couchianus,43
+Monopterus Albus,47
+Tetraodon Nigroviridis,46
+Danio Rerio,48
+Poecilia Formosa,47
+Amphiprion Percula,48
+Xiphophorus Maculatus,47
+Cottoperca Gobio,46
+Amphilophus Citrinellus,48
+Mastacembelus Armatus,47
+Gasterosteus Aculeatus,48
+Poecilia Reticulata,47
+Pygocentrus Nattereri,49
+Oryzias Melastigma,47
+Poecilia Latipinna,46
+Ictalurus Punctatus,49
+Parambassis Ranga,45
+Esox Lucius,48
+Astatotilapia Calliptera,48
+Maylandia Zebra,48
+Gambusia Affinis,45
+Paramormyrops Kingsleyae,49
+Electrophorus Electricus,49
+Erpetoichthys Calabaricus,49
+Lepisosteus Oculatus,47
+Gadus Morhua,44
+Chlorocebus Sabaeus,51
+Petromyzon Marinus,28
+Eptatretus Burgeri,35
+Ciona Savignyi,37
+Drosophila Melanogaster,39
+Ciona Intestinalis,38
+Caenorhabditis Elegans,22
+Phascolarctos Cinereus,47
+Vicugna Pacos,27
+Serinus Canaria,42
