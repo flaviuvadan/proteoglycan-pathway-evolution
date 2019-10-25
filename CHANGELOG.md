@@ -1,5 +1,8 @@
 # Documentation of project progress (changelog)
 
+## Oct 24, 2019
+- make taxa collector build organism information files (gene frequency and genes per organism)
+
 ## Oct 13, 2019
 - used EBI's Kalign to perform multiple sequence alignments for all genes
 - added a test parser script for writing MSAs as single lines (will not use yet as they are challenging to interpret if 
