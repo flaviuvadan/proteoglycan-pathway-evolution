@@ -47,13 +47,12 @@ class Parser:
 
     def create_gene_freq_plot(self):
         """ Creates a plot of the gene frequencies """
-        plt.figure(figsize=(18, 18))
+        plt.figure(figsize=(20, 20))
         plt.scatter(self.gene_freqs.values(), self.gene_freqs.keys(), marker='.')
-        plt.title("Organisms gene frequencies")
-        plt.axis([20, max(self.gene_freqs.values()) + 3, 0, len(self.gene_freqs.keys())])
+        plt.title("Organisms gene frequencies", fontsize=40)
+        plt.axis([21, max(self.gene_freqs.values()) + 2, 0, len(self.gene_freqs.keys())])
         plt.yticks(range(len(list(self.gene_freqs.keys()))), list(self.gene_freqs.keys()))
-        plt.xticks(range(max(self.gene_freqs.values()) + 3 - 20), )
-        plt.tick_params(axis='y', which='major', labelsize=5)
+        plt.tick_params(axis='y', labelsize=6)
         plt.savefig("gene_freqs_2.pdf", format="pdf", quality=95)
         plt.close()
 
