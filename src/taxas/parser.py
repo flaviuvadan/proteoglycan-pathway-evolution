@@ -1,9 +1,7 @@
 import csv
 import os
 
-import matplotlib as mpl
 import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
 import seaborn as sn
 
@@ -53,7 +51,7 @@ class Parser:
         plt.axis([21, max(self.gene_freqs.values()) + 2, 0, len(self.gene_freqs.keys())])
         plt.yticks(range(len(list(self.gene_freqs.keys()))), list(self.gene_freqs.keys()))
         plt.tick_params(axis='y', labelsize=6)
-        plt.savefig("gene_freqs_2.pdf", format="pdf", quality=95)
+        plt.savefig("gene_freqs.pdf", format="pdf", quality=95)
         plt.close()
 
     def _get_genes_vector(self):
@@ -102,7 +100,6 @@ class Parser:
         # easier to go about this with this approach than fight with matplotlib
         # self._create_organisms_genes_csv()
         df = pd.read_csv("organisms_genes_vectors.txt")
-        # plot in the opposite direction as it is easier to read
         y_values = df.Organism
         x_values = df.columns[1:]
         fig_text = "A matrix representation of the presence of each gene in every studied organism"
@@ -121,4 +118,4 @@ if __name__ == "__main__":
     gene_file_path = os.path.join(os.pardir, "data", "genes.txt")
     parser = Parser(gene_file_path)
     parser.create_gene_freq_plot()
-    # parser.create_organisms_genes_matrix()
+    parser.create_organisms_genes_matrix()
