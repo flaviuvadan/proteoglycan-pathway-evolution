@@ -1,5 +1,10 @@
 # Documentation of project progress (changelog)
 
+## Oct 31, 2019
+- started building the MSAs parser
+- noticed the alignments had a problem caused by the ClustalW format (limited number of characters for the organism 
+name). Performed MSAs again, with Kalign on EBI, and saved in FASTA format 
+
 ## Oct 24, 2019
 - make taxa collector build organism information files (gene frequency and genes per organism)
 
