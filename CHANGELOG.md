@@ -1,5 +1,8 @@
 # Documentation of project progress (changelog)
 
+## Nov 2, 2019
+- implemented a taxon mapper for generating a plot of frequency of organisms per clade
+
 ## Nov 1, 2019
 - implemented the MSA parser
 - moved some results files around (plots moved to src/data)
