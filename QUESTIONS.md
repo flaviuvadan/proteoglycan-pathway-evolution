@@ -14,4 +14,5 @@ species of interest was homo sapiens).
 long regions of similar nucleotides. Rather, it shows many small regions that seem to align, with long break in between.
 Why is this the case? What is the function of Prg4? Does it make sense for it to have high mutation rates such that we 
 observe these inter-spaced regions, which can suggest inconsistency between organisms.
-4)
+4) See MSA plot - what can we infer from the regions that are highly preserved? How about the regions that are highly 
+spread through the alignment, i.e short preserved regions but spread through the genomes?

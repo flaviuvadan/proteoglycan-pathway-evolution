@@ -1,5 +1,9 @@
 # Documentation of project progress (changelog)
 
+## Nov 1, 2019
+- implemented the MSA parser
+- moved some results files around (plots moved to src/data)
+
 ## Oct 31, 2019
 - started building the MSAs parser
 - noticed the alignments had a problem caused by the ClustalW format (limited number of characters for the organism 
