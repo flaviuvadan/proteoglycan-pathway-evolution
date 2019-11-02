@@ -59,19 +59,16 @@ class Parser:
             for i in range(len(list(self.alignments.get(gene).values())[0])):
                 freq_i = 0
                 for seq in self.alignments.get(gene).values():
-                    try:
-                        if seq[i] != "-":
-                            freq_i = freq_i + 1
-                    except Exception as e:
-                        pass
+                    if seq[i] != "-":
+                        freq_i = freq_i + 1
                 freqs[gene].append((i, freq_i))
         return freqs
 
     def build_frequency_plots(self):
         """ Builds the frequency plots associated with the MSAs """
         num_plots = len(list(self.frequencies.keys()))
-        fig = plt.figure(figsize=(10, 50))
-        fig.subplots_adjust(hspace=1)
+        fig = plt.figure(figsize=(8, 50))
+        fig.subplots_adjust(hspace=2)
         for idx, gene in enumerate(list(self.frequencies.keys())):
             values = self.frequencies.get(gene)
             x_vals = [x[0] for x in values]

@@ -51,7 +51,7 @@ class Parser:
         plt.axis([21, max(self.gene_freqs.values()) + 2, 0, len(self.gene_freqs.keys())])
         plt.yticks(range(len(list(self.gene_freqs.keys()))), list(self.gene_freqs.keys()))
         plt.tick_params(axis='y', labelsize=6)
-        plt.savefig("gene_freqs.pdf", format="pdf", quality=95)
+        plt.savefig("gene_frequencies.pdf", format="pdf", quality=95)
         plt.close()
 
     def _get_genes_vector(self):
@@ -111,7 +111,7 @@ class Parser:
         plt.xticks(range(len(x_values)), x_values)
         plt.yticks(range(len(y_values)), y_values)
         sn.heatmap(df, cbar=False, xticklabels=x_values, yticklabels=y_values, cmap=["White", "Blue"])
-        plt.savefig("vectors.pdf")
+        plt.savefig("gene_presence_vectors.pdf")
 
 
 if __name__ == "__main__":
