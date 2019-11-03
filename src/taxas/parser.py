@@ -13,17 +13,17 @@ class Parser:
     GENE_ID_IDX = 1
     GENE_IDX = 2
 
-    def __init__(self, genes_file_path):
+    def __init__(self):
         """ Constructor """
         self.genes, self.gene_indices = self.load_genes(genes_file_path)
         self.gene_freqs = self._parse_gene_freqs()
         self.org_genes = self._parse_organisms_genes()
 
-    def load_genes(self, genes_file_path):
+    def load_genes(self):
         """ Reads in the genes """
         genes = []
         genes_indices = {}
-        with open(genes_file_path, 'r') as gene_file:
+        with open(os.path.join(os.pardir, "data", "genes.txt"), 'r') as gene_file:
             csv_reader = csv.reader(gene_file, delimiter=',')
             for i, gene in enumerate(csv_reader):
                 # record the i'th index because we want to keep track of the location of the gene in the binary vector
@@ -35,7 +35,7 @@ class Parser:
     def _parse_gene_freqs(self):
         """ Parses the gene frequencies file """
         frequencies = {}
-        with open("gene_frequencies.txt", "r") as freqs:
+        with open(os.path.join(os.pardir, "data", "genes", "gene_frequencies.txt"), "r") as freqs:
             freqs.readline()  # omit the first line
             for line in freqs.readlines():
                 split_line = line.split(",")
@@ -98,8 +98,8 @@ class Parser:
     def create_organisms_genes_matrix(self):
         """ Creates a plot that is a binary matrix of all the genes vs. organisms """
         # easier to go about this with this approach than fight with matplotlib
-        # self._create_organisms_genes_csv()
-        df = pd.read_csv("organisms_genes_vectors.txt")
+        path = os.path.join(os.pardir, "data", "genes", "organisms_genes_vectors.txt")
+        df = pd.read_csv(path)
         y_values = df.Organism
         x_values = df.columns[1:]
         df = df.drop(columns=["Organism"])
@@ -117,7 +117,6 @@ class Parser:
 
 
 if __name__ == "__main__":
-    gene_file_path = os.path.join(os.pardir, "data", "genes.txt")
-    parser = Parser(gene_file_path)
+    parser = Parser()
     parser.create_gene_freq_plot()
     parser.create_organisms_genes_matrix()

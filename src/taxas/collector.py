@@ -23,27 +23,31 @@ class Collector:
         :param gene_file_path: name of the file containing gene names
         """
         self.gene_file_path = gene_file_path
-        self.gene_ids = self.load_genes()
-        self.organisms = self.load_organisms()
+        self.gene_ids = self._load_genes()
+        # keep track of what genes an organism has and what organisms a gene appears in
+        self.organisms, self.genes = self._load_organisms()
 
-    def load_genes(self):
+    def _load_genes(self):
         """ Loads the genes into the class gene_ids """
         with open(self.gene_file_path, 'r') as gene_file:
             csv_reader = csv.reader(gene_file, delimiter=',')
             for gene in csv_reader:
                 yield (gene[self.GENE_NAME_IDX], gene[self.GENE_ID_IDX])
 
-    def get_organisms_file_path(self, gene_name, gene_id):
+    def _get_organisms_file_path(self, gene_name, gene_id):
         """ Builds the file path to the organisms file of the given gene name and ID """
         return os.path.join(os.pardir, "data", "organisms", "{}_{}.txt".format(gene_name, gene_id))
 
-    def load_organisms(self):
-        """ Responsible for loading all the organisms curated for the list of genes of interest """
+    def _load_organisms(self):
+        """ Responsible for loading all the organisms curated for the list of genes of interest. Builds and returns two
+        maps - one mapping each organism to its genes and one mapping each gene to its organisms """
         organisms = {}
+        genes = {}
         for gene in self.gene_ids:
-            org_file_path = self.get_organisms_file_path(gene[self.GENE_NAME_IDX], gene[self.GENE_ID_IDX])
+            org_file_path = self._get_organisms_file_path(gene[self.GENE_NAME_IDX], gene[self.GENE_ID_IDX])
             with open(org_file_path, "r") as orgs:
                 org = orgs.read().splitlines()
+                genes[gene[self.GENE_NAME_IDX]] = {}
                 # we only care about unique organisms
                 for o in org:
                     if not o.startswith(">"):
@@ -58,7 +62,8 @@ class Collector:
                     else:
                         organisms[clean_o][self.FREQ_KEY] = organisms[clean_o][self.FREQ_KEY] + 1
                         organisms[clean_o][self.GENE_IDS_KEY].append(gene)
-        return organisms
+                    genes[gene[self.GENE_NAME_IDX]][clean_o] = 1
+        return organisms, genes
 
     def get_gene_frequencies(self):
         """ Builds a file containing the gene frequencies of each organism """
@@ -66,6 +71,13 @@ class Collector:
             freqs.write("Organism,Gene Frequency\n")
             for org, data in self.organisms.items():
                 freqs.write("{},{}\n".format(org, data.get(self.FREQ_KEY)))
+
+    def get_genes_organisms(self):
+        """ Builds a file containing which organisms a gene appears in """
+        with open("genes_organisms.txt", "w") as f:
+            f.write("Gene,Organisms\n")
+            for gene in self.genes.keys():
+                f.write("{},{}".format(gene, "/".join(self.genes.get(gene).keys()) + "\n"))
 
     def get_organisms_genes(self):
         """ Builds a file containing the genes exhibited by each organism """
@@ -83,7 +95,7 @@ class Collector:
             f.write("Kingdom,Subkingdom,Phylum,Clade,Subphylum,Clade,Class,Subclass,Superorder,Order,Suborder," +
                     "Subsuborder,Family,Genus,Species\n")
             for org in self.organisms.keys():
-                url = self.construct_ebi_taxon_url(org)
+                url = self._construct_ebi_taxon_url(org)
                 req = requests.get(url)
                 if req.status_code == 404:
                     print("Failed to find taxon information for organism: {}".format(org))
@@ -94,30 +106,31 @@ class Collector:
                               "org: {}".format(req.status_code, url, org)
                     raise exceptions.SpeciesRequestException(message)
                 parsed_req = json.loads(req.text)[0].get("lineage")  # single JSON object typically
-                f.write(self.format_organism_info(org, parsed_req))
+                f.write(self._format_organism_info(org, parsed_req))
                 # do not bombard EBI with 100s of API calls
                 time.sleep(0.200)
 
-    def construct_ebi_taxon_url(self, org):
+    def _construct_ebi_taxon_url(self, org):
         """ Constructs and returns the EBI url """
-        split = self.parse_organism_name(org)
+        split = self._parse_organism_name(org)
         return "http://www.ebi.ac.uk/ena/data/taxonomy/v1/taxon/scientific-name/{}%20{}".format(split[0], split[1])
 
-    def parse_organism_name(self, org):
+    def _parse_organism_name(self, org):
         """ Returns the split organism name as (genus, species) """
         split_org = org.split()
         return split_org[0], split_org[1]
 
-    def format_organism_info(self, org, info):
+    def _format_organism_info(self, org, info):
         """ Creates a nicely formatted string to add to organisms.txt """
         species_idx = 1
-        split_org = self.parse_organism_name(org)
+        split_org = self._parse_organism_name(org)
         return ",".join(info.replace(";", "").split()) + ",{}\n".format(split_org[species_idx])
 
 
 if __name__ == "__main__":
-    gene_file_path = os.path.join(os.pardir, "data", "genes.txt")
+    gene_file_path = os.path.join(os.pardir, "data", "genes", "genes.txt")
     collector = Collector(gene_file_path)
-    collector.collect()
+    # collector.collect()
     # collector.get_organisms_genes()
     # collector.get_gene_frequencies()
+    collector.get_genes_organisms()
