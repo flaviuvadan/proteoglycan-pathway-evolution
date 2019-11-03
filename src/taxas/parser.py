@@ -102,14 +102,16 @@ class Parser:
         df = pd.read_csv("organisms_genes_vectors.txt")
         y_values = df.Organism
         x_values = df.columns[1:]
-        fig_text = "A matrix representation of the presence of each gene in every studied organism"
         df = df.drop(columns=["Organism"])
+
+        fig_text = "A matrix representation of the presence of each gene in every studied organism"
 
         plt.figure(figsize=(50, 50))
         plt.title("Organisms gene presence", fontsize=50)
         plt.figtext(0.5, 0.01, fig_text, wrap=True, horizontalalignment="center", fontsize=40)
         plt.xticks(range(len(x_values)), x_values)
         plt.yticks(range(len(y_values)), y_values)
+
         sn.heatmap(df, cbar=False, xticklabels=x_values, yticklabels=y_values, cmap=["White", "Blue"])
         plt.savefig("gene_presence_vectors.pdf")
 

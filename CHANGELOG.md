@@ -2,6 +2,7 @@
 
 ## Nov 2, 2019
 - implemented a taxon mapper for generating a plot of frequency of organisms per clade
+- implemented a gene function visualizer
 
 ## Nov 1, 2019
 - implemented the MSA parser
