@@ -3,6 +3,7 @@
 ## Nov 3, 2019
 - added a phylogeny mapper for building the trees
 - reorganized some data files
+- wrote script for phylogenetic tree visualizations
 
 ## Nov 2, 2019
 - implemented a taxon mapper for generating a plot of frequency of organisms per clade
