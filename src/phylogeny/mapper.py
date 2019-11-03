@@ -1,6 +1,7 @@
 import os
 
-from ete3 import Tree, TreeStyle, AttrFace
+import ete3
+from ete3 import Tree, TreeStyle
 
 
 class Mapper:
@@ -36,25 +37,53 @@ class Mapper:
             self._create_standard_tree(newick_info)
 
     def _create_radial_tree(self, newick_info):
-        """ Creates the radial version of the global tree """
+        """
+        Creates the radial version of the global tree
+        :param newick_info - newick-formatted tree representation
+        """
         t = Tree(newick_info, format=1)  # see ete3/coretype/TreeNode doc for format
         ts = TreeStyle()
-        ts.show_leaf_name = True
+        ts.show_leaf_name = False
         ts.mode = 'c'
         ts.arc_span = 360
         ts.force_topology = True
         ts.legend = None
+
+        ns = ete3.NodeStyle()
+        ns["hz_line_type"], ns["vt_line_type"] = 0, 0
+        ns["hz_line_color"], ns["vt_line_color"] = "black", "black"
+        ns["hz_line_width"], ns["vt_line_width"] = 1, 1
+        for node in t.traverse():
+            node.set_style(ns)
+            if node.is_leaf():
+                node_face = ete3.TextFace(node.name.strip("'"), fsize=60, penwidth=10)
+                node.add_face(node_face, 1)
+
         destination = os.path.join(os.getcwd(), "src", "data", "visualizations", "phylogeny", "radial", "global.pdf")
         t.render(destination, tree_style=ts)
 
     def _create_standard_tree(self, newick_info):
-        """ Creates the standard version of the global tree """
+        """
+        Creates the standard version of the global tree
+        :param newick_info - newick-formatted tree representation
+        """
         t = Tree(newick_info, format=1)  # see ete3/coretype/TreeNode doc for format
         ts = TreeStyle()
-        ts.show_leaf_name = True
+        ts.show_leaf_name = False
         ts.force_topology = True
         ts.legend = None
         ts.rotation = 90
+
+        ns = ete3.NodeStyle()
+        ns["hz_line_type"], ns["vt_line_type"] = 0, 0
+        ns["hz_line_color"], ns["vt_line_color"] = "black", "black"
+        ns["hz_line_width"], ns["vt_line_width"] = 1, 1
+        for node in t.traverse():
+            node.set_style(ns)
+            if node.is_leaf():
+                node_face = ete3.TextFace(node.name.strip("'"), fsize=60, penwidth=10)
+                node.add_face(node_face, 1)
+
         destination = os.path.join(os.getcwd(), "src", "data", "visualizations", "phylogeny", "standard", "global.pdf")
         t.render(destination, tree_style=ts)
 
@@ -62,11 +91,80 @@ class Mapper:
         """ Creates the 51 trees, one per gene """
         with open(os.path.join(os.getcwd(), "src", "data", "phylogeny", "phyliptree.phy"), "r") as f:
             newick_info = f.read()
+            for gene in self.genes_organisms.keys():
+                self._create_radial_gene_tree(newick_info, gene, self.genes_organisms.get(gene).keys())
+                self._create_standard_gene_tree(newick_info, gene, self.genes_organisms.get(gene).keys())
 
-    def _create_radial_gene_tree(self, newick_info):
-        """ Creates the radial gene tree of each gene """
+    def _create_radial_gene_tree(self, newick_info, gene, organisms):
+        """
+        Creates the radial gene tree of each gene
+        :param newick_info - newick-formatted tree representation
+        :param gene - gene name
+        :param organisms - list of organisms that contain the given gene
+        """
+        t = Tree(newick_info, format=1)  # see ete3/coretype/TreeNode doc for format
+        ts = TreeStyle()
+        ts.show_leaf_name = True
+        ts.mode = 'c'
+        ts.arc_span = 360
+        ts.force_topology = True
+        ts.title.add_face(ete3.TextFace(gene, fsize=120, bold=True), column=0)
+        ts.show_leaf_name = False
+        ts.show_scale = False
+
+        ns = ete3.NodeStyle()
+        ns["hz_line_type"], ns["vt_line_type"] = 0, 0
+        ns["hz_line_color"], ns["vt_line_color"] = "black", "black"
+        ns["hz_line_width"], ns["vt_line_width"] = 1, 1
+        for node in t.traverse():
+            node.set_style(ns)
+            if node.is_leaf():
+                if node.name.strip("'").title() in organisms:
+                    node_face = ete3.TextFace(node.name.strip("'"), fsize=60, penwidth=10)
+                    node.add_face(node_face, 1)
+                else:
+                    node_face = ete3.TextFace(node.name.strip("'"), fsize=45, penwidth=10, fgcolor="blue")
+                    node.add_face(node_face, 1)
+
+        destination = os.path.join(os.getcwd(), "src", "data", "visualizations", "phylogeny", "radial",
+                                   "{}.pdf".format(gene))
+        t.render(destination, tree_style=ts)
+
+    def _create_standard_gene_tree(self, newick_info, gene, organisms):
+        """
+        Creates the standard gene tree of each gene
+        :param newick_info - newick-formatted tree representation
+        :param gene - gene name
+        :param organisms - list of organisms that contain the given gene
+        """
+        t = Tree(newick_info, format=1)  # see ete3/coretype/TreeNode doc for format
+        ts = TreeStyle()
+        ts.force_topology = True
+        ts.title.add_face(ete3.TextFace(gene, fsize=120, bold=True), column=0)
+        ts.show_leaf_name = False
+        ts.show_scale = False
+        ts.rotation = 90
+
+        ns = ete3.NodeStyle()
+        ns["hz_line_type"], ns["vt_line_type"] = 0, 0
+        ns["hz_line_color"], ns["vt_line_color"] = "black", "black"
+        ns["hz_line_width"], ns["vt_line_width"] = 1, 1
+        for node in t.traverse():
+            node.set_style(ns)
+            if node.is_leaf():
+                if node.name.strip("'").title() in organisms:
+                    node_face = ete3.TextFace(node.name.strip("'"), fsize=60, penwidth=10)
+                    node.add_face(node_face, 1)
+                else:
+                    node_face = ete3.TextFace(node.name.strip("'"), fsize=45, penwidth=10, fgcolor="blue")
+                    node.add_face(node_face, 1)
+
+        destination = os.path.join(os.getcwd(), "src", "data", "visualizations", "phylogeny", "standard",
+                                   "{}.pdf".format(gene))
+        t.render(destination, tree_style=ts)
 
 
 if __name__ == "__main__":
     mapper = Mapper()
     mapper.create_global_trees()
+    mapper.create_gene_trees()
