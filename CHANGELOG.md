@@ -1,5 +1,9 @@
 # Documentation of project progress (changelog)
 
+## Nov 3, 2019
+- added a phylogeny mapper for building the trees
+- reorganized some data files
+
 ## Nov 2, 2019
 - implemented a taxon mapper for generating a plot of frequency of organisms per clade
 - implemented a gene function visualizer
