@@ -1,0 +1,323 @@
+(
+(
+'Erpetoichthys calabaricus':4,
+(
+(
+'Pteropus vampyrus':4,
+'Myotis lucifugus':4
+)Chiroptera:4,
+'Tupaia belangeri':4,
+'Monodelphis domestica':4,
+(
+'Nannospalax galili':4,
+'Castor canadensis':4,
+'Jaculus jaculus':4,
+'Chinchilla lanigera':4,
+(
+'Fukomys damarensis':4,
+'Heterocephalus glaber':4
+)Bathyergidae:4,
+'Octodon degus':4,
+(
+'Cavia aperea':4,
+'Cavia porcellus':4
+)Cavia:4,
+(
+'Rattus norvegicus':4,
+(
+'Mus spicilegus':4,
+'Mus spretus':4,
+'Mus pahari':4,
+'Mus musculus':4,
+'Mus caroli':4
+)Mus:4,
+'Meriones unguiculatus':4
+)Muridae:4,
+(
+'Microtus ochrogaster':4,
+'Peromyscus maniculatus':4,
+'Mesocricetus auratus':4,
+'Cricetulus griseus':4
+)Cricetidae:4,
+'Dipodomys ordii':4,
+(
+'Spermophilus dauricus':4,
+'Ictidomys tridecemlineatus':4,
+'Urocitellus parryii':4,
+'Marmota marmota':4
+)Sciuridae:4
+)Rodentia:4,
+(
+'Oryctolagus cuniculus':4,
+'Ochotona princeps':4
+)Lagomorpha:4,
+'Procavia capensis':4,
+(
+'Equus caballus':4,
+'Equus asinus':4
+)Equus:4,
+'Loxodonta africana':4,
+(
+'Vicugna pacos':4,
+(
+'Ovis aries':4,
+'Capra hircus':4,
+(
+'Bos mutus':4,
+'Bos indicus':4,
+'Bos taurus':4
+)Bos:4,
+'Bison bison':4
+)Bovidae:4,
+'Sus scrofa':4,
+'Tursiops truncatus':4
+)Artiodactyla:4,
+(
+(
+(
+'Panthera tigris':4,
+'Panthera pardus':4
+)Panthera:4,
+'Felis catus':4
+)Felidae:4,
+(
+'Neovison vison':4,
+'Mustela putorius':4
+)Mustelidae:4,
+(
+'Ailuropoda melanoleuca':4,
+(
+'Ursus maritimus':4,
+'Ursus americanus':4
+)Ursus:4
+)Ursidae:4,
+(
+'Vulpes vulpes':4,
+'Canis lupus familiaris':4
+)Canidae:4
+)Carnivora:4,
+(
+'Carlito syrichta':4,
+'Prolemur simus':4,
+'Propithecus coquereli':4,
+'Nomascus leucogenys':4,
+'Aotus nancymaae':4,
+'Otolemur garnettii':4,
+'Microcebus murinus':4,
+(
+'Homo sapiens':4,
+'Pongo abelii':4,
+(
+'Pan troglodytes':4,
+'Pan paniscus':4
+)Pan:4,
+'Gorilla gorilla':4
+)Hominidae:4,
+(
+'Piliocolobus tephrosceles':4,
+(
+'Rhinopithecus roxellana':4,
+'Rhinopithecus bieti':4
+)Rhinopithecus:4,
+'Chlorocebus sabaeus':4,
+'Colobus angolensis':4,
+'Mandrillus leucophaeus':4,
+'Theropithecus gelada':4,
+'Papio anubis':4,
+(
+'Macaca nemestrina':4,
+'Macaca mulatta':4,
+'Macaca fascicularis':4
+)Macaca:4,
+'Cercocebus atys':4
+)Cercopithecidae:4,
+(
+'Saimiri boliviensis':4,
+'Cebus capucinus':4,
+'Callithrix jacchus':4
+)Cebidae:4
+)Primates:4,
+'Echinops telfairi':4,
+(
+'Sorex araneus':4,
+'Erinaceus europaeus':4
+)Eulipotyphla:4,
+'Dasypus novemcinctus':4,
+'Choloepus hoffmanni':4,
+(
+'Phascolarctos cinereus':4,
+'Vombatus ursinus':4,
+'Notamacropus eugenii':4
+)Diprotodontia:4,
+'Sarcophilus harrisii':4,
+'Ornithorhynchus anatinus':4
+)Mammalia:4,
+(
+(
+'Calidris pygmaea':4,
+'Calidris pugnax':4
+)Calidris:4,
+'Nothoprocta perdicaria':4,
+'Melopsittacus undulatus':4,
+(
+(
+'Manacus vitellinus':4,
+'Lepidothrix coronata':4
+)Pipridae:4,
+'Ficedula albicollis':4,
+(
+'Zonotrichia albicollis':4,
+'Junco hyemalis':4
+)Passerellidae:4,
+(
+'Taeniopygia guttata':4,
+'Lonchura striata':4
+)Estrildidae:4,
+(
+'Cyanistes caeruleus':4,
+'Parus major':4
+)Paridae:4,
+'Serinus canaria':4
+)Passeriformes:4,
+(
+(
+'Coturnix japonica':4,
+'Meleagris gallopavo':4,
+'Gallus gallus':4
+)Phasianidae:4,
+'Numida meleagris':4
+)Galliformes:4,
+(
+'Anser brachyrhynchus':4,
+'Anas platyrhynchos':4
+)Anatidae:4,
+(
+'Apteryx rowi':4,
+'Apteryx owenii':4,
+'Apteryx haastii':4
+)Apteryx:4,
+'Dromaius novaehollandiae':4
+)Aves:4,
+(
+'Pogona vitticeps':4,
+'Salvator merianae':4,
+'Anolis carolinensis':4,
+'Notechis scutatus':4
+)Squamata:4,
+'Sphenodon punctatus':4,
+'Crocodylus porosus':4,
+(
+(
+'Chelonoidis abingdonii':4,
+'Gopherus agassizii':4
+)Testudinidae:4,
+'Pelodiscus sinensis':4,
+'Chrysemys picta':4
+)Testudines:4,
+'Xenopus tropicalis':4,
+(
+'Gouania willdenowi':4,
+'Periophthalmus magnuspinnatus':4,
+'Larimichthys crocea':4,
+'Parambassis ranga':4,
+(
+'Paramormyrops kingsleyae':4,
+'Scleropages formosus':4
+)Osteoglossiformes:4,
+'Hippocampus comes':4,
+(
+'Stegastes partitus':4,
+(
+'Amphiprion percula':4,
+'Amphiprion ocellaris':4
+)Amphiprion:4,
+'Acanthochromis polyacanthus':4
+)Pomacentridae:4,
+(
+'Betta splendens':4,
+'Anabas testudineus':4
+)Anabantiformes:4,
+'Hucho hucho':4,
+'Labrus bergylta':4,
+(
+'Gasterosteus aculeatus':4,
+'Cottoperca gobio':4
+)Perciformes:4,
+(
+'Cynoglossus semilaevis':4,
+'Scophthalmus maximus':4
+)Pleuronectiformes:4,
+(
+'Mastacembelus armatus':4,
+'Monopterus albus':4
+)Synbranchiformes:4,
+(
+'Seriola lalandi':4,
+'Seriola dumerili':4
+)Seriola:4,
+(
+'Mola mola':4,
+(
+'Tetraodon nigroviridis':4,
+'Takifugu rubripes':4
+)Tetraodontidae:4
+)Tetraodontiformes:4,
+'Lates calcarifer':4,
+(
+'Pundamilia nyererei':4,
+'Maylandia zebra':4,
+'Amphilophus citrinellus':4,
+'Neolamprologus brichardi':4,
+'Astatotilapia calliptera':4,
+'Haplochromis burtoni':4,
+'Oreochromis niloticus':4
+)Cichlidae:4,
+(
+'Oryzias melastigma':4,
+'Oryzias latipes':4
+)Oryzias:4,
+(
+'Kryptolebias marmoratus':4,
+'Cyprinodon variegatus':4,
+(
+'Gambusia affinis':4,
+(
+'Xiphophorus couchianus':4,
+'Xiphophorus maculatus':4
+)Xiphophorus:4,
+(
+'Poecilia mexicana':4,
+'Poecilia latipinna':4,
+'Poecilia formosa':4,
+'Poecilia reticulata':4
+)Poecilia:4
+)Poeciliidae:4,
+'Fundulus heteroclitus':4
+)Cyprinodontiformes:4,
+'Gadus morhua':4,
+'Esox lucius':4,
+'Electrophorus electricus':4,
+'Ictalurus punctatus':4,
+(
+'Pygocentrus nattereri':4,
+'Astyanax mexicanus':4
+)Characiformes:4,
+'Danio rerio':4,
+(
+'Denticeps clupeoides':4,
+'Clupea harengus':4
+)Clupeiformes:4,
+'Lepisosteus oculatus':4
+)Actinopteri:4,
+'Latimeria chalumnae':4,
+'Callorhinchus milii':4,
+'Eptatretus burgeri':4,
+'Petromyzon marinus':4,
+(
+'Ciona savignyi':4,
+'Ciona intestinalis':4
+)Ciona:4
+)Chordata:4,
+'Drosophila melanogaster':4,
+'Caenorhabditis elegans':4
+)Metazoa:4;
