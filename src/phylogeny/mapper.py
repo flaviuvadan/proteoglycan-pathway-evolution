@@ -1,7 +1,6 @@
 import os
 
-import ete3
-from ete3 import Tree, TreeStyle
+import ete3 as ete
 
 
 class Mapper:
@@ -41,22 +40,22 @@ class Mapper:
         Creates the radial version of the global tree
         :param newick_info - newick-formatted tree representation
         """
-        t = Tree(newick_info, format=1)  # see ete3/coretype/TreeNode doc for format
-        ts = TreeStyle()
+        t = ete.Tree(newick_info, format=1)  # see ete/coretype/TreeNode doc for format
+        ts = ete.TreeStyle()
         ts.show_leaf_name = False
         ts.mode = 'c'
         ts.arc_span = 360
         ts.force_topology = True
         ts.legend = None
 
-        ns = ete3.NodeStyle()
+        ns = ete.NodeStyle()
         ns["hz_line_type"], ns["vt_line_type"] = 0, 0
         ns["hz_line_color"], ns["vt_line_color"] = "black", "black"
         ns["hz_line_width"], ns["vt_line_width"] = 1, 1
         for node in t.traverse():
             node.set_style(ns)
             if node.is_leaf():
-                node_face = ete3.TextFace(node.name.strip("'"), fsize=60, penwidth=10)
+                node_face = ete.TextFace(node.name.strip("'"), fsize=60, penwidth=10)
                 node.add_face(node_face, 1)
 
         destination = os.path.join(os.getcwd(), "src", "data", "visualizations", "phylogeny", "radial", "global.pdf")
@@ -67,21 +66,21 @@ class Mapper:
         Creates the standard version of the global tree
         :param newick_info - newick-formatted tree representation
         """
-        t = Tree(newick_info, format=1)  # see ete3/coretype/TreeNode doc for format
-        ts = TreeStyle()
+        t = ete.Tree(newick_info, format=1)  # see ete/coretype/TreeNode doc for format
+        ts = ete.TreeStyle()
         ts.show_leaf_name = False
         ts.force_topology = True
         ts.legend = None
         ts.rotation = 90
 
-        ns = ete3.NodeStyle()
+        ns = ete.NodeStyle()
         ns["hz_line_type"], ns["vt_line_type"] = 0, 0
         ns["hz_line_color"], ns["vt_line_color"] = "black", "black"
         ns["hz_line_width"], ns["vt_line_width"] = 1, 1
         for node in t.traverse():
             node.set_style(ns)
             if node.is_leaf():
-                node_face = ete3.TextFace(node.name.strip("'"), fsize=60, penwidth=10)
+                node_face = ete.TextFace(node.name.strip("'"), fsize=60, penwidth=10)
                 node.add_face(node_face, 1)
 
         destination = os.path.join(os.getcwd(), "src", "data", "visualizations", "phylogeny", "standard", "global.pdf")
@@ -102,17 +101,17 @@ class Mapper:
         :param gene - gene name
         :param organisms - list of organisms that contain the given gene
         """
-        t = Tree(newick_info, format=1)  # see ete3/coretype/TreeNode doc for format
-        ts = TreeStyle()
+        t = ete.Tree(newick_info, format=1)  # see ete/coretype/TreeNode doc for format
+        ts = ete.TreeStyle()
         ts.show_leaf_name = True
         ts.mode = 'c'
         ts.arc_span = 360
         ts.force_topology = True
-        ts.title.add_face(ete3.TextFace(gene, fsize=120, bold=True), column=0)
+        ts.title.add_face(ete.TextFace(gene, fsize=120, bold=True), column=0)
         ts.show_leaf_name = False
         ts.show_scale = False
 
-        ns = ete3.NodeStyle()
+        ns = ete.NodeStyle()
         ns["hz_line_type"], ns["vt_line_type"] = 0, 0
         ns["hz_line_color"], ns["vt_line_color"] = "black", "black"
         ns["hz_line_width"], ns["vt_line_width"] = 1, 1
@@ -120,10 +119,10 @@ class Mapper:
             node.set_style(ns)
             if node.is_leaf():
                 if node.name.strip("'").title() in organisms:
-                    node_face = ete3.TextFace(node.name.strip("'"), fsize=60, penwidth=10)
+                    node_face = ete.TextFace(node.name.strip("'"), fsize=60, penwidth=10)
                     node.add_face(node_face, 1)
                 else:
-                    node_face = ete3.TextFace(node.name.strip("'"), fsize=45, penwidth=10, fgcolor="blue")
+                    node_face = ete.TextFace(node.name.strip("'"), fsize=45, penwidth=10, fgcolor="blue")
                     node.add_face(node_face, 1)
 
         destination = os.path.join(os.getcwd(), "src", "data", "visualizations", "phylogeny", "radial",
@@ -137,15 +136,15 @@ class Mapper:
         :param gene - gene name
         :param organisms - list of organisms that contain the given gene
         """
-        t = Tree(newick_info, format=1)  # see ete3/coretype/TreeNode doc for format
-        ts = TreeStyle()
+        t = ete.Tree(newick_info, format=1)  # see ete/coretype/TreeNode doc for format
+        ts = ete.TreeStyle()
         ts.force_topology = True
-        ts.title.add_face(ete3.TextFace(gene, fsize=120, bold=True), column=0)
+        ts.title.add_face(ete.TextFace(gene, fsize=120, bold=True), column=0)
         ts.show_leaf_name = False
         ts.show_scale = False
         ts.rotation = 90
 
-        ns = ete3.NodeStyle()
+        ns = ete.NodeStyle()
         ns["hz_line_type"], ns["vt_line_type"] = 0, 0
         ns["hz_line_color"], ns["vt_line_color"] = "black", "black"
         ns["hz_line_width"], ns["vt_line_width"] = 1, 1
@@ -153,10 +152,10 @@ class Mapper:
             node.set_style(ns)
             if node.is_leaf():
                 if node.name.strip("'").title() in organisms:
-                    node_face = ete3.TextFace(node.name.strip("'"), fsize=60, penwidth=10)
+                    node_face = ete.TextFace(node.name.strip("'"), fsize=60, penwidth=10)
                     node.add_face(node_face, 1)
                 else:
-                    node_face = ete3.TextFace(node.name.strip("'"), fsize=45, penwidth=10, fgcolor="blue")
+                    node_face = ete.TextFace(node.name.strip("'"), fsize=45, penwidth=10, fgcolor="blue")
                     node.add_face(node_face, 1)
 
         destination = os.path.join(os.getcwd(), "src", "data", "visualizations", "phylogeny", "standard",
