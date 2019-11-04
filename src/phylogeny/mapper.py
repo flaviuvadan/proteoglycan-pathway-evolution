@@ -10,6 +10,9 @@ class Mapper:
     GENE_IDX = 0
     ORGANISMS_IDX = 1
 
+    GENUS_IDX = 0
+    SPECIES_IDX = 1
+
     def __init__(self):
         """ Constructor """
         self.genes_organisms = self._read_genes_organisms()
@@ -91,8 +94,8 @@ class Mapper:
         with open(os.path.join(os.getcwd(), "src", "data", "phylogeny", "phyliptree.phy"), "r") as f:
             newick_info = f.read()
             for gene in self.genes_organisms.keys():
-                self._create_radial_gene_tree(newick_info, gene, self.genes_organisms.get(gene).keys())
-                self._create_standard_gene_tree(newick_info, gene, self.genes_organisms.get(gene).keys())
+                self._create_radial_gene_tree(newick_info, gene, list(self.genes_organisms.get(gene).keys()))
+                self._create_standard_gene_tree(newick_info, gene, list(self.genes_organisms.get(gene).keys()))
 
     def _create_radial_gene_tree(self, newick_info, gene, organisms):
         """
@@ -107,7 +110,7 @@ class Mapper:
         ts.mode = 'c'
         ts.arc_span = 360
         ts.force_topology = True
-        ts.title.add_face(ete.TextFace(gene, fsize=120, bold=True), column=0)
+        ts.title.add_face(ete.TextFace(gene, fsize=150, bold=True), column=0)
         ts.show_leaf_name = False
         ts.show_scale = False
 
@@ -118,11 +121,18 @@ class Mapper:
         for node in t.traverse():
             node.set_style(ns)
             if node.is_leaf():
-                if node.name.strip("'").title() in organisms:
+                split_node_name = node.name.strip("'").split()
+                genus_species = " ".join([split_node_name[self.GENUS_IDX], split_node_name[self.SPECIES_IDX]])
+                found_in_orgs = False
+                for org in organisms:
+                    if genus_species.lower() in org.lower():
+                        found_in_orgs = True
+                        break
+                if found_in_orgs:
                     node_face = ete.TextFace(node.name.strip("'"), fsize=60, penwidth=10)
                     node.add_face(node_face, 1)
                 else:
-                    node_face = ete.TextFace(node.name.strip("'"), fsize=45, penwidth=10, fgcolor="blue")
+                    node_face = ete.TextFace(node.name.strip("'"), fsize=55, penwidth=10, fgcolor="blue")
                     node.add_face(node_face, 1)
 
         destination = os.path.join(os.getcwd(), "src", "data", "visualizations", "phylogeny", "radial",
@@ -139,7 +149,7 @@ class Mapper:
         t = ete.Tree(newick_info, format=1)  # see ete/coretype/TreeNode doc for format
         ts = ete.TreeStyle()
         ts.force_topology = True
-        ts.title.add_face(ete.TextFace(gene, fsize=120, bold=True), column=0)
+        ts.title.add_face(ete.TextFace(gene, fsize=150, bold=True), column=0)
         ts.show_leaf_name = False
         ts.show_scale = False
         ts.rotation = 90
@@ -151,11 +161,18 @@ class Mapper:
         for node in t.traverse():
             node.set_style(ns)
             if node.is_leaf():
-                if node.name.strip("'").title() in organisms:
+                split_node_name = node.name.strip("'").split()
+                genus_species = " ".join([split_node_name[self.GENUS_IDX], split_node_name[self.SPECIES_IDX]])
+                found_in_orgs = False
+                for org in organisms:
+                    if genus_species.lower() in org.lower():
+                        found_in_orgs = True
+                        break
+                if found_in_orgs:
                     node_face = ete.TextFace(node.name.strip("'"), fsize=60, penwidth=10)
                     node.add_face(node_face, 1)
                 else:
-                    node_face = ete.TextFace(node.name.strip("'"), fsize=45, penwidth=10, fgcolor="blue")
+                    node_face = ete.TextFace(node.name.strip("'"), fsize=55, penwidth=10, fgcolor="blue")
                     node.add_face(node_face, 1)
 
         destination = os.path.join(os.getcwd(), "src", "data", "visualizations", "phylogeny", "standard",
