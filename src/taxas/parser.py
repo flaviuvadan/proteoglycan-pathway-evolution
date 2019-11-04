@@ -15,7 +15,7 @@ class Parser:
 
     def __init__(self):
         """ Constructor """
-        self.genes, self.gene_indices = self.load_genes(genes_file_path)
+        self.genes, self.gene_indices = self.load_genes()
         self.gene_freqs = self._parse_gene_freqs()
         self.org_genes = self._parse_organisms_genes()
 
@@ -23,7 +23,7 @@ class Parser:
         """ Reads in the genes """
         genes = []
         genes_indices = {}
-        with open(os.path.join(os.pardir, "data", "genes.txt"), 'r') as gene_file:
+        with open(os.path.join(os.getcwd(), "src", "data", "genes", "genes.txt"), 'r') as gene_file:
             csv_reader = csv.reader(gene_file, delimiter=',')
             for i, gene in enumerate(csv_reader):
                 # record the i'th index because we want to keep track of the location of the gene in the binary vector
@@ -35,7 +35,7 @@ class Parser:
     def _parse_gene_freqs(self):
         """ Parses the gene frequencies file """
         frequencies = {}
-        with open(os.path.join(os.pardir, "data", "genes", "gene_frequencies.txt"), "r") as freqs:
+        with open(os.path.join(os.getcwd(), "src", "data", "genes", "gene_frequencies.txt"), "r") as freqs:
             freqs.readline()  # omit the first line
             for line in freqs.readlines():
                 split_line = line.split(",")
@@ -63,7 +63,7 @@ class Parser:
         """ Parses the organisms genes file """
         org_genes = {}
         # add each org to dict, each pointing to another dict that's a binary gene representation
-        with open("organisms_genes.txt", "r") as orgs:
+        with open(os.path.join(os.getcwd(), "src", "data", "genes", "organisms_genes.txt"), "r") as orgs:
             orgs.readline()  # omit the first line
             for line in orgs.readlines():
                 split_line = line.split(",")
@@ -98,7 +98,7 @@ class Parser:
     def create_organisms_genes_matrix(self):
         """ Creates a plot that is a binary matrix of all the genes vs. organisms """
         # easier to go about this with this approach than fight with matplotlib
-        path = os.path.join(os.pardir, "data", "genes", "organisms_genes_vectors.txt")
+        path = os.path.join(os.getcwd(), "src", "data", "genes", "organisms_genes_vectors.txt")
         df = pd.read_csv(path)
         y_values = df.Organism
         x_values = df.columns[1:]
@@ -112,7 +112,7 @@ class Parser:
         plt.xticks(range(len(x_values)), x_values)
         plt.yticks(range(len(y_values)), y_values)
 
-        sn.heatmap(df, cbar=False, xticklabels=x_values, yticklabels=y_values, cmap=["White", "Blue"])
+        sn.heatmap(df, cbar=False, xticklabels=x_values, yticklabels=y_values, cmap="Blues")
         plt.savefig("gene_presence_vectors.pdf")
 
 

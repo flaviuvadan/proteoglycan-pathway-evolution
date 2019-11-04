@@ -12,21 +12,20 @@ class Parser:
     ORGANISM_IDX = 0
     ALIGNMENT_IDX = 1
 
-    def __init__(self, base_path):
+    def __init__(self):
         """ Constructor """
-        self.base_path = base_path
         self.alignment_file_paths = self._build_alignment_paths()
         self.alignments = self._parse_alignments()
         self.frequencies = self._build_frequencies()
 
     def _get_alignment_filenames(self):
         """ Returns a list of all the MSA filenames """
-        return os.listdir(self.base_path)
+        return os.listdir(os.path.join(os.getcwd(), "src", "data", "alignments"))
 
     def _build_alignment_paths(self):
         """ Returns a list of all the alignments full file paths """
         alignment_file_names = self._get_alignment_filenames()
-        return [os.path.join(self.base_path, afn) for afn in alignment_file_names]
+        return [os.path.join(os.getcwd(), "src", "data", "alignments", afn) for afn in alignment_file_names]
 
     def _parse_alignments(self):
         """ Parses the MSAs to clean up the 60 character break added by ClustalW """
@@ -88,5 +87,5 @@ class Parser:
 
 
 if __name__ == "__main__":
-    parser = Parser(os.getcwd())
+    parser = Parser()
     parser.build_frequency_plots()

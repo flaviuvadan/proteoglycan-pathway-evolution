@@ -2,6 +2,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sn
 
+sn.set_style("whitegrid")
+
 
 class Visualizer:
     """ Responsible for creating a simple visualization of the gene functions """
@@ -24,7 +26,7 @@ class Visualizer:
         plt.title("Matrix representation of the gene functions", fontsize=30)
         plt.xticks(range(len(x_vals)), x_vals, rotation="45")
         plt.yticks(range(len(y_vals)), y_vals)
-        sn.heatmap(df, cbar=False, xticklabels=x_vals, yticklabels=y_vals, cmap=["White", "Blue"])
+        sn.heatmap(df, cbar=False, xticklabels=x_vals, yticklabels=y_vals, cmap="Blues")
         plt.savefig("gene_functions.pdf", quality=95)
 
 

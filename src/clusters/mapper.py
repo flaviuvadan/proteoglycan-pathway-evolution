@@ -11,7 +11,6 @@ class Mapper:
 
     def __init__(self):
         """ Constructor """
-        self.base_path = os.getcwd()
         self.gene_vectors = self._load_gene_vectors()
 
     def _load_gene_vectors(self):
@@ -20,7 +19,7 @@ class Mapper:
 
     def _get_gene_vectors_file_path(self):
         """ Builds and returns the file path to the organisms gene vectors """
-        return os.path.join(self.base_path, "data", "organisms_genes_vectors.txt")
+        return os.path.join(os.getcwd(), "src", "data", "genes", "organisms_genes_vectors.txt")
 
     def build_hierchical_heatmap(self):
         """ Builds a hierarchical heatmap of the gene vectors """
@@ -33,7 +32,7 @@ class Mapper:
         plt.figtext(0.5, 0.01, fig_text, wrap=True, horizontalalignment="center", fontsize=40)
         plt.xticks(range(len(x_values)), x_values)
         plt.yticks(range(len(y_values)), y_values)
-        fig = sn.clustermap(df, cbar=False, xticklabels=x_values, yticklabels=y_values, cmap=["White", "Blue"], figsize=(50,50))
+        fig = sn.clustermap(df, cbar=False, xticklabels=x_values, yticklabels=y_values, cmap="Blues", figsize=(50, 50))
         fig.cax.set_visible(False)
         fig.savefig("genes_clustermap.pdf")
 
