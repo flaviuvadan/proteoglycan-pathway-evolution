@@ -1,5 +1,8 @@
 # Documentation of project progress (changelog)
 
+## Nov 4, 2019
+- fixed the problem of false negative matches when building phylogeny trees for all the genes
+
 ## Nov 3, 2019
 - added a phylogeny mapper for building the trees
 - reorganized some data files
