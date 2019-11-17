@@ -15,34 +15,3 @@ By comparing the non-synonymous vs. synonymous mutations in a pair- wise fashion
 potential biological conclusions regarding the evolution of the proteoglycan synthesizing pathway, such as whether the 
 proteoglycan synthesizing pathway is selected for in organisms that produce collagen.
 
-### Frequency of organisms based on classification
-
-![](src/data/visualizations/taxon_info/taxa_info.pdf)
-
-### Organisms vs. associated gene frequencies
-
-![](src/data/visualizations/genes/gene_frequencies.pdf)
-
-### Gene functions
-
-![](src/data/visualizations/genes/gene_functions.pdf)
-
-### Gene vector (whether an organism has a gene or not) clustermap
-
-![](src/data/visualizations/genes/genes_clustermap.pdf)
-
-
-### Multiple sequence alignments of all the genes' organisms seuqences
-
-![](src/data/visualizations/alignments/MSAs.pdf)
-
-### Sample phylogenetic relationship between organisms (blue organisms do not have the specified gene)
-
-#### Radial
-
-![](src/data/visualizations/phylogeny/radial/Acan.pdf)
-
-#### Standard
-
-![](src/data/visualizations/phylogeny/standard/Acan.pdf)
-
