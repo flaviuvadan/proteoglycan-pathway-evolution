@@ -3,7 +3,6 @@ Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Eu
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchontoglires,Primates,Haplorrhini,Catarrhini,Hominidae,Pan,Troglodytes
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchontoglires,Primates,Haplorrhini,Catarrhini,Hominidae,Pan,Paniscus
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchontoglires,Primates,Haplorrhini,Catarrhini,Hominidae,Gorilla,Gorilla
-Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchontoglires,Primates,Haplorrhini,Catarrhini,Hominidae,Pongo,Abelii
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchontoglires,Primates,Haplorrhini,Catarrhini,Hylobatidae,Nomascus,Leucogenys
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchontoglires,Primates,Haplorrhini,Catarrhini,Cercopithecidae,Colobinae,Colobus,Angolensis
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchontoglires,Primates,Haplorrhini,Catarrhini,Cercopithecidae,Cercopithecinae,Theropithecus,Gelada
@@ -21,8 +20,6 @@ Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Eu
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchontoglires,Primates,Haplorrhini,Platyrrhini,Cebidae,Callitrichinae,Callithrix,Callithrix,Jacchus
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchontoglires,Glires,Lagomorpha,Leporidae,Oryctolagus,Cuniculus
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchontoglires,Primates,Haplorrhini,Tarsiiformes,Tarsiidae,Carlito,Syrichta
-Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchontoglires,Scandentia,Tupaiidae,Tupaia,Belangeri
-Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchontoglires,Glires,Lagomorpha,Ochotonidae,Ochotona,Princeps
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchontoglires,Glires,Rodentia,Myomorpha,Muroidea,Cricetidae,Neotominae,Peromyscus,Maniculatus
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchontoglires,Primates,Haplorrhini,Catarrhini,Cercopithecidae,Colobinae,Piliocolobus,Tephrosceles
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchontoglires,Glires,Rodentia,Myomorpha,Muroidea,Cricetidae,Cricetinae,Cricetulus,Griseus
@@ -62,14 +59,11 @@ Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Eu
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchontoglires,Glires,Rodentia,Myomorpha,Muroidea,Cricetidae,Cricetinae,Cricetulus,Griseus
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Euarchontoglires,Primates,Strepsirrhini,Lorisiformes,Galagidae,Otolemur,Garnettii
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Afrotheria,Proboscidea,Elephantidae,Loxodonta,Africana
-Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Afrotheria,Hyracoidea,Procaviidae,Procavia,Capensis
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Laurasiatheria,Perissodactyla,Equidae,Equus,Caballus
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Laurasiatheria,Carnivora,Caniformia,Mustelidae,Mustelinae,Mustela,Putorius
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Laurasiatheria,Carnivora,Feliformia,Felidae,Felinae,Felis,Catus
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Laurasiatheria,Artiodactyla,Suina,Suidae,Sus,Scrofa
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Laurasiatheria,Artiodactyla,Ruminantia,Pecora,Bovidae,Bovinae,Bison,Bison
-Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Laurasiatheria,Chiroptera,Megachiroptera,Pteropodidae,Pteropodinae,Pteropus,Vampyrus
-Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Laurasiatheria,Artiodactyla,Whippomorpha,Cetacea,Odontoceti,Delphinidae,Tursiops,Truncatus
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Laurasiatheria,Artiodactyla,Ruminantia,Pecora,Bovidae,Bovinae,Bos,Taurus
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Laurasiatheria,Carnivora,Caniformia,Canidae,Canis,lupus
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Laurasiatheria,Artiodactyla,Ruminantia,Pecora,Bovidae,Bovinae,Bos,Taurus
@@ -82,15 +76,10 @@ Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,La
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Laurasiatheria,Artiodactyla,Ruminantia,Pecora,Bovidae,Caprinae,Capra,Hircus
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Laurasiatheria,Chiroptera,Microchiroptera,Vespertilionidae,Myotis,Lucifugus
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Laurasiatheria,Artiodactyla,Ruminantia,Pecora,Bovidae,Bovinae,Bos,Indicus
-Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Laurasiatheria,Eulipotyphla,Soricidae,Soricinae,Sorex,Araneus
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Xenarthra,Cingulata,Dasypodidae,Dasypus,Novemcinctus
-Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Afrotheria,Tenrecidae,Tenrecinae,Echinops,Telfairi
-Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Laurasiatheria,Eulipotyphla,Erinaceidae,Erinaceinae,Erinaceus,Europaeus
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Actinopterygii,Neopterygii,Teleostei,Clupei,Clupeiformes,Denticipitoidei,Denticipitidae,Denticeps,Clupeoides
-Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Xenarthra,Pilosa,Folivora,Megalonychidae,Choloepus,Hoffmanni
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Metatheria,Didelphimorphia,Didelphidae,Monodelphis,Domestica
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Metatheria,Dasyuromorphia,Dasyuridae,Sarcophilus,Harrisii
-Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Metatheria,Diprotodontia,Macropodidae,Notamacropus,Eugenii
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Metatheria,Diprotodontia,Vombatidae,Vombatus,Ursinus
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Monotremata,Ornithorhynchidae,Ornithorhynchus,Anatinus
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Archelosauria,Archosauria,Dinosauria,Saurischia,Theropoda,Coelurosauria,Aves,Neognathae,Galloanserae,Anseriformes,Anatidae,Anatinae,Anas,Platyrhynchos
@@ -196,5 +185,4 @@ Eukaryota,Metazoa,Ecdysozoa,Arthropoda,Hexapoda,Insecta,Pterygota,Neoptera,Holom
 Eukaryota,Metazoa,Chordata,Tunicata,Ascidiacea,Enterogona,Phlebobranchia,Cionidae,Ciona,Intestinalis
 Eukaryota,Metazoa,Ecdysozoa,Nematoda,Chromadorea,Rhabditida,Rhabditina,Rhabditomorpha,Rhabditoidea,Rhabditidae,Peloderinae,Caenorhabditis,Elegans
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Metatheria,Diprotodontia,Phascolarctidae,Phascolarctos,Cinereus
-Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Mammalia,Eutheria,Laurasiatheria,Artiodactyla,Tylopoda,Camelidae,Vicugna,Pacos
 Eukaryota,Metazoa,Chordata,Craniata,Vertebrata,Euteleostomi,Archelosauria,Archosauria,Dinosauria,Saurischia,Theropoda,Coelurosauria,Aves,Neognathae,Passeriformes,Passeroidea,Fringillidae,Carduelinae,Serinus,Canaria

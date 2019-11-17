@@ -17,15 +17,23 @@ class Collector:
     FREQ_KEY = "freq"
     GENE_IDS_KEY = "genes"
 
-    def __init__(self, gene_file_path):
+    def __init__(self):
         """
         Constructor
-        :param gene_file_path: name of the file containing gene names
         """
-        self.gene_file_path = gene_file_path
+        self.parent_path = self._get_parent_path()
+        self.gene_file_path = self._get_gene_file_path()
         self.gene_ids = self._load_genes()
         # keep track of what genes an organism has and what organisms a gene appears in
-        self.organisms, self.genes = self._load_organisms()
+        self.organisms, self.genes = self._load_orgs_and_genes()
+
+    def _get_parent_path(self):
+        """ Constructs the parent path of the folder where the files of this class are held """
+        return os.path.join(os.getcwd(), "src", "data", "genes")
+
+    def _get_gene_file_path(self):
+        """ Constructs and returns the gene file paths """
+        return os.path.join(os.getcwd(), "src", "data", "genes", "genes.txt")
 
     def _load_genes(self):
         """ Loads the genes into the class gene_ids """
@@ -36,9 +44,9 @@ class Collector:
 
     def _get_organisms_file_path(self, gene_name, gene_id):
         """ Builds the file path to the organisms file of the given gene name and ID """
-        return os.path.join(os.pardir, "data", "organisms", "{}_{}.txt".format(gene_name, gene_id))
+        return os.path.join(os.getcwd(), "src", "data", "organisms", "{}_{}.txt".format(gene_name, gene_id))
 
-    def _load_organisms(self):
+    def _load_orgs_and_genes(self):
         """ Responsible for loading all the organisms curated for the list of genes of interest. Builds and returns two
         maps - one mapping each organism to its genes and one mapping each gene to its organisms """
         organisms = {}
@@ -67,21 +75,24 @@ class Collector:
 
     def get_gene_frequencies(self):
         """ Builds a file containing the gene frequencies of each organism """
-        with open("gene_frequencies.txt", "w") as freqs:
+        path = os.path.join(self.parent_path, "gene_frequencies.txt")
+        with open(path, "w") as freqs:
             freqs.write("Organism,Gene Frequency\n")
             for org, data in self.organisms.items():
                 freqs.write("{},{}\n".format(org, data.get(self.FREQ_KEY)))
 
     def get_genes_organisms(self):
         """ Builds a file containing which organisms a gene appears in """
-        with open("genes_organisms.txt", "w") as f:
+        path = os.path.join(self.parent_path, "genes_organisms.txt")
+        with open(path, "w") as f:
             f.write("Gene,Organisms\n")
             for gene in self.genes.keys():
                 f.write("{},{}".format(gene, "/".join(self.genes.get(gene).keys()) + "\n"))
 
     def get_organisms_genes(self):
         """ Builds a file containing the genes exhibited by each organism """
-        with open("organisms_genes.txt", "w") as freqs:
+        path = os.path.join(self.parent_path, "genes.txt")
+        with open(path, "w") as freqs:
             freqs.write("Organism,Genes\n")
             for org, data in self.organisms.items():
                 genes = ""
@@ -91,7 +102,8 @@ class Collector:
 
     def collect(self):
         """ Collects taxa information from EBI (https://www.ebi.ac.uk/ena/browse/taxonomy-service) """
-        with open("taxa_info.txt", "w") as f:
+        path = os.path.join(os.getcwd(), "src", "data", "phylogeny", "taxa_info.txt")
+        with open(path, "w") as f:
             f.write("Kingdom,Subkingdom,Phylum,Clade,Subphylum,Clade,Class,Subclass,Superorder,Order,Suborder," +
                     "Subsuborder,Family,Genus,Species\n")
             for org in self.organisms.keys():
@@ -128,9 +140,8 @@ class Collector:
 
 
 if __name__ == "__main__":
-    gene_file_path = os.path.join(os.pardir, "data", "genes", "genes.txt")
-    collector = Collector(gene_file_path)
-    # collector.collect()
-    # collector.get_organisms_genes()
-    # collector.get_gene_frequencies()
+    collector = Collector()
+    collector.collect()
+    collector.get_organisms_genes()
+    collector.get_gene_frequencies()
     collector.get_genes_organisms()

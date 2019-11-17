@@ -3,7 +3,6 @@ Homo Sapiens,51
 Pan Troglodytes,47
 Pan Paniscus,47
 Gorilla Gorilla,47
-Pongo Abelii,49
 Nomascus Leucogenys,48
 Colobus Angolensis Palliatus,46
 Theropithecus Gelada,48
@@ -21,8 +20,6 @@ Aotus Nancymaae,48
 Callithrix Jacchus,48
 Oryctolagus Cuniculus,45
 Carlito Syrichta,38
-Tupaia Belangeri,40
-Ochotona Princeps,42
 Peromyscus Maniculatus Bairdii,46
 Piliocolobus Tephrosceles,47
 Cricetulus Griseus Chok1Gshd,45
@@ -62,16 +59,13 @@ Meriones Unguiculatus,46
 Cricetulus Griseus Picr,46
 Otolemur Garnettii,48
 Loxodonta Africana,47
-Procavia Capensis,43
 Equus Caballus,48
 Mustela Putorius Furo,48
 Felis Catus,49
 Sus Scrofa,48
 Bison Bison Bison,46
-Pteropus Vampyrus,45
-Tursiops Truncatus,44
 Bos Taurus,48
-Canis Familiaris,46
+Canis lupus,46
 Bos Taurus Hybrid,46
 Ailuropoda Melanoleuca,47
 Vulpes Vulpes,46
@@ -82,15 +76,10 @@ Canis Lupus Dingo,49
 Capra Hircus,48
 Myotis Lucifugus,40
 Bos Indicus Hybrid,48
-Sorex Araneus,25
 Dasypus Novemcinctus,49
-Echinops Telfairi,36
-Erinaceus Europaeus,37
 Denticeps Clupeoides,46
-Choloepus Hoffmanni,33
 Monodelphis Domestica,48
 Sarcophilus Harrisii,47
-Notamacropus Eugenii,45
 Vombatus Ursinus,48
 Ornithorhynchus Anatinus,34
 Anas Platyrhynchos Platyrhynchos,46
@@ -196,5 +185,4 @@ Drosophila Melanogaster,39
 Ciona Intestinalis,38
 Caenorhabditis Elegans,22
 Phascolarctos Cinereus,47
-Vicugna Pacos,27
 Serinus Canaria,42

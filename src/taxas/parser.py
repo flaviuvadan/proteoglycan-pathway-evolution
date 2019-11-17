@@ -105,7 +105,6 @@ class Parser:
         df = df.drop(columns=["Organism"])
 
         fig_text = "A matrix representation of the presence of each gene in every studied organism"
-
         plt.figure(figsize=(50, 50))
         plt.title("Organisms gene presence", fontsize=50)
         plt.figtext(0.5, 0.01, fig_text, wrap=True, horizontalalignment="center", fontsize=40)
