@@ -37,7 +37,7 @@ class Mapper:
                       "Coelacanthiformes - bony fish (ancient); Hyperoartia - jawless bony fish;\n" \
                       "Hyperotreti - hagfish; Phlebobranchia - sea squirts; Pterygota - winged insects; \n" \
                       "Rhabditina - nematodes."
-        plt.figure(figsize=(8, 10))
+        plt.figure(figsize=(8, 8))
         plt.xlabel(txt_caption)
         plt.ylim(0, max(y_values) + 5)
         plt.xticks(range(len(x_values)), x_values, rotation="45")
