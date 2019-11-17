@@ -1,4 +1,8 @@
-# Documentation of project progress (changelog)
+# Documentation of project progress
+
+## Nov 17, 2019
+- adjusted MSA visualization to start x-axis at 0
+- adjusted grouping of organisms based on taxonomic information
 
 ## Nov 4, 2019
 - fixed the problem of false negative matches when building phylogeny trees for all the genes
