@@ -3,7 +3,6 @@ Homo Sapiens,Homo sapiens,9606
 Pan Troglodytes,Pan troglodytes,9598
 Pan Paniscus,Pan paniscus,9597
 Gorilla Gorilla,Gorilla gorilla,9593
-Pongo Abelii,Pongo abelii,9601
 Nomascus Leucogenys,Nomascus leucogenys,61853
 Colobus Angolensis,Colobus angolensis,54131
 Theropithecus Gelada,Theropithecus gelada,9565
@@ -21,8 +20,6 @@ Aotus Nancymaae,Aotus nancymaae,37293
 Callithrix Jacchus,Callithrix jacchus,9483
 Oryctolagus Cuniculus,Oryctolagus cuniculus,9986
 Carlito Syrichta,Carlito syrichta,1868482
-Tupaia Belangeri,Tupaia belangeri,37347
-Ochotona Princeps,Ochotona princeps,9978
 Peromyscus Maniculatus,Peromyscus maniculatus,10042
 Piliocolobus Tephrosceles,Piliocolobus tephrosceles,591936
 Cricetulus Griseus,Cricetulus griseus,10029
@@ -62,14 +59,11 @@ Meriones Unguiculatus,Meriones unguiculatus,10047
 Cricetulus Griseus,Cricetulus griseus,10029
 Otolemur Garnettii,Otolemur garnettii,30611
 Loxodonta Africana,Loxodonta africana,9785
-Procavia Capensis,Procavia capensis,9813
 Equus Caballus,Equus caballus,9796
 Mustela Putorius,Mustela putorius,9668
 Felis Catus,Felis catus,9685
 Sus Scrofa,Sus scrofa,9823
 Bison Bison,Bison bison,9901
-Pteropus Vampyrus,Pteropus vampyrus,132908
-Tursiops Truncatus,Tursiops truncatus,9739
 Bos Taurus,Bos taurus,9913
 Canis Familiaris,Canis lupus familiaris,9615
 Bos Taurus,Bos taurus,9913
@@ -82,15 +76,10 @@ Canis Lupus,Canis lupus,9612
 Capra Hircus,Capra hircus,9925
 Myotis Lucifugus,Myotis lucifugus,59463
 Bos Indicus,Bos indicus,9915
-Sorex Araneus,Sorex araneus,42254
 Dasypus Novemcinctus,Dasypus novemcinctus,9361
-Echinops Telfairi,Echinops telfairi,9371
-Erinaceus Europaeus,Erinaceus europaeus,9365
 Denticeps Clupeoides,Denticeps clupeoides,299321
-Choloepus Hoffmanni,Choloepus hoffmanni,9358
 Monodelphis Domestica,Monodelphis domestica,13616
 Sarcophilus Harrisii,Sarcophilus harrisii,9305
-Notamacropus Eugenii,Notamacropus eugenii,9315
 Vombatus Ursinus,Vombatus ursinus,29139
 Ornithorhynchus Anatinus,Ornithorhynchus anatinus,9258
 Anas Platyrhynchos,Anas platyrhynchos,8839
@@ -196,5 +185,4 @@ Drosophila Melanogaster,Drosophila melanogaster,7227
 Ciona Intestinalis,Ciona intestinalis,7719
 Caenorhabditis Elegans,Caenorhabditis elegans,6239
 Phascolarctos Cinereus,Phascolarctos cinereus,38626
-Vicugna Pacos,Vicugna pacos,30538
 Serinus Canaria,Serinus canaria,9135

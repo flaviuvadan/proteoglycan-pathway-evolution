@@ -2,11 +2,11 @@
 (
 'Erpetoichthys calabaricus':4,
 (
+'Myotis lucifugus':4,
 (
-'Pteropus vampyrus':4,
-'Myotis lucifugus':4
-)Chiroptera:4,
-'Tupaia belangeri':4,
+'Phascolarctos cinereus':4,
+'Vombatus ursinus':4
+)Diprotodontia:4,
 'Monodelphis domestica':4,
 (
 'Nannospalax galili':4,
@@ -47,18 +47,8 @@
 'Marmota marmota':4
 )Sciuridae:4
 )Rodentia:4,
-(
 'Oryctolagus cuniculus':4,
-'Ochotona princeps':4
-)Lagomorpha:4,
-'Procavia capensis':4,
 (
-'Equus caballus':4,
-'Equus asinus':4
-)Equus:4,
-'Loxodonta africana':4,
-(
-'Vicugna pacos':4,
 (
 'Ovis aries':4,
 'Capra hircus':4,
@@ -69,9 +59,13 @@
 )Bos:4,
 'Bison bison':4
 )Bovidae:4,
-'Sus scrofa':4,
-'Tursiops truncatus':4
+'Sus scrofa':4
 )Artiodactyla:4,
+(
+'Equus caballus':4,
+'Equus asinus':4
+)Equus:4,
+'Loxodonta africana':4,
 (
 (
 (
@@ -106,7 +100,6 @@
 'Microcebus murinus':4,
 (
 'Homo sapiens':4,
-'Pongo abelii':4,
 (
 'Pan troglodytes':4,
 'Pan paniscus':4
@@ -137,18 +130,7 @@
 'Callithrix jacchus':4
 )Cebidae:4
 )Primates:4,
-'Echinops telfairi':4,
-(
-'Sorex araneus':4,
-'Erinaceus europaeus':4
-)Eulipotyphla:4,
 'Dasypus novemcinctus':4,
-'Choloepus hoffmanni':4,
-(
-'Phascolarctos cinereus':4,
-'Vombatus ursinus':4,
-'Notamacropus eugenii':4
-)Diprotodontia:4,
 'Sarcophilus harrisii':4,
 'Ornithorhynchus anatinus':4
 )Mammalia:4,
