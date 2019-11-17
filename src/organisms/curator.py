@@ -12,13 +12,16 @@ class Curator:
     GENE_NAME_IDX = 0
     GENE_ID_IDX = 1
 
-    def __init__(self, gene_file_path):
+    def __init__(self, ):
         """
         Constructor
-        :param gene_file_path: name of the file containing gene names
         """
-        self.gene_file_path = gene_file_path
+        self.gene_file_path = self._get_gene_file_path()
         self.genes = self.load_genes()
+
+    def _get_gene_file_path(self):
+        """ Builds and returns the genes file path """
+        return os.path.join(os.getcwd(), "src", "data", "genes", "genes.txt")
 
     def load_genes(self):
         """ Loads the genes into the class gene_ids """
@@ -27,13 +30,13 @@ class Curator:
             for gene in csv_reader:
                 yield (gene[self.GENE_NAME_IDX], gene[self.GENE_ID_IDX])
 
-    def build_gene_file_path(self, gene_id):
+    def _build_gene_file_path(self, gene_id):
         """
         Builds the path to a gene orthologs file
         :param gene_id: Ensembl ID of the gene
         :return: path to file
         """
-        return os.path.join(os.pardir, "data", "orthologs", "{}.txt".format(gene_id))
+        return os.path.join(os.getcwd(), "src", "data", "orthologs", "{}.txt".format(gene_id))
 
     def curate(self):
         """ Curates organisms """
@@ -41,7 +44,7 @@ class Curator:
             gene_id = gene[self.GENE_ID_IDX]
             gene_name = gene[self.GENE_NAME_IDX]
             organisms = {}
-            with open(self.build_gene_file_path(gene_id), "r") as orthologs:
+            with open(self._build_gene_file_path(gene_id), "r") as orthologs:
                 loaded = json.load(orthologs)
                 data = loaded.get('data')
                 if not data:
@@ -49,14 +52,17 @@ class Curator:
                 homologies = data[0].get('homologies')
                 if not homologies:
                     raise exceptions.EmptyOrthologData("gene {} ortholog homologies not found".format(gene_id))
-                for homology in homologies:
-                    source_species, source_seq, target_species, target_seq = self.parse_homologies(gene_id, homology)
+                for hom in homologies:
+                    try:
+                        source_species, source_seq, target_species, target_seq = self._parse_homologies(gene_id, hom)
+                    except exceptions.ProjectedBuildOrganismException:
+                        continue
                     # want to keep seqs around for multiple sequence alignment
                     organisms[source_species] = source_seq
                     organisms[target_species] = target_seq
-            self.create_organisms_file(gene_name, gene_id, organisms)
+            self._create_organisms_file(gene_name, gene_id, organisms)
 
-    def parse_homologies(self, gene_id, homology):
+    def _parse_homologies(self, gene_id, homology):
         """
         Parses the homologies dictionary of the orthologs of a gene to get the source and target species, along with
         their sequences
@@ -84,21 +90,39 @@ class Curator:
         target_seq = target.get('align_seq')
         if not target_seq:
             raise exceptions.EmptySquence("gene {} target seq not found".format(gene_id))
+
+        if self._is_projection_build(target_species):
+            # source species is always Homo Sapiens b/c that's our reference
+            raise exceptions.ProjectedBuildOrganismException("projected build species: {}".format(target_species))
         return source_species, source_seq, target_species, target_seq
 
-    def get_organisms_file_path(self, gene_name, gene_id):
-        """ Builds the file path to the organisms file of the given gene name and gene ID """
-        return os.path.join(os.pardir, "data", "organisms", "{}_{}.txt".format(gene_name, gene_id))
+    def _is_projection_build(self, species):
+        """
+        Tells whether a given species's genome is listed as a "Projection Build" in Ensembl.
 
-    def create_organisms_file(self, gene_name, gene_id, organisms):
+        Note, we do not want to include low-coverage genomes in the analysis as we cannot make any biologically-sound
+        claims about those organisms. By filtering out those organisms here, we allow other packages to use clean data
+        :param str species: species name
+        :return: True if species has a projection build, False otherwise
+        """
+        projection_build_species = ["vicugna_pacos", "tursiops_truncatus", "erinaceus_europaeus", "procavia_capensis",
+                                    "echinops_telfairi", "pteropus_vampyrus", "pongo_abelii", "ochotona_princeps",
+                                    "sorex_araneus", "choloepus_hoffmanni", "tupaia_belangeri", "notamacropus_eugenii"]
+        return True if species in projection_build_species else False
+
+    def _get_organisms_file_path(self, gene_name, gene_id):
+        """ Builds the file path to the organisms file of the given gene name and gene ID """
+        return os.path.join(os.getcwd(), "src", "data", "organisms", "{}_{}.txt".format(gene_name, gene_id))
+
+    def _create_organisms_file(self, gene_name, gene_id, organisms):
         """
         Creates the organisms files associated with the orthologs of a gene
         :param str gene_name: name of the gene being processed
         :param str gene_id: Ensembl ID of the gene
         :param dict organisms: dictionary of organisms keyed on species
         """
-        organisms_file_path = self.get_organisms_file_path(gene_name, gene_id)
-        with open(organisms_file_path, 'w') as out:
+        organisms_file_path = self._get_organisms_file_path(gene_name, gene_id)
+        with open(organisms_file_path, "w") as out:
             for species, sequence in organisms.items():
                 # no point in having the dashes (-) from the alignment as the seqs for Homo Sapiens get overwritten
                 # and we have to re-compute the pair-wise alignment again, anyway
@@ -106,6 +130,5 @@ class Curator:
 
 
 if __name__ == "__main__":
-    gene_file_path = os.path.join(os.pardir, "data", "genes.txt")
-    curator = Curator(gene_file_path)
+    curator = Curator()
     curator.curate()

@@ -22,5 +22,10 @@ class EmptySquence(PGException):
     """ An exception used for handling empty sequences in the Ensembl API response """
     pass
 
+
 class SpeciesRequestException(PGException):
     """ An exception used for handling GBIF API non-200 responses """
+
+
+class ProjectedBuildOrganismException(PGException):
+    """ An exception used for indicating an organism has a projected built genome in Ensembl """
