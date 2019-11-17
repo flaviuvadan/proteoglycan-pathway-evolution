@@ -55,7 +55,7 @@ class Parser:
         for gene in self.alignments.keys():
             if not freqs.get(gene):
                 freqs[gene] = []
-            for i in range(len(list(self.alignments.get(gene).values())[0])):
+            for i in range(len(list(self.alignments.get(gene).values())[0])):  # all alignments have the same length
                 freq_i = 0
                 for seq in self.alignments.get(gene).values():
                     if seq[i] != "-":
@@ -66,7 +66,7 @@ class Parser:
     def build_frequency_plots(self):
         """ Builds the frequency plots associated with the MSAs """
         num_plots = len(list(self.frequencies.keys()))
-        fig = plt.figure(figsize=(8, 50))
+        fig = plt.figure(figsize=(8, 40))  # these were figured out by trial and error
         fig.subplots_adjust(hspace=2)
         for idx, gene in enumerate(list(self.frequencies.keys())):
             values = self.frequencies.get(gene)
@@ -80,10 +80,11 @@ class Parser:
             ax = fig.add_subplot(num_plots, 1, idx + 1)
             ax.add_collection(linecoll)
             plt.scatter(x_vals, y_vals, marker="None")
+            plt.xlim(0, len(lines))
             plt.yticks([])
-            title = "{} - MSA".format(gene.split("_")[0])
+            title = "{} - MSA".format(gene.split('_')[0])
             plt.title(title)
-        plt.savefig("MSAs.pdf", format="pdf", quality=95)
+        plt.savefig("MSAs.pdf", format="pdf", quality=95, bbox_inches='tight')
 
 
 if __name__ == "__main__":
