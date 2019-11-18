@@ -63,6 +63,15 @@ class Parser:
                 freqs[gene].append((i, freq_i))
         return freqs
 
+    def build_block_alignments(self):
+        """ Reads the parsed multiple sequence alignments and prints to a file in block format """
+        for align_key in self.alignments.keys():
+            path = os.path.join(os.getcwd(), "src", "data", "organisms", align_key)
+            with open(path, "w") as f:
+                for org_key in self.alignments.get(align_key).keys():
+                    f.write(">{}\n".format(org_key))
+                    f.write("{}\n".format(self.alignments.get(align_key).get(org_key).replace("-", "")))
+
     def build_frequency_plots(self):
         """ Builds the frequency plots associated with the MSAs """
         num_plots = len(list(self.frequencies.keys()))
@@ -89,4 +98,5 @@ class Parser:
 
 if __name__ == "__main__":
     parser = Parser()
-    parser.build_frequency_plots()
+    parser.build_block_alignments()
+    # parser.build_frequency_plots()
