@@ -119,5 +119,6 @@ class Parser:
 
 if __name__ == "__main__":
     parser = Parser()
-    parser.create_gene_freq_plot()
-    parser.create_organisms_genes_matrix()
+    # parser.create_gene_freq_plot()
+    # parser.create_organisms_genes_matrix()
+    parser._create_organisms_genes_csv()
