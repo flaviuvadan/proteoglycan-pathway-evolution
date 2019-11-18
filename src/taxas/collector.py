@@ -91,7 +91,7 @@ class Collector:
 
     def get_organisms_genes(self):
         """ Builds a file containing the genes exhibited by each organism """
-        path = os.path.join(self.parent_path, "genes.txt")
+        path = os.path.join(self.parent_path, "organisms_genes.txt")
         with open(path, "w") as freqs:
             freqs.write("Organism,Genes\n")
             for org, data in self.organisms.items():
