@@ -15,11 +15,11 @@ class Parser:
 
     def __init__(self):
         """ Constructor """
-        self.genes, self.gene_indices = self.load_genes()
+        self.genes, self.gene_indices = self._load_genes()
         self.gene_freqs = self._parse_gene_freqs()
         self.org_genes = self._parse_organisms_genes()
 
-    def load_genes(self):
+    def _load_genes(self):
         """ Reads in the genes """
         genes = []
         genes_indices = {}
@@ -81,7 +81,8 @@ class Parser:
 
     def _create_organisms_genes_csv(self):
         """ Creates a csv of the generated organisms gene vectors """
-        with open("organisms_genes_vectors.txt", "w") as f:
+        path = os.path.join(os.getcwd(), "src", "data", "genes", "organisms_genes_vectors.txt")
+        with open(path, "w") as f:
             title = "Organism,"
             total_gene_indices = len(self.gene_indices.keys())
             for i, gene in enumerate(self.gene_indices.keys()):
@@ -98,6 +99,7 @@ class Parser:
     def create_organisms_genes_matrix(self):
         """ Creates a plot that is a binary matrix of all the genes vs. organisms """
         # easier to go about this with this approach than fight with matplotlib
+        self._create_organisms_genes_csv()
         path = os.path.join(os.getcwd(), "src", "data", "genes", "organisms_genes_vectors.txt")
         df = pd.read_csv(path)
         y_values = df.Organism
