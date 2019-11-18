@@ -82,7 +82,7 @@ class Parser:
             plt.scatter(x_vals, y_vals, marker="None")
             plt.xlim(0, len(lines))
             plt.yticks([])
-            title = "{} - MSA".format(gene.split('_')[0])
+            title = "{}".format(gene.split('_')[0])
             plt.title(title)
         plt.savefig("MSAs.pdf", format="pdf", quality=95, bbox_inches='tight')
 
