@@ -1,5 +1,8 @@
 # Documentation of project progress
 
+## Nov 18, 2019
+- start building the dnds package
+
 ## Nov 17, 2019
 - adjusted MSA visualization to start x-axis at 0
 - adjusted grouping of organisms based on taxonomic information
