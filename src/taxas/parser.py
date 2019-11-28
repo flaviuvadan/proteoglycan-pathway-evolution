@@ -45,13 +45,19 @@ class Parser:
 
     def create_gene_freq_plot(self):
         """ Creates a plot of the gene frequencies """
+        xs = self.gene_freqs.values()
+        ys = self.gene_freqs.keys()
+        xy_pairs = list(zip(xs, ys))
+        xy_pairs_sorted = sorted(xy_pairs, key=lambda k: k[0])
+        xs = [k[0] for k in xy_pairs_sorted]
+        ys = [k[1] for k in xy_pairs_sorted]
         plt.figure(figsize=(20, 20))
-        plt.scatter(self.gene_freqs.values(), self.gene_freqs.keys(), marker='.')
+        plt.scatter(xs, ys, marker='o')
         plt.title("Organisms gene frequencies", fontsize=40)
-        plt.axis([21, max(self.gene_freqs.values()) + 2, 0, len(self.gene_freqs.keys())])
-        plt.yticks(range(len(list(self.gene_freqs.keys()))), list(self.gene_freqs.keys()))
+        plt.axis([21, max(xs) + 2, -1, len(ys)])
+        plt.yticks(range(len(ys)), ys)
         plt.tick_params(axis='y', labelsize=6)
-        plt.savefig("gene_frequencies.pdf", format="pdf", quality=95)
+        plt.savefig("gene_frequencies.pdf", format="pdf", quality=95, bbox_inches="tight")
         plt.close()
 
     def _get_genes_vector(self):
@@ -119,6 +125,6 @@ class Parser:
 
 if __name__ == "__main__":
     parser = Parser()
-    # parser.create_gene_freq_plot()
+    parser.create_gene_freq_plot()
     # parser.create_organisms_genes_matrix()
-    parser._create_organisms_genes_csv()
+    # parser._create_organisms_genes_csv()
