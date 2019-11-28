@@ -1,5 +1,10 @@
 # Documentation of project progress
 
+## Nov 28, 2019
+- fixed an inaccurate piece of information regarding gene functions
+- adjusted gene function chart to have a tight bounding box
+- adjusted the gene frequencies chart - sorted organisms based on gene frequency 
+
 ## Nov 18, 2019
 - start building the dnds package
 
