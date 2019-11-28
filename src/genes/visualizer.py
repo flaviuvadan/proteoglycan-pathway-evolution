@@ -27,7 +27,7 @@ class Visualizer:
         plt.xticks(range(len(x_vals)), x_vals, rotation="45")
         plt.yticks(range(len(y_vals)), y_vals)
         sn.heatmap(df, cbar=False, xticklabels=x_vals, yticklabels=y_vals, cmap="Blues")
-        plt.savefig("gene_functions.pdf", quality=95)
+        plt.savefig("gene_functions.pdf", quality=95, bbox_inches='tight')
 
 
 if __name__ == "__main__":
