@@ -1,5 +1,8 @@
 # Documentation of project progress
 
+## Dec 3, 2019
+- added first presentation
+
 ## Nov 28, 2019
 - fixed an inaccurate piece of information regarding gene functions
 - adjusted gene function chart to have a tight bounding box
