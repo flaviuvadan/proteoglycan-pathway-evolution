@@ -1,20 +1,80 @@
 (
 (
 (
-'Danio rerio':4,
 (
-'Homo sapiens':4,
-'Anas platyrhynchos':4,
-'Notechis scutatus':4,
-'Xenopus tropicalis':4,
-'Latimeria chalumnae':4
+(
+Danio rerio:4)
+Danio:4)
+Actinopteri:4)
+Actinopterygii:4,
+(
+(
+(
+(
+Homo sapiens:4)
+Homo:4)
+Hominoidea:4)
+Mammalia:4,
+(
+(
+Anas platyrhynchos:4)
+Anas:4)
+Aves:4,
+(
+(
+Notechis scutatus:4)
+Notechis:4)
+Colubroidea:4,
+(
+(
+(
+Xenopus tropicalis:4)
+Xenopus:4)
+Pipoidea:4)
+Amphibia:4,
+(
+(
+Latimeria chalumnae:4)
+Latimeria:4)
+Coelacanthimorpha:4
 )Sarcopterygii:4,
-'Callorhinchus milii':4,
-'Eptatretus burgeri':4,
-'Petromyzon marinus':4
-)Craniata:4,
-'Ciona intestinalis':4
+(
+(
+Callorhinchus milii:4)
+Callorhinchus:4)
+Chondrichthyes:4,
+(
+(
+Eptatretus burgeri:4)
+Eptatretus:4)
+Myxini:4,
+(
+(
+Petromyzon marinus:4)
+Petromyzon:4)
+Hyperoartia:4,
+(
+(
+Ciona intestinalis:4)
+Ciona:4)
+Ascidiacea:4
 )Chordata:4,
-'Drosophila melanogaster':4,
-'Caenorhabditis elegans':4
+(
+(
+(
+(
+Drosophila melanogaster:4)
+Drosophila:4)
+Ephydroidea:4)
+Insecta:4)
+Arthropoda:4,
+(
+(
+(
+(
+Caenorhabditis elegans:4)
+Caenorhabditis:4)
+Rhabditoidea:4)
+Chromadorea:4)
+Nematoda:4
 )Metazoa:4;

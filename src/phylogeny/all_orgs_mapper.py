@@ -33,7 +33,7 @@ class Mapper:
 
     def create_global_trees(self):
         """ Creates the main global tree """
-        with open(os.path.join(os.getcwd(), "src", "data", "phylogeny", "phyliptree.phy"), "r") as f:
+        with open(os.path.join(os.getcwd(), "src", "data", "phylogeny", "all_orgs_phyliptree.phy"), "r") as f:
             newick_info = f.read()
             self._create_radial_tree(newick_info)
             self._create_standard_tree(newick_info)
@@ -91,7 +91,7 @@ class Mapper:
 
     def create_gene_trees(self):
         """ Creates the 51 trees, one per gene """
-        with open(os.path.join(os.getcwd(), "src", "data", "phylogeny", "phyliptree.phy"), "r") as f:
+        with open(os.path.join(os.getcwd(), "src", "data", "phylogeny", "all_orgs_phyliptree.phy"), "r") as f:
             newick_info = f.read()
             for gene in self.genes_organisms.keys():
                 self._create_radial_gene_tree(newick_info, gene, list(self.genes_organisms.get(gene).keys()))
