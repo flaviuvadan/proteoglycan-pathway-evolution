@@ -1,5 +1,9 @@
 # Documentation of project progress
 
+## Dec 26th, 2019
+- chose and added a subset of the organisms that represent the classes of bones/cartilage for the study
+- added the phylogenetic mapper for significant organisms
+
 ## Dec 3, 2019
 - added first presentation
 
