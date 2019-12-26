@@ -31,17 +31,20 @@ class Mapper:
         """ Creates a plot of the organisms classification """
         x_values = self.organisms.keys()
         y_values = self.organisms.values()
-        txt_caption = "Taxonomic frequency of the analyzed dataset. The presented classes are:\n" \
-                      "Mammalia - mammals; Actinopterygii - ray-finned fish; Archelosauria - turtles and archosaurs;" \
-                      "\nLepidosauria - scaly reptiles; Amphibia - amphibians; Holocephali - cartilaginous fish; \n" \
-                      "Coelacanthiformes - bony fish (ancient); Hyperoartia - jawless bony fish;\n" \
-                      "Hyperotreti - hagfish; Phlebobranchia - sea squirts; Pterygota - winged insects; \n" \
-                      "Rhabditina - nematodes."
+        x_label = "Taxonomic classification\n\n" \
+                  "Taxonomic frequency of the analyzed dataset. The presented classes are:\n" \
+                  "Mammalia - mammals; Actinopterygii - ray-finned fish; Archelosauria - turtles and archosaurs;" \
+                  "\nLepidosauria - scaly reptiles; Amphibia - amphibians; Holocephali - cartilaginous fish; \n" \
+                  "Coelacanthiformes - bony fish (ancient); Hyperoartia - jawless bony fish;\n" \
+                  "Hyperotreti - hagfish; Phlebobranchia - sea squirts; Pterygota - winged insects; \n" \
+                  "Rhabditina - nematodes."
+        y_label = "Number of organisms"
         plt.figure(figsize=(8, 8))
-        plt.xlabel(txt_caption)
+        plt.ylabel(y_label)
+        plt.xlabel(x_label)
         plt.ylim(0, max(y_values) + 5)
         plt.xticks(range(len(x_values)), x_values, rotation="45")
-        plt.scatter(x_values, y_values)
+        plt.bar(x_values, y_values)
         plt.savefig("taxa_info.pdf", quality=95, bbox_inches='tight')
 
 
