@@ -12,7 +12,7 @@ class Visualizer:
     def __init__(self):
         """ Constructor """
         self.alignments = self._parse_organisms_alignments()
-        self.dnds_dataframes, self.error_log = self._get_gene_dnds_dataframes()
+        # self.dnds_dataframes, self.error_log = self._get_gene_dnds_dataframes()
 
     def _parse_organisms_alignments(self):
         """ Reads in the organisms alignments """
@@ -98,6 +98,11 @@ class Visualizer:
 
 if __name__ == "__main__":
     visualizer = Visualizer()
-    for err in visualizer.error_log:
-        print(err)
+    for k in visualizer.alignments.keys():
+        algns = visualizer.alignments.get(k)
+        for a in algns.values():
+            print(a)
+        break
+    # for err in visualizer.error_log:
+    #     print(err)
     # visualizer.visualize()

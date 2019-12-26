@@ -25,7 +25,9 @@ class EmptySquence(PGException):
 
 class SpeciesRequestException(PGException):
     """ An exception used for handling GBIF API non-200 responses """
+    pass
 
 
 class ProjectedBuildOrganismException(PGException):
     """ An exception used for indicating an organism has a projected built genome in Ensembl """
+    pass
