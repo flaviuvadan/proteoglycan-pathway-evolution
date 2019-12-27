@@ -20,20 +20,24 @@ class Mapper:
         :param newick_info: newick-formatted tree representation
         """
         t = ete.Tree(newick_info, format=1)  # see ete/coretype/TreeNode doc for format
+
         ts = ete.TreeStyle()
-        ts.mode = 'c'
-        ts.arc_span = 360
         ts.show_leaf_name = False
         ts.force_topology = True
         ts.show_scale = False
-        ts.scale = 120
+        ts.legend = None
+        ts.complete_branch_lines_when_necessary = True
+        ts.extra_branch_line_type = 1  # 0 solid, 1 dashed, 2 dotted
+        ts.extra_branch_line_color = "black"
+        ts.draw_guiding_lines = True
         tree_face = ete.TextFace("Significant organisms phylogenetic relationship", fsize=100, bold=True)
         ts.title.add_face(tree_face, column=0)
 
         ns = ete.NodeStyle()
         ns["hz_line_type"], ns["vt_line_type"] = 0, 0
         ns["hz_line_color"], ns["vt_line_color"] = "black", "black"
-        ns["hz_line_width"], ns["vt_line_width"] = 1, 1
+        ns["hz_line_width"], ns["vt_line_width"] = 2, 2
+        ns["size"] = 0
 
         for node in t.traverse():
             node.set_style(ns)
@@ -42,7 +46,7 @@ class Mapper:
                 node.add_face(face, 1)
             else:
                 face = ete.TextFace(node.name, fsize=65, penwidth=10)
-                node.add_face(face, 1)
+                node.add_face(face, 1, "aligned")
         destination = os.path.join(os.getcwd(), "src", "data", "visualizations", "phylogeny", "sig_orgs_phylo.pdf")
         t.render(destination, tree_style=ts, dpi=500)
 
