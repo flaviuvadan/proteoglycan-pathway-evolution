@@ -1,5 +1,8 @@
 # Documentation of project progress
 
+## Dec 28th, 2019
+- implemented the similarity mapper (uses Jaccard's index for similarity)
+
 ## Dec 27th, 2019
 - add more taxonomic details to the significant organisms phylogenetic tree
 - performed a comparison against BLAST of organisms that are reported to not have a gene
