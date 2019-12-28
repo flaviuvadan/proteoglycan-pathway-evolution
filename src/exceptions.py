@@ -35,4 +35,4 @@ class ProjectedBuildOrganismException(PGException):
 
 class BlastDictionaryAccessException(PGException):
     """ An exception used for indicating that a BLAST dictionary does not have something stored at a passed key """
-    pas
+    pass
