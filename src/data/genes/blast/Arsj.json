@@ -1,116 +1,116 @@
 {
-"BlastOutput2": [
-{
-    "report": {
-      "program": "blastn",
-      "version": "BLASTN 2.10.0+",
-      "reference": "Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), \"A greedy algorithm for aligning DNA sequences\", J Comput Biol 2000; 7(1-2):203-14.",
-      "search_target": {
-        "db": "nt_v5"
-      },
-      "params": {
-        "expect": 10,
-        "sc_match": 1,
-        "sc_mismatch": -2,
-        "gap_open": 0,
-        "gap_extend": 0,
-        "filter": "L;m;",
-        "entrez_query": "txid9258 [ORGN] OR txid10116 [ORGN] OR txid59463 [ORGN] OR txid7757 [ORGN] OR txid7764 [ORGN]"
-      },
-      "results": {
-        "search": {
-          "query_id": "NM_024590.4",
-          "query_title": "Homo sapiens arylsulfatase family member J (ARSJ), transcript variant 1, mRNA",
-          "query_len": 4603,
-          "query_masking": [
-            {
-              "from": 488,
-              "to": 494
-            },
-            {
-              "from": 526,
-              "to": 542
-            },
-            {
-              "from": 562,
-              "to": 583
-            },
-            {
-              "from": 2478,
-              "to": 2568
-            },
-            {
-              "from": 3165,
-              "to": 3179
-            },
-            {
-              "from": 3334,
-              "to": 3452
-            },
-            {
-              "from": 3762,
-              "to": 3773
-            },
-            {
-              "from": 4455,
-              "to": 4515
+  "BlastOutput2": [
+    {
+      "report": {
+        "program": "blastn",
+        "version": "BLASTN 2.10.0+",
+        "reference": "Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), \"A greedy algorithm for aligning DNA sequences\", J Comput Biol 2000; 7(1-2):203-14.",
+        "search_target": {
+          "db": "nt_v5"
+        },
+        "params": {
+          "expect": 10,
+          "sc_match": 1,
+          "sc_mismatch": -2,
+          "gap_open": 0,
+          "gap_extend": 0,
+          "filter": "L;m;",
+          "entrez_query": "txid9258 [ORGN] OR txid10116 [ORGN] OR txid59463 [ORGN] OR txid7757 [ORGN] OR txid7764 [ORGN]"
+        },
+        "results": {
+          "search": {
+            "query_id": "NM_024590.4",
+            "query_title": "Homo sapiens arylsulfatase family member J (ARSJ), transcript variant 1, mRNA",
+            "query_len": 4603,
+            "query_masking": [
+              {
+                "from": 488,
+                "to": 494
+              },
+              {
+                "from": 526,
+                "to": 542
+              },
+              {
+                "from": 562,
+                "to": 583
+              },
+              {
+                "from": 2478,
+                "to": 2568
+              },
+              {
+                "from": 3165,
+                "to": 3179
+              },
+              {
+                "from": 3334,
+                "to": 3452
+              },
+              {
+                "from": 3762,
+                "to": 3773
+              },
+              {
+                "from": 4455,
+                "to": 4515
+              }
+            ],
+            "hits": [
+              {
+                "num": 1,
+                "description": [
+                  {
+                    "id": "gi|114145537|ref|NM_001047887.1|",
+                    "accession": "NM_001047887",
+                    "title": "Rattus norvegicus arylsulfatase family, member J (Arsj), mRNA",
+                    "taxid": 10116,
+                    "sciname": "Rattus norvegicus"
+                  },
+                  {
+                    "id": "gi|81158023|tpe|BN000740.1|",
+                    "accession": "BN000740",
+                    "title": "TPA_inf: Rattus norvegicus mRNA for arylsulfatase J (Arsj gene)",
+                    "taxid": 10116,
+                    "sciname": "Rattus norvegicus"
+                  }
+                ],
+                "len": 1794,
+                "hsps": [
+                  {
+                    "num": 1,
+                    "bit_score": 2060.13,
+                    "score": 1115,
+                    "evalue": 0,
+                    "identity": 1525,
+                    "query_from": 814,
+                    "query_to": 2540,
+                    "query_strand": "Plus",
+                    "hit_from": 1,
+                    "hit_to": 1721,
+                    "hit_strand": "Plus",
+                    "align_len": 1728,
+                    "gaps": 8,
+                    "qseq": "ATGGCTCCCAGGGGCTGTGCGGGGCATCCGCCTCCGC-CTTCTCCACAGGCCTGTGTCTGTCCTGGAAAGATGCTAGCAATGGGGGCGCTGGCAGGATTCTGGATCCTCTGCCTCCTCACTTATGGTTACCTGTCCTGGGGCCAGGCCTTAGAAGAGGAGGAAGAAGGGGCCTTACTAGCTCAAGCTGGAGAGAAACTAGAGCCCAGCACAACTTCCACCTCCCAGCCCCATCTCATTTTCATCCTAGCGGATGATCAGGGATTTAGAGATGTGGGTTACCACGGATCTGAGATTAAAACACCTACTCTTGACAAGCTCGCTGCCGAAGGAGTTAAACTGGAGAACTACTATGTCCAGCCTATTTGCACACCATCCAGGAGTCAGTTTATTACTGGAAAGTATCAGATACACACCGGACTTCAACATTCTATCATAAGACCTACCCAACCCAACTGTTTACCTCTGGACAATGCCACCCTACCTCAGAAACTGAAGGAGGTTGGATATTCAACGCATATGGTCGGAAAATGGCACTTGGGTTTTTACAGAAAAGAATGCATGCCCACCAGAAGAGGATTTGATACCTTTTTTGGTTCCCTTTTGGGAAGTGGGGATTACTATACACACTACAAATGTGACAGTCCTGGGATGTGTGGCTATGACTTGTATGAAAACGACAATGCTGCCTGGGACTATGACAATGGCATATACTCCACACAGATGTACACTCAGAGAGTACAGCAAATCTTAGCTTCCCATAACCCCACAAAGCCTATATTTTTATATATTGCCTATCAAGCTGTTCATTCACCACTGCAAGCTCCTGGCAGGTATTTCGAACACTACCGATCCATTATCAACATAAACAGGAGGAGATATGCTGCCATGCTTTCCTGCTTAGATGAAGCAATCAACAACGTGACATTGGCTCTAAAGACTTATGGTTTCTATAACAACAGCATTATCATTTACTCTTCAGATAATGGTGGCCAGCCTACGGCAGGAGGGAGTAACTGGCCTCTCAGAGGTAGCAAAGGAACATATTGGGAAGGAGGGATCCGGGCTGTAGGCTTTGTGCATAGCCCACTTCTGAAAAACAAGGGAACAGTGTGTAAGGAACTTGTGCACATCACTGACTGGTACCCCACTCTCATTTCACTGGCTGAAGGACAGATTGATGAGGACATTCAACTAGATGGCTATGATATCTGGGAGACCATAAGTGAGGGTCTTCGCTCACCCCGAGTAGATATTTTGCATAACATTGACCCCATATACACCAAGGCAAAAAATGGCTCCTGGGCAGCAGGCTATGGGATCTGGAACACTGCAATCCAGTCAGCCATCAGAGTGCAGCACTGGAAATTGCTTACAGGAAATCCTGGCTACAGCGACTGGGTCCCCCCTCAGTCTTTCAGCAACCTGGGACCGAACCGGTGGCACAATGAACGGATCACCTTGTCAACTGGCAAAAGTGTATGGCTTTTCAACATCACAGCCGACCCATATGAGAGGGTGGACCTATCTAACAGGTATCCAGGAATCGTGAAGAAGCTCCTACGGAGGCTCTCACAGTTCAACAAAACTGCAGTGCCGGTCAGGTATCCCCCCAAAGACCCCAGAAGTAACCCTAGGCTCAATGGAGGGGTCTGGGGACCATGGTATaaagaggaaaccaagaaaaagaagccaagcaaaaatcaggctgagaaaaagcaaaagaaaag",
+                    "hseq": "ATGGCCCCCAGGGACAGTGCGGAGCCTCTGCCTCCGCTCTT-TCCACAGGCCAGGGTCTGGCCTGGAAAGATGGTAGCGATGGGTGCCCTGGCAGGCTTCTGGGTCCTCAGCCTGATCACCTATGGCTACCTGAGCTGGGGCCAGGACTTAGAAGAGGAG------GGGTCCCTAAGGGCTCAAGTTGAAGAGAGACCTGAAGCAGGCACAGCAGTCACCTCCCAGCCCCATCTCATTTTCATACTAGCTGATGATCAGGGATTTAGAGACGTGGGTTACCACGGATCTGAGATAAAGACTCCCACTCTTGACAAACTCGCTGCGGAAGGAGTTAAGCTAGAGAACTACTATGTCCAGCCTATTTGCACGCCGTCCAGGAGTCAGTTTATTACCGGAAAGTATCAGATACACACAGGACTTCAGCATTCTATCATTAGACCTACCCAACCCAACTGTCTACCTCTGGACAACGCAACCCTACCTCAGAAGCTGAAGGAGGTCGGCTATTCAACCCATATGGTTGGGAAGTGGCACTTGGGATTTTACAGAAAAGACTGCATGCCTACCAAGAGAGGATTTGACACCTTTTTTGGCTCACTTTTGGGAAGTGGTGATTATTACACACACTACAAATGTGACAGTCCTGGGGTGTGTGGCTATGACTTGTACGAAAACGACAATGCCGCTTGGGACTATGACAATGGCATCTACTCAACACAGATGTACACTCAGAGAGTGCAGCAAATCTTAGCCTCCCACGACCCCACAAAGCCTCTGTTTTTATACGTTGCTTACCAAGCTGTCCACTCACCACTGCAAGCCCCTGGCAGGTACTTTGAACACTATAGATCCATTATCAACATAAACAGGAGGAGGTATGCGGCCATGCTCTCCTGCCTGGATGAAGCGATCCACAATGTGACCCTGGCTCTAAAGAGGTATGGTTTCTATAACAATAGCATTATCATTTACTCCTCAGATAATGGTGGGCAGCCCACAGCAGGAGGAAGTAACTGGCCTCTCAGAGGCAGCAAAGGAACATATTGGGAAGGAGGCATCCGGGCAGTTGGCTTTGTGCACAGCCCACTTCTGAAAAACAAGGGAACGGTGTGTAAGGAGCTTGTGCACATCACCGATTGGTACCCGACCTTGATTTCACTGGCTGAAGGACAGATTGATGAAGACATTCAGCTAGATGGATACGATATCTGGGAGACCATAAGCGAAGGTCTTCGTTCACCCCGAGTGGATATTTTGCACAACATTGACCCCATCTATACCAAGGCAAAAAATGGTTCCTGGGCAGCAGGCTATGGAATCTGGAACACCGCGATCCAGTCGGCCATCCGGGTGCAGCACTGGAAACTGCTCACAGGAAATCCTGGCTACAGTGACTGGGTCCCCCCTCAGGCTTTCAGCAATCTGGGCCCAAACCGGTGGCACAATGAAAGGATTACCTTGTCAACTGGCAAGAGTATCTGGCTTTTCAACATCACAGCTGATCCATATGAGAGGGTGGACCTATCCAGCAGGTATCCAGGCATTGTGAAGAAGTTGCTTCGGAGACTGTCACAGTTCAACAAGACAGCGGTGCCTGTCAGGTACCCCCCGAAGGATCCCAGAAGCAACCCTAGGCTCAACGGAGGAGTCTGGGGTCCGTGGTATAAAGAGGAAAGCAAGAAAAAGAAGACAAACAAAACCAAGGCTAAGAAAATGCAAAAGAAAAG",
+                    "midline": "||||| ||||||| | |||||| || || |||||||| ||| |||||||||| | ||||| |||||||||||| |||| ||||| || |||||||| |||||| ||||| ||||  |||| ||||| ||||||  ||||||||||| |||||||||||||      ||| || ||   ||||||| || ||||| ||  ||  |  ||||| |   ||||||||||||||||||||||||||| ||||| |||||||||||||||||||| ||||||||||||||||||||||| || || || ||||||||||| |||||||| ||||||||||| || ||||||||||||||||||||||||||||| || |||||||||||||||||||| |||||||||||||||||||| |||||||| ||||||||||| ||||||||||||||||||||| ||||||||||||| || |||||||||||||| ||||||||||| || |||||||| |||||||| || || ||||||||||| |||||||||||||| |||||||| ||||  ||||||||||| ||||||||||| || |||||||||||||| ||||| || ||||||||||||||||||||||||||| ||||||||||||||||||| |||||||||||||| || |||||||||||||||||||| ||||| ||||||||||||||||||||||| |||||||||||||| |||||  |||||||||||||| | ||||||||  |||| || |||||||| || |||||||||||||| ||||||||||| || ||||||||  |||||||||||||||||||||||||||| ||||| |||||||| |||||| | |||||||| ||| |||| |||||  ||||||||||||  ||||||||||||||||| ||||||||||||||||| |||||||||||||| ||||| || |||||||| |||||||||||||||||||| |||||||||||||||||||||||||| |||||||| || ||||||||||| |||||||||||||||||||||||||| ||||||||||| |||||||||||||| || |||||||| ||  | ||||||||||||||||||||||||||||| |||||||| |||||||| || |||||||||||||||||||| || |||||||| ||||||||||| ||||||||||| |||||||||||||| || ||||||||||||||||| |||||||||||||||||||| ||||||||||| || |||||||| |||||| | ||||||||||||||| |||| |||||||||||||||||||| |||||||||||||||||| |||||||||| ||||| || |||||||||||||||||| |||| ||||||||||||||||| ||| | |||||||||||||||||||| || ||||||||||||||||||||||| | |||||||||||| || ||||||||| | || ||||| || |||||||||||||| || || ||||| |||||||| ||||| || || |||||||| |||||||||||||| ||||| |||||||| || |||||||||||||||| ||||||||||||| ||| |||||   ||||| |||||| ||||||||||||"
+                  }
+                ]
+              }
+            ],
+            "stat": {
+              "db_num": 310999,
+              "db_len": 900269439,
+              "hsp_len": 31,
+              "eff_space": 4071953364840,
+              "kappa": 0.46,
+              "lambda": 1.28,
+              "entropy": 0.85
             }
-          ],
-          "hits": [
-            {
-              "num": 1,
-              "description": [
-                {
-                  "id": "gi|114145537|ref|NM_001047887.1|",
-                  "accession": "NM_001047887",
-                  "title": "Rattus norvegicus arylsulfatase family, member J (Arsj), mRNA",
-                  "taxid": 10116,
-                  "sciname": "Rattus norvegicus"
-                },
-                {
-                  "id": "gi|81158023|tpe|BN000740.1|",
-                  "accession": "BN000740",
-                  "title": "TPA_inf: Rattus norvegicus mRNA for arylsulfatase J (Arsj gene)",
-                  "taxid": 10116,
-                  "sciname": "Rattus norvegicus"
-                }
-              ],
-              "len": 1794,
-              "hsps": [
-                {
-                  "num": 1,
-                  "bit_score": 2060.13,
-                  "score": 1115,
-                  "evalue": 0,
-                  "identity": 1525,
-                  "query_from": 814,
-                  "query_to": 2540,
-                  "query_strand": "Plus",
-                  "hit_from": 1,
-                  "hit_to": 1721,
-                  "hit_strand": "Plus",
-                  "align_len": 1728,
-                  "gaps": 8,
-                  "qseq": "ATGGCTCCCAGGGGCTGTGCGGGGCATCCGCCTCCGC-CTTCTCCACAGGCCTGTGTCTGTCCTGGAAAGATGCTAGCAATGGGGGCGCTGGCAGGATTCTGGATCCTCTGCCTCCTCACTTATGGTTACCTGTCCTGGGGCCAGGCCTTAGAAGAGGAGGAAGAAGGGGCCTTACTAGCTCAAGCTGGAGAGAAACTAGAGCCCAGCACAACTTCCACCTCCCAGCCCCATCTCATTTTCATCCTAGCGGATGATCAGGGATTTAGAGATGTGGGTTACCACGGATCTGAGATTAAAACACCTACTCTTGACAAGCTCGCTGCCGAAGGAGTTAAACTGGAGAACTACTATGTCCAGCCTATTTGCACACCATCCAGGAGTCAGTTTATTACTGGAAAGTATCAGATACACACCGGACTTCAACATTCTATCATAAGACCTACCCAACCCAACTGTTTACCTCTGGACAATGCCACCCTACCTCAGAAACTGAAGGAGGTTGGATATTCAACGCATATGGTCGGAAAATGGCACTTGGGTTTTTACAGAAAAGAATGCATGCCCACCAGAAGAGGATTTGATACCTTTTTTGGTTCCCTTTTGGGAAGTGGGGATTACTATACACACTACAAATGTGACAGTCCTGGGATGTGTGGCTATGACTTGTATGAAAACGACAATGCTGCCTGGGACTATGACAATGGCATATACTCCACACAGATGTACACTCAGAGAGTACAGCAAATCTTAGCTTCCCATAACCCCACAAAGCCTATATTTTTATATATTGCCTATCAAGCTGTTCATTCACCACTGCAAGCTCCTGGCAGGTATTTCGAACACTACCGATCCATTATCAACATAAACAGGAGGAGATATGCTGCCATGCTTTCCTGCTTAGATGAAGCAATCAACAACGTGACATTGGCTCTAAAGACTTATGGTTTCTATAACAACAGCATTATCATTTACTCTTCAGATAATGGTGGCCAGCCTACGGCAGGAGGGAGTAACTGGCCTCTCAGAGGTAGCAAAGGAACATATTGGGAAGGAGGGATCCGGGCTGTAGGCTTTGTGCATAGCCCACTTCTGAAAAACAAGGGAACAGTGTGTAAGGAACTTGTGCACATCACTGACTGGTACCCCACTCTCATTTCACTGGCTGAAGGACAGATTGATGAGGACATTCAACTAGATGGCTATGATATCTGGGAGACCATAAGTGAGGGTCTTCGCTCACCCCGAGTAGATATTTTGCATAACATTGACCCCATATACACCAAGGCAAAAAATGGCTCCTGGGCAGCAGGCTATGGGATCTGGAACACTGCAATCCAGTCAGCCATCAGAGTGCAGCACTGGAAATTGCTTACAGGAAATCCTGGCTACAGCGACTGGGTCCCCCCTCAGTCTTTCAGCAACCTGGGACCGAACCGGTGGCACAATGAACGGATCACCTTGTCAACTGGCAAAAGTGTATGGCTTTTCAACATCACAGCCGACCCATATGAGAGGGTGGACCTATCTAACAGGTATCCAGGAATCGTGAAGAAGCTCCTACGGAGGCTCTCACAGTTCAACAAAACTGCAGTGCCGGTCAGGTATCCCCCCAAAGACCCCAGAAGTAACCCTAGGCTCAATGGAGGGGTCTGGGGACCATGGTATaaagaggaaaccaagaaaaagaagccaagcaaaaatcaggctgagaaaaagcaaaagaaaag",
-                  "hseq": "ATGGCCCCCAGGGACAGTGCGGAGCCTCTGCCTCCGCTCTT-TCCACAGGCCAGGGTCTGGCCTGGAAAGATGGTAGCGATGGGTGCCCTGGCAGGCTTCTGGGTCCTCAGCCTGATCACCTATGGCTACCTGAGCTGGGGCCAGGACTTAGAAGAGGAG------GGGTCCCTAAGGGCTCAAGTTGAAGAGAGACCTGAAGCAGGCACAGCAGTCACCTCCCAGCCCCATCTCATTTTCATACTAGCTGATGATCAGGGATTTAGAGACGTGGGTTACCACGGATCTGAGATAAAGACTCCCACTCTTGACAAACTCGCTGCGGAAGGAGTTAAGCTAGAGAACTACTATGTCCAGCCTATTTGCACGCCGTCCAGGAGTCAGTTTATTACCGGAAAGTATCAGATACACACAGGACTTCAGCATTCTATCATTAGACCTACCCAACCCAACTGTCTACCTCTGGACAACGCAACCCTACCTCAGAAGCTGAAGGAGGTCGGCTATTCAACCCATATGGTTGGGAAGTGGCACTTGGGATTTTACAGAAAAGACTGCATGCCTACCAAGAGAGGATTTGACACCTTTTTTGGCTCACTTTTGGGAAGTGGTGATTATTACACACACTACAAATGTGACAGTCCTGGGGTGTGTGGCTATGACTTGTACGAAAACGACAATGCCGCTTGGGACTATGACAATGGCATCTACTCAACACAGATGTACACTCAGAGAGTGCAGCAAATCTTAGCCTCCCACGACCCCACAAAGCCTCTGTTTTTATACGTTGCTTACCAAGCTGTCCACTCACCACTGCAAGCCCCTGGCAGGTACTTTGAACACTATAGATCCATTATCAACATAAACAGGAGGAGGTATGCGGCCATGCTCTCCTGCCTGGATGAAGCGATCCACAATGTGACCCTGGCTCTAAAGAGGTATGGTTTCTATAACAATAGCATTATCATTTACTCCTCAGATAATGGTGGGCAGCCCACAGCAGGAGGAAGTAACTGGCCTCTCAGAGGCAGCAAAGGAACATATTGGGAAGGAGGCATCCGGGCAGTTGGCTTTGTGCACAGCCCACTTCTGAAAAACAAGGGAACGGTGTGTAAGGAGCTTGTGCACATCACCGATTGGTACCCGACCTTGATTTCACTGGCTGAAGGACAGATTGATGAAGACATTCAGCTAGATGGATACGATATCTGGGAGACCATAAGCGAAGGTCTTCGTTCACCCCGAGTGGATATTTTGCACAACATTGACCCCATCTATACCAAGGCAAAAAATGGTTCCTGGGCAGCAGGCTATGGAATCTGGAACACCGCGATCCAGTCGGCCATCCGGGTGCAGCACTGGAAACTGCTCACAGGAAATCCTGGCTACAGTGACTGGGTCCCCCCTCAGGCTTTCAGCAATCTGGGCCCAAACCGGTGGCACAATGAAAGGATTACCTTGTCAACTGGCAAGAGTATCTGGCTTTTCAACATCACAGCTGATCCATATGAGAGGGTGGACCTATCCAGCAGGTATCCAGGCATTGTGAAGAAGTTGCTTCGGAGACTGTCACAGTTCAACAAGACAGCGGTGCCTGTCAGGTACCCCCCGAAGGATCCCAGAAGCAACCCTAGGCTCAACGGAGGAGTCTGGGGTCCGTGGTATAAAGAGGAAAGCAAGAAAAAGAAGACAAACAAAACCAAGGCTAAGAAAATGCAAAAGAAAAG",
-                  "midline": "||||| ||||||| | |||||| || || |||||||| ||| |||||||||| | ||||| |||||||||||| |||| ||||| || |||||||| |||||| ||||| ||||  |||| ||||| ||||||  ||||||||||| |||||||||||||      ||| || ||   ||||||| || ||||| ||  ||  |  ||||| |   ||||||||||||||||||||||||||| ||||| |||||||||||||||||||| ||||||||||||||||||||||| || || || ||||||||||| |||||||| ||||||||||| || ||||||||||||||||||||||||||||| || |||||||||||||||||||| |||||||||||||||||||| |||||||| ||||||||||| ||||||||||||||||||||| ||||||||||||| || |||||||||||||| ||||||||||| || |||||||| |||||||| || || ||||||||||| |||||||||||||| |||||||| ||||  ||||||||||| ||||||||||| || |||||||||||||| ||||| || ||||||||||||||||||||||||||| ||||||||||||||||||| |||||||||||||| || |||||||||||||||||||| ||||| ||||||||||||||||||||||| |||||||||||||| |||||  |||||||||||||| | ||||||||  |||| || |||||||| || |||||||||||||| ||||||||||| || ||||||||  |||||||||||||||||||||||||||| ||||| |||||||| |||||| | |||||||| ||| |||| |||||  ||||||||||||  ||||||||||||||||| ||||||||||||||||| |||||||||||||| ||||| || |||||||| |||||||||||||||||||| |||||||||||||||||||||||||| |||||||| || ||||||||||| |||||||||||||||||||||||||| ||||||||||| |||||||||||||| || |||||||| ||  | ||||||||||||||||||||||||||||| |||||||| |||||||| || |||||||||||||||||||| || |||||||| ||||||||||| ||||||||||| |||||||||||||| || ||||||||||||||||| |||||||||||||||||||| ||||||||||| || |||||||| |||||| | ||||||||||||||| |||| |||||||||||||||||||| |||||||||||||||||| |||||||||| ||||| || |||||||||||||||||| |||| ||||||||||||||||| ||| | |||||||||||||||||||| || ||||||||||||||||||||||| | |||||||||||| || ||||||||| | || ||||| || |||||||||||||| || || ||||| |||||||| ||||| || || |||||||| |||||||||||||| ||||| |||||||| || |||||||||||||||| ||||||||||||| ||| |||||   ||||| |||||| ||||||||||||"
-                }
-              ]
-            }
-          ],
-          "stat": {
-            "db_num": 310999,
-            "db_len": 900269439,
-            "hsp_len": 31,
-            "eff_space": 4071953364840,
-            "kappa": 0.46,
-            "lambda": 1.28,
-            "entropy": 0.85
           }
         }
       }
     }
-  }
-]
+  ]
 }
 

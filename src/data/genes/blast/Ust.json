@@ -1,413 +1,413 @@
 {
-"BlastOutput2": [
-{
-    "report": {
-      "program": "blastn",
-      "version": "BLASTN 2.10.0+",
-      "reference": "Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), \"A greedy algorithm for aligning DNA sequences\", J Comput Biol 2000; 7(1-2):203-14.",
-      "search_target": {
-        "db": "nt_v5"
-      },
-      "params": {
-        "expect": 10,
-        "sc_match": 1,
-        "sc_mismatch": -2,
-        "gap_open": 0,
-        "gap_extend": 0,
-        "filter": "L;m;",
-        "entrez_query": "txid109280 [ORGN] OR txid30464 [ORGN] OR txid9643 [ORGN] OR txid9993 [ORGN] OR txid99837 [ORGN] OR txid10036 [ORGN] OR txid51338 [ORGN] OR txid6239 [ORGN] OR txid7897 [ORGN]"
-      },
-      "results": {
-        "search": {
-          "query_id": "NM_005715.3",
-          "query_title": "Homo sapiens uronyl 2-sulfotransferase (UST), mRNA",
-          "query_len": 4496,
-          "query_masking": [
-            {
-              "from": 65,
-              "to": 172
-            },
-            {
-              "from": 264,
-              "to": 308
-            },
-            {
-              "from": 1511,
-              "to": 1517
-            },
-            {
-              "from": 2246,
-              "to": 2257
-            },
-            {
-              "from": 3160,
-              "to": 3167
-            },
-            {
-              "from": 3998,
-              "to": 4004
-            },
-            {
-              "from": 4113,
-              "to": 4120
-            },
-            {
-              "from": 4382,
-              "to": 4394
-            },
-            {
-              "from": 4405,
-              "to": 4411
+  "BlastOutput2": [
+    {
+      "report": {
+        "program": "blastn",
+        "version": "BLASTN 2.10.0+",
+        "reference": "Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), \"A greedy algorithm for aligning DNA sequences\", J Comput Biol 2000; 7(1-2):203-14.",
+        "search_target": {
+          "db": "nt_v5"
+        },
+        "params": {
+          "expect": 10,
+          "sc_match": 1,
+          "sc_mismatch": -2,
+          "gap_open": 0,
+          "gap_extend": 0,
+          "filter": "L;m;",
+          "entrez_query": "txid109280 [ORGN] OR txid30464 [ORGN] OR txid9643 [ORGN] OR txid9993 [ORGN] OR txid99837 [ORGN] OR txid10036 [ORGN] OR txid51338 [ORGN] OR txid6239 [ORGN] OR txid7897 [ORGN]"
+        },
+        "results": {
+          "search": {
+            "query_id": "NM_005715.3",
+            "query_title": "Homo sapiens uronyl 2-sulfotransferase (UST), mRNA",
+            "query_len": 4496,
+            "query_masking": [
+              {
+                "from": 65,
+                "to": 172
+              },
+              {
+                "from": 264,
+                "to": 308
+              },
+              {
+                "from": 1511,
+                "to": 1517
+              },
+              {
+                "from": 2246,
+                "to": 2257
+              },
+              {
+                "from": 3160,
+                "to": 3167
+              },
+              {
+                "from": 3998,
+                "to": 4004
+              },
+              {
+                "from": 4113,
+                "to": 4120
+              },
+              {
+                "from": 4382,
+                "to": 4394
+              },
+              {
+                "from": 4405,
+                "to": 4411
+              }
+            ],
+            "hits": [
+              {
+                "num": 1,
+                "description": [
+                  {
+                    "id": "gi|1196029353|ref|XM_013127199.2|",
+                    "accession": "XM_013127199",
+                    "title": "PREDICTED: Mesocricetus auratus uronyl 2-sulfotransferase (Ust), mRNA",
+                    "taxid": 10036,
+                    "sciname": "Mesocricetus auratus"
+                  }
+                ],
+                "len": 4318,
+                "hsps": [
+                  {
+                    "num": 1,
+                    "bit_score": 1989.96,
+                    "score": 1077,
+                    "evalue": 0,
+                    "identity": 1724,
+                    "query_from": 6,
+                    "query_to": 2002,
+                    "query_strand": "Plus",
+                    "hit_from": 99,
+                    "hit_to": 2092,
+                    "hit_strand": "Plus",
+                    "align_len": 2030,
+                    "gaps": 69,
+                    "qseq": "AGCCTGAACCGGGAC-AAA-AC-ACG-CCGAGACCTACAGACACAAAG-CCGGGGGGTCCACGCTggcgctggaggcgagccccggcggccgcaagcgagcccgaggcgcggcggggcgcggggcgtggggacgctagcggg-cgccgga-cgggcgcggcgccccgtcacgggcAGCGCCC-CGAACCGGGG-CC-GGACACCTC-GGCCGC-TC-GGG-C-C-GC-GGCGGCGGGGACCATGCCGAAGAAAGTCTCCTGAGCCCGGCAACTTCGgcccctccccgcccccacccggctgccctccgcgcggccctccccATGTGCAGCCGGCCAGCCGGGCTCTCCTCCTCGCGGCGGATGGGTGACCTTTTCCTGGCACGGGCAGGCTGTGGGAGGCAGCGGAGCAGGCGATGAAGAAGA---AGCAGCAGCATCCCGGCGGCGGCGCGGATCCCTGGCCCCATGGGGCCCCTATGGGGGGCGCCCCTCCGGGCCTGGGCAGCTGGAAGCGTCGGGTGCCCCTGCTGCCTTTCCTGCGCTTCTCCCTCCGGGACTACGGCTTCTGCATGGCCACCCTGCTGGTCTTCTGCCTGGGCTCCCTCCTCTATCAGCTCAGCGGGGGACCCCCTCGCTTCCTGCTCGACCTGCGGCAGTACTTGGGAAATTCCACTTACTTGGATGACCATGGACCACCTCCTAGTAAGGTACTACCTTTCCCAAGCCAGGTGGTGTACAACAGGGTAGGCAAGTGTGGGAGCCGTACTGTGGTCTTGCTTCTGAGAATCTTGTCGGAGAAGCACGGATTTAATTTGGTCACATCAGACATTCACAACAAAACCAGGCTTACTAAAAATGAACAAATGGAACTGATTAAAAATATAAGTACTGCCGAACAACCCTATTTATTCACTCGACATGTTCATTTCCTCAACTTCTCAAGGTTTGGAGGAGACCAGCCTGTCTACATCAACATCATTAGAGACCCCGTCAACCGGTTCTTATCCAACTATTTTTTCCGTCGCTTTGGAGACTGGAGAGGGGAACAAAATCACATGATCCGCACCCCCAGCATGAGGCAGGAGGAGCGCTACCTGGATATCAATGAGTGTATTCTTGAAAACTATCCCGAGTGCTCCAACCCCAGGTTATTTTACATCATTCCGTACTTTTGTGGACAGCATCCCAGATGCAGGGAGCCTGGTGAATGGGCCCTTGAGAGAGCAAAGCTGAACGTGAATGAAAACTTCCTGCTCGTGGGGATTCTTGAAGAGTTGGAAGATGTGCTGCTGTTACTGGAAAGATTTTTACCTCATTACTTCAAGGGCGTGCTCAGTATCTACAAAGACCCAGAGCACAGGAAGCTTGGAAACATGACTGTGACGGTGAAGAAGACTGTCCCCTCTCCTGAGGCTGTGCAGATCCTCTACCAGCGGATGAGATACGAGTACGAGTTTTACCACTACGTCAAAGAGCAGTTCCACCTGCTGAAGCGCAAGTTTGGACTTAAGTCTCACGTCAGCAAGcccccccTGAGGCCACACTTCTTTATCCCAACTCCACTGGAAACCGAGGAGCCAATCGACGATGAAGAACAGGATGATGAAAAGTGGCTGGAAGATATTTATAAGAGGTGAT--GTG-ACTGTGTTGCCTCTATGGCTTTA-TCTCCCTTTTCCAGAAAGTTCTTTGTTTGGGGAAGTAAAATCCTTAAGGGAC-TAAATTAATGCTTGGGTGCATTAAAAAGAACAAAACATTCCCACATGTTGGGGTCATTGGGAGATGCCCGGTTTTGCGGGTTTTATTTGTTTAATTTTATT-CTGTGTTTTCTCTTGGCTCTTTGGGTCTTTCCCGGGTACACTAGATGGCTCCATCCCAAGGCATCTTGTCATAAAACAG-CTTTCC---CCC--ACCCCATATCA-TGGGAAAAGGGGGAGAAATATAGCCCCTAGCCTAATAACTTATCATTTGTAAAATGACTTATAAAAATATTACCTCAATGGTAGGAGACATCCAGACTTGT",
+                    "hseq": "AGCCTGAGTCGGGACCAAACACGCCGCCCGAGACC--C--ACACAAAGCCCGGGGGGTCCACGCTGGCGCTCGTGGCGAGCC------G-TG--AGCGAGCCCGGGGCACAGCGGGACCTGGGGCGCAAGGCTGCTAGCGGGACGTGCGATCGGGCGCGG-GCTGCG-ATC-GCCA-CCCTCACG--CCGGGGCCCGGGACATCTCGGGGCCCTTCGGGGCCGCAGCGGGTGGCGGGGACCAAGATGAGGAGAGTGCCCTGAGCCCGGCAACTTCGGCCCCTCCCCGCCCCCACCCGGTTGCCCTCGGCGAGTCCCTCTCCATGTGCAGCCAGCCGGCCAGGCGCTCCGGCTGGCGGCGGATGGGTGACCTCTTCCTGGCCCAGGCGGGCTGTGCGAGGCGGCGGAGTCGGCGATGAAGAAGAAGCAGCAGCAGCATCCCAGCAGCGGCGAGGATCCCTGGCCCCATGGGGCCCCTGTGGGGGGCGCCCCTCCGTGCCTGGGTGGCTGCAAGCGCCGGATCCCGCTGCTGCCTTTCCTACGCTTCTCCCTCCGAGACTACGGTTTCTGCATGGCCACCCTGCTGGTCTTCTGCCTAGGCTCCCTCTTCTACCAGCTCAGCGGGGGACCCCCTCGCTTCCTGCTCGACCTGCGACAGTATCTGGGAAATTCCACTTACTTGGATGACCATGGACCACCTCCTAGTAAGGTCCTTCCGTTCCCCAGCCAGGTGGTGTACAACAGAGTCGGCAAGTGTGGCAGTCGCACCGTGGTCTTGCTTCTGAGAATCTTGTCAGAGAAACACGGGTTCAATTTGGTCACGTCAGACATTCACAACAAAACCAGGCTTACTAAAAACGAGCAAATGGAACTGATTAAGAATGTCAGCACGGCCGAACAGCCCTATTTATTCACGAGACATGTTCACTTCCTCAACTTCTCAAGGTTTGGAGGAGACCAGCCCGTCTACATCAACATCATTAGAGACCCCGTCAGTAGGTTTCTATCTAACTACTTTTTCCGTCGCTTTGGAGACTGGAGAGGGGAACAGAATCACATGATCCGCACCCCCAGCATGAGGCAGGAGGAGCGCTACCTGGATATCAATGAGTGCATTCTGGAAAACTACCCTGAGTGTTCCAACCCCAGGTTATTTTACATCATTCCGTATTTCTGTGGACAGCACCCCAGATGTAGGGAGCCTGGCGAGTGGGCCCTGGAGCGTGCCAAAATGAACGTGAATGAAAACTTCCTGCTCGTGGGGATTCTGGAGGAGTTAGAGGACGTGCTGCTTTTACTGGAAAGATTTTTACCTCATTACTTCAAGGGCGTGCTCAGCATCTACAAGGACCCAGAGCATAGGAAACTGGGCAACATGACTGTGACCGTGAAGAAAACTGTCCCCTCTCCGGAGGCTGTGCAGATTCTCTACCAGCGAATGAGGTACGAGTACGAGTTCTACCACTACGTCAAAGAGCAGTTCCACCTGCTGAAACGCAAGCTTGGACTGAAGTCTCGCTCCAGCAGACTTCCTCCGCGGCCACAGTTCTTCATTCCCACCCCTCTGGAGACTGACGAGCCTGTCGACGACGAGGAACAAGATGATGAAAAGTGGCTAGAAGATATTTATAAGAGGTGATACCAGCACGACATTGCCACCGCGGCTGTATTCCCCCCTTTCCAGAAAGTTC----TTTGGGGAAGAAAAATTGTGAAGGGACTTTGGTTAATGCCCGGGTGCATTAAAAAGACCAAAACATTCCCACATGTTGGGGTCATTGGGAGATGCCCGGTTTTGCGGGTTTTATTTGTTTAATTTTACTGCT-T-TTTTCT-TTGCCTCCTTGAGTCTTTCCCAGATACACTAGATTGCTCCACCACAAGACATCTCTTCACAGAACAGACTTCCCAATCCCTTACCCTTTA-CAGTGAGAGAAGAGGGAGAAATGT-GTCC-T--CC-AACC-CAG-TCATTTTTAAGATGTCTCC-AAGAATATTACTTCCATGGTAA-AGATATCCAGACTTGT",
+                    "midline": "|||||||  |||||| ||| ||  || ||||||||  |  |||||||| |||||||||||||||||||||| | ||||||||      |  |  |||||||||| ||| | ||||| |  ||||||   ||  ||||||||| ||   || ||||||||| ||  ||   | | || | | | ||  |||||| || ||||| ||| || | | || ||| | | || || ||||||||||| |  || || |||  ||||||||||||||||||||||||||||||||||||||||| ||||||| ||| | ||||| |||||||||||| ||| ||| ||| ||||  || |||||||||||||||||| |||||||| | ||| ||||||| ||||| ||||||  ||||||||||||||   |||||||||||||| || |||||| ||||||||||||||||||||||||| ||||||||||||||||| |||||||  |||| ||||| ||| | || |||||||||||||| |||||||||||||| |||||||| |||||||||||||||||||||||||||||||| ||||||||| |||| ||||||||||||||||||||||||||||||||||||||||| |||||  ||||||||||||||||||||||||||||||||||||||||||||||||| || || ||||| |||||||||||||||||||| || ||||||||||| || || || |||||||||||||||||||||||||| ||||| ||||| || ||||||||||| ||||||||||||||||||||||||||||||||||| || ||||||||||||||||| ||| | || || |||||||| ||||||||||||||  |||||||||| ||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||   ||||  |||| ||||| ||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||| |||||||| || ||||| |||||||||||||||||||||||||||||||| || ||||||||||| |||||||| ||||||||||| || |||||||| ||| | || ||  ||||||||||||||||||||||||||||||||||||| || ||||| || || |||||||| |||||||||||||||||||||||||||||||||||||||||||| |||||||| ||||||||||| ||||| || || |||||||||||||| |||||||| |||||||||||||| |||||||||||||| ||||||||||| ||||| |||||||||||||| ||||||||||||||||||||||||||||||||||| |||||| ||||||| ||||||| |  |||||  |  || | | ||||||| ||||| || || || || ||||| || || |||||  ||||||| || ||||| ||||||||||||||||| ||||||||||||||||||||||    | ||    ||||| |   |||| || || ||| ||||||||||||||    |||||||||| |||||  | ||||||| |   |||||||  |||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| | || | |||||| ||| ||| ||| ||||||||| | |||||||||| |||||| | |||| |||||  ||| | ||||| ||| ||   |||  ||||  || || || || ||| ||||||||| | | || |  || ||   |   |||||| ||| ||| ||   || |||||||| || ||||||  ||| ||||||||||||"
+                  },
+                  {
+                    "num": 2,
+                    "bit_score": 407.383,
+                    "score": 220,
+                    "evalue": 1.04941e-110,
+                    "identity": 337,
+                    "query_from": 4122,
+                    "query_to": 4496,
+                    "query_strand": "Plus",
+                    "hit_from": 3887,
+                    "hit_to": 4263,
+                    "hit_strand": "Plus",
+                    "align_len": 389,
+                    "gaps": 26,
+                    "qseq": "GGCCCTGGGCCCAAC--AGTTTGTACTTCATGAAACATATTGTACATTTTACATAGTTTAATTTAA----AAAATACCTTTTAAGCTAGTTGATCTTTGACTGTCTTATTTATTATAACCTTTCAGCACATTCCAAGGTTTTAGTTACTCAGGAAGGAGTTAATTAAAATGATTTTATTTTGGTCTGATGGATGTTTTTTAAAAGGAAAATTATTATTATGAACCTTCAGCCTACTTTCTTGAGTGCCGT-----AAAAGTGCTTGTAAATCtttttttttttttAAGAAGAAAGaaaaaaaTGGTGTTTGACGTTGATGGAAATTCAAAAATATATATGGAACTGAAACATTAACTTAGCTAAAATA---AAAGCAATCTGTGTTTGA",
+                    "hseq": "GGCCCT-GGCCCAACATAGTTTATACTTCATGAAATATATTGTACATTTTACATAGTTTAATTTAAAAAGAAAATACATTTTAAGCTAGTTGGTCTTTG-C---CTTATTTATTATAACCCTTCAGCACATTCCAAGGTTTTAGTTACTCAGGAAGGAGTTAATTAAAATGATTTTATTTTGGTCAGATGGATGTTTTTTAAAAGGAAAATTATTCTTATGAACTCTCAGCTGACTTCCTTGAATGCTGTAAAAAAAAAGTGCTTGTGAATCTTTTTTTTCT---AAGA-GTT---AAAAAATGGTGTTTGACATTGATGGGAATTCAAAAATATATATGGGACTAAAACCTTAGCTTAGCTAAAATAATGAAAGTGATCTGTGTTTGA",
+                    "midline": "|||||| ||||||||  ||||| |||||||||||| ||||||||||||||||||||||||||||||    ||||||| |||||||||||||| |||||| |   |||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||| ||||||||  |||||  |||| ||||| ||| ||     |||||||||||| |||||||||||| |   |||| |     ||||||||||||||||| ||||||| ||||||||||||||||||| ||| |||| ||| |||||||||||||   ||||  ||||||||||||"
+                  }
+                ]
+              },
+              {
+                "num": 2,
+                "description": [
+                  {
+                    "id": "gi|984081872|ref|XM_015497901.1|",
+                    "accession": "XM_015497901",
+                    "title": "PREDICTED: Marmota marmota marmota uronyl-2-sulfotransferase (Ust), mRNA",
+                    "taxid": 9994,
+                    "sciname": "Marmota marmota marmota"
+                  }
+                ],
+                "len": 3804,
+                "hsps": [
+                  {
+                    "num": 1,
+                    "bit_score": 1936.41,
+                    "score": 1048,
+                    "evalue": 0,
+                    "identity": 1331,
+                    "query_from": 648,
+                    "query_to": 2090,
+                    "query_strand": "Plus",
+                    "hit_from": 154,
+                    "hit_to": 1610,
+                    "hit_strand": "Plus",
+                    "align_len": 1465,
+                    "gaps": 30,
+                    "qseq": "GGAAATTCCACTTACTTGGATGACCATGGACCACCTCCTAGTAAGGTACTACCTTTCCCAAGCCAGGTGGTGTACAACAGGGTAGGCAAGTGTGGGAGCCGTACTGTGGTCTTGCTTCTGAGAATCTTGTCGGAGAAGCACGGATTTAATTTGGTCACATCAGACATTCACAACAAAACCAGGCTTACTAAAAATGAACAAATGGAACTGATTAAAAATATAAGTACTGCCGAACAACCCTATTTATTCACTCGACATGTTCATTTCCTCAACTTCTCAAGGTTTGGAGGAGACCAGCCTGTCTACATCAACATCATTAGAGACCCCGTCAACCGGTTCTTATCCAACTATTTTTTCCGTCGCTTTGGAGACTGGAGAGGGGAACAAAATCACATGATCCGCACCCCCAGCATGAGGCAGGAGGAGCGCTACCTGGATATCAATGAGTGTATTCTTGAAAACTATCCCGAGTGCTCCAACCCCAGGTTATTTTACATCATTCCGTACTTTTGTGGACAGCATCCCAGATGCAGGGAGCCTGGTGAATGGGCCCTTGAGAGAGCAAAGCTGAACGTGAATGAAAACTTCCTGCTCGTGGGGATTCTTGAAGAGTTGGAAGATGTGCTGCTGTTACTGGAAAGATTTTTACCTCATTACTTCAAGGGCGTGCTCAGTATCTACAAAGACCCAGAGCACAGGAAGCTTGGAAACATGACTGTGACGGTGAAGAAGACTGTCCCCTCTCCTGAGGCTGTGCAGATCCTCTACCAGCGGATGAGATACGAGTACGAGTTTTACCACTACGTCAAAGAGCAGTTCCACCTGCTGAAGCGCAAGTTTGGACTTAAGTCTCACGTCAGCAAGcccccccTGAGGCCACACTTCTTTATCCCAACTCCACTGGAAACCGAGGAGCCAATCGACGATGAAGAACAGGATGATGAAAAGTGGCTGGAAGATATTTATAAGAGGTGATG--TG-ACTGTGTTGCCTCTATGGCTTTATCTCCCTTTTCCAGAAAG----TTC--TTTGTTTGGGGAAGTAAAATCCTTAAGGGAC-TAAATTAATGCTTGGGTGCATTAAAAAGAACAAAACATTCCCACATGTTGGGGTCATTGGGAGATGCCCGGTTTTGCGGGTTTTATTTGTTTAATTTTATTCTGTGTTTTCTCTTGGCTCTTTGG-GTCTTTCCCGGGTACACTAGATGGCTCCATCCCAAGGCA-TCTTGTCATAAAACAGCTTTCCC--CC--ACCCC-A-TATCATGGGAAAAGGGGGAGAAATATAGCCCCTAGCCTAATAACTTATCATTTGTAAAATGACTTATAAAAATATTACCTCAATGGTAGGAGACATCCAGACTTGTATATTTCAGTGGAAATAC-AAAACCACTTCAGAGACCAGGGTATCTCCTCTGGAAGGATCTAAGAGA---AGGTAAGACAGATTAGGACATC",
+                    "hseq": "GGAAATTCCACTTACTTGGATGACCATGGACCACCTCCTAGTAAGGTACTGCCCTTCCCCAGCCAGGTGGTGTACAACAGGGTGGGCAAATGTGGCAGCCGCACTGTGGTCTTGCTTCTGAGAATCTTGTCAGAGAAGCACGGATTCAATTTGGTCACTTCAGACATTCACAACAAAACCAGGCTTACAAAAAATGAACAAATGGAACTGATTAAAAATATAAGTACTGCCGAACAGCCCTATTTATTCACCCGACACGTTCATTTCCTCAACTTCTCAAGGTTTGGAGGAGACCAGCCCGTCTACATCAACATCATTAGAGACCCCGTCAGCCGGTTTTTATCTAACTATTTTTTTCGTCGCTTTGGAGACTGGAGAGGGGAACAGAACCACATGATCCGCACCCCCAGCATGAGGCAGGAGGAGCGCTACCTGGATATCAATGAGTGCATTCTTGAAAACTACCCTGAGTGTTCCAACCCCAGGTTATTTTACATCATTCCGTATTTTTGTGGACAGCATCCCAGATGCAGGGAGCCTGGTGAGTGGGCCCTCGAACGCGCAAAGCTGAACGTGAATGAAAACTTCCTGCTCGTGGGGATTCTCGAGGAGTTGGAAGATGTGCTGCTTTTACTGGAAAGATTTTTACCTCATTACTTCAAGGGTGTGCTCAGCATCTACAAGGACCCAGAGCACAGGAAACTGGGAAACATGACTGTGACCGTGAAGAAGACTGTCCCCTCTCCCGAGGCAGTGCAGATACTCTACCAGCGAATGAGATACGAGTACCAGTTCTACCACTACGTCAAGGAGCAGTTCCACCTGCTCAAGCGCAAGTTTGGACTCAAGTCTCACGTGAGCAGACCCGCCCTGAGGCCGCAGTTCTTCATCCCCACCCCGCTGGAAACCGAGGAGCCCATGGACGATGAGGAGCAGGACGATGAAAAGTGGCTAGAAGATATTTATAAGAGGTGATGCCAGCACTG-GGTGGCTCCATGGCGGAATCTCCCTTTTCCAGAAAGGTTGTTCTGTTTGTTTGAGGAAGAAAAATCCAGAAGGGACTTAAATTAATGCTTGAGTGCATTAAAAAGAACAAAACATTCCCACATGTTGGGGTCATTGGGAGATGCCCGGTTTTGCGGGTTTTATTTGTTTAATTTTATT--GT-TTTTC-CTTGGCTCTTTTGAGTCTTTCCCAGGTACACTAGATGGCTCCATCACAAGGCAGTCTTGTTCCAAA-CAGCCTACCCAGCCCCACCCCCAGTA-CATGGGAGAA-GGGGAGAAATATATCCCCCAGCCCAATAACTTATCATTTGTAAAATGACTTGTAAAAATATTACCTCAATGGCAGAAGACATCCAGACTTGTATATTTCAGTAGAAATACAAAAACCACTTCAGAGACCAGGGAATCTGCTCTAGAAGTGTCTGAGAGGGTCAGGTAAGGCAGAAAAGAACATC",
+                    "midline": "|||||||||||||||||||||||||||||||||||||||||||||||||| || ||||| ||||||||||||||||||||||| ||||| ||||| ||||| ||||||||||||||||||||||||||||| |||||||||||||| ||||||||||| ||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||| ||||| ||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||| |||||| ||||| ||||||||||| ||||||||||||||||||||||||||||| || ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||| || ||||| |||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||| |||||||| ||  | |||||||||||||||||||||||||||||||||||||||||||| || |||||||||||||||||||| ||||||||||||||||||||||||||||||||||| |||||||| |||||||| ||||||||||||||||| || ||||||||||||||||| ||||||||||||||||||||||| ||||| |||||||| ||||||||||| ||||||||||||||| |||| |||||||||||||| ||||||||||||||||| ||||||||||||||||| ||||||||||| ||||  ||| |||||||||| || ||||| ||||| || || ||||||||||||||||| || |||||||| || ||||| |||||||||||||| |||||||||||||||||||||||   | |||| | || ||| |||||   |||||||||||||||||||    |||  |||||||| ||||| |||||||  ||||||| |||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  || ||||| ||||||||||| | ||||||||| ||||||||||||||||||||| ||||||| ||||||   ||| |||| | |||  ||  ||||| | || ||||||| || ||||||||||||| |||| |||| ||||||||||||||||||||||||||| |||||||||||||||||||| || |||||||||||||||||||||||||| ||||||| |||||||||||||||||||||| |||| |||| ||||  ||| ||||    ||||||| ||||  || |||||"
+                  },
+                  {
+                    "num": 2,
+                    "bit_score": 1411.96,
+                    "score": 764,
+                    "evalue": 0,
+                    "identity": 1355,
+                    "query_from": 2893,
+                    "query_to": 4493,
+                    "query_strand": "Plus",
+                    "hit_from": 2213,
+                    "hit_to": 3801,
+                    "hit_strand": "Plus",
+                    "align_len": 1632,
+                    "gaps": 74,
+                    "qseq": "CATTTCTTATGGGACCTGTGTGCTCCTGAGAACTCTTACTTGAGACATCAAAA--AGAAGCAGCAAGAGCTTCTGGGACAGAGACTGCTTGGCCAGCTTTGTAAGTAAGTGGCTGCCTCCAATGTGATGTGAGTACATGTTGGGCAG-T-C-TCACTGTCCTAAGGTATGTCTTCTTTCCACCTCCCACTGCCCCT-C-CCCTGCCACCTATCAATGATGCCTTGGTTCAGTCATTAGAAATCTGTTGCTTTGAGTTCTGAAATATTTTCAC-C-TT-------aaaaaaaaTGCTGAAAATACACATTCTCCTGGGAAGACGATAAACAGCTAGCTAAGAAGCCGAGGTTCAGTGGTGGCAGCAGGAAGGACACTGCCACAAATTTTGTCTATTTCATATTTGTCCCCTAGAGCCAGCCCTAGCAAATGTGTGAGTTGGGAGTAGTTAATAGTAAATAAGACTCTGACTTTACACAAGCTACACATTTTATACTTTTCATAAACCACAAAGTCTCTCTAGAATTTTTTCTGCCTTCACTAAAATTGGACTGTAGCCAAGATATAAAGCAAGTCATTTGGAACCTGCCGAGTGAGCACTGAAGCTACTTTATCATGAGATGTGTGTTAAGAAGGCTGCAGCCCACAGGAGTCCAGGGAAGGCGGGGACCACAGAGGCACAGAGTCCAGCACTTGGCCGCTCATGGGCCTTCTTTCTGCCTCAGAGGACGGGGGCAGAGAAGTGATGAAGGGAAATGTTCTTAGAGGAGGAAATATCCTTTGTCCTGTTCAGAGAGACCAGGGCCCTACCATTAGGCATACTTTCAGAAGCAACCTGGAGAACAGCTATCAATCATATTCAAAACCAGTACAAGAACTGCTGCCTGGTACCCTGTGAGTCATTTCTATGAAATTCCATATAAAGAATGATGATAAGTTTACACACTGTGCAATCTCACAATCTGAAAATAAAGTTGAGTTGGCTGTGTTTTCTCTGCTCTTGTCAGAACATTGGGACAATTGGTCGTTCAAAAACATTCATCCTCTTACTGCAAGTTTATCTGGGTACTTTTACCTGTGTGTTCAAAGGCATTTCTTTTCAGCAGTGATCATTATAACTTCACaaaaaaaGATGCTGACGGATTTACTTACAGGGCCTTAATGTTATTTTGTCCCAGCCAACACCCTCTAGGTCCTAAAAGTCAAGGTACT---TCAGTTTATTTGGCAAACATGACAACAttttttttGGCCCTGGGCCCAAC--AGTTTGTACTTCATGAAACATATTGTACATTTTACATAGTTTAATTTAAAAAATACCTTTTAAGCTAGTTGATCTTTGACTGTCTTATTTATTATAACCTTTCAGCACATTCCAAGGTTTTAGTTACTCAGGAAGGAGTTAATTAAAATGATTTTATTTTGGTCTGATGGATGTTTTTTAAAAGGAAAATTATTATTATGAACCTTCAGCCTACTTT-CTTGAGTGCCGTAAAAGTGCTTGTAAATCt-t-t-t-t--tttttttt--AAGAAGAAA-GaaaaaaaTGGTGTTTGACGTTGATGGAAATTCAAAAATATATATGGAACTGAAACATTAACTTAGCTAAAATAAAAGCAATCTGTGTT",
+                    "hseq": "CATTTCTTATGGAACCTATTTGTTTCTGAGGGCCCTCACCAGGGACGTCAAAATGAGAAGCAGCAAGA-CTTCTGGGTAAGAGATTGATTGACCAACTTTCTGAGTAAGTGGATGCCCCTAGTATGATCTGAGTAGACTCTGAGCAGTTCCATCAC--CCCCAAAATAATCCTCCTCTTCACTTCCCAC-ACCCCTGCTGTCTGCTCCCTATTAATGAAGTCTTGGCCCAGGCATTAGAAATCTGTT-CCTTAAATTCTGAAGTATTTTCACTCTTTAAAAAAAAAAAAAAAACCTGAAAATACATGTCCTCCTGGGTAGATGATATACAGCTAGCTGAGGAACCAAGGTATGGTGGTGGTAGCAGGAAG-A-A-T---AC---TTGTGAC-A---AAT-TTTGCCTCC-A-AG--AG--C-A--AAA----TGAGTTGCAAGTACTTATTAGTAAATAAGATTCTGACTTTACACAAGCTACACATTTTCTGCTTTTCAGAAACCAACAAGTCTCTCTAAAATTCTTTCTTCCTTCACTAAAACTGGACAGGAGCCAAGATATAAAGCAAGTCATTTGGAACCTGCCGAGTGGGTGCTGAAGCCACTTTATCATGAGA--TATATTAAGACGGCTCCAGCCCACAGGCACCCAGTGAAGGCAGGGACCACAGAGGCAAAAAGTCCAGCATGTGGCCACATGTGGGCC-CCTTTCTGCCTCAGAGAACTGAAGCAGGGAAGTGAATAAAGGAAATGTTCTCAGAAAAAGAATTATCCTTTGTCTTGTGCAGAGAGACCAGGGCCCTACCATTAGGCATACTTCAAAAAGCAACCTGGAAAACAGCT----ATCATGTTCAAAACAAGTACAAGGACTGCTGCCTGATATGTTGTGAGTCGTTTCTATGAA-TTACACTTAAATAATGAAGATTAGTTTACACACTGTGCAATCTCACA-TCTG-AAATAAAGTTGCGTTGGCTAAGTTTTCTCTGCTGTTGTCAGAACATCGGGACAATTGGTCACTCAACAAAATCCTTCCTCTTTCTGCAAGTTCACATGGGCACTTGTACCTGTGTGTCCAAAGGCATTTATTTTCAGCAGTGATCTTGGTAACTTTATGACAAAAGGTGCCAACTGATTTACTTGCAGGGCCTTTTTGTTATTTTGTCTCAACAAACAGTCTCTAGGTCCTAGAAGTCAAGGCACTCCATCAGTTTCTTTGGCACACATGACAACA-TTTCTTTGGCCCTGGGCCCAACATAGTTTGTACTTCATGAAATATACTGTACATTTTACATAGTTTAATTTAAAAAATACATTTTAAGCTAGTTGATCTTTGACTGCCTTATTTATTATAACCTTTCAGCACATTCCAAGGTTTTAGTTACTCAGGAAGGAGTTAATTAAAATGATTTTATTTTGGTTTGATGGATGTTTTTTAAAAGGAAAATTATTATTATGAACCCTCAGCCTACTTTCCTTGAGTGCTGTAAAAGTGCTTGTAAATCTCTCTCTCTCATTTTTTTTTTAAGAAGAAAGGAAAAAAATGGTGTTTGACATTGATGGAAATTCAAAAGTATATATGGAACTGAAACATTAGCTTAGCTAAAATAAAAGCAATCTGTGTT",
+                    "midline": "|||||||||||| |||| | || | |||||  | || ||  | ||| ||||||  ||||||||||||| ||||||||  ||||| || ||| ||| |||| | ||||||||| |||| | | | |||| |||||| |   || |||| | | ||||   || ||  ||   || || | ||| ||||||  ||||| |   ||||  ||||| ||||| | |||||  ||| ||||||||||||||| | || | ||||||| ||||||||| | ||       ||||||||  |||||||||||  | |||||||| ||| |||| |||||||||| || | || ||||   ||||||| ||||||||| | | |   ||   || || | |    || |||| | || | ||  ||  | |  |||    |||||||  |||| ||| |||||||||||| ||||||||||||||||||||||||||| | ||||||| ||||||  ||||||||||| |||| ||||| |||||||||||| ||||| | |||||||||||||||||||||||||||||||||||||||| |  ||||||| ||||||||||||||  | | |||||| |||| |||||||||||   |||| |||||| ||||||||||||||| | |||||||||  ||||| |   ||||||  ||||||||||||||| || |  |||| |||||||  || ||||||||||| |||  | ||| ||||||||||| ||| ||||||||||||||||||||||||||||||||||  | |||||||||||| |||||||    ||||| |||||||| |||||||| ||||||||||| ||   |||||||| |||||||||| || ||  |||| ||||| ||| ||||||||||||||||||||||||| |||| ||||||||||| |||||||  |||||||||||| |||||||||||| |||||||||||||  |||| || || | ||||||| ||||||||| |  |||| |||| ||||||||||| ||||||||||| ||||||||||||||| |  |||||| |  | ||||| |||  || ||||||||| |||||||||  |||||||||||| || | ||||  |||||||||||| ||||||||| |||   ||||||| ||||||| ||||||||||| ||| ||||||||||||||||||  |||||||||||||||||| ||| ||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||| |||||||||||| ||||||||| |||||||||||||||||||| | | | |  ||||||||  ||||||||| ||||||||||||||||||| ||||||||||||||||| |||||||||||||||||||||| ||||||||||||||||||||||||||||"
+                  }
+                ]
+              },
+              {
+                "num": 3,
+                "description": [
+                  {
+                    "id": "gi|1147253236|ref|XM_020179625.1|",
+                    "accession": "XM_020179625",
+                    "title": "PREDICTED: Castor canadensis uronyl 2-sulfotransferase (Ust), partial mRNA",
+                    "taxid": 51338,
+                    "sciname": "Castor canadensis"
+                  }
+                ],
+                "len": 2600,
+                "hsps": [
+                  {
+                    "num": 1,
+                    "bit_score": 1568.93,
+                    "score": 849,
+                    "evalue": 0,
+                    "identity": 1221,
+                    "query_from": 648,
+                    "query_to": 2011,
+                    "query_strand": "Plus",
+                    "hit_from": 4,
+                    "hit_to": 1400,
+                    "hit_strand": "Plus",
+                    "align_len": 1398,
+                    "gaps": 35,
+                    "qseq": "GGAAATTCCACTTACTTGGATGACCATGGACCACCTCCTAGTAAGGTACTACCTTTCCCAAGCCAGGTGGTGTACAACAGGGTAGGCAAGTGTGGGAGCCGTACTGTGGTCTTGCTTCTGAGAATCTTGTCGGAGAAGCACGGATTTAATTTGGTCACATCAGACATTCACAACAAAACCAGGCTTACTAAAAATGAACAAATGGAACTGATTAAAAATATAAGTACTGCCGAACAACCCTATTTATTCACTCGACATGTTCATTTCCTCAACTTCTCAAGGTTTGGAGGAGACCAGCCTGTCTACATCAACATCATTAGAGACCCCGTCAACCGGTTCTTATCCAACTATTTTTTCCGTCGCTTTGGAGACTGGAGAGGGGAACAAAATCACATGATCCGCACCCCCAGCATGAGGCAGGAGGAGCGCTACCTGGATATCAATGAGTGTATTCTTGAAAACTATCCCGAGTGCTCCAACCCCAGGTTATTTTACATCATTCCGTACTTTTGTGGACAGCATCCCAGATGCAGGGAGCCTGGTGAATGGGCCCTTGAGAGAGCAAAGCTGAACGTGAATGAAAACTTCCTGCTCGTGGGGATTCTTGAAGAGTTGGAAGATGTGCTGCTGTTACTGGAAAGATTTTTACCTCATTACTTCAAGGGCGTGCTCAGTATCTACAAAGACCCAGAGCACAGGAAGCTTGGAAACATGACTGTGACGGTGAAGAAGACTGTCCCCTCTCCTGAGGCTGTGCAGATCCTCTACCAGCGGATGAGATACGAGTAC-GAGTTTTACCACTACGTCAAAGAGCAGTTCCACCTGCTGAAGCGCAAGTTTGGACTTAAGTCTCACGTCAGCAAGcccccccTGAGGCCACACTTCTTTATCCCAACTCCACTGGAAACCGAGGAGCCAATCGACGATGAAGAACAGGATGATGAAAAGTGGCTGGAAGATATTTATAAGAGGTGATG--TG-ACTGTGTTGCCTCTATGGCTTTATCTCCCTTTTCCAGAAAGTTCTTT--GTTTGGGGAAGTAAAATCCTTAAGGGAC-TAAATTAATGCTTGGGTGCATTAAAAAGAACAAAACATTCCCACATGTTGGGGTCATTGGGAGATGCCCGGTTTTGCGGGTTTTATTTGTTTAATTTTATTCTGTG-TTTTCTCTTG----G--CT---CT--TTGGGTC-TTTCCCGGGTACACTAGATGGCTCCATCCCAAGGCATCTTGTCATAAAACAG---C-TT-----T--CC-CCCACCCCATATCATGGGAAAAGGGGGAGAAATATAGC--CCCTAGCCTAATAACTTATCATTTGTAAAATGACTTATAAAAATATTACCTCAATGGTAGGAGACATCCAGACTTGTATATTTCAG",
+                    "hseq": "GGAAATTCCACTTACTTGGATGACCATGGGCCACCTCCTAGTAAGGTCCTTCCTTTCCCCAGCCAGGTGGTGTACAACAGAGTAGGCAAGTGTGGAAGTCGTACTGTGGTCTTGCTTCTGCGAATCTTGTCAGAGAAGCACGGATTTAATTTGGTCACATCAGACATTCACAACAAAACCAGACTTACAAAAAATGAACAGATGGAACTGATTAAAAATATAAGTACTGCTGAACAGCCCTATTTATTCACTCGCCATGTTCATTTCCTCAACTTCTCAAGGTTCGGAGGAGAGCAGCCTGTCTACATCAACATCATCAGAGACCCCGTCAGCCGGTTCTTATCTAACTATTTTTTCCGTCGCTTTGGAGACTGGAGAGGGGAACAGAATCACATGGTCCGCACCCCCAGCATGAGGCAGGAGGAACGCTATCTGGACATCAATGAGTGCATTCTGGAAAACTACCCTGAGTGTTCCAACCCCAGGTTATTTTACATCATTCCATATTTCTGTGGACAGCATCCCAGATGCAGGGAGCCTGGTGAGTGGGCCCTTGAACGCGCAAAGCTGAACGTGAATGAAAACTTCCTGCTCGTGGGGATTCTCGAGGAGTTGGAAGATGTGCTGCTTTTACTGGAAAGATTTTTACCTCATTACTTCAAGGGTGTGCTCAGCATCTACAAGGACCCAGAGCATAGGAAACTTGGAAACATGACTGTGACGGTGAAGAAGACGGTCCCCTCCCCCGAGGCCGTGCAGATCCTCTACCAGCGCATGAGATACGAATACNGA-TTCTACCACTACGTCAAAGCGCAGTTCCACCTGCTGAAGCGCAAGTTCGGACTCAAGTCTCGCGCGAGCAGGACCCCTGCGAGACCTCAGTTCTTCGTCCCCACCCCCCTGGAGACCGAGGAGCCAATCGATGACGAGGAGCAAGACGATGAAAAGTGGCTGGAAGATATTTATAAGAGGTGATGCCAGCCCTGTGTTGCCTCCATGGCTTTATCTCCCTTTTCCGGAAAGTTCTTTGGGGAAGAAAAAAAAAAATCCTGATGGAACTTCGATTAATGCTTGTGTGCATTAAAGAGAACAAAACATTCCCACATGTTGGGGTCATTGGGAGATGCCCGGTTTTGCGGGTTTTATTTGCTTAATTTTATTCTGTGGTTTTGTTTTGTTTTGTTCTTGGCTCCTTGAGTTTTTTCCCAGGTACAGTAGAGGGCTCCATCACCAGGCACCTCTTCATCAAAGAGGTGCCTTCCCCATGTCCGCCCACCCTCTGTGATGGGGTAAGAGGAAGAAGTAACACATCCACAGCCCAGAAGTTTGTCATTTGCAAAATGACTTGGAAAAATATTACCTCAGTGGTAGAAGATACCCAGGCTTGTACATTGCAG",
+                    "midline": "||||||||||||||||||||||||||||| ||||||||||||||||| || |||||||| |||||||||||||||||||| |||||||||||||| || ||||||||||||||||||||| |||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||| ||||| ||||||||||| ||||||||||||||||||||||||||||| ||||| ||||||||||||||||| ||||||||||||||||||||||||||||| |||||||| ||||||||||||||||||||||| ||||||||||||| |||||||||||| ||||||||||||||||||||||||||||||||||||||||| ||||||||| |||||||||||||||||||||||||||| ||||| ||||| ||||||||||| ||||| |||||||| || ||||| ||||||||||||||||||||||||||||| || || ||||||||||||||||||||||||||||||||||| |||||||||||  | |||||||||||||||||||||||||||||||||||||||||||| || |||||||||||||||||||| ||||||||||||||||||||||||||||||||||| |||||||| |||||||| ||||||||||| ||||| |||||||||||||||||||||||||||||||| |||||||| || ||||| |||||||||||||||||||| ||||||||||| ||| || || |||||||||||||||| ||||||||||||||||||||||||||| ||||| ||||||| ||  |||| | ||||   ||| || || |||||  |||| || || ||||| ||||||||||||||||| || || || || || ||||||||||||||||||||||||||||||||||||||   |  |||||||||||| ||||||||||||||||||||| |||||||||||  |   |   ||  |||||||| | || || |  ||||||||||| |||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||| |||| | |||    |  ||   ||  ||| ||  |||||| |||||| |||| ||||||||| | ||||| ||  |||| ||| ||   | ||     |  || |||||||  | | |||||  ||| || |||| ||   |  ||  |||| |  |  || ||||||| ||||||||||  ||||||||||||||| |||||| ||| | |||| |||||| ||| |||"
+                  }
+                ]
+              },
+              {
+                "num": 4,
+                "description": [
+                  {
+                    "id": "gi|1443682298|ref|XM_026044368.1|",
+                    "accession": "XM_026044368",
+                    "title": "PREDICTED: Nothoprocta perdicaria uronyl 2-sulfotransferase (UST), partial mRNA",
+                    "taxid": 30464,
+                    "sciname": "Nothoprocta perdicaria"
+                  }
+                ],
+                "len": 1800,
+                "hsps": [
+                  {
+                    "num": 1,
+                    "bit_score": 907.825,
+                    "score": 491,
+                    "evalue": 0,
+                    "identity": 816,
+                    "query_from": 648,
+                    "query_to": 1623,
+                    "query_strand": "Plus",
+                    "hit_from": 7,
+                    "hit_to": 979,
+                    "hit_strand": "Plus",
+                    "align_len": 977,
+                    "gaps": 5,
+                    "qseq": "GGAAATTCCACTTACTTGGATGACCATGGACCACCTCC-TAGTAAGGTACTACCTTTCCCAAGCCAGGTGGTGTACAACAGGGTAGGCAAGTGTGGGAGCCGTACTGTGGTCTTGCTTCTGAGAATCTTGTCGGAGAAGCACGGATTTAATTTGGTCACATCAGACATTCACAACAAAACCAGGCTTACTAAAAATGAACAAATGGAACTGATTAAAAATATAAGTACTGCCGAACAACCCTATTTATTCACTCGACATGTTCATTTCCTCAACTTCTCAAGGTTTGGAGGAGACCAGCCTGTCTACATCAACATCATTAGAGACCCCGTCAACCGGTTCTTATCCAACTATTTTTTCCGTCGCTTTGGAGACTGGAGAGGGGAACAAAATCACATGATCCGCACCCCCAGCATGAGGCAGGAGGAGCGCTACCTGGATATCAATGAGTGTATTCTTGAAAACTATCCCGAGTGCTCCAACCCCAGGTTATTTTACATCATTCCGTACTTTTGTGGACAGCATCCCAGATGCAGGGAGCCTGGTGAATGGGCCCTTGAGAGAGCAAAGCTGAACGTGAATGAAAACTTCCTGCTCGTGGGGATTCTTGAAGAGTTGGAAGATGTGCTGCTGTTACTGGAAAGATTTTTACCTCATTACTTCAAGGGCGTGCTCAGTATCTACAAAGACCCAGAGCACAGGAAGCTTGGAAACATGACTGTGACGGTGAAGAAGACTGTCCCCTCTCCTGAGGCTGTGCAGATCCTCTACCAGCGGATGAGATACGAGTACGAGTTTTACCACTACGTCAAAGAGCAGTTCCACCTGCTGAAGCGCAAGTTTGGACTTAAGTCTCACGTCAGCAAGcccccccTGAGGCCACACTTCTTTATCCCAACTCCACTGGAAACCGAGGAGCCAATCGACGATGAAGAACAGGATGATGAAAAGTGGCTGGAAGATATTTATAAGAGGTGAT",
+                    "hseq": "GGAAATTCCACTTACTTGGATGATCATGGACCACCCCCACAG-AAGGTTCTTCCATTCCCCAGCCAGGTGGTCTACAACAGAGTTGGAAAGTGTGGGAGTCGAACTGTGGTTTTGCTTTTGAGAATTTTATCAGAGAAACATGGATTCAACCTCGTTACATCTGACATTCATAACAAAACAAGACTTACCAAAAATGAACAGATGGAATTGATTAAAAACATAAGCACTGCTGAGCAGCCCTATTTATTCACTAGACATGTTCATTTCCTCAACTTCTCAAGGTTTGGAGGCGACCAGCCAGTGTATATCAATATTATTAGAGATCCTGTCAATCGATTTTTATCCAATTATTTTTTTCGACGTTTTGGAGACTGGAGAGGAGAACAGAATCATATGATCCGTACCCCCAGCATGAGGCAGGAGGAAAGATATCTGGACATCAATGTATGTATCCTTGAAAACTACCCTGAGTGTTCCAATCCCAGGTTATTTTACATTATACCATATTTTTGTGGACAGCATCCAAGATGCAGGGAGCCTGGTGAGTGGGCCCTTGAAAGAGCAAAGCTGAATGTTAATGAAAATTTTCTTCTTGTGGGAATTCTGGAGGAGCTGGAGGATGTGCTGCTTTTATTAGAAAGATTCTTACCTCATTATTTCAAGGATGTGCTGAGCATCTATAAAAACCCAGAACACAGGAAACTTGGCAATTTGACTGTGACAGTGAAAAAGACCGTCCCTTCTCCAGAAGCCATACAGATCCTCTACCAGCGCATGAGATATGAATATGAATTCTATTACTATGTCAAAGAACAGTTTCACCTATTAAAGCGCAAGTTTGGACTCAAGTCTCATATCAGGAAACCACGTCCCAGACCTGAGTTCTTCATTCCTTCTCCCCTGGAAACAGAAGAACCAATAGATGATGAGGAA---GATGATGAAAAATGGCTAGAGGATATCTATAAAAGGTGAT",
+                    "midline": "||||||||||||||||||||||| ||||||||||| ||  || ||||| || || ||||| ||||||||||| |||||||| || || ||||||||||| || |||||||| |||||| ||||||| || || ||||| || ||||| ||  | || ||||| |||||||| |||||||| || ||||| ||||||||||| |||||| |||||||||| ||||| ||||| || || ||||||||||||||| ||||||||||||||||||||||||||||||||||||| |||||||| || || ||||| || |||||||| || ||||| || || |||||||| |||||||| || || ||||||||||||||||| ||||| ||||| |||||||| |||||||||||||||||||||||  | || ||||| |||||||  ||||| ||||||||||| || ||||| ||||| ||||||||||||||||| || || || ||||||||||||||||| |||||||||||||||||||| ||||||||||| |||||||||||||| || |||||||| || || || ||||| ||||| || ||| |||| ||||||||||| ||| | |||||||| ||||||||||| |||||||  ||||| || ||||| ||| ||||||| |||||||| ||||| ||  |||||||||| ||||| ||||| ||||| ||||| || ||  | ||||||||||||||||| |||||||| || || || || ||  |||| |||||||| ||||| |||||  | ||||||||||||||||| ||||||||  |||| || || |  |  || ||  | ||||| || ||  |||| |||||||| || || ||||| || ||||| |||   ||||||||||| ||||| || ||||| ||||| |||||||"
+                  }
+                ]
+              },
+              {
+                "num": 5,
+                "description": [
+                  {
+                    "id": "gi|1147355337|ref|XR_002213007.1|",
+                    "accession": "XR_002213007",
+                    "title": "PREDICTED: Castor canadensis uncharacterized LOC109693044 (LOC109693044), ncRNA",
+                    "taxid": 51338,
+                    "sciname": "Castor canadensis"
+                  }
+                ],
+                "len": 2643,
+                "hsps": [
+                  {
+                    "num": 1,
+                    "bit_score": 63.9064,
+                    "score": 34,
+                    "evalue": 2.61682e-07,
+                    "identity": 36,
+                    "query_from": 2136,
+                    "query_to": 2172,
+                    "query_strand": "Plus",
+                    "hit_from": 1528,
+                    "hit_to": 1492,
+                    "hit_strand": "Minus",
+                    "align_len": 37,
+                    "gaps": 0,
+                    "qseq": "GAGGCTGAGGTGGGAGGATCACTTGAGCCCAGGAGTT",
+                    "hseq": "GAGGTTGAGGTGGGAGGATCACTTGAGCCCAGGAGTT",
+                    "midline": "|||| ||||||||||||||||||||||||||||||||"
+                  }
+                ]
+              },
+              {
+                "num": 6,
+                "description": [
+                  {
+                    "id": "gi|1147281425|ref|XM_020166744.1|",
+                    "accession": "XM_020166744",
+                    "title": "PREDICTED: Castor canadensis ectonucleoside triphosphate diphosphohydrolase 5 (Entpd5), transcript variant X4, mRNA",
+                    "taxid": 51338,
+                    "sciname": "Castor canadensis"
+                  }
+                ],
+                "len": 5026,
+                "hsps": [
+                  {
+                    "num": 1,
+                    "bit_score": 63.9064,
+                    "score": 34,
+                    "evalue": 2.61682e-07,
+                    "identity": 39,
+                    "query_from": 2136,
+                    "query_to": 2176,
+                    "query_strand": "Plus",
+                    "hit_from": 3658,
+                    "hit_to": 3619,
+                    "hit_strand": "Minus",
+                    "align_len": 41,
+                    "gaps": 1,
+                    "qseq": "GAGGCTGAGGTGGGAGGATCACTTGAGCCCAGGAGTTTGAG",
+                    "hseq": "GAGGCTGAGGTGGGAGGATCACTTGAGCCCAGGAATT-GAG",
+                    "midline": "|||||||||||||||||||||||||||||||||| || |||"
+                  }
+                ]
+              },
+              {
+                "num": 7,
+                "description": [
+                  {
+                    "id": "gi|1147281423|ref|XM_020166743.1|",
+                    "accession": "XM_020166743",
+                    "title": "PREDICTED: Castor canadensis ectonucleoside triphosphate diphosphohydrolase 5 (Entpd5), transcript variant X3, mRNA",
+                    "taxid": 51338,
+                    "sciname": "Castor canadensis"
+                  }
+                ],
+                "len": 5113,
+                "hsps": [
+                  {
+                    "num": 1,
+                    "bit_score": 63.9064,
+                    "score": 34,
+                    "evalue": 2.61682e-07,
+                    "identity": 39,
+                    "query_from": 2136,
+                    "query_to": 2176,
+                    "query_strand": "Plus",
+                    "hit_from": 3745,
+                    "hit_to": 3706,
+                    "hit_strand": "Minus",
+                    "align_len": 41,
+                    "gaps": 1,
+                    "qseq": "GAGGCTGAGGTGGGAGGATCACTTGAGCCCAGGAGTTTGAG",
+                    "hseq": "GAGGCTGAGGTGGGAGGATCACTTGAGCCCAGGAATT-GAG",
+                    "midline": "|||||||||||||||||||||||||||||||||| || |||"
+                  }
+                ]
+              },
+              {
+                "num": 8,
+                "description": [
+                  {
+                    "id": "gi|1147281420|ref|XM_020166742.1|",
+                    "accession": "XM_020166742",
+                    "title": "PREDICTED: Castor canadensis ectonucleoside triphosphate diphosphohydrolase 5 (Entpd5), transcript variant X2, mRNA",
+                    "taxid": 51338,
+                    "sciname": "Castor canadensis"
+                  }
+                ],
+                "len": 5134,
+                "hsps": [
+                  {
+                    "num": 1,
+                    "bit_score": 63.9064,
+                    "score": 34,
+                    "evalue": 2.61682e-07,
+                    "identity": 39,
+                    "query_from": 2136,
+                    "query_to": 2176,
+                    "query_strand": "Plus",
+                    "hit_from": 3766,
+                    "hit_to": 3727,
+                    "hit_strand": "Minus",
+                    "align_len": 41,
+                    "gaps": 1,
+                    "qseq": "GAGGCTGAGGTGGGAGGATCACTTGAGCCCAGGAGTTTGAG",
+                    "hseq": "GAGGCTGAGGTGGGAGGATCACTTGAGCCCAGGAATT-GAG",
+                    "midline": "|||||||||||||||||||||||||||||||||| || |||"
+                  }
+                ]
+              },
+              {
+                "num": 9,
+                "description": [
+                  {
+                    "id": "gi|1147281417|ref|XM_020166741.1|",
+                    "accession": "XM_020166741",
+                    "title": "PREDICTED: Castor canadensis ectonucleoside triphosphate diphosphohydrolase 5 (Entpd5), transcript variant X1, mRNA",
+                    "taxid": 51338,
+                    "sciname": "Castor canadensis"
+                  }
+                ],
+                "len": 5170,
+                "hsps": [
+                  {
+                    "num": 1,
+                    "bit_score": 63.9064,
+                    "score": 34,
+                    "evalue": 2.61682e-07,
+                    "identity": 39,
+                    "query_from": 2136,
+                    "query_to": 2176,
+                    "query_strand": "Plus",
+                    "hit_from": 3802,
+                    "hit_to": 3763,
+                    "hit_strand": "Minus",
+                    "align_len": 41,
+                    "gaps": 1,
+                    "qseq": "GAGGCTGAGGTGGGAGGATCACTTGAGCCCAGGAGTTTGAG",
+                    "hseq": "GAGGCTGAGGTGGGAGGATCACTTGAGCCCAGGAATT-GAG",
+                    "midline": "|||||||||||||||||||||||||||||||||| || |||"
+                  }
+                ]
+              }
+            ],
+            "stat": {
+              "db_num": 297383,
+              "db_len": 881504507,
+              "hsp_len": 31,
+              "eff_space": 3894755355810,
+              "kappa": 0.46,
+              "lambda": 1.28,
+              "entropy": 0.85
             }
-          ],
-          "hits": [
-            {
-              "num": 1,
-              "description": [
-                {
-                  "id": "gi|1196029353|ref|XM_013127199.2|",
-                  "accession": "XM_013127199",
-                  "title": "PREDICTED: Mesocricetus auratus uronyl 2-sulfotransferase (Ust), mRNA",
-                  "taxid": 10036,
-                  "sciname": "Mesocricetus auratus"
-                }
-              ],
-              "len": 4318,
-              "hsps": [
-                {
-                  "num": 1,
-                  "bit_score": 1989.96,
-                  "score": 1077,
-                  "evalue": 0,
-                  "identity": 1724,
-                  "query_from": 6,
-                  "query_to": 2002,
-                  "query_strand": "Plus",
-                  "hit_from": 99,
-                  "hit_to": 2092,
-                  "hit_strand": "Plus",
-                  "align_len": 2030,
-                  "gaps": 69,
-                  "qseq": "AGCCTGAACCGGGAC-AAA-AC-ACG-CCGAGACCTACAGACACAAAG-CCGGGGGGTCCACGCTggcgctggaggcgagccccggcggccgcaagcgagcccgaggcgcggcggggcgcggggcgtggggacgctagcggg-cgccgga-cgggcgcggcgccccgtcacgggcAGCGCCC-CGAACCGGGG-CC-GGACACCTC-GGCCGC-TC-GGG-C-C-GC-GGCGGCGGGGACCATGCCGAAGAAAGTCTCCTGAGCCCGGCAACTTCGgcccctccccgcccccacccggctgccctccgcgcggccctccccATGTGCAGCCGGCCAGCCGGGCTCTCCTCCTCGCGGCGGATGGGTGACCTTTTCCTGGCACGGGCAGGCTGTGGGAGGCAGCGGAGCAGGCGATGAAGAAGA---AGCAGCAGCATCCCGGCGGCGGCGCGGATCCCTGGCCCCATGGGGCCCCTATGGGGGGCGCCCCTCCGGGCCTGGGCAGCTGGAAGCGTCGGGTGCCCCTGCTGCCTTTCCTGCGCTTCTCCCTCCGGGACTACGGCTTCTGCATGGCCACCCTGCTGGTCTTCTGCCTGGGCTCCCTCCTCTATCAGCTCAGCGGGGGACCCCCTCGCTTCCTGCTCGACCTGCGGCAGTACTTGGGAAATTCCACTTACTTGGATGACCATGGACCACCTCCTAGTAAGGTACTACCTTTCCCAAGCCAGGTGGTGTACAACAGGGTAGGCAAGTGTGGGAGCCGTACTGTGGTCTTGCTTCTGAGAATCTTGTCGGAGAAGCACGGATTTAATTTGGTCACATCAGACATTCACAACAAAACCAGGCTTACTAAAAATGAACAAATGGAACTGATTAAAAATATAAGTACTGCCGAACAACCCTATTTATTCACTCGACATGTTCATTTCCTCAACTTCTCAAGGTTTGGAGGAGACCAGCCTGTCTACATCAACATCATTAGAGACCCCGTCAACCGGTTCTTATCCAACTATTTTTTCCGTCGCTTTGGAGACTGGAGAGGGGAACAAAATCACATGATCCGCACCCCCAGCATGAGGCAGGAGGAGCGCTACCTGGATATCAATGAGTGTATTCTTGAAAACTATCCCGAGTGCTCCAACCCCAGGTTATTTTACATCATTCCGTACTTTTGTGGACAGCATCCCAGATGCAGGGAGCCTGGTGAATGGGCCCTTGAGAGAGCAAAGCTGAACGTGAATGAAAACTTCCTGCTCGTGGGGATTCTTGAAGAGTTGGAAGATGTGCTGCTGTTACTGGAAAGATTTTTACCTCATTACTTCAAGGGCGTGCTCAGTATCTACAAAGACCCAGAGCACAGGAAGCTTGGAAACATGACTGTGACGGTGAAGAAGACTGTCCCCTCTCCTGAGGCTGTGCAGATCCTCTACCAGCGGATGAGATACGAGTACGAGTTTTACCACTACGTCAAAGAGCAGTTCCACCTGCTGAAGCGCAAGTTTGGACTTAAGTCTCACGTCAGCAAGcccccccTGAGGCCACACTTCTTTATCCCAACTCCACTGGAAACCGAGGAGCCAATCGACGATGAAGAACAGGATGATGAAAAGTGGCTGGAAGATATTTATAAGAGGTGAT--GTG-ACTGTGTTGCCTCTATGGCTTTA-TCTCCCTTTTCCAGAAAGTTCTTTGTTTGGGGAAGTAAAATCCTTAAGGGAC-TAAATTAATGCTTGGGTGCATTAAAAAGAACAAAACATTCCCACATGTTGGGGTCATTGGGAGATGCCCGGTTTTGCGGGTTTTATTTGTTTAATTTTATT-CTGTGTTTTCTCTTGGCTCTTTGGGTCTTTCCCGGGTACACTAGATGGCTCCATCCCAAGGCATCTTGTCATAAAACAG-CTTTCC---CCC--ACCCCATATCA-TGGGAAAAGGGGGAGAAATATAGCCCCTAGCCTAATAACTTATCATTTGTAAAATGACTTATAAAAATATTACCTCAATGGTAGGAGACATCCAGACTTGT",
-                  "hseq": "AGCCTGAGTCGGGACCAAACACGCCGCCCGAGACC--C--ACACAAAGCCCGGGGGGTCCACGCTGGCGCTCGTGGCGAGCC------G-TG--AGCGAGCCCGGGGCACAGCGGGACCTGGGGCGCAAGGCTGCTAGCGGGACGTGCGATCGGGCGCGG-GCTGCG-ATC-GCCA-CCCTCACG--CCGGGGCCCGGGACATCTCGGGGCCCTTCGGGGCCGCAGCGGGTGGCGGGGACCAAGATGAGGAGAGTGCCCTGAGCCCGGCAACTTCGGCCCCTCCCCGCCCCCACCCGGTTGCCCTCGGCGAGTCCCTCTCCATGTGCAGCCAGCCGGCCAGGCGCTCCGGCTGGCGGCGGATGGGTGACCTCTTCCTGGCCCAGGCGGGCTGTGCGAGGCGGCGGAGTCGGCGATGAAGAAGAAGCAGCAGCAGCATCCCAGCAGCGGCGAGGATCCCTGGCCCCATGGGGCCCCTGTGGGGGGCGCCCCTCCGTGCCTGGGTGGCTGCAAGCGCCGGATCCCGCTGCTGCCTTTCCTACGCTTCTCCCTCCGAGACTACGGTTTCTGCATGGCCACCCTGCTGGTCTTCTGCCTAGGCTCCCTCTTCTACCAGCTCAGCGGGGGACCCCCTCGCTTCCTGCTCGACCTGCGACAGTATCTGGGAAATTCCACTTACTTGGATGACCATGGACCACCTCCTAGTAAGGTCCTTCCGTTCCCCAGCCAGGTGGTGTACAACAGAGTCGGCAAGTGTGGCAGTCGCACCGTGGTCTTGCTTCTGAGAATCTTGTCAGAGAAACACGGGTTCAATTTGGTCACGTCAGACATTCACAACAAAACCAGGCTTACTAAAAACGAGCAAATGGAACTGATTAAGAATGTCAGCACGGCCGAACAGCCCTATTTATTCACGAGACATGTTCACTTCCTCAACTTCTCAAGGTTTGGAGGAGACCAGCCCGTCTACATCAACATCATTAGAGACCCCGTCAGTAGGTTTCTATCTAACTACTTTTTCCGTCGCTTTGGAGACTGGAGAGGGGAACAGAATCACATGATCCGCACCCCCAGCATGAGGCAGGAGGAGCGCTACCTGGATATCAATGAGTGCATTCTGGAAAACTACCCTGAGTGTTCCAACCCCAGGTTATTTTACATCATTCCGTATTTCTGTGGACAGCACCCCAGATGTAGGGAGCCTGGCGAGTGGGCCCTGGAGCGTGCCAAAATGAACGTGAATGAAAACTTCCTGCTCGTGGGGATTCTGGAGGAGTTAGAGGACGTGCTGCTTTTACTGGAAAGATTTTTACCTCATTACTTCAAGGGCGTGCTCAGCATCTACAAGGACCCAGAGCATAGGAAACTGGGCAACATGACTGTGACCGTGAAGAAAACTGTCCCCTCTCCGGAGGCTGTGCAGATTCTCTACCAGCGAATGAGGTACGAGTACGAGTTCTACCACTACGTCAAAGAGCAGTTCCACCTGCTGAAACGCAAGCTTGGACTGAAGTCTCGCTCCAGCAGACTTCCTCCGCGGCCACAGTTCTTCATTCCCACCCCTCTGGAGACTGACGAGCCTGTCGACGACGAGGAACAAGATGATGAAAAGTGGCTAGAAGATATTTATAAGAGGTGATACCAGCACGACATTGCCACCGCGGCTGTATTCCCCCCTTTCCAGAAAGTTC----TTTGGGGAAGAAAAATTGTGAAGGGACTTTGGTTAATGCCCGGGTGCATTAAAAAGACCAAAACATTCCCACATGTTGGGGTCATTGGGAGATGCCCGGTTTTGCGGGTTTTATTTGTTTAATTTTACTGCT-T-TTTTCT-TTGCCTCCTTGAGTCTTTCCCAGATACACTAGATTGCTCCACCACAAGACATCTCTTCACAGAACAGACTTCCCAATCCCTTACCCTTTA-CAGTGAGAGAAGAGGGAGAAATGT-GTCC-T--CC-AACC-CAG-TCATTTTTAAGATGTCTCC-AAGAATATTACTTCCATGGTAA-AGATATCCAGACTTGT",
-                  "midline": "|||||||  |||||| ||| ||  || ||||||||  |  |||||||| |||||||||||||||||||||| | ||||||||      |  |  |||||||||| ||| | ||||| |  ||||||   ||  ||||||||| ||   || ||||||||| ||  ||   | | || | | | ||  |||||| || ||||| ||| || | | || ||| | | || || ||||||||||| |  || || |||  ||||||||||||||||||||||||||||||||||||||||| ||||||| ||| | ||||| |||||||||||| ||| ||| ||| ||||  || |||||||||||||||||| |||||||| | ||| ||||||| ||||| ||||||  ||||||||||||||   |||||||||||||| || |||||| ||||||||||||||||||||||||| ||||||||||||||||| |||||||  |||| ||||| ||| | || |||||||||||||| |||||||||||||| |||||||| |||||||||||||||||||||||||||||||| ||||||||| |||| ||||||||||||||||||||||||||||||||||||||||| |||||  ||||||||||||||||||||||||||||||||||||||||||||||||| || || ||||| |||||||||||||||||||| || ||||||||||| || || || |||||||||||||||||||||||||| ||||| ||||| || ||||||||||| ||||||||||||||||||||||||||||||||||| || ||||||||||||||||| ||| | || || |||||||| ||||||||||||||  |||||||||| ||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||   ||||  |||| ||||| ||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||| |||||||| || ||||| |||||||||||||||||||||||||||||||| || ||||||||||| |||||||| ||||||||||| || |||||||| ||| | || ||  ||||||||||||||||||||||||||||||||||||| || ||||| || || |||||||| |||||||||||||||||||||||||||||||||||||||||||| |||||||| ||||||||||| ||||| || || |||||||||||||| |||||||| |||||||||||||| |||||||||||||| ||||||||||| ||||| |||||||||||||| ||||||||||||||||||||||||||||||||||| |||||| ||||||| ||||||| |  |||||  |  || | | ||||||| ||||| || || || || ||||| || || |||||  ||||||| || ||||| ||||||||||||||||| ||||||||||||||||||||||    | ||    ||||| |   |||| || || ||| ||||||||||||||    |||||||||| |||||  | ||||||| |   |||||||  |||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| | || | |||||| ||| ||| ||| ||||||||| | |||||||||| |||||| | |||| |||||  ||| | ||||| ||| ||   |||  ||||  || || || || ||| ||||||||| | | || |  || ||   |   |||||| ||| ||| ||   || |||||||| || ||||||  ||| ||||||||||||"
-                },
-                {
-                  "num": 2,
-                  "bit_score": 407.383,
-                  "score": 220,
-                  "evalue": 1.04941e-110,
-                  "identity": 337,
-                  "query_from": 4122,
-                  "query_to": 4496,
-                  "query_strand": "Plus",
-                  "hit_from": 3887,
-                  "hit_to": 4263,
-                  "hit_strand": "Plus",
-                  "align_len": 389,
-                  "gaps": 26,
-                  "qseq": "GGCCCTGGGCCCAAC--AGTTTGTACTTCATGAAACATATTGTACATTTTACATAGTTTAATTTAA----AAAATACCTTTTAAGCTAGTTGATCTTTGACTGTCTTATTTATTATAACCTTTCAGCACATTCCAAGGTTTTAGTTACTCAGGAAGGAGTTAATTAAAATGATTTTATTTTGGTCTGATGGATGTTTTTTAAAAGGAAAATTATTATTATGAACCTTCAGCCTACTTTCTTGAGTGCCGT-----AAAAGTGCTTGTAAATCtttttttttttttAAGAAGAAAGaaaaaaaTGGTGTTTGACGTTGATGGAAATTCAAAAATATATATGGAACTGAAACATTAACTTAGCTAAAATA---AAAGCAATCTGTGTTTGA",
-                  "hseq": "GGCCCT-GGCCCAACATAGTTTATACTTCATGAAATATATTGTACATTTTACATAGTTTAATTTAAAAAGAAAATACATTTTAAGCTAGTTGGTCTTTG-C---CTTATTTATTATAACCCTTCAGCACATTCCAAGGTTTTAGTTACTCAGGAAGGAGTTAATTAAAATGATTTTATTTTGGTCAGATGGATGTTTTTTAAAAGGAAAATTATTCTTATGAACTCTCAGCTGACTTCCTTGAATGCTGTAAAAAAAAAGTGCTTGTGAATCTTTTTTTTCT---AAGA-GTT---AAAAAATGGTGTTTGACATTGATGGGAATTCAAAAATATATATGGGACTAAAACCTTAGCTTAGCTAAAATAATGAAAGTGATCTGTGTTTGA",
-                  "midline": "|||||| ||||||||  ||||| |||||||||||| ||||||||||||||||||||||||||||||    ||||||| |||||||||||||| |||||| |   |||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||| ||||||||  |||||  |||| ||||| ||| ||     |||||||||||| |||||||||||| |   |||| |     ||||||||||||||||| ||||||| ||||||||||||||||||| ||| |||| ||| |||||||||||||   ||||  ||||||||||||"
-                }
-              ]
-            },
-            {
-              "num": 2,
-              "description": [
-                {
-                  "id": "gi|984081872|ref|XM_015497901.1|",
-                  "accession": "XM_015497901",
-                  "title": "PREDICTED: Marmota marmota marmota uronyl-2-sulfotransferase (Ust), mRNA",
-                  "taxid": 9994,
-                  "sciname": "Marmota marmota marmota"
-                }
-              ],
-              "len": 3804,
-              "hsps": [
-                {
-                  "num": 1,
-                  "bit_score": 1936.41,
-                  "score": 1048,
-                  "evalue": 0,
-                  "identity": 1331,
-                  "query_from": 648,
-                  "query_to": 2090,
-                  "query_strand": "Plus",
-                  "hit_from": 154,
-                  "hit_to": 1610,
-                  "hit_strand": "Plus",
-                  "align_len": 1465,
-                  "gaps": 30,
-                  "qseq": "GGAAATTCCACTTACTTGGATGACCATGGACCACCTCCTAGTAAGGTACTACCTTTCCCAAGCCAGGTGGTGTACAACAGGGTAGGCAAGTGTGGGAGCCGTACTGTGGTCTTGCTTCTGAGAATCTTGTCGGAGAAGCACGGATTTAATTTGGTCACATCAGACATTCACAACAAAACCAGGCTTACTAAAAATGAACAAATGGAACTGATTAAAAATATAAGTACTGCCGAACAACCCTATTTATTCACTCGACATGTTCATTTCCTCAACTTCTCAAGGTTTGGAGGAGACCAGCCTGTCTACATCAACATCATTAGAGACCCCGTCAACCGGTTCTTATCCAACTATTTTTTCCGTCGCTTTGGAGACTGGAGAGGGGAACAAAATCACATGATCCGCACCCCCAGCATGAGGCAGGAGGAGCGCTACCTGGATATCAATGAGTGTATTCTTGAAAACTATCCCGAGTGCTCCAACCCCAGGTTATTTTACATCATTCCGTACTTTTGTGGACAGCATCCCAGATGCAGGGAGCCTGGTGAATGGGCCCTTGAGAGAGCAAAGCTGAACGTGAATGAAAACTTCCTGCTCGTGGGGATTCTTGAAGAGTTGGAAGATGTGCTGCTGTTACTGGAAAGATTTTTACCTCATTACTTCAAGGGCGTGCTCAGTATCTACAAAGACCCAGAGCACAGGAAGCTTGGAAACATGACTGTGACGGTGAAGAAGACTGTCCCCTCTCCTGAGGCTGTGCAGATCCTCTACCAGCGGATGAGATACGAGTACGAGTTTTACCACTACGTCAAAGAGCAGTTCCACCTGCTGAAGCGCAAGTTTGGACTTAAGTCTCACGTCAGCAAGcccccccTGAGGCCACACTTCTTTATCCCAACTCCACTGGAAACCGAGGAGCCAATCGACGATGAAGAACAGGATGATGAAAAGTGGCTGGAAGATATTTATAAGAGGTGATG--TG-ACTGTGTTGCCTCTATGGCTTTATCTCCCTTTTCCAGAAAG----TTC--TTTGTTTGGGGAAGTAAAATCCTTAAGGGAC-TAAATTAATGCTTGGGTGCATTAAAAAGAACAAAACATTCCCACATGTTGGGGTCATTGGGAGATGCCCGGTTTTGCGGGTTTTATTTGTTTAATTTTATTCTGTGTTTTCTCTTGGCTCTTTGG-GTCTTTCCCGGGTACACTAGATGGCTCCATCCCAAGGCA-TCTTGTCATAAAACAGCTTTCCC--CC--ACCCC-A-TATCATGGGAAAAGGGGGAGAAATATAGCCCCTAGCCTAATAACTTATCATTTGTAAAATGACTTATAAAAATATTACCTCAATGGTAGGAGACATCCAGACTTGTATATTTCAGTGGAAATAC-AAAACCACTTCAGAGACCAGGGTATCTCCTCTGGAAGGATCTAAGAGA---AGGTAAGACAGATTAGGACATC",
-                  "hseq": "GGAAATTCCACTTACTTGGATGACCATGGACCACCTCCTAGTAAGGTACTGCCCTTCCCCAGCCAGGTGGTGTACAACAGGGTGGGCAAATGTGGCAGCCGCACTGTGGTCTTGCTTCTGAGAATCTTGTCAGAGAAGCACGGATTCAATTTGGTCACTTCAGACATTCACAACAAAACCAGGCTTACAAAAAATGAACAAATGGAACTGATTAAAAATATAAGTACTGCCGAACAGCCCTATTTATTCACCCGACACGTTCATTTCCTCAACTTCTCAAGGTTTGGAGGAGACCAGCCCGTCTACATCAACATCATTAGAGACCCCGTCAGCCGGTTTTTATCTAACTATTTTTTTCGTCGCTTTGGAGACTGGAGAGGGGAACAGAACCACATGATCCGCACCCCCAGCATGAGGCAGGAGGAGCGCTACCTGGATATCAATGAGTGCATTCTTGAAAACTACCCTGAGTGTTCCAACCCCAGGTTATTTTACATCATTCCGTATTTTTGTGGACAGCATCCCAGATGCAGGGAGCCTGGTGAGTGGGCCCTCGAACGCGCAAAGCTGAACGTGAATGAAAACTTCCTGCTCGTGGGGATTCTCGAGGAGTTGGAAGATGTGCTGCTTTTACTGGAAAGATTTTTACCTCATTACTTCAAGGGTGTGCTCAGCATCTACAAGGACCCAGAGCACAGGAAACTGGGAAACATGACTGTGACCGTGAAGAAGACTGTCCCCTCTCCCGAGGCAGTGCAGATACTCTACCAGCGAATGAGATACGAGTACCAGTTCTACCACTACGTCAAGGAGCAGTTCCACCTGCTCAAGCGCAAGTTTGGACTCAAGTCTCACGTGAGCAGACCCGCCCTGAGGCCGCAGTTCTTCATCCCCACCCCGCTGGAAACCGAGGAGCCCATGGACGATGAGGAGCAGGACGATGAAAAGTGGCTAGAAGATATTTATAAGAGGTGATGCCAGCACTG-GGTGGCTCCATGGCGGAATCTCCCTTTTCCAGAAAGGTTGTTCTGTTTGTTTGAGGAAGAAAAATCCAGAAGGGACTTAAATTAATGCTTGAGTGCATTAAAAAGAACAAAACATTCCCACATGTTGGGGTCATTGGGAGATGCCCGGTTTTGCGGGTTTTATTTGTTTAATTTTATT--GT-TTTTC-CTTGGCTCTTTTGAGTCTTTCCCAGGTACACTAGATGGCTCCATCACAAGGCAGTCTTGTTCCAAA-CAGCCTACCCAGCCCCACCCCCAGTA-CATGGGAGAA-GGGGAGAAATATATCCCCCAGCCCAATAACTTATCATTTGTAAAATGACTTGTAAAAATATTACCTCAATGGCAGAAGACATCCAGACTTGTATATTTCAGTAGAAATACAAAAACCACTTCAGAGACCAGGGAATCTGCTCTAGAAGTGTCTGAGAGGGTCAGGTAAGGCAGAAAAGAACATC",
-                  "midline": "|||||||||||||||||||||||||||||||||||||||||||||||||| || ||||| ||||||||||||||||||||||| ||||| ||||| ||||| ||||||||||||||||||||||||||||| |||||||||||||| ||||||||||| ||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||| ||||| ||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||| |||||| ||||| ||||||||||| ||||||||||||||||||||||||||||| || ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||| || ||||| |||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||| |||||||| ||  | |||||||||||||||||||||||||||||||||||||||||||| || |||||||||||||||||||| ||||||||||||||||||||||||||||||||||| |||||||| |||||||| ||||||||||||||||| || ||||||||||||||||| ||||||||||||||||||||||| ||||| |||||||| ||||||||||| ||||||||||||||| |||| |||||||||||||| ||||||||||||||||| ||||||||||||||||| ||||||||||| ||||  ||| |||||||||| || ||||| ||||| || || ||||||||||||||||| || |||||||| || ||||| |||||||||||||| |||||||||||||||||||||||   | |||| | || ||| |||||   |||||||||||||||||||    |||  |||||||| ||||| |||||||  ||||||| |||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  || ||||| ||||||||||| | ||||||||| ||||||||||||||||||||| ||||||| ||||||   ||| |||| | |||  ||  ||||| | || ||||||| || ||||||||||||| |||| |||| ||||||||||||||||||||||||||| |||||||||||||||||||| || |||||||||||||||||||||||||| ||||||| |||||||||||||||||||||| |||| |||| ||||  ||| ||||    ||||||| ||||  || |||||"
-                },
-                {
-                  "num": 2,
-                  "bit_score": 1411.96,
-                  "score": 764,
-                  "evalue": 0,
-                  "identity": 1355,
-                  "query_from": 2893,
-                  "query_to": 4493,
-                  "query_strand": "Plus",
-                  "hit_from": 2213,
-                  "hit_to": 3801,
-                  "hit_strand": "Plus",
-                  "align_len": 1632,
-                  "gaps": 74,
-                  "qseq": "CATTTCTTATGGGACCTGTGTGCTCCTGAGAACTCTTACTTGAGACATCAAAA--AGAAGCAGCAAGAGCTTCTGGGACAGAGACTGCTTGGCCAGCTTTGTAAGTAAGTGGCTGCCTCCAATGTGATGTGAGTACATGTTGGGCAG-T-C-TCACTGTCCTAAGGTATGTCTTCTTTCCACCTCCCACTGCCCCT-C-CCCTGCCACCTATCAATGATGCCTTGGTTCAGTCATTAGAAATCTGTTGCTTTGAGTTCTGAAATATTTTCAC-C-TT-------aaaaaaaaTGCTGAAAATACACATTCTCCTGGGAAGACGATAAACAGCTAGCTAAGAAGCCGAGGTTCAGTGGTGGCAGCAGGAAGGACACTGCCACAAATTTTGTCTATTTCATATTTGTCCCCTAGAGCCAGCCCTAGCAAATGTGTGAGTTGGGAGTAGTTAATAGTAAATAAGACTCTGACTTTACACAAGCTACACATTTTATACTTTTCATAAACCACAAAGTCTCTCTAGAATTTTTTCTGCCTTCACTAAAATTGGACTGTAGCCAAGATATAAAGCAAGTCATTTGGAACCTGCCGAGTGAGCACTGAAGCTACTTTATCATGAGATGTGTGTTAAGAAGGCTGCAGCCCACAGGAGTCCAGGGAAGGCGGGGACCACAGAGGCACAGAGTCCAGCACTTGGCCGCTCATGGGCCTTCTTTCTGCCTCAGAGGACGGGGGCAGAGAAGTGATGAAGGGAAATGTTCTTAGAGGAGGAAATATCCTTTGTCCTGTTCAGAGAGACCAGGGCCCTACCATTAGGCATACTTTCAGAAGCAACCTGGAGAACAGCTATCAATCATATTCAAAACCAGTACAAGAACTGCTGCCTGGTACCCTGTGAGTCATTTCTATGAAATTCCATATAAAGAATGATGATAAGTTTACACACTGTGCAATCTCACAATCTGAAAATAAAGTTGAGTTGGCTGTGTTTTCTCTGCTCTTGTCAGAACATTGGGACAATTGGTCGTTCAAAAACATTCATCCTCTTACTGCAAGTTTATCTGGGTACTTTTACCTGTGTGTTCAAAGGCATTTCTTTTCAGCAGTGATCATTATAACTTCACaaaaaaaGATGCTGACGGATTTACTTACAGGGCCTTAATGTTATTTTGTCCCAGCCAACACCCTCTAGGTCCTAAAAGTCAAGGTACT---TCAGTTTATTTGGCAAACATGACAACAttttttttGGCCCTGGGCCCAAC--AGTTTGTACTTCATGAAACATATTGTACATTTTACATAGTTTAATTTAAAAAATACCTTTTAAGCTAGTTGATCTTTGACTGTCTTATTTATTATAACCTTTCAGCACATTCCAAGGTTTTAGTTACTCAGGAAGGAGTTAATTAAAATGATTTTATTTTGGTCTGATGGATGTTTTTTAAAAGGAAAATTATTATTATGAACCTTCAGCCTACTTT-CTTGAGTGCCGTAAAAGTGCTTGTAAATCt-t-t-t-t--tttttttt--AAGAAGAAA-GaaaaaaaTGGTGTTTGACGTTGATGGAAATTCAAAAATATATATGGAACTGAAACATTAACTTAGCTAAAATAAAAGCAATCTGTGTT",
-                  "hseq": "CATTTCTTATGGAACCTATTTGTTTCTGAGGGCCCTCACCAGGGACGTCAAAATGAGAAGCAGCAAGA-CTTCTGGGTAAGAGATTGATTGACCAACTTTCTGAGTAAGTGGATGCCCCTAGTATGATCTGAGTAGACTCTGAGCAGTTCCATCAC--CCCCAAAATAATCCTCCTCTTCACTTCCCAC-ACCCCTGCTGTCTGCTCCCTATTAATGAAGTCTTGGCCCAGGCATTAGAAATCTGTT-CCTTAAATTCTGAAGTATTTTCACTCTTTAAAAAAAAAAAAAAAACCTGAAAATACATGTCCTCCTGGGTAGATGATATACAGCTAGCTGAGGAACCAAGGTATGGTGGTGGTAGCAGGAAG-A-A-T---AC---TTGTGAC-A---AAT-TTTGCCTCC-A-AG--AG--C-A--AAA----TGAGTTGCAAGTACTTATTAGTAAATAAGATTCTGACTTTACACAAGCTACACATTTTCTGCTTTTCAGAAACCAACAAGTCTCTCTAAAATTCTTTCTTCCTTCACTAAAACTGGACAGGAGCCAAGATATAAAGCAAGTCATTTGGAACCTGCCGAGTGGGTGCTGAAGCCACTTTATCATGAGA--TATATTAAGACGGCTCCAGCCCACAGGCACCCAGTGAAGGCAGGGACCACAGAGGCAAAAAGTCCAGCATGTGGCCACATGTGGGCC-CCTTTCTGCCTCAGAGAACTGAAGCAGGGAAGTGAATAAAGGAAATGTTCTCAGAAAAAGAATTATCCTTTGTCTTGTGCAGAGAGACCAGGGCCCTACCATTAGGCATACTTCAAAAAGCAACCTGGAAAACAGCT----ATCATGTTCAAAACAAGTACAAGGACTGCTGCCTGATATGTTGTGAGTCGTTTCTATGAA-TTACACTTAAATAATGAAGATTAGTTTACACACTGTGCAATCTCACA-TCTG-AAATAAAGTTGCGTTGGCTAAGTTTTCTCTGCTGTTGTCAGAACATCGGGACAATTGGTCACTCAACAAAATCCTTCCTCTTTCTGCAAGTTCACATGGGCACTTGTACCTGTGTGTCCAAAGGCATTTATTTTCAGCAGTGATCTTGGTAACTTTATGACAAAAGGTGCCAACTGATTTACTTGCAGGGCCTTTTTGTTATTTTGTCTCAACAAACAGTCTCTAGGTCCTAGAAGTCAAGGCACTCCATCAGTTTCTTTGGCACACATGACAACA-TTTCTTTGGCCCTGGGCCCAACATAGTTTGTACTTCATGAAATATACTGTACATTTTACATAGTTTAATTTAAAAAATACATTTTAAGCTAGTTGATCTTTGACTGCCTTATTTATTATAACCTTTCAGCACATTCCAAGGTTTTAGTTACTCAGGAAGGAGTTAATTAAAATGATTTTATTTTGGTTTGATGGATGTTTTTTAAAAGGAAAATTATTATTATGAACCCTCAGCCTACTTTCCTTGAGTGCTGTAAAAGTGCTTGTAAATCTCTCTCTCTCATTTTTTTTTTAAGAAGAAAGGAAAAAAATGGTGTTTGACATTGATGGAAATTCAAAAGTATATATGGAACTGAAACATTAGCTTAGCTAAAATAAAAGCAATCTGTGTT",
-                  "midline": "|||||||||||| |||| | || | |||||  | || ||  | ||| ||||||  ||||||||||||| ||||||||  ||||| || ||| ||| |||| | ||||||||| |||| | | | |||| |||||| |   || |||| | | ||||   || ||  ||   || || | ||| ||||||  ||||| |   ||||  ||||| ||||| | |||||  ||| ||||||||||||||| | || | ||||||| ||||||||| | ||       ||||||||  |||||||||||  | |||||||| ||| |||| |||||||||| || | || ||||   ||||||| ||||||||| | | |   ||   || || | |    || |||| | || | ||  ||  | |  |||    |||||||  |||| ||| |||||||||||| ||||||||||||||||||||||||||| | ||||||| ||||||  ||||||||||| |||| ||||| |||||||||||| ||||| | |||||||||||||||||||||||||||||||||||||||| |  ||||||| ||||||||||||||  | | |||||| |||| |||||||||||   |||| |||||| ||||||||||||||| | |||||||||  ||||| |   ||||||  ||||||||||||||| || |  |||| |||||||  || ||||||||||| |||  | ||| ||||||||||| ||| ||||||||||||||||||||||||||||||||||  | |||||||||||| |||||||    ||||| |||||||| |||||||| ||||||||||| ||   |||||||| |||||||||| || ||  |||| ||||| ||| ||||||||||||||||||||||||| |||| ||||||||||| |||||||  |||||||||||| |||||||||||| |||||||||||||  |||| || || | ||||||| ||||||||| |  |||| |||| ||||||||||| ||||||||||| ||||||||||||||| |  |||||| |  | ||||| |||  || ||||||||| |||||||||  |||||||||||| || | ||||  |||||||||||| ||||||||| |||   ||||||| ||||||| ||||||||||| ||| ||||||||||||||||||  |||||||||||||||||| ||| ||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||| |||||||||||| ||||||||| |||||||||||||||||||| | | | |  ||||||||  ||||||||| ||||||||||||||||||| ||||||||||||||||| |||||||||||||||||||||| ||||||||||||||||||||||||||||"
-                }
-              ]
-            },
-            {
-              "num": 3,
-              "description": [
-                {
-                  "id": "gi|1147253236|ref|XM_020179625.1|",
-                  "accession": "XM_020179625",
-                  "title": "PREDICTED: Castor canadensis uronyl 2-sulfotransferase (Ust), partial mRNA",
-                  "taxid": 51338,
-                  "sciname": "Castor canadensis"
-                }
-              ],
-              "len": 2600,
-              "hsps": [
-                {
-                  "num": 1,
-                  "bit_score": 1568.93,
-                  "score": 849,
-                  "evalue": 0,
-                  "identity": 1221,
-                  "query_from": 648,
-                  "query_to": 2011,
-                  "query_strand": "Plus",
-                  "hit_from": 4,
-                  "hit_to": 1400,
-                  "hit_strand": "Plus",
-                  "align_len": 1398,
-                  "gaps": 35,
-                  "qseq": "GGAAATTCCACTTACTTGGATGACCATGGACCACCTCCTAGTAAGGTACTACCTTTCCCAAGCCAGGTGGTGTACAACAGGGTAGGCAAGTGTGGGAGCCGTACTGTGGTCTTGCTTCTGAGAATCTTGTCGGAGAAGCACGGATTTAATTTGGTCACATCAGACATTCACAACAAAACCAGGCTTACTAAAAATGAACAAATGGAACTGATTAAAAATATAAGTACTGCCGAACAACCCTATTTATTCACTCGACATGTTCATTTCCTCAACTTCTCAAGGTTTGGAGGAGACCAGCCTGTCTACATCAACATCATTAGAGACCCCGTCAACCGGTTCTTATCCAACTATTTTTTCCGTCGCTTTGGAGACTGGAGAGGGGAACAAAATCACATGATCCGCACCCCCAGCATGAGGCAGGAGGAGCGCTACCTGGATATCAATGAGTGTATTCTTGAAAACTATCCCGAGTGCTCCAACCCCAGGTTATTTTACATCATTCCGTACTTTTGTGGACAGCATCCCAGATGCAGGGAGCCTGGTGAATGGGCCCTTGAGAGAGCAAAGCTGAACGTGAATGAAAACTTCCTGCTCGTGGGGATTCTTGAAGAGTTGGAAGATGTGCTGCTGTTACTGGAAAGATTTTTACCTCATTACTTCAAGGGCGTGCTCAGTATCTACAAAGACCCAGAGCACAGGAAGCTTGGAAACATGACTGTGACGGTGAAGAAGACTGTCCCCTCTCCTGAGGCTGTGCAGATCCTCTACCAGCGGATGAGATACGAGTAC-GAGTTTTACCACTACGTCAAAGAGCAGTTCCACCTGCTGAAGCGCAAGTTTGGACTTAAGTCTCACGTCAGCAAGcccccccTGAGGCCACACTTCTTTATCCCAACTCCACTGGAAACCGAGGAGCCAATCGACGATGAAGAACAGGATGATGAAAAGTGGCTGGAAGATATTTATAAGAGGTGATG--TG-ACTGTGTTGCCTCTATGGCTTTATCTCCCTTTTCCAGAAAGTTCTTT--GTTTGGGGAAGTAAAATCCTTAAGGGAC-TAAATTAATGCTTGGGTGCATTAAAAAGAACAAAACATTCCCACATGTTGGGGTCATTGGGAGATGCCCGGTTTTGCGGGTTTTATTTGTTTAATTTTATTCTGTG-TTTTCTCTTG----G--CT---CT--TTGGGTC-TTTCCCGGGTACACTAGATGGCTCCATCCCAAGGCATCTTGTCATAAAACAG---C-TT-----T--CC-CCCACCCCATATCATGGGAAAAGGGGGAGAAATATAGC--CCCTAGCCTAATAACTTATCATTTGTAAAATGACTTATAAAAATATTACCTCAATGGTAGGAGACATCCAGACTTGTATATTTCAG",
-                  "hseq": "GGAAATTCCACTTACTTGGATGACCATGGGCCACCTCCTAGTAAGGTCCTTCCTTTCCCCAGCCAGGTGGTGTACAACAGAGTAGGCAAGTGTGGAAGTCGTACTGTGGTCTTGCTTCTGCGAATCTTGTCAGAGAAGCACGGATTTAATTTGGTCACATCAGACATTCACAACAAAACCAGACTTACAAAAAATGAACAGATGGAACTGATTAAAAATATAAGTACTGCTGAACAGCCCTATTTATTCACTCGCCATGTTCATTTCCTCAACTTCTCAAGGTTCGGAGGAGAGCAGCCTGTCTACATCAACATCATCAGAGACCCCGTCAGCCGGTTCTTATCTAACTATTTTTTCCGTCGCTTTGGAGACTGGAGAGGGGAACAGAATCACATGGTCCGCACCCCCAGCATGAGGCAGGAGGAACGCTATCTGGACATCAATGAGTGCATTCTGGAAAACTACCCTGAGTGTTCCAACCCCAGGTTATTTTACATCATTCCATATTTCTGTGGACAGCATCCCAGATGCAGGGAGCCTGGTGAGTGGGCCCTTGAACGCGCAAAGCTGAACGTGAATGAAAACTTCCTGCTCGTGGGGATTCTCGAGGAGTTGGAAGATGTGCTGCTTTTACTGGAAAGATTTTTACCTCATTACTTCAAGGGTGTGCTCAGCATCTACAAGGACCCAGAGCATAGGAAACTTGGAAACATGACTGTGACGGTGAAGAAGACGGTCCCCTCCCCCGAGGCCGTGCAGATCCTCTACCAGCGCATGAGATACGAATACNGA-TTCTACCACTACGTCAAAGCGCAGTTCCACCTGCTGAAGCGCAAGTTCGGACTCAAGTCTCGCGCGAGCAGGACCCCTGCGAGACCTCAGTTCTTCGTCCCCACCCCCCTGGAGACCGAGGAGCCAATCGATGACGAGGAGCAAGACGATGAAAAGTGGCTGGAAGATATTTATAAGAGGTGATGCCAGCCCTGTGTTGCCTCCATGGCTTTATCTCCCTTTTCCGGAAAGTTCTTTGGGGAAGAAAAAAAAAAATCCTGATGGAACTTCGATTAATGCTTGTGTGCATTAAAGAGAACAAAACATTCCCACATGTTGGGGTCATTGGGAGATGCCCGGTTTTGCGGGTTTTATTTGCTTAATTTTATTCTGTGGTTTTGTTTTGTTTTGTTCTTGGCTCCTTGAGTTTTTTCCCAGGTACAGTAGAGGGCTCCATCACCAGGCACCTCTTCATCAAAGAGGTGCCTTCCCCATGTCCGCCCACCCTCTGTGATGGGGTAAGAGGAAGAAGTAACACATCCACAGCCCAGAAGTTTGTCATTTGCAAAATGACTTGGAAAAATATTACCTCAGTGGTAGAAGATACCCAGGCTTGTACATTGCAG",
-                  "midline": "||||||||||||||||||||||||||||| ||||||||||||||||| || |||||||| |||||||||||||||||||| |||||||||||||| || ||||||||||||||||||||| |||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||| ||||| ||||||||||| ||||||||||||||||||||||||||||| ||||| ||||||||||||||||| ||||||||||||||||||||||||||||| |||||||| ||||||||||||||||||||||| ||||||||||||| |||||||||||| ||||||||||||||||||||||||||||||||||||||||| ||||||||| |||||||||||||||||||||||||||| ||||| ||||| ||||||||||| ||||| |||||||| || ||||| ||||||||||||||||||||||||||||| || || ||||||||||||||||||||||||||||||||||| |||||||||||  | |||||||||||||||||||||||||||||||||||||||||||| || |||||||||||||||||||| ||||||||||||||||||||||||||||||||||| |||||||| |||||||| ||||||||||| ||||| |||||||||||||||||||||||||||||||| |||||||| || ||||| |||||||||||||||||||| ||||||||||| ||| || || |||||||||||||||| ||||||||||||||||||||||||||| ||||| ||||||| ||  |||| | ||||   ||| || || |||||  |||| || || ||||| ||||||||||||||||| || || || || || ||||||||||||||||||||||||||||||||||||||   |  |||||||||||| ||||||||||||||||||||| |||||||||||  |   |   ||  |||||||| | || || |  ||||||||||| |||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||| |||| | |||    |  ||   ||  ||| ||  |||||| |||||| |||| ||||||||| | ||||| ||  |||| ||| ||   | ||     |  || |||||||  | | |||||  ||| || |||| ||   |  ||  |||| |  |  || ||||||| ||||||||||  ||||||||||||||| |||||| ||| | |||| |||||| ||| |||"
-                }
-              ]
-            },
-            {
-              "num": 4,
-              "description": [
-                {
-                  "id": "gi|1443682298|ref|XM_026044368.1|",
-                  "accession": "XM_026044368",
-                  "title": "PREDICTED: Nothoprocta perdicaria uronyl 2-sulfotransferase (UST), partial mRNA",
-                  "taxid": 30464,
-                  "sciname": "Nothoprocta perdicaria"
-                }
-              ],
-              "len": 1800,
-              "hsps": [
-                {
-                  "num": 1,
-                  "bit_score": 907.825,
-                  "score": 491,
-                  "evalue": 0,
-                  "identity": 816,
-                  "query_from": 648,
-                  "query_to": 1623,
-                  "query_strand": "Plus",
-                  "hit_from": 7,
-                  "hit_to": 979,
-                  "hit_strand": "Plus",
-                  "align_len": 977,
-                  "gaps": 5,
-                  "qseq": "GGAAATTCCACTTACTTGGATGACCATGGACCACCTCC-TAGTAAGGTACTACCTTTCCCAAGCCAGGTGGTGTACAACAGGGTAGGCAAGTGTGGGAGCCGTACTGTGGTCTTGCTTCTGAGAATCTTGTCGGAGAAGCACGGATTTAATTTGGTCACATCAGACATTCACAACAAAACCAGGCTTACTAAAAATGAACAAATGGAACTGATTAAAAATATAAGTACTGCCGAACAACCCTATTTATTCACTCGACATGTTCATTTCCTCAACTTCTCAAGGTTTGGAGGAGACCAGCCTGTCTACATCAACATCATTAGAGACCCCGTCAACCGGTTCTTATCCAACTATTTTTTCCGTCGCTTTGGAGACTGGAGAGGGGAACAAAATCACATGATCCGCACCCCCAGCATGAGGCAGGAGGAGCGCTACCTGGATATCAATGAGTGTATTCTTGAAAACTATCCCGAGTGCTCCAACCCCAGGTTATTTTACATCATTCCGTACTTTTGTGGACAGCATCCCAGATGCAGGGAGCCTGGTGAATGGGCCCTTGAGAGAGCAAAGCTGAACGTGAATGAAAACTTCCTGCTCGTGGGGATTCTTGAAGAGTTGGAAGATGTGCTGCTGTTACTGGAAAGATTTTTACCTCATTACTTCAAGGGCGTGCTCAGTATCTACAAAGACCCAGAGCACAGGAAGCTTGGAAACATGACTGTGACGGTGAAGAAGACTGTCCCCTCTCCTGAGGCTGTGCAGATCCTCTACCAGCGGATGAGATACGAGTACGAGTTTTACCACTACGTCAAAGAGCAGTTCCACCTGCTGAAGCGCAAGTTTGGACTTAAGTCTCACGTCAGCAAGcccccccTGAGGCCACACTTCTTTATCCCAACTCCACTGGAAACCGAGGAGCCAATCGACGATGAAGAACAGGATGATGAAAAGTGGCTGGAAGATATTTATAAGAGGTGAT",
-                  "hseq": "GGAAATTCCACTTACTTGGATGATCATGGACCACCCCCACAG-AAGGTTCTTCCATTCCCCAGCCAGGTGGTCTACAACAGAGTTGGAAAGTGTGGGAGTCGAACTGTGGTTTTGCTTTTGAGAATTTTATCAGAGAAACATGGATTCAACCTCGTTACATCTGACATTCATAACAAAACAAGACTTACCAAAAATGAACAGATGGAATTGATTAAAAACATAAGCACTGCTGAGCAGCCCTATTTATTCACTAGACATGTTCATTTCCTCAACTTCTCAAGGTTTGGAGGCGACCAGCCAGTGTATATCAATATTATTAGAGATCCTGTCAATCGATTTTTATCCAATTATTTTTTTCGACGTTTTGGAGACTGGAGAGGAGAACAGAATCATATGATCCGTACCCCCAGCATGAGGCAGGAGGAAAGATATCTGGACATCAATGTATGTATCCTTGAAAACTACCCTGAGTGTTCCAATCCCAGGTTATTTTACATTATACCATATTTTTGTGGACAGCATCCAAGATGCAGGGAGCCTGGTGAGTGGGCCCTTGAAAGAGCAAAGCTGAATGTTAATGAAAATTTTCTTCTTGTGGGAATTCTGGAGGAGCTGGAGGATGTGCTGCTTTTATTAGAAAGATTCTTACCTCATTATTTCAAGGATGTGCTGAGCATCTATAAAAACCCAGAACACAGGAAACTTGGCAATTTGACTGTGACAGTGAAAAAGACCGTCCCTTCTCCAGAAGCCATACAGATCCTCTACCAGCGCATGAGATATGAATATGAATTCTATTACTATGTCAAAGAACAGTTTCACCTATTAAAGCGCAAGTTTGGACTCAAGTCTCATATCAGGAAACCACGTCCCAGACCTGAGTTCTTCATTCCTTCTCCCCTGGAAACAGAAGAACCAATAGATGATGAGGAA---GATGATGAAAAATGGCTAGAGGATATCTATAAAAGGTGAT",
-                  "midline": "||||||||||||||||||||||| ||||||||||| ||  || ||||| || || ||||| ||||||||||| |||||||| || || ||||||||||| || |||||||| |||||| ||||||| || || ||||| || ||||| ||  | || ||||| |||||||| |||||||| || ||||| ||||||||||| |||||| |||||||||| ||||| ||||| || || ||||||||||||||| ||||||||||||||||||||||||||||||||||||| |||||||| || || ||||| || |||||||| || ||||| || || |||||||| |||||||| || || ||||||||||||||||| ||||| ||||| |||||||| |||||||||||||||||||||||  | || ||||| |||||||  ||||| ||||||||||| || ||||| ||||| ||||||||||||||||| || || || ||||||||||||||||| |||||||||||||||||||| ||||||||||| |||||||||||||| || |||||||| || || || ||||| ||||| || ||| |||| ||||||||||| ||| | |||||||| ||||||||||| |||||||  ||||| || ||||| ||| ||||||| |||||||| ||||| ||  |||||||||| ||||| ||||| ||||| ||||| || ||  | ||||||||||||||||| |||||||| || || || || ||  |||| |||||||| ||||| |||||  | ||||||||||||||||| ||||||||  |||| || || |  |  || ||  | ||||| || ||  |||| |||||||| || || ||||| || ||||| |||   ||||||||||| ||||| || ||||| ||||| |||||||"
-                }
-              ]
-            },
-            {
-              "num": 5,
-              "description": [
-                {
-                  "id": "gi|1147355337|ref|XR_002213007.1|",
-                  "accession": "XR_002213007",
-                  "title": "PREDICTED: Castor canadensis uncharacterized LOC109693044 (LOC109693044), ncRNA",
-                  "taxid": 51338,
-                  "sciname": "Castor canadensis"
-                }
-              ],
-              "len": 2643,
-              "hsps": [
-                {
-                  "num": 1,
-                  "bit_score": 63.9064,
-                  "score": 34,
-                  "evalue": 2.61682e-07,
-                  "identity": 36,
-                  "query_from": 2136,
-                  "query_to": 2172,
-                  "query_strand": "Plus",
-                  "hit_from": 1528,
-                  "hit_to": 1492,
-                  "hit_strand": "Minus",
-                  "align_len": 37,
-                  "gaps": 0,
-                  "qseq": "GAGGCTGAGGTGGGAGGATCACTTGAGCCCAGGAGTT",
-                  "hseq": "GAGGTTGAGGTGGGAGGATCACTTGAGCCCAGGAGTT",
-                  "midline": "|||| ||||||||||||||||||||||||||||||||"
-                }
-              ]
-            },
-            {
-              "num": 6,
-              "description": [
-                {
-                  "id": "gi|1147281425|ref|XM_020166744.1|",
-                  "accession": "XM_020166744",
-                  "title": "PREDICTED: Castor canadensis ectonucleoside triphosphate diphosphohydrolase 5 (Entpd5), transcript variant X4, mRNA",
-                  "taxid": 51338,
-                  "sciname": "Castor canadensis"
-                }
-              ],
-              "len": 5026,
-              "hsps": [
-                {
-                  "num": 1,
-                  "bit_score": 63.9064,
-                  "score": 34,
-                  "evalue": 2.61682e-07,
-                  "identity": 39,
-                  "query_from": 2136,
-                  "query_to": 2176,
-                  "query_strand": "Plus",
-                  "hit_from": 3658,
-                  "hit_to": 3619,
-                  "hit_strand": "Minus",
-                  "align_len": 41,
-                  "gaps": 1,
-                  "qseq": "GAGGCTGAGGTGGGAGGATCACTTGAGCCCAGGAGTTTGAG",
-                  "hseq": "GAGGCTGAGGTGGGAGGATCACTTGAGCCCAGGAATT-GAG",
-                  "midline": "|||||||||||||||||||||||||||||||||| || |||"
-                }
-              ]
-            },
-            {
-              "num": 7,
-              "description": [
-                {
-                  "id": "gi|1147281423|ref|XM_020166743.1|",
-                  "accession": "XM_020166743",
-                  "title": "PREDICTED: Castor canadensis ectonucleoside triphosphate diphosphohydrolase 5 (Entpd5), transcript variant X3, mRNA",
-                  "taxid": 51338,
-                  "sciname": "Castor canadensis"
-                }
-              ],
-              "len": 5113,
-              "hsps": [
-                {
-                  "num": 1,
-                  "bit_score": 63.9064,
-                  "score": 34,
-                  "evalue": 2.61682e-07,
-                  "identity": 39,
-                  "query_from": 2136,
-                  "query_to": 2176,
-                  "query_strand": "Plus",
-                  "hit_from": 3745,
-                  "hit_to": 3706,
-                  "hit_strand": "Minus",
-                  "align_len": 41,
-                  "gaps": 1,
-                  "qseq": "GAGGCTGAGGTGGGAGGATCACTTGAGCCCAGGAGTTTGAG",
-                  "hseq": "GAGGCTGAGGTGGGAGGATCACTTGAGCCCAGGAATT-GAG",
-                  "midline": "|||||||||||||||||||||||||||||||||| || |||"
-                }
-              ]
-            },
-            {
-              "num": 8,
-              "description": [
-                {
-                  "id": "gi|1147281420|ref|XM_020166742.1|",
-                  "accession": "XM_020166742",
-                  "title": "PREDICTED: Castor canadensis ectonucleoside triphosphate diphosphohydrolase 5 (Entpd5), transcript variant X2, mRNA",
-                  "taxid": 51338,
-                  "sciname": "Castor canadensis"
-                }
-              ],
-              "len": 5134,
-              "hsps": [
-                {
-                  "num": 1,
-                  "bit_score": 63.9064,
-                  "score": 34,
-                  "evalue": 2.61682e-07,
-                  "identity": 39,
-                  "query_from": 2136,
-                  "query_to": 2176,
-                  "query_strand": "Plus",
-                  "hit_from": 3766,
-                  "hit_to": 3727,
-                  "hit_strand": "Minus",
-                  "align_len": 41,
-                  "gaps": 1,
-                  "qseq": "GAGGCTGAGGTGGGAGGATCACTTGAGCCCAGGAGTTTGAG",
-                  "hseq": "GAGGCTGAGGTGGGAGGATCACTTGAGCCCAGGAATT-GAG",
-                  "midline": "|||||||||||||||||||||||||||||||||| || |||"
-                }
-              ]
-            },
-            {
-              "num": 9,
-              "description": [
-                {
-                  "id": "gi|1147281417|ref|XM_020166741.1|",
-                  "accession": "XM_020166741",
-                  "title": "PREDICTED: Castor canadensis ectonucleoside triphosphate diphosphohydrolase 5 (Entpd5), transcript variant X1, mRNA",
-                  "taxid": 51338,
-                  "sciname": "Castor canadensis"
-                }
-              ],
-              "len": 5170,
-              "hsps": [
-                {
-                  "num": 1,
-                  "bit_score": 63.9064,
-                  "score": 34,
-                  "evalue": 2.61682e-07,
-                  "identity": 39,
-                  "query_from": 2136,
-                  "query_to": 2176,
-                  "query_strand": "Plus",
-                  "hit_from": 3802,
-                  "hit_to": 3763,
-                  "hit_strand": "Minus",
-                  "align_len": 41,
-                  "gaps": 1,
-                  "qseq": "GAGGCTGAGGTGGGAGGATCACTTGAGCCCAGGAGTTTGAG",
-                  "hseq": "GAGGCTGAGGTGGGAGGATCACTTGAGCCCAGGAATT-GAG",
-                  "midline": "|||||||||||||||||||||||||||||||||| || |||"
-                }
-              ]
-            }
-          ],
-          "stat": {
-            "db_num": 297383,
-            "db_len": 881504507,
-            "hsp_len": 31,
-            "eff_space": 3894755355810,
-            "kappa": 0.46,
-            "lambda": 1.28,
-            "entropy": 0.85
           }
         }
       }
     }
-  }
-]
+  ]
 }
 

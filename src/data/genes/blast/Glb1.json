@@ -1,81 +1,81 @@
 {
-"BlastOutput2": [
-{
-    "report": {
-      "program": "blastn",
-      "version": "BLASTN 2.10.0+",
-      "reference": "Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), \"A greedy algorithm for aligning DNA sequences\", J Comput Biol 2000; 7(1-2):203-14.",
-      "search_target": {
-        "db": "nt_v5"
-      },
-      "params": {
-        "expect": 10,
-        "sc_match": 1,
-        "sc_mismatch": -2,
-        "gap_open": 0,
-        "gap_extend": 0,
-        "filter": "L;m;",
-        "entrez_query": "txid210632 [ORGN] OR txid13735 [ORGN] OR txid8502 [ORGN] OR txid9258 [ORGN] OR txid7719 [ORGN] OR txid51511 [ORGN] OR txid299321 [ORGN]"
-      },
-      "results": {
-        "search": {
-          "query_id": "NM_000404.4",
-          "query_title": "Homo sapiens galactosidase beta 1 (GLB1), transcript variant 1, mRNA",
-          "query_len": 2523,
-          "query_masking": [
-            {
-              "from": 2060,
-              "to": 2066
+  "BlastOutput2": [
+    {
+      "report": {
+        "program": "blastn",
+        "version": "BLASTN 2.10.0+",
+        "reference": "Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), \"A greedy algorithm for aligning DNA sequences\", J Comput Biol 2000; 7(1-2):203-14.",
+        "search_target": {
+          "db": "nt_v5"
+        },
+        "params": {
+          "expect": 10,
+          "sc_match": 1,
+          "sc_mismatch": -2,
+          "gap_open": 0,
+          "gap_extend": 0,
+          "filter": "L;m;",
+          "entrez_query": "txid210632 [ORGN] OR txid13735 [ORGN] OR txid8502 [ORGN] OR txid9258 [ORGN] OR txid7719 [ORGN] OR txid51511 [ORGN] OR txid299321 [ORGN]"
+        },
+        "results": {
+          "search": {
+            "query_id": "NM_000404.4",
+            "query_title": "Homo sapiens galactosidase beta 1 (GLB1), transcript variant 1, mRNA",
+            "query_len": 2523,
+            "query_masking": [
+              {
+                "from": 2060,
+                "to": 2066
+              }
+            ],
+            "hits": [
+              {
+                "num": 1,
+                "description": [
+                  {
+                    "id": "gi|1121800824|ref|XM_019537637.1|",
+                    "accession": "XM_019537637",
+                    "title": "PREDICTED: Crocodylus porosus transmembrane protein with metallophosphoesterase domain-like (LOC109311789), transcript variant X1, mRNA",
+                    "taxid": 8502,
+                    "sciname": "Crocodylus porosus"
+                  }
+                ],
+                "len": 4442,
+                "hsps": [
+                  {
+                    "num": 1,
+                    "bit_score": 660.374,
+                    "score": 357,
+                    "evalue": 0,
+                    "identity": 1074,
+                    "query_from": 143,
+                    "query_to": 1555,
+                    "query_strand": "Plus",
+                    "hit_from": 111,
+                    "hit_to": 1524,
+                    "hit_strand": "Plus",
+                    "align_len": 1426,
+                    "gaps": 25,
+                    "qseq": "ACC-CAGAGGATGTTT-GAAATTGACTATAGCCGGGACTCCTTCCTCAAGGATGGCCAGCCATTTCGCTACATCTCAGGAAGCATTCACTACTCCCGTGTGCCCCGCTTCTACTGGAAGGACCGGCTGCTGAAGATGAAGATGGCTGGGCTGAACGCCATCCAGACGTATGTGCCCTGGAACTTTCATGAGCCCTG-GCCAGGACAGTACCAGTTTTCTGAGGACCATGATGTGGAATATTTTCTTCGGCTGGCTCATGAG-CTGGGACTGCTGGTTATCCTGAGGCCCGGGCCCTACATCTGTGCAGAGTGGGAAATGGGAGGATTACCTGCTTGGCTGCTAGAGAAAGAGTCTATTCTTCTCCGCTCCTCCGACCCAGATTACCTGGCAGCTGTGGACAAGTGGTTGGGAGTCCTTCTGCCCAAGATGAAGCCTCTCCTCTATCAGAATGGAGGGCCAGTTATAACAGTGCAGGTTGAAAATGAATATGGCAGCTACTTTGCCTGTGATTTTGACTACCTGCGCTTCCTGCAGAAGCGCTTTCGCCACCATCTGGGGGATGATGTGGTTCTGTTTACCACTGATGGAGCACATAAAACATTCCTGAAATGTGGGGCCCTGCAGGGCCTCTACACCACGGTGGACTTTGGAACAGGCAGCAACATCACAGATGCTTTCCTAAGCCAGAGGAAG-TGTGAGCCCAAAGGACCCTTGATCAATTCTGAATTCTATACTGGCTGGCTAGATCACTGGGGCCAACCTCACTCCACAAT-CAAGACCGAAGC-AGTGGCTTCCTCCCTCTATGATATACTTGCCCGTGGGGCGAGTGTGAACTTGTACATGTTTATAGGTGGGACCAATTTTGCCTATTGGAATGGGGCCAACTCACCC-TATGCAGCACAGCCCACCAGCTACGACTATGATGCCCCACTGAGTGAGGCTGGGGACCTCACTGAGAAGTATTTTGCTCTGCGAAACATCATCCAGAAGTTTGAAAAAGTACCAGAAGGTCCTATCCCTCCATCTACACCAAAGTTTGCATATGGAAAGGT-CACTTTGGAAAAGTTAAAGACAGTGGGAGCAGCTCTGGACATTCTGTGTCCCTCTGGGCCCATCAAAAGCCTTTATCCCTTGACATTTATCCAGGTGAAACAGCATTATGGGTTTGTGCTGTACCGGAC-AACACTTCCTCAAGA-TTGCAGCAACCCAGCACCT-CTCTCTTCACCCCTCAATGGAGTCCACGATCGAGCATATGTTGCTGTGGATGGGATCCCCCAGGGAGTCCTTGAGCGAAACAATGTGA-TCACTCTGAACATAACAGGGAAAGCTGGAGCCACTCTGGACCTTCTGGTAGAGAACATGGGACGTGTGAACTATGGTGCATATATCAACGATTTTAAGGGTTTGGTTTCTAAC",
+                    "hseq": "ACCTCAGA-GAAGTTTCGGAATTGACTACGACCACAACTGCTTCGTCAAGGATGGGAAGCCATTCCGCTACATCTCAGGTAGCATTCACTATGCCCGTGTGCCCCGGTACTATTGGAAAGACCGTTTGTTGAAGATGAAGATGGCAGGGCTTGATGCCATTCAAACGTATGTGCCATGGAACTATCATGA-ATCTGAGCCAGGACTATATAACTTCTCTGGTGACAGAGATGTGGAATATTTCCTGCAGCTAGCTAATGAGACT-GGATTGTTGGTAATACTGAGAGCTGGACCTTATATCTGCGCAGAATGGGACATGGGTGGTCTGCCTGCATGGTTATTGGAAAAAGAATCAATTGTTCTAAGATCTTCTGATTTAGATTACCTAGAATCTGTGGACAAGTGGATGGGTGTCTTTTTACCAAAGATGAAGCCTCTTCTTTATCAAAATGGAGGGCCAATTATTATGGTGCAGGTTGAAAATGAGTATGGAAGCTACTTTGCCTGCGATTACGATTACCTTCGATATCTCCAGAAGCTCTTCCGCCACCACCTTGGGGAGGATGTGGTGCTGTTTACCACAGATGGGGCAGGCAAAAGTTACTTGAGATGTGGAGCGCTGCAAGGTCTTTATGCAACAGTGGATTTTGCCCCAGGTTGTAATGTCACAGCAGCATTTTTATCTCA-AAGAAGCAGTGAACCAACAGGCCCTTTGGTTAATTCTGAGTTCTATACTGGCTGGCTGGATCACTGGGGTCACCGTCATTCTTTTGTGCCAG-CC-CAGCTGGTAGCTAAATCTCTTGGTGAAATCCTGGCACGTGGTGCTAATGTTAACATGTACATGTTTATAGGTGGGACCAATTTTGCCTACTGGAATGGAGCAAA-TATGCCATACACACCACAGCCTACTAGTTATGACTATGATGCTCCATTAAGTGAAGCAGGGGACCTCACGGAGAAATACTTTGCTCTGAGGGAAGTAATTGGTATGTATAAAAGATTACCTGAGGGTCCTATCCCCCCAACAACACCAAAGTTTGCATACGGACAGGTTCAAAT-GGAGAAGATAGGCACTCTGCTAGAAGTTCTTGATGACCTGTCACCGTCTGGACCAGTAAAAAGCGTTTATCCATTGACGTTTGTTCAACTAAAACAATATTTTGGGTTTGTGTTGTACAGGACTAAC-CTGAAAAAAAACTTG-AGTGAAGAAAC-CCTACTGATTTCACCTCTCAATGGAGTTCATGATCGTGCCTATATTTCTGTGGATGGGATTCCTCAGGGAGTCCTTGAAAGAGGCAA-GTCACTTATGATAAATATAACTGGAAAGGCTGGAGCAAATCTGGACCTGTTGGTAGAAAACATGGGTCGAGTAAACTATGGTAAATACAACAATGACTTTAAGGGTCTGGTTTCAAAC",
+                    "midline": "||| |||| || |||| | |||||||||   ||   ||| |||| ||||||||||  ||||||| |||||||||||||| |||||||||||  ||||||||||||| | ||| ||||| |||||  || |||||||||||||||| |||||  | ||||| || ||||||||||| ||||||| ||||||   ||| ||||||||  ||  | || ||||  |||   |||||||||||||| || | ||| ||| ||||| || ||| || |||| || |||||  | || || || ||||| ||||| ||||| ||||| ||  | ||||| ||| |  | || ||||| || ||| ||||  | || || ||   ||||||||| | | |||||||||||||| |||| ||| || | || |||||||||||||| || ||||| |||||||||||| |||| |  ||||||||||||||||| ||||| |||||||||||||| ||||  || ||||| || |  || ||||||| ||| |||||||| || ||||| |||||||| ||||||||||| ||||| |||   ||||  | | ||| |||||| || ||||| || || ||  | || ||||| ||||   ||||  | ||  ||||||  || ||  ||   || | ||||  |||| || | ||| || ||| | |||||||| ||||||||||||||||| ||||||||||| || | ||| ||     | | || ||  |||  || |||   || ||   ||| || || || ||||| || | ||| ||| |||||||||||||||||||||||||||||||||| |||||||| || || |   || ||  || ||||||| || || || ||||||||||| ||| | ||||| || ||||||||||| ||||| || ||||||||| |  |  | ||    | || | ||| | |||| || ||||||||||| ||| | ||||||||||||||||| ||| |||| ||  | ||| ||| ||   ||  ||  || || ||| ||    ||||  || ||||| ||  | |||||| ||||||| ||||| ||| | ||  | |||||  ||| |||||||||| ||||| |||| ||| ||     || | ||| ||  |   | | ||| ||   |||||| ||||||||||| || ||||| || ||| || ||||||||||||| || ||||||||||||||  ||  ||| || | | |   | || ||||| || || |||||||| | |||||||||  ||||||| |||||||| || || |||||||||  ||| | ||| || ||||||||| ||||||| |||"
+                  }
+                ]
+              }
+            ],
+            "stat": {
+              "db_num": 279558,
+              "db_len": 1852515912,
+              "hsp_len": 31,
+              "eff_space": 4594873238088,
+              "kappa": 0.46,
+              "lambda": 1.28,
+              "entropy": 0.85
             }
-          ],
-          "hits": [
-            {
-              "num": 1,
-              "description": [
-                {
-                  "id": "gi|1121800824|ref|XM_019537637.1|",
-                  "accession": "XM_019537637",
-                  "title": "PREDICTED: Crocodylus porosus transmembrane protein with metallophosphoesterase domain-like (LOC109311789), transcript variant X1, mRNA",
-                  "taxid": 8502,
-                  "sciname": "Crocodylus porosus"
-                }
-              ],
-              "len": 4442,
-              "hsps": [
-                {
-                  "num": 1,
-                  "bit_score": 660.374,
-                  "score": 357,
-                  "evalue": 0,
-                  "identity": 1074,
-                  "query_from": 143,
-                  "query_to": 1555,
-                  "query_strand": "Plus",
-                  "hit_from": 111,
-                  "hit_to": 1524,
-                  "hit_strand": "Plus",
-                  "align_len": 1426,
-                  "gaps": 25,
-                  "qseq": "ACC-CAGAGGATGTTT-GAAATTGACTATAGCCGGGACTCCTTCCTCAAGGATGGCCAGCCATTTCGCTACATCTCAGGAAGCATTCACTACTCCCGTGTGCCCCGCTTCTACTGGAAGGACCGGCTGCTGAAGATGAAGATGGCTGGGCTGAACGCCATCCAGACGTATGTGCCCTGGAACTTTCATGAGCCCTG-GCCAGGACAGTACCAGTTTTCTGAGGACCATGATGTGGAATATTTTCTTCGGCTGGCTCATGAG-CTGGGACTGCTGGTTATCCTGAGGCCCGGGCCCTACATCTGTGCAGAGTGGGAAATGGGAGGATTACCTGCTTGGCTGCTAGAGAAAGAGTCTATTCTTCTCCGCTCCTCCGACCCAGATTACCTGGCAGCTGTGGACAAGTGGTTGGGAGTCCTTCTGCCCAAGATGAAGCCTCTCCTCTATCAGAATGGAGGGCCAGTTATAACAGTGCAGGTTGAAAATGAATATGGCAGCTACTTTGCCTGTGATTTTGACTACCTGCGCTTCCTGCAGAAGCGCTTTCGCCACCATCTGGGGGATGATGTGGTTCTGTTTACCACTGATGGAGCACATAAAACATTCCTGAAATGTGGGGCCCTGCAGGGCCTCTACACCACGGTGGACTTTGGAACAGGCAGCAACATCACAGATGCTTTCCTAAGCCAGAGGAAG-TGTGAGCCCAAAGGACCCTTGATCAATTCTGAATTCTATACTGGCTGGCTAGATCACTGGGGCCAACCTCACTCCACAAT-CAAGACCGAAGC-AGTGGCTTCCTCCCTCTATGATATACTTGCCCGTGGGGCGAGTGTGAACTTGTACATGTTTATAGGTGGGACCAATTTTGCCTATTGGAATGGGGCCAACTCACCC-TATGCAGCACAGCCCACCAGCTACGACTATGATGCCCCACTGAGTGAGGCTGGGGACCTCACTGAGAAGTATTTTGCTCTGCGAAACATCATCCAGAAGTTTGAAAAAGTACCAGAAGGTCCTATCCCTCCATCTACACCAAAGTTTGCATATGGAAAGGT-CACTTTGGAAAAGTTAAAGACAGTGGGAGCAGCTCTGGACATTCTGTGTCCCTCTGGGCCCATCAAAAGCCTTTATCCCTTGACATTTATCCAGGTGAAACAGCATTATGGGTTTGTGCTGTACCGGAC-AACACTTCCTCAAGA-TTGCAGCAACCCAGCACCT-CTCTCTTCACCCCTCAATGGAGTCCACGATCGAGCATATGTTGCTGTGGATGGGATCCCCCAGGGAGTCCTTGAGCGAAACAATGTGA-TCACTCTGAACATAACAGGGAAAGCTGGAGCCACTCTGGACCTTCTGGTAGAGAACATGGGACGTGTGAACTATGGTGCATATATCAACGATTTTAAGGGTTTGGTTTCTAAC",
-                  "hseq": "ACCTCAGA-GAAGTTTCGGAATTGACTACGACCACAACTGCTTCGTCAAGGATGGGAAGCCATTCCGCTACATCTCAGGTAGCATTCACTATGCCCGTGTGCCCCGGTACTATTGGAAAGACCGTTTGTTGAAGATGAAGATGGCAGGGCTTGATGCCATTCAAACGTATGTGCCATGGAACTATCATGA-ATCTGAGCCAGGACTATATAACTTCTCTGGTGACAGAGATGTGGAATATTTCCTGCAGCTAGCTAATGAGACT-GGATTGTTGGTAATACTGAGAGCTGGACCTTATATCTGCGCAGAATGGGACATGGGTGGTCTGCCTGCATGGTTATTGGAAAAAGAATCAATTGTTCTAAGATCTTCTGATTTAGATTACCTAGAATCTGTGGACAAGTGGATGGGTGTCTTTTTACCAAAGATGAAGCCTCTTCTTTATCAAAATGGAGGGCCAATTATTATGGTGCAGGTTGAAAATGAGTATGGAAGCTACTTTGCCTGCGATTACGATTACCTTCGATATCTCCAGAAGCTCTTCCGCCACCACCTTGGGGAGGATGTGGTGCTGTTTACCACAGATGGGGCAGGCAAAAGTTACTTGAGATGTGGAGCGCTGCAAGGTCTTTATGCAACAGTGGATTTTGCCCCAGGTTGTAATGTCACAGCAGCATTTTTATCTCA-AAGAAGCAGTGAACCAACAGGCCCTTTGGTTAATTCTGAGTTCTATACTGGCTGGCTGGATCACTGGGGTCACCGTCATTCTTTTGTGCCAG-CC-CAGCTGGTAGCTAAATCTCTTGGTGAAATCCTGGCACGTGGTGCTAATGTTAACATGTACATGTTTATAGGTGGGACCAATTTTGCCTACTGGAATGGAGCAAA-TATGCCATACACACCACAGCCTACTAGTTATGACTATGATGCTCCATTAAGTGAAGCAGGGGACCTCACGGAGAAATACTTTGCTCTGAGGGAAGTAATTGGTATGTATAAAAGATTACCTGAGGGTCCTATCCCCCCAACAACACCAAAGTTTGCATACGGACAGGTTCAAAT-GGAGAAGATAGGCACTCTGCTAGAAGTTCTTGATGACCTGTCACCGTCTGGACCAGTAAAAAGCGTTTATCCATTGACGTTTGTTCAACTAAAACAATATTTTGGGTTTGTGTTGTACAGGACTAAC-CTGAAAAAAAACTTG-AGTGAAGAAAC-CCTACTGATTTCACCTCTCAATGGAGTTCATGATCGTGCCTATATTTCTGTGGATGGGATTCCTCAGGGAGTCCTTGAAAGAGGCAA-GTCACTTATGATAAATATAACTGGAAAGGCTGGAGCAAATCTGGACCTGTTGGTAGAAAACATGGGTCGAGTAAACTATGGTAAATACAACAATGACTTTAAGGGTCTGGTTTCAAAC",
-                  "midline": "||| |||| || |||| | |||||||||   ||   ||| |||| ||||||||||  ||||||| |||||||||||||| |||||||||||  ||||||||||||| | ||| ||||| |||||  || |||||||||||||||| |||||  | ||||| || ||||||||||| ||||||| ||||||   ||| ||||||||  ||  | || ||||  |||   |||||||||||||| || | ||| ||| ||||| || ||| || |||| || |||||  | || || || ||||| ||||| ||||| ||||| ||  | ||||| ||| |  | || ||||| || ||| ||||  | || || ||   ||||||||| | | |||||||||||||| |||| ||| || | || |||||||||||||| || ||||| |||||||||||| |||| |  ||||||||||||||||| ||||| |||||||||||||| ||||  || ||||| || |  || ||||||| ||| |||||||| || ||||| |||||||| ||||||||||| ||||| |||   ||||  | | ||| |||||| || ||||| || || ||  | || ||||| ||||   ||||  | ||  ||||||  || ||  ||   || | ||||  |||| || | ||| || ||| | |||||||| ||||||||||||||||| ||||||||||| || | ||| ||     | | || ||  |||  || |||   || ||   ||| || || || ||||| || | ||| ||| |||||||||||||||||||||||||||||||||| |||||||| || || |   || ||  || ||||||| || || || ||||||||||| ||| | ||||| || ||||||||||| ||||| || ||||||||| |  |  | ||    | || | ||| | |||| || ||||||||||| ||| | ||||||||||||||||| ||| |||| ||  | ||| ||| ||   ||  ||  || || ||| ||    ||||  || ||||| ||  | |||||| ||||||| ||||| ||| | ||  | |||||  ||| |||||||||| ||||| |||| ||| ||     || | ||| ||  |   | | ||| ||   |||||| ||||||||||| || ||||| || ||| || ||||||||||||| || ||||||||||||||  ||  ||| || | | |   | || ||||| || || |||||||| | |||||||||  ||||||| |||||||| || || |||||||||  ||| | ||| || ||||||||| ||||||| |||"
-                }
-              ]
-            }
-          ],
-          "stat": {
-            "db_num": 279558,
-            "db_len": 1852515912,
-            "hsp_len": 31,
-            "eff_space": 4594873238088,
-            "kappa": 0.46,
-            "lambda": 1.28,
-            "entropy": 0.85
           }
         }
       }
     }
-  }
-]
+  ]
 }
 

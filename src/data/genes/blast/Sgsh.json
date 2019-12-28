@@ -1,108 +1,108 @@
 {
-"BlastOutput2": [
-{
-    "report": {
-      "program": "blastn",
-      "version": "BLASTN 2.10.0+",
-      "reference": "Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), \"A greedy algorithm for aligning DNA sequences\", J Comput Biol 2000; 7(1-2):203-14.",
-      "search_target": {
-        "db": "nt_v5"
-      },
-      "params": {
-        "expect": 10,
-        "sc_match": 1,
-        "sc_mismatch": -2,
-        "gap_open": 0,
-        "gap_extend": 0,
-        "filter": "L;m;",
-        "entrez_query": "txid156563 [ORGN] OR txid44394 [ORGN] OR txid9258 [ORGN] OR txid59463 [ORGN] OR txid6239 [ORGN]"
-      },
-      "results": {
-        "search": {
-          "query_id": "NM_000199.5",
-          "query_title": "Homo sapiens N-sulfoglucosamine sulfohydrolase (SGSH), transcript variant 1, mRNA",
-          "query_len": 2705,
-          "hits": [
-            {
-              "num": 1,
-              "description": [
-                {
-                  "id": "gi|1491423076|ref|XM_026798903.1|",
-                  "accession": "XM_026798903",
-                  "title": "PREDICTED: Zonotrichia albicollis N-sulfoglucosamine sulfohydrolase (SGSH), partial mRNA",
-                  "taxid": 44394,
-                  "sciname": "Zonotrichia albicollis"
-                }
-              ],
-              "len": 636,
-              "hsps": [
-                {
-                  "num": 1,
-                  "bit_score": 520.029,
-                  "score": 281,
-                  "evalue": 8.06757e-145,
-                  "identity": 513,
-                  "query_from": 204,
-                  "query_to": 832,
-                  "query_strand": "Plus",
-                  "hit_from": 7,
-                  "hit_to": 635,
-                  "hit_strand": "Plus",
-                  "align_len": 629,
-                  "gaps": 0,
-                  "qseq": "AATGCCTTCACCTCGGTCAGCAGCTGCTCTCCCAGCCGCGCCAGCCTCCTCACTGGCCTGCCCCAGCATCAGAATGGGATGTACGGGCTGCACCAGGACGTGCACCACTTCAACTCCTTCGACAAGGTGCGGAGCCTGCCGCTGCTGCTCAGCCAAGCTGGTGTGCGCACAGGCATCATCGGGAAGAAGCACGTGGGGCCGGAGACCGTGTACCCGTTTGACTTTGCGTACACGGAGGAGAATGGCTCCGTCCTCCAGGTGGGGCGGAACATCACTAGAATTAAGCTGCTCGTCCGGAAATTCCTGCAGACTCAGGATGACCGGCCTTTCTTCCTCTACGTCGCCTTCCACGACCCCCACCGCTGTGGGCACTCCCAGCCCCAGTACGGAACCTTCTGTGAGAAGTTTGGCAACGGAGAGAGCGGCATGGGTCGTATCCCAGACTGGACCCCCCAGGCCTACGACCCACTGGACGTGCTGGTGCCTTACTTCGTCCCCAACACCCCGGCAGCCCGAGCCGACCTGGCCGCTCAGTACACCACCGTCGGCCGCATGGACCAAGGAGTTGGACTGGTGCTCCAGGAGCTGCGTGACGCCGGTGTCCTGAACGACACACTGGTGATCTTCAC",
-                  "hseq": "AACGCCTTCACCTCCGTGAGCAGCTGCTCCCCGAGCCGGGCCAGCATCCTGACCGGCCTACCCCAGCACCAGAACGGGATGTACGGGCTGCACCAGGACGTGCATCACTTCAACTCCTTCGACGGCGTGAGGAGCCTGCCCCAGCTGCTCAGCCACGCAGGCATCCGGACAGGGATAATTGGGAAGAAGCACGTGGGGCCGGCGGCTGTGTACCCCTTCGACTTCGCCTACACAGAGGAGAACAGCTCAGTCCTGCAGGTGGGGAGAAACATCACCCGGATCAAGGAGCTTGTCCGGCGCTTCCTGCAGAGCCAGGACGAGAGGCCTTTCTTCCTCTATGTTGCCTTCCACGACCCTCACCGCTGCGGGCACTCCCAGCCCCAGTATGGGCCCTTTTGTGAGAAGTTTGGCAATGGACAGAGCGGGATGGGCTGGATCCCTGACTGGAAGCCACAGATTTACCAGCCAGAGCAAGTGCAGGTCCCTCCCTTTGTCCCAGACACGCCGGCTGCCCGGGAGGACCTGGCTGCCCAGTACACGACCATCGGGCGCATGGACCAAGGGATCGGGCTGGTCCTGCAGGAGCTGCTCCACGCCGGTTTCCTCAACAGCACCCTGGTGATCTACAC",
-                  "midline": "|| ||||||||||| || ||||||||||| || ||||| |||||| |||| || ||||| |||||||| ||||| ||||||||||||||||||||||||||||| ||||||||||||||||||   ||| |||||||||| | |||||||||||| || ||  | || ||||| || || |||||||||||||||||||||| | | |||||||| || ||||| || ||||| ||||||||  |||| ||||| ||||||||| | ||||||||  | || |||  ||| ||||||   ||||||||||  ||||| ||  |||||||||||||||| || |||||||||||||| |||||||| |||||||||||||||||||| ||  |||| ||||||||||||||||| ||| ||||||| |||||  | ||||| |||||||  || |||   ||| | |||  | | |||| ||| |||  ||| |||||  |||| ||||| ||||| |  |||||||| || |||||||| ||| |||| ||||||||||||||  | || ||||| || ||||||||||   |||||||| |||| |||  ||| |||||||||| |||"
-                }
-              ]
-            },
-            {
-              "num": 2,
-              "description": [
-                {
-                  "id": "gi|1341054036|ref|XM_023946784.1|",
-                  "accession": "XM_023946784",
-                  "title": "PREDICTED: Cyanistes caeruleus N-sulphoglucosamine sulphohydrolase-like (LOC111943928), partial mRNA",
-                  "taxid": 156563,
-                  "sciname": "Cyanistes caeruleus"
-                }
-              ],
-              "len": 437,
-              "hsps": [
-                {
-                  "num": 1,
-                  "bit_score": 361.217,
-                  "score": 195,
-                  "evalue": 5.17463e-97,
-                  "identity": 355,
-                  "query_from": 378,
-                  "query_to": 812,
-                  "query_strand": "Plus",
-                  "hit_from": 3,
-                  "hit_to": 437,
-                  "hit_strand": "Plus",
-                  "align_len": 435,
-                  "gaps": 0,
-                  "qseq": "ATCATCGGGAAGAAGCACGTGGGGCCGGAGACCGTGTACCCGTTTGACTTTGCGTACACGGAGGAGAATGGCTCCGTCCTCCAGGTGGGGCGGAACATCACTAGAATTAAGCTGCTCGTCCGGAAATTCCTGCAGACTCAGGATGACCGGCCTTTCTTCCTCTACGTCGCCTTCCACGACCCCCACCGCTGTGGGCACTCCCAGCCCCAGTACGGAACCTTCTGTGAGAAGTTTGGCAACGGAGAGAGCGGCATGGGTCGTATCCCAGACTGGACCCCCCAGGCCTACGACCCACTGGACGTGCTGGTGCCTTACTTCGTCCCCAACACCCCGGCAGCCCGAGCCGACCTGGCCGCTCAGTACACCACCGTCGGCCGCATGGACCAAGGAGTTGGACTGGTGCTCCAGGAGCTGCGTGACGCCGGTGTCCTGAAC",
-                  "hseq": "ATAATTGGGAAGAAGCACGTGGGGCCCGAGGCTGTGTACCCCTTCGACTTTGCCTACACAGAGGAGAACAGTTCGGTCCTGCAGGTTGGGAGAAACATCAGCCGGATCAAGGCGCTCGTCCGGCGGTTCCTGCAGAGCCAGGACGAGCGGCCTTTCTTCCTCTATGTTGCCTTCCACGACCCCCACCGCTGTGGGCACTCCCAGCCCCAGTACGGGGCCTTCTGTGAGAAGTTTGGCAATGGCGAGAGCGGCATGGGCTGGATCCCTGACTGGAAACCACAGATTTACCGCCCAGAACAAGTGCAGGTCCCTGCCTTTGTCCCGGACACGCCGGCTGCCCGGGCAGACCTGGCTGCGCAGTACACGACCATCGGGCGCATGGACCAAGGGATCGGGCTGGTGCTGCAGGAGCTGCGCCACGCTGGCGTCCTCAAC",
-                  "midline": "|| || |||||||||||||||||||| ||| | |||||||| || |||||||| ||||| ||||||||  | || ||||| ||||| ||| | |||||||   | || |||  ||||||||||   ||||||||||  ||||| || ||||||||||||||||| || |||||||||||||||||||||||||||||||||||||||||||||||  |||||||||||||||||||||| || ||||||||||||||  | ||||| |||||||  || |||   |||  ||||    | |||| ||| |||  ||| |||||  |||| ||||| ||||| || |||||||| || |||||||| ||| |||| ||||||||||||||  | || |||||||| |||||||||||  |||| || ||||| |||"
-                }
-              ]
+  "BlastOutput2": [
+    {
+      "report": {
+        "program": "blastn",
+        "version": "BLASTN 2.10.0+",
+        "reference": "Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), \"A greedy algorithm for aligning DNA sequences\", J Comput Biol 2000; 7(1-2):203-14.",
+        "search_target": {
+          "db": "nt_v5"
+        },
+        "params": {
+          "expect": 10,
+          "sc_match": 1,
+          "sc_mismatch": -2,
+          "gap_open": 0,
+          "gap_extend": 0,
+          "filter": "L;m;",
+          "entrez_query": "txid156563 [ORGN] OR txid44394 [ORGN] OR txid9258 [ORGN] OR txid59463 [ORGN] OR txid6239 [ORGN]"
+        },
+        "results": {
+          "search": {
+            "query_id": "NM_000199.5",
+            "query_title": "Homo sapiens N-sulfoglucosamine sulfohydrolase (SGSH), transcript variant 1, mRNA",
+            "query_len": 2705,
+            "hits": [
+              {
+                "num": 1,
+                "description": [
+                  {
+                    "id": "gi|1491423076|ref|XM_026798903.1|",
+                    "accession": "XM_026798903",
+                    "title": "PREDICTED: Zonotrichia albicollis N-sulfoglucosamine sulfohydrolase (SGSH), partial mRNA",
+                    "taxid": 44394,
+                    "sciname": "Zonotrichia albicollis"
+                  }
+                ],
+                "len": 636,
+                "hsps": [
+                  {
+                    "num": 1,
+                    "bit_score": 520.029,
+                    "score": 281,
+                    "evalue": 8.06757e-145,
+                    "identity": 513,
+                    "query_from": 204,
+                    "query_to": 832,
+                    "query_strand": "Plus",
+                    "hit_from": 7,
+                    "hit_to": 635,
+                    "hit_strand": "Plus",
+                    "align_len": 629,
+                    "gaps": 0,
+                    "qseq": "AATGCCTTCACCTCGGTCAGCAGCTGCTCTCCCAGCCGCGCCAGCCTCCTCACTGGCCTGCCCCAGCATCAGAATGGGATGTACGGGCTGCACCAGGACGTGCACCACTTCAACTCCTTCGACAAGGTGCGGAGCCTGCCGCTGCTGCTCAGCCAAGCTGGTGTGCGCACAGGCATCATCGGGAAGAAGCACGTGGGGCCGGAGACCGTGTACCCGTTTGACTTTGCGTACACGGAGGAGAATGGCTCCGTCCTCCAGGTGGGGCGGAACATCACTAGAATTAAGCTGCTCGTCCGGAAATTCCTGCAGACTCAGGATGACCGGCCTTTCTTCCTCTACGTCGCCTTCCACGACCCCCACCGCTGTGGGCACTCCCAGCCCCAGTACGGAACCTTCTGTGAGAAGTTTGGCAACGGAGAGAGCGGCATGGGTCGTATCCCAGACTGGACCCCCCAGGCCTACGACCCACTGGACGTGCTGGTGCCTTACTTCGTCCCCAACACCCCGGCAGCCCGAGCCGACCTGGCCGCTCAGTACACCACCGTCGGCCGCATGGACCAAGGAGTTGGACTGGTGCTCCAGGAGCTGCGTGACGCCGGTGTCCTGAACGACACACTGGTGATCTTCAC",
+                    "hseq": "AACGCCTTCACCTCCGTGAGCAGCTGCTCCCCGAGCCGGGCCAGCATCCTGACCGGCCTACCCCAGCACCAGAACGGGATGTACGGGCTGCACCAGGACGTGCATCACTTCAACTCCTTCGACGGCGTGAGGAGCCTGCCCCAGCTGCTCAGCCACGCAGGCATCCGGACAGGGATAATTGGGAAGAAGCACGTGGGGCCGGCGGCTGTGTACCCCTTCGACTTCGCCTACACAGAGGAGAACAGCTCAGTCCTGCAGGTGGGGAGAAACATCACCCGGATCAAGGAGCTTGTCCGGCGCTTCCTGCAGAGCCAGGACGAGAGGCCTTTCTTCCTCTATGTTGCCTTCCACGACCCTCACCGCTGCGGGCACTCCCAGCCCCAGTATGGGCCCTTTTGTGAGAAGTTTGGCAATGGACAGAGCGGGATGGGCTGGATCCCTGACTGGAAGCCACAGATTTACCAGCCAGAGCAAGTGCAGGTCCCTCCCTTTGTCCCAGACACGCCGGCTGCCCGGGAGGACCTGGCTGCCCAGTACACGACCATCGGGCGCATGGACCAAGGGATCGGGCTGGTCCTGCAGGAGCTGCTCCACGCCGGTTTCCTCAACAGCACCCTGGTGATCTACAC",
+                    "midline": "|| ||||||||||| || ||||||||||| || ||||| |||||| |||| || ||||| |||||||| ||||| ||||||||||||||||||||||||||||| ||||||||||||||||||   ||| |||||||||| | |||||||||||| || ||  | || ||||| || || |||||||||||||||||||||| | | |||||||| || ||||| || ||||| ||||||||  |||| ||||| ||||||||| | ||||||||  | || |||  ||| ||||||   ||||||||||  ||||| ||  |||||||||||||||| || |||||||||||||| |||||||| |||||||||||||||||||| ||  |||| ||||||||||||||||| ||| ||||||| |||||  | ||||| |||||||  || |||   ||| | |||  | | |||| ||| |||  ||| |||||  |||| ||||| ||||| |  |||||||| || |||||||| ||| |||| ||||||||||||||  | || ||||| || ||||||||||   |||||||| |||| |||  ||| |||||||||| |||"
+                  }
+                ]
+              },
+              {
+                "num": 2,
+                "description": [
+                  {
+                    "id": "gi|1341054036|ref|XM_023946784.1|",
+                    "accession": "XM_023946784",
+                    "title": "PREDICTED: Cyanistes caeruleus N-sulphoglucosamine sulphohydrolase-like (LOC111943928), partial mRNA",
+                    "taxid": 156563,
+                    "sciname": "Cyanistes caeruleus"
+                  }
+                ],
+                "len": 437,
+                "hsps": [
+                  {
+                    "num": 1,
+                    "bit_score": 361.217,
+                    "score": 195,
+                    "evalue": 5.17463e-97,
+                    "identity": 355,
+                    "query_from": 378,
+                    "query_to": 812,
+                    "query_strand": "Plus",
+                    "hit_from": 3,
+                    "hit_to": 437,
+                    "hit_strand": "Plus",
+                    "align_len": 435,
+                    "gaps": 0,
+                    "qseq": "ATCATCGGGAAGAAGCACGTGGGGCCGGAGACCGTGTACCCGTTTGACTTTGCGTACACGGAGGAGAATGGCTCCGTCCTCCAGGTGGGGCGGAACATCACTAGAATTAAGCTGCTCGTCCGGAAATTCCTGCAGACTCAGGATGACCGGCCTTTCTTCCTCTACGTCGCCTTCCACGACCCCCACCGCTGTGGGCACTCCCAGCCCCAGTACGGAACCTTCTGTGAGAAGTTTGGCAACGGAGAGAGCGGCATGGGTCGTATCCCAGACTGGACCCCCCAGGCCTACGACCCACTGGACGTGCTGGTGCCTTACTTCGTCCCCAACACCCCGGCAGCCCGAGCCGACCTGGCCGCTCAGTACACCACCGTCGGCCGCATGGACCAAGGAGTTGGACTGGTGCTCCAGGAGCTGCGTGACGCCGGTGTCCTGAAC",
+                    "hseq": "ATAATTGGGAAGAAGCACGTGGGGCCCGAGGCTGTGTACCCCTTCGACTTTGCCTACACAGAGGAGAACAGTTCGGTCCTGCAGGTTGGGAGAAACATCAGCCGGATCAAGGCGCTCGTCCGGCGGTTCCTGCAGAGCCAGGACGAGCGGCCTTTCTTCCTCTATGTTGCCTTCCACGACCCCCACCGCTGTGGGCACTCCCAGCCCCAGTACGGGGCCTTCTGTGAGAAGTTTGGCAATGGCGAGAGCGGCATGGGCTGGATCCCTGACTGGAAACCACAGATTTACCGCCCAGAACAAGTGCAGGTCCCTGCCTTTGTCCCGGACACGCCGGCTGCCCGGGCAGACCTGGCTGCGCAGTACACGACCATCGGGCGCATGGACCAAGGGATCGGGCTGGTGCTGCAGGAGCTGCGCCACGCTGGCGTCCTCAAC",
+                    "midline": "|| || |||||||||||||||||||| ||| | |||||||| || |||||||| ||||| ||||||||  | || ||||| ||||| ||| | |||||||   | || |||  ||||||||||   ||||||||||  ||||| || ||||||||||||||||| || |||||||||||||||||||||||||||||||||||||||||||||||  |||||||||||||||||||||| || ||||||||||||||  | ||||| |||||||  || |||   |||  ||||    | |||| ||| |||  ||| |||||  |||| ||||| ||||| || |||||||| || |||||||| ||| |||| ||||||||||||||  | || |||||||| |||||||||||  |||| || ||||| |||"
+                  }
+                ]
+              }
+            ],
+            "stat": {
+              "db_num": 252364,
+              "db_len": 942514600,
+              "hsp_len": 30,
+              "eff_space": 2500974344000,
+              "kappa": 0.46,
+              "lambda": 1.28,
+              "entropy": 0.85
             }
-          ],
-          "stat": {
-            "db_num": 252364,
-            "db_len": 942514600,
-            "hsp_len": 30,
-            "eff_space": 2500974344000,
-            "kappa": 0.46,
-            "lambda": 1.28,
-            "entropy": 0.85
           }
         }
       }
     }
-  }
-]
+  ]
 }
 

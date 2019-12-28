@@ -1,148 +1,148 @@
 {
-"BlastOutput2": [
-{
-    "report": {
-      "program": "blastn",
-      "version": "BLASTN 2.10.0+",
-      "reference": "Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), \"A greedy algorithm for aligning DNA sequences\", J Comput Biol 2000; 7(1-2):203-14.",
-      "search_target": {
-        "db": "nt_v5"
-      },
-      "params": {
-        "expect": 10,
-        "sc_match": 1,
-        "sc_mismatch": -2,
-        "gap_open": 0,
-        "gap_extend": 0,
-        "filter": "L;m;",
-        "entrez_query": "txid9598 [ORGN] OR txid7719 [ORGN] OR txid7757 [ORGN] OR txid51511 [ORGN]"
-      },
-      "results": {
-        "search": {
-          "query_id": "NM_020223.4",
-          "query_title": "Homo sapiens FAM20C golgi associated secretory pathway kinase (FAM20C), mRNA",
-          "query_len": 3176,
-          "query_masking": [
-            {
-              "from": 48,
-              "to": 119
-            },
-            {
-              "from": 147,
-              "to": 208
-            },
-            {
-              "from": 288,
-              "to": 359
-            },
-            {
-              "from": 778,
-              "to": 862
-            },
-            {
-              "from": 1523,
-              "to": 1529
+  "BlastOutput2": [
+    {
+      "report": {
+        "program": "blastn",
+        "version": "BLASTN 2.10.0+",
+        "reference": "Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), \"A greedy algorithm for aligning DNA sequences\", J Comput Biol 2000; 7(1-2):203-14.",
+        "search_target": {
+          "db": "nt_v5"
+        },
+        "params": {
+          "expect": 10,
+          "sc_match": 1,
+          "sc_mismatch": -2,
+          "gap_open": 0,
+          "gap_extend": 0,
+          "filter": "L;m;",
+          "entrez_query": "txid9598 [ORGN] OR txid7719 [ORGN] OR txid7757 [ORGN] OR txid51511 [ORGN]"
+        },
+        "results": {
+          "search": {
+            "query_id": "NM_020223.4",
+            "query_title": "Homo sapiens FAM20C golgi associated secretory pathway kinase (FAM20C), mRNA",
+            "query_len": 3176,
+            "query_masking": [
+              {
+                "from": 48,
+                "to": 119
+              },
+              {
+                "from": 147,
+                "to": 208
+              },
+              {
+                "from": 288,
+                "to": 359
+              },
+              {
+                "from": 778,
+                "to": 862
+              },
+              {
+                "from": 1523,
+                "to": 1529
+              }
+            ],
+            "hits": [
+              {
+                "num": 1,
+                "description": [
+                  {
+                    "id": "gi|1367315032|ref|XM_024357672.1|",
+                    "accession": "XM_024357672",
+                    "title": "PREDICTED: Pan troglodytes FAM20C, golgi associated secretory pathway kinase (FAM20C), mRNA",
+                    "taxid": 9598,
+                    "sciname": "Pan troglodytes"
+                  }
+                ],
+                "len": 2789,
+                "hsps": [
+                  {
+                    "num": 1,
+                    "bit_score": 3651.95,
+                    "score": 1977,
+                    "evalue": 0,
+                    "identity": 2024,
+                    "query_from": 404,
+                    "query_to": 2450,
+                    "query_strand": "Plus",
+                    "hit_from": 1,
+                    "hit_to": 2046,
+                    "hit_strand": "Plus",
+                    "align_len": 2047,
+                    "gaps": 1,
+                    "qseq": "CGCTCCGGAGAGGCCGAGCGGGGACGGGCCCGAGATGGCGCGGGGACCCAGCGCTCCGGCGGCGGGCGCCCTGCACGCGGCCCGGGCCCGGGGACAGCCCCGGAGCTGGTAGCCGCCCGGCACCGATGGACCTTGACCCGCGAGGCGGCGCCGCGCTCGTGCCCAGCTGCAGCTAGAGGGGCGCGCGGGCAGAACGCGCTCCAGGCCCGGGCCGGCCCGCGCGGCCATGAAGATGATGCTGGTGCGCCGGTTCCGCGTGCTCATCCTGATGGTGTTCCTGGTGGCCTGCGCGCTGCACATCGCCCTGGACCTGCTGCCCAGGCTGGAGCGACGCGGCGCGCGGCCCTCGGGGGAGCCCGGCTGTTCGTGCGCGCAgcccgccgccgaggtggccgcgcccggctgggcccaggttcggggccgccccggggagcccccggccgcctcctccgccgccggcGACGCGGGCTGGCCCAACAAGCACACGCTCCGCATCCTGCAGGACTTCAGCTCCGACCCCTCCTCCAACCTCTCGTCCCACTCGCTGGAGAAACTGCCGCCCGCGGCCGAGCCGGCCGAGCGCGCCTTGCGGGGGCGGGATCCCGGCGCCCTAAGACCCCACGACCCCGCGCACCGGCCGCTGCTGCGAGACCCCGGCCCGCGTCGGTCCGAGTCGCCCCCCGGCCCCGGCGGAGACGCCTCCCTCCTGGCCAGGCTGTTCGAGCACCCGCTTTACCGGGTGGCGGTTCCGCCGCTCACGGAGGAGGACGTCCTGTTCAATGTGAACAGCGACACCAGGCTCAGCCCCAAAGCGGCGGAGAACCCGGACTGGCCGCATGCGGGTGCTGAAGGTGCAGAATTCCTCTCCCCCGGGGAGGCGGCCGTGGACTCCTATCCCAACTGGCTCAAGTTCCACATTGGTATCAACCGGTACGAGCTGTACTCCAGACACAACCCGGCCATCGAGGCCCTGCTGCACGACCTCAGCTCCCAGAGGATCACCAGCGTGGCCATGAAGTCGGGGGGCACGCAGCTGAAGCTCATCATGACCTTCCAGAATTACGGGCAAGCGCTGTTCAAACCCATGAAACAAACGAGGGAGCAGGAGACACCCCCTGACtttttttATTTCTCTGACTACGAGAGGCACAATGCGGAGATTGCTGCCTTCCACCTGGACAGGATCCTGGACTTCCGCCGGGTCCCTCCCGTGGCCGGCAGGATGGTCAACATGACCAAGGAGATCCGGGACGTCACACGGGACAAGAAGCTCTGGAGGACCTTCTTCATCTCTCCAGCCAACAACATCTGCTTCTACGGCGAGTGTTCCTACTACTGCTCCACGGAGCACGCCCTGTGCGGGAAGCCAGACCAGATCGAGGGCTCGCTGGCGGCCTTCCTGCCCGACCTGTCCCTGGCCAAGAGGAAGACCTGGCGGAACCCTTGGCGGCGTTCCTACCACAAGCGCAAGAAGGCCGAGTGGGAGGTGGACCCTGACTACTGCGAGGAGGTGAAGCAGACACCGCCCTACGACAGCAGCCACCGCATCCTGGACGTCATGGACATGACGATCTTCGACTTCCTCATGGGAAACATGGACCGTCACCACTACGAGACTTTTGAGAAGTTTGGGAATGAAACGTTCATCATCCACTTAGACAATGGAAGAGGGTTTGGGAAGTATTCGCACGACGAGCTCTCCATCCTGGTGCCGCTACAGCAGTGCTGCAGGATCCGGAAGTCCACCTACCTGCGTCTGCAGCTCCTGGCCAAGGAGGAGTACAAGCTGAGCCTGCTGATGGCCGAGTCTCTGCGGGGGGACCAGGTGGCACCCGTGCTGTACCAGCCGCACCTGGAGGCCCTGGACCGGCGGCTCCGCGTCGTGCTAAAGGCCGTCCGGGACTGCGTGGAGAGGAACGGGCTCCACAGCGTGGTGGATGACGACCTGGACACTGAGCACAGAGCCGCCTCGGCGAGGTAGTGTCCGCCGGCCGCTGCGCTGCCCGGGACGGAGACAGAGGCGCCGGACCTCCCAGCAAGCGCATGC",
+                    "hseq": "CGCTCCGGAGAGGCCGAGCGGGGACGGGCCCGAGATGGCGCGGGGACCCAGCGCTTTGGCGGCGGGCGCCCTGCACGCGGCCCGGGCCCGGGGACAGCCCCGGAGCTGGTAGCCGCCCGGCACCGATGGACCTTGACCCGCGAGGCGGCGCCGCGCTCGTGCCCAGCTGCAGCTAGAGGGGCGCGCGGGCAGAACGCGCTCCAGGCCCGGGCCGGCCCGCGCGGCCATGAAGATGATCCTGGTGCGCCGGTTCCGCGTGCTCATCCTGATGGTGTTCCTGGTGGCCTGCGCGCTGCACATCGCCCTGGACCTGCTGCCCAGGCTGGAGCGACGCGGCGCGCGGCCCTCGGGGGAGCCCGGCTGTTCGTGCGCGCAGCCCGCCGCCGAGGTGGCCGCGCCCGGCTGGGCCCAGGTTCGGGGCCGCCCCGGGGAGCCCCCGGCCGCCTCCTCCGCCGCCGGCGACGCGGGCTGGCCCAACAAGCACACGCTCCGCATCCTGCAGGACTTCAGCTCCGACCCCTCCTCCAACCTCTCGTCCCACTCGCTGGAGAAACTGCCGCCGGCGGCCGAGCCGGCCGAGCGCGCCTTGCGGGGGCGGGATCCCGGCGCCCTAAGACCCCACGACCCCGCGCACCGGCCGCTGCTGCGAGACCCCGGCCCGCGTCGGTCCGAGTCGCCCCCCGGCCCCGGCGGAGACGGCTCCCTCCTGGCCAGGCTGTTCGAGCACCCGCTGTACCGGGTGGCGGTTCCGCCGCTCACGGAGGAGGACGGCCTGTTCACTGTGAACAGCGACACCAGGCTCAGCCCCAAAGCGGCGGAGAACCCGGACTGGCCGCATGCGGGTGTTGAAGGTGCAGAATTCCCCTCCCCCGGGGAGGCGGCCGTGGACTCCTATCCCAACTGGCTCAAGTTCCACATTGGTATCAACCGGTACGAGCTGTACTCCAGACACAACCCGGCCATCGAGGCCCTGCTGCACGACCTCAGCTCCCAGAGGATCACCAGCGTGGCCATGAAGTCGGGGGGCACGCAGCTGAAGCTCATCATGACCTTCCAGAATTACGGGCAAGCGCTGTTCAAACCCATGAAACAAACGAGGGAGCAGGAGACGCCCCCTGACTTTTTTTATTTCTCTGACTATGAGAGGCACAATGCGGAGATTGCTGCCTTCCACCTGGACAGGATCCTGGACTTCCGCCGGGTCCCTCCCGTGGCCGGCAGGATGGTCAACATGACCAAGGAGATCCGGGACGTCACACGGGACAAGAAGCTCTGGAGGACCTTCTTCATCTCGCCAGCCAACAACATCTGCTTCTACGGCGAGTGCTCCTACTACTGCTCCACGGAGCATGCCCTGTGCGGGAAGCCAGACCAGATCGAGGGCTCGCTGGCGGCCTTCCTGCCCGACCTGTCCCTGGCCAAGAGGAAGACCTGGCGGAACCCTTGGCGGCGTTCCTACCACAAGCGCAAGAAGGCCGAGTGGGAGGTGGACCCTGACTACTGCGAGGAGGTGAAGCAGACACCGCCCTACGACAGCAGCCACCGCATCCTGGACGTTATGGACATGACGATCTTCGACTTCCTCATGGGAAACATGGACCGTCACCACTACGAGACTTTTGAGAAGTTTGGGAATGAAACGTTCATCATCCACTTAGACAATGGAAGAGGGTTTGGGAAGTATTCGCACGACGAGCTCTCCATCCTGGTGCCGCTACAGCAGTGCTGCAGGATCCGGAAGTCCACCTACCTGCGTCTGCAGCTCCTGGCCAAGGAGGAGTACAAGCTGAGCCTGCTGATGGCCGAGTCTCTGCGGGGGGACCAGGTGGCACCCGTGCTGTACCAGCCGCACCTGGAGGCCCTGGACCGGCGGCTCCGCATCGTGCTAAAGGCCGTCCGGGACTGCGTGGAGAGGGACGGGCTCCACAGCGTGGTGGAGGAGGACCTGGACACTGGGCACAGAGCCGCCTCGGCGAGGTAGTGTCCGCCGGCCGCTGCGCTGCCCGGGACGGAGACAGAGGGGCCGGACCTCCCAGCAAGCGC-TGC",
+                    "midline": "|||||||||||||||||||||||||||||||||||||||||||||||||||||||  |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||| |||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||| ||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||| |||||||||||||||||||||| || ||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||| |||"
+                  },
+                  {
+                    "num": 2,
+                    "bit_score": 1330.71,
+                    "score": 720,
+                    "evalue": 0,
+                    "identity": 740,
+                    "query_from": 2400,
+                    "query_to": 3149,
+                    "query_strand": "Plus",
+                    "hit_from": 2040,
+                    "hit_to": 2789,
+                    "hit_strand": "Plus",
+                    "align_len": 750,
+                    "gaps": 0,
+                    "qseq": "GCGCTGCCCGGGACGGAGACAGAGGCGCCGGACCTCCCAGCAAGCGCATGCGCCCGTCGTGAATTCAGTGAATTCAGAGGCAGGACGGGATCATCCGGAGTCGGGAGCTGCTGCCACAGGAGGCGAGGCTCCCCAGGTCTCATAGGACACATTTTGTCAGTGTTTGACCAGAAAAGCTTGGGAAGGAAGCGCTGTCTGTGCTCACGGACAGAGGCGGCCGGCGCCGGAGGCATTCCATCCTTTCTGTAGGGAAAGGAGCCTTTATTTACTATTTTGTATTTATATTTGATGAATAAGTATATAAACAGAGACGTGTACACAGATGCCAATCACCTACCAAACCAAACACGAGGACCGCCCTCCCTGGTTCTGGGGGCCCCTCAAGGCCAAGCTCACCCCTCAAGTGCTCTCACACTCGGGACCTAATTCAAGTAAAAACCCTTTCTCCTTCCTGGGGCCTCGGCTCCTGGAGGGCTGGAGGGTCTCGTCTGAGGACGGGAGGAGGCTCTCGCTGGACGTCTGGCCTGTGCGCTGGTGGACGGATGCCTACGTGGTTTTGGAGGACCCGATGACCAGGCGTCCTGCGAGTCCGCCCGCTGGCCTGCAGCACCCACCTCGGACTTGGCTGTGGACGGTTGGTGCAAGTGCATCCTGCAGGGCTGGCTGTGCGCAGCTGTGGGCTGACCTTTGCAGAGTTTTGTGGAATAGTTTGCAATGTCATAAAAGTGCAATAAAGGTACAGCAGATGTG",
+                    "hseq": "GCGCTGCCCGGGATGGAGACAGAGGGGCCGGACCTCCCAGCAAGCGCACGCGCCCGTCGTGAATTCAGTGAATTCAGAGGCAGGACGGGATCATCCGGAGTCGGGAGCTGCTGCCACAGGAGGCGAGGCTCCCCAGGTCTCACAGGACACATTTTGTCAGTGTTTGACCAGAAAAGCTTGGGAAGGAAGCGCTGTCTGTGCTCACGGACAGAGGCGGCCGGCGCCGGAGGCATTCCATCCTTTCTGTAGGGAAAGGAGCCTTTATTTACTATTTTGTATTTATATATGATGAATAAGTATATAAACAGAGACGTGTACGCAGACGCCAATCACCTACCAAACCAAACACGAGGACCGCCCTCCCTGGTTCTGGGGGCCCCTCAAGGCCAAGCTCACCCCTCAAGTGCTCTCACACTCGGGACCTAATTCAAGTAAAAACCCTTTCTCCTTCCTGGGGCCTCGGCTCCTGGAGGGCTGGAGGGTCTCGTCTGAGGACGGGAGGAGGCTCTCGCTGGACGTCTGGCCTGTGCGCTGGTGGACGGATGCCTACGCGGTTTTGGAGGACCCGATGACCAGGCGTCCTGCGAGTCCGCCCGCTGGCCTGCAGCGCCCACCTCGGACTTGGCTGTGGACGGTTGGTGCAAGTGCATCCTGCAGGGCTGGCTGTGCGCAGCTGTGGGCTGACCTTTGCAGAGTTTTGTGGAATAGTTTGCAATGTGATAAAAGTGCAATAAAGGTACAGCAGATGTG",
+                    "midline": "||||||||||||| ||||||||||| |||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||| |||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||"
+                  }
+                ]
+              },
+              {
+                "num": 2,
+                "description": [
+                  {
+                    "id": "gi|1367318932|ref|XM_024358165.1|",
+                    "accession": "XM_024358165",
+                    "title": "PREDICTED: Pan troglodytes collagen alpha-1(I) chain-like (LOC112209826), mRNA",
+                    "taxid": 9598,
+                    "sciname": "Pan troglodytes"
+                  }
+                ],
+                "len": 2928,
+                "hsps": [
+                  {
+                    "num": 1,
+                    "bit_score": 1105.42,
+                    "score": 598,
+                    "evalue": 0,
+                    "identity": 627,
+                    "query_from": 1,
+                    "query_to": 631,
+                    "query_strand": "Plus",
+                    "hit_from": 638,
+                    "hit_to": 1,
+                    "hit_strand": "Minus",
+                    "align_len": 639,
+                    "gaps": 9,
+                    "qseq": "GAGAGGCTCGGCCAGGCGGGAGCTGCGCTCGGGGCGGCCGCTGCACCTgcccgggaccccgccggccgctccccgcgcccaccccttccgcccttcgccccccccttccccccagccccgGTCTCCCGGGCGCGGCGTGAGAGCAGAgcccggcccggaggagccgccccttccccgcccgcccgcccg--------gcgcctggagaggagcgcgcTGAGGATCGGGACGCCTGCGGCCGCCGCCACCGCCCAGGCCCGTCGCGCCCCGGCCGGGATGGACCCACACGCCCGATGagccccgcgccggcggctgcgagcgccgagcctccccctgctgcggccccagccgccccccgcgcgcccggcTCCGCGGACCAGGACCCCTGGGCTCCCCGGCTGAGGGCGCGGCCGCTCCGGAGAGGCCGAGCGGGGACGGGCCCGAGATGGCGCGGGGACCCAGCGCTCCGGCGGCGGGCGCCCTGCACGCGGCCCGGGCCCGGGGACAGCCCCGGAGCTGGTAGCCGCCCGGCACCGATGGACCTTGACCCGCGAGGCGGCGCCGCGCTCGTGCCCAGCTGCAGCTAGAGGGGCGCGCGGGCAGAACGCGCTCCAGGCCCGGGCCGGCCCGCGCGGCCAT",
+                    "hseq": "GAGAGGCTCGGCCAGGCGGGAGCTGCGCTCGGGGCGGCCGCTGCACCTGCCCGGGACCCCGCCGGCCGCTCCCCGCGCCCACCCCTTCCGCCCTTCGCCCCCCCCTTCCCCCCAGCCCCGGTCTCC-GGGCGCGGCGTGAGAGCAGAGCCCGGCCCGGAGGAGCCGCCCCTTCCCCGCCCGCCCGCCCGCCCGCCCGGCGCCTGGAGAGGAGCGCGCTGAGGATCGGGTCGCCTGCGGCCGCCGCCACCGCCCAGGCCCGTCGCGCCCCGGCCGGGATGGACCCACACGCCCGATGAGCCCCGCGCCGGCGGCTGCGAGCGCCGAGCCTCCCCCTGCTGCGGCCCCAGCCGCCCCCCGCGCGCCCGGCTCCGCGGACCAGGACCCCTGGGCTCCCCGGCTGAGGGCGCGGCCGCTCCGGAGAGGCCGAGCGGGGACGGGCCCGAGATGGCGCGGGGACCCAGCGCTTTGGCGGCGGGCGCCCTGCACGCGGCCCGGGCCCGGGGACAGCCCCGGAGCTGGTAGCCGCCCGGCACCGATGGACCTTGACCCGCGAGGCGGCGCCGCGCTCGTGCCCAGCTGCAGCTAGAGGGGCGCGCGGGCAGAACGCGCTCCAGGCCCGGGCCGGCCCGCGCGGCCAT",
+                    "midline": "|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||        ||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||"
+                  }
+                ]
+              }
+            ],
+            "stat": {
+              "db_num": 154807,
+              "db_len": 1184310464,
+              "hsp_len": 31,
+              "eff_space": 3709563500815,
+              "kappa": 0.46,
+              "lambda": 1.28,
+              "entropy": 0.85
             }
-          ],
-          "hits": [
-            {
-              "num": 1,
-              "description": [
-                {
-                  "id": "gi|1367315032|ref|XM_024357672.1|",
-                  "accession": "XM_024357672",
-                  "title": "PREDICTED: Pan troglodytes FAM20C, golgi associated secretory pathway kinase (FAM20C), mRNA",
-                  "taxid": 9598,
-                  "sciname": "Pan troglodytes"
-                }
-              ],
-              "len": 2789,
-              "hsps": [
-                {
-                  "num": 1,
-                  "bit_score": 3651.95,
-                  "score": 1977,
-                  "evalue": 0,
-                  "identity": 2024,
-                  "query_from": 404,
-                  "query_to": 2450,
-                  "query_strand": "Plus",
-                  "hit_from": 1,
-                  "hit_to": 2046,
-                  "hit_strand": "Plus",
-                  "align_len": 2047,
-                  "gaps": 1,
-                  "qseq": "CGCTCCGGAGAGGCCGAGCGGGGACGGGCCCGAGATGGCGCGGGGACCCAGCGCTCCGGCGGCGGGCGCCCTGCACGCGGCCCGGGCCCGGGGACAGCCCCGGAGCTGGTAGCCGCCCGGCACCGATGGACCTTGACCCGCGAGGCGGCGCCGCGCTCGTGCCCAGCTGCAGCTAGAGGGGCGCGCGGGCAGAACGCGCTCCAGGCCCGGGCCGGCCCGCGCGGCCATGAAGATGATGCTGGTGCGCCGGTTCCGCGTGCTCATCCTGATGGTGTTCCTGGTGGCCTGCGCGCTGCACATCGCCCTGGACCTGCTGCCCAGGCTGGAGCGACGCGGCGCGCGGCCCTCGGGGGAGCCCGGCTGTTCGTGCGCGCAgcccgccgccgaggtggccgcgcccggctgggcccaggttcggggccgccccggggagcccccggccgcctcctccgccgccggcGACGCGGGCTGGCCCAACAAGCACACGCTCCGCATCCTGCAGGACTTCAGCTCCGACCCCTCCTCCAACCTCTCGTCCCACTCGCTGGAGAAACTGCCGCCCGCGGCCGAGCCGGCCGAGCGCGCCTTGCGGGGGCGGGATCCCGGCGCCCTAAGACCCCACGACCCCGCGCACCGGCCGCTGCTGCGAGACCCCGGCCCGCGTCGGTCCGAGTCGCCCCCCGGCCCCGGCGGAGACGCCTCCCTCCTGGCCAGGCTGTTCGAGCACCCGCTTTACCGGGTGGCGGTTCCGCCGCTCACGGAGGAGGACGTCCTGTTCAATGTGAACAGCGACACCAGGCTCAGCCCCAAAGCGGCGGAGAACCCGGACTGGCCGCATGCGGGTGCTGAAGGTGCAGAATTCCTCTCCCCCGGGGAGGCGGCCGTGGACTCCTATCCCAACTGGCTCAAGTTCCACATTGGTATCAACCGGTACGAGCTGTACTCCAGACACAACCCGGCCATCGAGGCCCTGCTGCACGACCTCAGCTCCCAGAGGATCACCAGCGTGGCCATGAAGTCGGGGGGCACGCAGCTGAAGCTCATCATGACCTTCCAGAATTACGGGCAAGCGCTGTTCAAACCCATGAAACAAACGAGGGAGCAGGAGACACCCCCTGACtttttttATTTCTCTGACTACGAGAGGCACAATGCGGAGATTGCTGCCTTCCACCTGGACAGGATCCTGGACTTCCGCCGGGTCCCTCCCGTGGCCGGCAGGATGGTCAACATGACCAAGGAGATCCGGGACGTCACACGGGACAAGAAGCTCTGGAGGACCTTCTTCATCTCTCCAGCCAACAACATCTGCTTCTACGGCGAGTGTTCCTACTACTGCTCCACGGAGCACGCCCTGTGCGGGAAGCCAGACCAGATCGAGGGCTCGCTGGCGGCCTTCCTGCCCGACCTGTCCCTGGCCAAGAGGAAGACCTGGCGGAACCCTTGGCGGCGTTCCTACCACAAGCGCAAGAAGGCCGAGTGGGAGGTGGACCCTGACTACTGCGAGGAGGTGAAGCAGACACCGCCCTACGACAGCAGCCACCGCATCCTGGACGTCATGGACATGACGATCTTCGACTTCCTCATGGGAAACATGGACCGTCACCACTACGAGACTTTTGAGAAGTTTGGGAATGAAACGTTCATCATCCACTTAGACAATGGAAGAGGGTTTGGGAAGTATTCGCACGACGAGCTCTCCATCCTGGTGCCGCTACAGCAGTGCTGCAGGATCCGGAAGTCCACCTACCTGCGTCTGCAGCTCCTGGCCAAGGAGGAGTACAAGCTGAGCCTGCTGATGGCCGAGTCTCTGCGGGGGGACCAGGTGGCACCCGTGCTGTACCAGCCGCACCTGGAGGCCCTGGACCGGCGGCTCCGCGTCGTGCTAAAGGCCGTCCGGGACTGCGTGGAGAGGAACGGGCTCCACAGCGTGGTGGATGACGACCTGGACACTGAGCACAGAGCCGCCTCGGCGAGGTAGTGTCCGCCGGCCGCTGCGCTGCCCGGGACGGAGACAGAGGCGCCGGACCTCCCAGCAAGCGCATGC",
-                  "hseq": "CGCTCCGGAGAGGCCGAGCGGGGACGGGCCCGAGATGGCGCGGGGACCCAGCGCTTTGGCGGCGGGCGCCCTGCACGCGGCCCGGGCCCGGGGACAGCCCCGGAGCTGGTAGCCGCCCGGCACCGATGGACCTTGACCCGCGAGGCGGCGCCGCGCTCGTGCCCAGCTGCAGCTAGAGGGGCGCGCGGGCAGAACGCGCTCCAGGCCCGGGCCGGCCCGCGCGGCCATGAAGATGATCCTGGTGCGCCGGTTCCGCGTGCTCATCCTGATGGTGTTCCTGGTGGCCTGCGCGCTGCACATCGCCCTGGACCTGCTGCCCAGGCTGGAGCGACGCGGCGCGCGGCCCTCGGGGGAGCCCGGCTGTTCGTGCGCGCAGCCCGCCGCCGAGGTGGCCGCGCCCGGCTGGGCCCAGGTTCGGGGCCGCCCCGGGGAGCCCCCGGCCGCCTCCTCCGCCGCCGGCGACGCGGGCTGGCCCAACAAGCACACGCTCCGCATCCTGCAGGACTTCAGCTCCGACCCCTCCTCCAACCTCTCGTCCCACTCGCTGGAGAAACTGCCGCCGGCGGCCGAGCCGGCCGAGCGCGCCTTGCGGGGGCGGGATCCCGGCGCCCTAAGACCCCACGACCCCGCGCACCGGCCGCTGCTGCGAGACCCCGGCCCGCGTCGGTCCGAGTCGCCCCCCGGCCCCGGCGGAGACGGCTCCCTCCTGGCCAGGCTGTTCGAGCACCCGCTGTACCGGGTGGCGGTTCCGCCGCTCACGGAGGAGGACGGCCTGTTCACTGTGAACAGCGACACCAGGCTCAGCCCCAAAGCGGCGGAGAACCCGGACTGGCCGCATGCGGGTGTTGAAGGTGCAGAATTCCCCTCCCCCGGGGAGGCGGCCGTGGACTCCTATCCCAACTGGCTCAAGTTCCACATTGGTATCAACCGGTACGAGCTGTACTCCAGACACAACCCGGCCATCGAGGCCCTGCTGCACGACCTCAGCTCCCAGAGGATCACCAGCGTGGCCATGAAGTCGGGGGGCACGCAGCTGAAGCTCATCATGACCTTCCAGAATTACGGGCAAGCGCTGTTCAAACCCATGAAACAAACGAGGGAGCAGGAGACGCCCCCTGACTTTTTTTATTTCTCTGACTATGAGAGGCACAATGCGGAGATTGCTGCCTTCCACCTGGACAGGATCCTGGACTTCCGCCGGGTCCCTCCCGTGGCCGGCAGGATGGTCAACATGACCAAGGAGATCCGGGACGTCACACGGGACAAGAAGCTCTGGAGGACCTTCTTCATCTCGCCAGCCAACAACATCTGCTTCTACGGCGAGTGCTCCTACTACTGCTCCACGGAGCATGCCCTGTGCGGGAAGCCAGACCAGATCGAGGGCTCGCTGGCGGCCTTCCTGCCCGACCTGTCCCTGGCCAAGAGGAAGACCTGGCGGAACCCTTGGCGGCGTTCCTACCACAAGCGCAAGAAGGCCGAGTGGGAGGTGGACCCTGACTACTGCGAGGAGGTGAAGCAGACACCGCCCTACGACAGCAGCCACCGCATCCTGGACGTTATGGACATGACGATCTTCGACTTCCTCATGGGAAACATGGACCGTCACCACTACGAGACTTTTGAGAAGTTTGGGAATGAAACGTTCATCATCCACTTAGACAATGGAAGAGGGTTTGGGAAGTATTCGCACGACGAGCTCTCCATCCTGGTGCCGCTACAGCAGTGCTGCAGGATCCGGAAGTCCACCTACCTGCGTCTGCAGCTCCTGGCCAAGGAGGAGTACAAGCTGAGCCTGCTGATGGCCGAGTCTCTGCGGGGGGACCAGGTGGCACCCGTGCTGTACCAGCCGCACCTGGAGGCCCTGGACCGGCGGCTCCGCATCGTGCTAAAGGCCGTCCGGGACTGCGTGGAGAGGGACGGGCTCCACAGCGTGGTGGAGGAGGACCTGGACACTGGGCACAGAGCCGCCTCGGCGAGGTAGTGTCCGCCGGCCGCTGCGCTGCCCGGGACGGAGACAGAGGGGCCGGACCTCCCAGCAAGCGC-TGC",
-                  "midline": "|||||||||||||||||||||||||||||||||||||||||||||||||||||||  |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||| |||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||| ||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||| |||||||||||||||||||||| || ||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||| |||"
-                },
-                {
-                  "num": 2,
-                  "bit_score": 1330.71,
-                  "score": 720,
-                  "evalue": 0,
-                  "identity": 740,
-                  "query_from": 2400,
-                  "query_to": 3149,
-                  "query_strand": "Plus",
-                  "hit_from": 2040,
-                  "hit_to": 2789,
-                  "hit_strand": "Plus",
-                  "align_len": 750,
-                  "gaps": 0,
-                  "qseq": "GCGCTGCCCGGGACGGAGACAGAGGCGCCGGACCTCCCAGCAAGCGCATGCGCCCGTCGTGAATTCAGTGAATTCAGAGGCAGGACGGGATCATCCGGAGTCGGGAGCTGCTGCCACAGGAGGCGAGGCTCCCCAGGTCTCATAGGACACATTTTGTCAGTGTTTGACCAGAAAAGCTTGGGAAGGAAGCGCTGTCTGTGCTCACGGACAGAGGCGGCCGGCGCCGGAGGCATTCCATCCTTTCTGTAGGGAAAGGAGCCTTTATTTACTATTTTGTATTTATATTTGATGAATAAGTATATAAACAGAGACGTGTACACAGATGCCAATCACCTACCAAACCAAACACGAGGACCGCCCTCCCTGGTTCTGGGGGCCCCTCAAGGCCAAGCTCACCCCTCAAGTGCTCTCACACTCGGGACCTAATTCAAGTAAAAACCCTTTCTCCTTCCTGGGGCCTCGGCTCCTGGAGGGCTGGAGGGTCTCGTCTGAGGACGGGAGGAGGCTCTCGCTGGACGTCTGGCCTGTGCGCTGGTGGACGGATGCCTACGTGGTTTTGGAGGACCCGATGACCAGGCGTCCTGCGAGTCCGCCCGCTGGCCTGCAGCACCCACCTCGGACTTGGCTGTGGACGGTTGGTGCAAGTGCATCCTGCAGGGCTGGCTGTGCGCAGCTGTGGGCTGACCTTTGCAGAGTTTTGTGGAATAGTTTGCAATGTCATAAAAGTGCAATAAAGGTACAGCAGATGTG",
-                  "hseq": "GCGCTGCCCGGGATGGAGACAGAGGGGCCGGACCTCCCAGCAAGCGCACGCGCCCGTCGTGAATTCAGTGAATTCAGAGGCAGGACGGGATCATCCGGAGTCGGGAGCTGCTGCCACAGGAGGCGAGGCTCCCCAGGTCTCACAGGACACATTTTGTCAGTGTTTGACCAGAAAAGCTTGGGAAGGAAGCGCTGTCTGTGCTCACGGACAGAGGCGGCCGGCGCCGGAGGCATTCCATCCTTTCTGTAGGGAAAGGAGCCTTTATTTACTATTTTGTATTTATATATGATGAATAAGTATATAAACAGAGACGTGTACGCAGACGCCAATCACCTACCAAACCAAACACGAGGACCGCCCTCCCTGGTTCTGGGGGCCCCTCAAGGCCAAGCTCACCCCTCAAGTGCTCTCACACTCGGGACCTAATTCAAGTAAAAACCCTTTCTCCTTCCTGGGGCCTCGGCTCCTGGAGGGCTGGAGGGTCTCGTCTGAGGACGGGAGGAGGCTCTCGCTGGACGTCTGGCCTGTGCGCTGGTGGACGGATGCCTACGCGGTTTTGGAGGACCCGATGACCAGGCGTCCTGCGAGTCCGCCCGCTGGCCTGCAGCGCCCACCTCGGACTTGGCTGTGGACGGTTGGTGCAAGTGCATCCTGCAGGGCTGGCTGTGCGCAGCTGTGGGCTGACCTTTGCAGAGTTTTGTGGAATAGTTTGCAATGTGATAAAAGTGCAATAAAGGTACAGCAGATGTG",
-                  "midline": "||||||||||||| ||||||||||| |||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||| |||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||"
-                }
-              ]
-            },
-            {
-              "num": 2,
-              "description": [
-                {
-                  "id": "gi|1367318932|ref|XM_024358165.1|",
-                  "accession": "XM_024358165",
-                  "title": "PREDICTED: Pan troglodytes collagen alpha-1(I) chain-like (LOC112209826), mRNA",
-                  "taxid": 9598,
-                  "sciname": "Pan troglodytes"
-                }
-              ],
-              "len": 2928,
-              "hsps": [
-                {
-                  "num": 1,
-                  "bit_score": 1105.42,
-                  "score": 598,
-                  "evalue": 0,
-                  "identity": 627,
-                  "query_from": 1,
-                  "query_to": 631,
-                  "query_strand": "Plus",
-                  "hit_from": 638,
-                  "hit_to": 1,
-                  "hit_strand": "Minus",
-                  "align_len": 639,
-                  "gaps": 9,
-                  "qseq": "GAGAGGCTCGGCCAGGCGGGAGCTGCGCTCGGGGCGGCCGCTGCACCTgcccgggaccccgccggccgctccccgcgcccaccccttccgcccttcgccccccccttccccccagccccgGTCTCCCGGGCGCGGCGTGAGAGCAGAgcccggcccggaggagccgccccttccccgcccgcccgcccg--------gcgcctggagaggagcgcgcTGAGGATCGGGACGCCTGCGGCCGCCGCCACCGCCCAGGCCCGTCGCGCCCCGGCCGGGATGGACCCACACGCCCGATGagccccgcgccggcggctgcgagcgccgagcctccccctgctgcggccccagccgccccccgcgcgcccggcTCCGCGGACCAGGACCCCTGGGCTCCCCGGCTGAGGGCGCGGCCGCTCCGGAGAGGCCGAGCGGGGACGGGCCCGAGATGGCGCGGGGACCCAGCGCTCCGGCGGCGGGCGCCCTGCACGCGGCCCGGGCCCGGGGACAGCCCCGGAGCTGGTAGCCGCCCGGCACCGATGGACCTTGACCCGCGAGGCGGCGCCGCGCTCGTGCCCAGCTGCAGCTAGAGGGGCGCGCGGGCAGAACGCGCTCCAGGCCCGGGCCGGCCCGCGCGGCCAT",
-                  "hseq": "GAGAGGCTCGGCCAGGCGGGAGCTGCGCTCGGGGCGGCCGCTGCACCTGCCCGGGACCCCGCCGGCCGCTCCCCGCGCCCACCCCTTCCGCCCTTCGCCCCCCCCTTCCCCCCAGCCCCGGTCTCC-GGGCGCGGCGTGAGAGCAGAGCCCGGCCCGGAGGAGCCGCCCCTTCCCCGCCCGCCCGCCCGCCCGCCCGGCGCCTGGAGAGGAGCGCGCTGAGGATCGGGTCGCCTGCGGCCGCCGCCACCGCCCAGGCCCGTCGCGCCCCGGCCGGGATGGACCCACACGCCCGATGAGCCCCGCGCCGGCGGCTGCGAGCGCCGAGCCTCCCCCTGCTGCGGCCCCAGCCGCCCCCCGCGCGCCCGGCTCCGCGGACCAGGACCCCTGGGCTCCCCGGCTGAGGGCGCGGCCGCTCCGGAGAGGCCGAGCGGGGACGGGCCCGAGATGGCGCGGGGACCCAGCGCTTTGGCGGCGGGCGCCCTGCACGCGGCCCGGGCCCGGGGACAGCCCCGGAGCTGGTAGCCGCCCGGCACCGATGGACCTTGACCCGCGAGGCGGCGCCGCGCTCGTGCCCAGCTGCAGCTAGAGGGGCGCGCGGGCAGAACGCGCTCCAGGCCCGGGCCGGCCCGCGCGGCCAT",
-                  "midline": "|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||        ||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||"
-                }
-              ]
-            }
-          ],
-          "stat": {
-            "db_num": 154807,
-            "db_len": 1184310464,
-            "hsp_len": 31,
-            "eff_space": 3709563500815,
-            "kappa": 0.46,
-            "lambda": 1.28,
-            "entropy": 0.85
           }
         }
       }
     }
-  }
-]
+  ]
 }
 

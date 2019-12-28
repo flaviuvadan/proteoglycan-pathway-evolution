@@ -1,65 +1,65 @@
 {
-"BlastOutput2": [
-{
-    "report": {
-      "program": "blastn",
-      "version": "BLASTN 2.10.0+",
-      "reference": "Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), \"A greedy algorithm for aligning DNA sequences\", J Comput Biol 2000; 7(1-2):203-14.",
-      "search_target": {
-        "db": "nt_v5"
-      },
-      "params": {
-        "expect": 10,
-        "sc_match": 1,
-        "sc_mismatch": -2,
-        "gap_open": 0,
-        "gap_extend": 0,
-        "filter": "L;m;",
-        "entrez_query": "txid144197 [ORGN] OR txid210632 [ORGN] OR txid40217 [ORGN] OR txid885580 [ORGN] OR txid7757 [ORGN] OR txid7764 [ORGN] OR txid94237 [ORGN]"
-      },
-      "results": {
-        "search": {
-          "query_id": "NM_198150.3",
-          "query_title": "Homo sapiens arylsulfatase family member K (ARSK), mRNA",
-          "query_len": 3365,
-          "query_masking": [
-            {
-              "from": 981,
-              "to": 987
+  "BlastOutput2": [
+    {
+      "report": {
+        "program": "blastn",
+        "version": "BLASTN 2.10.0+",
+        "reference": "Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), \"A greedy algorithm for aligning DNA sequences\", J Comput Biol 2000; 7(1-2):203-14.",
+        "search_target": {
+          "db": "nt_v5"
+        },
+        "params": {
+          "expect": 10,
+          "sc_match": 1,
+          "sc_mismatch": -2,
+          "gap_open": 0,
+          "gap_extend": 0,
+          "filter": "L;m;",
+          "entrez_query": "txid144197 [ORGN] OR txid210632 [ORGN] OR txid40217 [ORGN] OR txid885580 [ORGN] OR txid7757 [ORGN] OR txid7764 [ORGN] OR txid94237 [ORGN]"
+        },
+        "results": {
+          "search": {
+            "query_id": "NM_198150.3",
+            "query_title": "Homo sapiens arylsulfatase family member K (ARSK), mRNA",
+            "query_len": 3365,
+            "query_masking": [
+              {
+                "from": 981,
+                "to": 987
+              },
+              {
+                "from": 2168,
+                "to": 2195
+              },
+              {
+                "from": 2369,
+                "to": 2416
+              },
+              {
+                "from": 2796,
+                "to": 2812
+              },
+              {
+                "from": 2980,
+                "to": 2996
+              }
+            ],
+            "hits": [
+            ],
+            "stat": {
+              "db_num": 138270,
+              "db_len": 930134133,
+              "hsp_len": 30,
+              "eff_space": 3088163420055,
+              "kappa": 0.46,
+              "lambda": 1.28,
+              "entropy": 0.85
             },
-            {
-              "from": 2168,
-              "to": 2195
-            },
-            {
-              "from": 2369,
-              "to": 2416
-            },
-            {
-              "from": 2796,
-              "to": 2812
-            },
-            {
-              "from": 2980,
-              "to": 2996
-            }
-          ],
-          "hits": [
-          ],
-          "stat": {
-            "db_num": 138270,
-            "db_len": 930134133,
-            "hsp_len": 30,
-            "eff_space": 3088163420055,
-            "kappa": 0.46,
-            "lambda": 1.28,
-            "entropy": 0.85
-          },
-          "message": "No hits found"
+            "message": "No hits found"
+          }
         }
       }
     }
-  }
-]
+  ]
 }
 

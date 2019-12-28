@@ -1,129 +1,129 @@
 {
-"BlastOutput2": [
-{
-    "report": {
-      "program": "blastn",
-      "version": "BLASTN 2.10.0+",
-      "reference": "Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), \"A greedy algorithm for aligning DNA sequences\", J Comput Biol 2000; 7(1-2):203-14.",
-      "search_target": {
-        "db": "nt_v5"
-      },
-      "params": {
-        "expect": 10,
-        "sc_match": 1,
-        "sc_mismatch": -2,
-        "gap_open": 0,
-        "gap_extend": 0,
-        "filter": "L;m;",
-        "entrez_query": "txid56716 [ORGN] OR txid38772 [ORGN] OR txid9135 [ORGN] OR txid44394 [ORGN] OR txid54131 [ORGN] OR txid7757 [ORGN]"
-      },
-      "results": {
-        "search": {
-          "query_id": "NC_000019.10",
-          "query_title": "Homo sapiens chromosome 19, GRCh38.p13 Primary Assembly",
-          "query_len": 3666,
-          "query_masking": [
-            {
-              "from": 41427411,
-              "to": 41427517
-            },
-            {
-              "from": 41427607,
-              "to": 41427691
-            },
-            {
-              "from": 41427885,
-              "to": 41428049
-            },
-            {
-              "from": 41428383,
-              "to": 41428404
+  "BlastOutput2": [
+    {
+      "report": {
+        "program": "blastn",
+        "version": "BLASTN 2.10.0+",
+        "reference": "Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), \"A greedy algorithm for aligning DNA sequences\", J Comput Biol 2000; 7(1-2):203-14.",
+        "search_target": {
+          "db": "nt_v5"
+        },
+        "params": {
+          "expect": 10,
+          "sc_match": 1,
+          "sc_mismatch": -2,
+          "gap_open": 0,
+          "gap_extend": 0,
+          "filter": "L;m;",
+          "entrez_query": "txid56716 [ORGN] OR txid38772 [ORGN] OR txid9135 [ORGN] OR txid44394 [ORGN] OR txid54131 [ORGN] OR txid7757 [ORGN]"
+        },
+        "results": {
+          "search": {
+            "query_id": "NC_000019.10",
+            "query_title": "Homo sapiens chromosome 19, GRCh38.p13 Primary Assembly",
+            "query_len": 3666,
+            "query_masking": [
+              {
+                "from": 41427411,
+                "to": 41427517
+              },
+              {
+                "from": 41427607,
+                "to": 41427691
+              },
+              {
+                "from": 41427885,
+                "to": 41428049
+              },
+              {
+                "from": 41428383,
+                "to": 41428404
+              }
+            ],
+            "hits": [
+              {
+                "num": 1,
+                "description": [
+                  {
+                    "id": "gi|795137577|ref|XM_011936529.1|",
+                    "accession": "XM_011936529",
+                    "title": "PREDICTED: Colobus angolensis palliatus UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 8 (B3GNT8), mRNA",
+                    "taxid": 336983,
+                    "sciname": "Colobus angolensis palliatus"
+                  }
+                ],
+                "len": 1880,
+                "hsps": [
+                  {
+                    "num": 1,
+                    "bit_score": 2379.61,
+                    "score": 1288,
+                    "evalue": 0,
+                    "identity": 1409,
+                    "query_from": 41425359,
+                    "query_to": 41426812,
+                    "query_strand": "Plus",
+                    "hit_from": 1878,
+                    "hit_to": 415,
+                    "hit_strand": "Minus",
+                    "align_len": 1466,
+                    "gaps": 14,
+                    "qseq": "TCAGAGTGGGGAGTGCATGTTTTTCAAAAACAAAAAGTAGGCAAAAACAGTCCACCACCCCATCTTTCCTGCCCAGGCCCCTGGCTGGGGGAGGCCAAGGAGTGGCTTAAGTTGTCCAGCTTCTGGGCCCTCCTCCCTCCCATCAAGACCTGGAAGGAGGGGCTGAGCCAGGGGCCGGCCCCAGAGGCCCAGGCCAGG------------TCAGCACCTCCGCCCTCCCCAATGAGAGTCAGCACTGGAGCCTTGGGTCTTGCAGTTGTTTCCAGAGCCGAATGCTGGCCTGGGGGCCCAGGGGCCGTACCAGCAGCAGGTTGCGGAAAGCACAGTGGTCCGCAGTGCGGTCTGCTGGCCAGGCTGTGAGGAAGCCTGGGTGGGCCTGGGGCACCAGGCCCAGGGCTCGGATGCAAAGGCCAGTGTAGACGTCCTCAAAGGGGAAGGGTGCCACACGGGCTGCCGCCCGCAGCAGCCAGGGTGCCAGGCGCCCGGCAATGACGTAGCCACCCCCGCTTGCATAGGCTGGGTAGCCACCTTCGAAGAAGGACTCGGGCACATAGAAGGGTCCTCCTGGCTTCCGGAGAGGCATGGCCTGGGTAAAGACCTCACCCAGGTAGAGGCTTCGGGCCGAGGCAGGTGGCAGGGCCCGCAGGTGAGCCAGCAGGGCAGGGGTGTGTACAAAGGCATCGTCCTGAGCTCGCAAGACAAAACTCACGGTGGGGCAGTGGCGGCCCAGCCAGGCCAGCAGCAGCAGGTCTTTGAGCGTCTGGTTGAATGGGACGTCGAGGAAGTCCCAGAGCAGCAGGTCACTGTAGCGACGGCTCTCCCAGGCCACTAGTGAGTCTAGGTCAGGCCCCGCCTCACCCACCGGAGACCCTAGCAGGAAGAGCAGCCGGATCCCTGGAGCTGGACTGCCCCACGTCTCTCTCACGGCCTGTCGTTCTGCAAAGCGCCCTGGTTCTGACTTGACGGCCAACAGCAGGTAGGGGACATCAGTATCTGAGCAGCTGGAGACTTGGCTGCCACCACCTCCAGGCAGCCACTGTGGGAAGCTCCGGCAGGCTGCTGACAGCAAGAAGCGGCGGAGGTCCTTGGGGTAGGAGGCGAAGTCAGGGATCTCGGTGGCGGCGGCGGCCCCCCAAGCCTGGCAGCCCCCCGTTTCAGTGCTGTCCCCACTGGGCAGGGACCCCAGCCGCCACTGCTGCTGGTTCCAGTAAGCAAAGGGCAGCGGGATAGTCTGGCCCAGGCGGGTGGAGAGGTTGGCAGGTAGGGTGGGCTCAGGGTTGGCTGGCGTGGGGCTTGGCGGGGTGCCCCGAGGGCTGGGGTAGGCCTTGCTGAGCCGGGACTCGGATGTCCACTCGATGTACACTTTGAGGCCCAGGAGTGTGAGCAGTGCTGACAGGCAGAGAAGGCACTTGGGGCAGCGCATGACCCGGCCCAGGGAAGGGGCGGCCGCGGGAGCT",
+                    "hseq": "TCAGAGTGGGGAGTGCATGTTTTTCAAAAACAAAAAGTAGGCAAAAACAGCCCACCACCCCATCTTTCCTGCCCAGGCCCCTGGCTG-AGGAGGCCAAGGAGTGGCTTAAGTTGTCCAGCTTCTAGGCCCTCCTCCCTCCCATCAAGACCTGGAAGGAGGGGCTGAGCCAGGGACAAGCCCCAGAGGCCCAGGCCAGGGCCCGGGCCAAATCACCACCTCCGCCCACCCCACCGAGAGTCAGCACTGGAGCCTTGGGTCTTGCAGTTGTTTCCAGAGCCGAATGCTGGCCTGAGGGCCCAGGGGCCGTACTAGCAGCAGGTTGCGGAAAGCGCAGTGGTCCGCAGTGCGGTCTGCTGGCCAGGCTGTGAGGAAGCCTGGGTGGCCCTGGGGCACCAGGCCCAAGGCTCGGATGCAAAGGCCAGTATAGACGTCCTCAATGGGGAAGGGTGCCACACGGGCTGCCGCCCGCAGCAGCCAGGGTGCCAGGCGCCCGGCAATGACGTAGCCACCCCCGCTTGCATAGGCTGGGTAGCCACCTTCGAAGAAGGACTCGGGCACGTAAAAGGGTCCTCCTGGCTTCCGGAGAGGCATGGCCTGTGTAAAGACCTCACCCAGGTAGAGGTTTCGGGCCGAGGCAGGTGGCAGGGCCCGCAGGTGAGCCAGCAGGGCAGGGGTGTACACAAAGGCATCATCCTGGGCTCGCAGGACAAAACTCACGGCGGGGCAGTGGCGGCCCAGCCAGGCCAGCAGCAACAGGTCTTTGAGCGTCTGGTTGAATGGGACGTCGAGGAAGTCCCAGAGCAGCAGGTCACTGTAGCGACGGCTCTCCCAGGCCACTAGTGAGTCTAGGTCAGGCCCCGCCTCACCCACCGGAGATCCTAGCAGGAAGAGCAGCCGGATCCCTGGAGCTGGACTGCCCCACGTCTCCCTCACGGCCTGTCGTTCTGCAAAGCGCCCTGGTTCTGACTTGACGGCCAACAGCAGGTAGGGGACATCAGTATCCGAGCAGCTGGAGACTTGGCCGCCACCACCTCCAGGCAGCCACTGTGGGAAGCTCCGGCAGGCTGCTGACAGCAGGAAGCGGCGGAGGTCCTTGGGGTAGGAGGTGAAGTCAGGGATCTCGGCGGCGGCGGCGGCCCCCCAAGCCTGGCAGCCCCCCGTTTCAGTGCTGTTCCCACTGGGCAGGGACCCCAGCCGCCACTGCTGCTGGTTCCAGTAAGCGAAGGGCAGCGGGCCAGTCTGGCCCAGGCGGGCGGAGAGGTTGGCAGGTAGGGTGGGCTCAGGGTTGGCTGGCGTGGGGCCTGGTGGGGTGCCCCGAGGGCTGGGGTAGGCCTTGCTGAGCCGGGACTCGGATGTCCACTCGATGTACACTTTGAGGCCCAGGAGTGTGAGCAGTGCTGACAGGCAGAGAAGGCACTTGGGGCAGCGCATGACCTGGCCCAGGGAAGGGGCGGCCGCGG-AGCT",
+                    "midline": "|||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||  ||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||| |  |||||||||||||||||||||            ||| ||||||||||| |||||  ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||| |||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| ||||||||||||||||||||| ||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| || ||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||  ||||||||||| ||||| ||||||| |||||||||||||| |||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||| ||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||  ||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||| ||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||| ||||"
+                  },
+                  {
+                    "num": 2,
+                    "bit_score": 440.623,
+                    "score": 238,
+                    "evalue": 1.00721e-120,
+                    "identity": 272,
+                    "query_from": 41427284,
+                    "query_to": 41427571,
+                    "query_strand": "Plus",
+                    "hit_from": 416,
+                    "hit_to": 133,
+                    "hit_strand": "Minus",
+                    "align_len": 288,
+                    "gaps": 4,
+                    "qseq": "CTCTGGGTCTGGCTCCCGCCAGCTCCGGGTGCCGGCCTCAGGTCAGGCCTCCCTCAGCTCCCTCTGATCTGCCTGCCCCAGCCCCTGTGTTGTCGACCGGCGGGGCCCAGCCCTGCCCAGCCAGTCCAgaggggcggggaggggagtggagcgggagcagggagggccccaggggccggggcggggctgaggcaggagagagggagggagggagggagggaggagggcaggaggcCGACCTGAGAGATGGGGCTCTGGCGTGTTAGGGCTGGTTTCTGGTGAGACAGC",
+                    "hseq": "CTCTGGGTCTGGCTCCCACCAGCTCCGAGTGCTGGCCCCAGGTCAGGCCTCCCTCAGCTCCCTCTGATCTGCCTGCCCCAGCCCCTGCGTTGTCGACCGGCCAGGCCCAGCCCTGCCCAGCCAGTCCAGAGGGGCGGGGAGGGGAGCGGAGCGGGAGCAGGGAGGGCCCCAGGGGCCGGGGCGGGGCTGAGGCAG-A---AGGGAGAGAGAGAGGGAGGGAGGAGGGCAGGAGGCCGACCTGAGAGATGGAGCTCTGGCGTGTTAGGGCTGGTTTCTGGTAAGACAGC",
+                    "midline": "||||||||||||||||| ||||||||| |||| |||| ||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||  ||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||| |   |||||| ||| ||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||| |||||||"
+                  },
+                  {
+                    "num": 3,
+                    "bit_score": 176.552,
+                    "score": 95,
+                    "evalue": 3.13604e-41,
+                    "identity": 119,
+                    "query_from": 41428601,
+                    "query_to": 41428730,
+                    "query_strand": "Plus",
+                    "hit_from": 127,
+                    "hit_to": 1,
+                    "hit_strand": "Minus",
+                    "align_len": 130,
+                    "gaps": 3,
+                    "qseq": "TTTGGGGCAGGCCTGTCCCCATCATGGCAGGAACACAGTCTGTCAGCAGCAGCAGTTGATGATCTGTCCAGCCCTGATTTCCTCCCCCAAAGTTTGAATAATGGAGCCTGTGGGAACAGCTGGAGGAAGA",
+                    "hseq": "TTTGGGGTAGACCTGTCCTCATTATGGCAGGAACCCAGTCTGTCAGCAGCAGCAGTTGAT---CTGTCCAGCCCTGATTTCCTCCCCCCAGATTTGAATAATGGAGCCTGTGGGAACAGCTGGAGGAAGA",
+                    "midline": "||||||| || ||||||| ||| ||||||||||| |||||||||||||||||||||||||   ||||||||||||||||||||||||| |  ||||||||||||||||||||||||||||||||||||||"
+                  }
+                ]
+              }
+            ],
+            "stat": {
+              "db_num": 151391,
+              "db_len": 1066425963,
+              "hsp_len": 31,
+              "eff_space": 3859398880670,
+              "kappa": 0.46,
+              "lambda": 1.28,
+              "entropy": 0.85
             }
-          ],
-          "hits": [
-            {
-              "num": 1,
-              "description": [
-                {
-                  "id": "gi|795137577|ref|XM_011936529.1|",
-                  "accession": "XM_011936529",
-                  "title": "PREDICTED: Colobus angolensis palliatus UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 8 (B3GNT8), mRNA",
-                  "taxid": 336983,
-                  "sciname": "Colobus angolensis palliatus"
-                }
-              ],
-              "len": 1880,
-              "hsps": [
-                {
-                  "num": 1,
-                  "bit_score": 2379.61,
-                  "score": 1288,
-                  "evalue": 0,
-                  "identity": 1409,
-                  "query_from": 41425359,
-                  "query_to": 41426812,
-                  "query_strand": "Plus",
-                  "hit_from": 1878,
-                  "hit_to": 415,
-                  "hit_strand": "Minus",
-                  "align_len": 1466,
-                  "gaps": 14,
-                  "qseq": "TCAGAGTGGGGAGTGCATGTTTTTCAAAAACAAAAAGTAGGCAAAAACAGTCCACCACCCCATCTTTCCTGCCCAGGCCCCTGGCTGGGGGAGGCCAAGGAGTGGCTTAAGTTGTCCAGCTTCTGGGCCCTCCTCCCTCCCATCAAGACCTGGAAGGAGGGGCTGAGCCAGGGGCCGGCCCCAGAGGCCCAGGCCAGG------------TCAGCACCTCCGCCCTCCCCAATGAGAGTCAGCACTGGAGCCTTGGGTCTTGCAGTTGTTTCCAGAGCCGAATGCTGGCCTGGGGGCCCAGGGGCCGTACCAGCAGCAGGTTGCGGAAAGCACAGTGGTCCGCAGTGCGGTCTGCTGGCCAGGCTGTGAGGAAGCCTGGGTGGGCCTGGGGCACCAGGCCCAGGGCTCGGATGCAAAGGCCAGTGTAGACGTCCTCAAAGGGGAAGGGTGCCACACGGGCTGCCGCCCGCAGCAGCCAGGGTGCCAGGCGCCCGGCAATGACGTAGCCACCCCCGCTTGCATAGGCTGGGTAGCCACCTTCGAAGAAGGACTCGGGCACATAGAAGGGTCCTCCTGGCTTCCGGAGAGGCATGGCCTGGGTAAAGACCTCACCCAGGTAGAGGCTTCGGGCCGAGGCAGGTGGCAGGGCCCGCAGGTGAGCCAGCAGGGCAGGGGTGTGTACAAAGGCATCGTCCTGAGCTCGCAAGACAAAACTCACGGTGGGGCAGTGGCGGCCCAGCCAGGCCAGCAGCAGCAGGTCTTTGAGCGTCTGGTTGAATGGGACGTCGAGGAAGTCCCAGAGCAGCAGGTCACTGTAGCGACGGCTCTCCCAGGCCACTAGTGAGTCTAGGTCAGGCCCCGCCTCACCCACCGGAGACCCTAGCAGGAAGAGCAGCCGGATCCCTGGAGCTGGACTGCCCCACGTCTCTCTCACGGCCTGTCGTTCTGCAAAGCGCCCTGGTTCTGACTTGACGGCCAACAGCAGGTAGGGGACATCAGTATCTGAGCAGCTGGAGACTTGGCTGCCACCACCTCCAGGCAGCCACTGTGGGAAGCTCCGGCAGGCTGCTGACAGCAAGAAGCGGCGGAGGTCCTTGGGGTAGGAGGCGAAGTCAGGGATCTCGGTGGCGGCGGCGGCCCCCCAAGCCTGGCAGCCCCCCGTTTCAGTGCTGTCCCCACTGGGCAGGGACCCCAGCCGCCACTGCTGCTGGTTCCAGTAAGCAAAGGGCAGCGGGATAGTCTGGCCCAGGCGGGTGGAGAGGTTGGCAGGTAGGGTGGGCTCAGGGTTGGCTGGCGTGGGGCTTGGCGGGGTGCCCCGAGGGCTGGGGTAGGCCTTGCTGAGCCGGGACTCGGATGTCCACTCGATGTACACTTTGAGGCCCAGGAGTGTGAGCAGTGCTGACAGGCAGAGAAGGCACTTGGGGCAGCGCATGACCCGGCCCAGGGAAGGGGCGGCCGCGGGAGCT",
-                  "hseq": "TCAGAGTGGGGAGTGCATGTTTTTCAAAAACAAAAAGTAGGCAAAAACAGCCCACCACCCCATCTTTCCTGCCCAGGCCCCTGGCTG-AGGAGGCCAAGGAGTGGCTTAAGTTGTCCAGCTTCTAGGCCCTCCTCCCTCCCATCAAGACCTGGAAGGAGGGGCTGAGCCAGGGACAAGCCCCAGAGGCCCAGGCCAGGGCCCGGGCCAAATCACCACCTCCGCCCACCCCACCGAGAGTCAGCACTGGAGCCTTGGGTCTTGCAGTTGTTTCCAGAGCCGAATGCTGGCCTGAGGGCCCAGGGGCCGTACTAGCAGCAGGTTGCGGAAAGCGCAGTGGTCCGCAGTGCGGTCTGCTGGCCAGGCTGTGAGGAAGCCTGGGTGGCCCTGGGGCACCAGGCCCAAGGCTCGGATGCAAAGGCCAGTATAGACGTCCTCAATGGGGAAGGGTGCCACACGGGCTGCCGCCCGCAGCAGCCAGGGTGCCAGGCGCCCGGCAATGACGTAGCCACCCCCGCTTGCATAGGCTGGGTAGCCACCTTCGAAGAAGGACTCGGGCACGTAAAAGGGTCCTCCTGGCTTCCGGAGAGGCATGGCCTGTGTAAAGACCTCACCCAGGTAGAGGTTTCGGGCCGAGGCAGGTGGCAGGGCCCGCAGGTGAGCCAGCAGGGCAGGGGTGTACACAAAGGCATCATCCTGGGCTCGCAGGACAAAACTCACGGCGGGGCAGTGGCGGCCCAGCCAGGCCAGCAGCAACAGGTCTTTGAGCGTCTGGTTGAATGGGACGTCGAGGAAGTCCCAGAGCAGCAGGTCACTGTAGCGACGGCTCTCCCAGGCCACTAGTGAGTCTAGGTCAGGCCCCGCCTCACCCACCGGAGATCCTAGCAGGAAGAGCAGCCGGATCCCTGGAGCTGGACTGCCCCACGTCTCCCTCACGGCCTGTCGTTCTGCAAAGCGCCCTGGTTCTGACTTGACGGCCAACAGCAGGTAGGGGACATCAGTATCCGAGCAGCTGGAGACTTGGCCGCCACCACCTCCAGGCAGCCACTGTGGGAAGCTCCGGCAGGCTGCTGACAGCAGGAAGCGGCGGAGGTCCTTGGGGTAGGAGGTGAAGTCAGGGATCTCGGCGGCGGCGGCGGCCCCCCAAGCCTGGCAGCCCCCCGTTTCAGTGCTGTTCCCACTGGGCAGGGACCCCAGCCGCCACTGCTGCTGGTTCCAGTAAGCGAAGGGCAGCGGGCCAGTCTGGCCCAGGCGGGCGGAGAGGTTGGCAGGTAGGGTGGGCTCAGGGTTGGCTGGCGTGGGGCCTGGTGGGGTGCCCCGAGGGCTGGGGTAGGCCTTGCTGAGCCGGGACTCGGATGTCCACTCGATGTACACTTTGAGGCCCAGGAGTGTGAGCAGTGCTGACAGGCAGAGAAGGCACTTGGGGCAGCGCATGACCTGGCCCAGGGAAGGGGCGGCCGCGG-AGCT",
-                  "midline": "|||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||  ||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||| |  |||||||||||||||||||||            ||| ||||||||||| |||||  ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||| |||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| ||||||||||||||||||||| ||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| || ||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||  ||||||||||| ||||| ||||||| |||||||||||||| |||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||| ||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||  ||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||| ||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||| ||||"
-                },
-                {
-                  "num": 2,
-                  "bit_score": 440.623,
-                  "score": 238,
-                  "evalue": 1.00721e-120,
-                  "identity": 272,
-                  "query_from": 41427284,
-                  "query_to": 41427571,
-                  "query_strand": "Plus",
-                  "hit_from": 416,
-                  "hit_to": 133,
-                  "hit_strand": "Minus",
-                  "align_len": 288,
-                  "gaps": 4,
-                  "qseq": "CTCTGGGTCTGGCTCCCGCCAGCTCCGGGTGCCGGCCTCAGGTCAGGCCTCCCTCAGCTCCCTCTGATCTGCCTGCCCCAGCCCCTGTGTTGTCGACCGGCGGGGCCCAGCCCTGCCCAGCCAGTCCAgaggggcggggaggggagtggagcgggagcagggagggccccaggggccggggcggggctgaggcaggagagagggagggagggagggagggaggagggcaggaggcCGACCTGAGAGATGGGGCTCTGGCGTGTTAGGGCTGGTTTCTGGTGAGACAGC",
-                  "hseq": "CTCTGGGTCTGGCTCCCACCAGCTCCGAGTGCTGGCCCCAGGTCAGGCCTCCCTCAGCTCCCTCTGATCTGCCTGCCCCAGCCCCTGCGTTGTCGACCGGCCAGGCCCAGCCCTGCCCAGCCAGTCCAGAGGGGCGGGGAGGGGAGCGGAGCGGGAGCAGGGAGGGCCCCAGGGGCCGGGGCGGGGCTGAGGCAG-A---AGGGAGAGAGAGAGGGAGGGAGGAGGGCAGGAGGCCGACCTGAGAGATGGAGCTCTGGCGTGTTAGGGCTGGTTTCTGGTAAGACAGC",
-                  "midline": "||||||||||||||||| ||||||||| |||| |||| ||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||  ||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||| |   |||||| ||| ||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||| |||||||"
-                },
-                {
-                  "num": 3,
-                  "bit_score": 176.552,
-                  "score": 95,
-                  "evalue": 3.13604e-41,
-                  "identity": 119,
-                  "query_from": 41428601,
-                  "query_to": 41428730,
-                  "query_strand": "Plus",
-                  "hit_from": 127,
-                  "hit_to": 1,
-                  "hit_strand": "Minus",
-                  "align_len": 130,
-                  "gaps": 3,
-                  "qseq": "TTTGGGGCAGGCCTGTCCCCATCATGGCAGGAACACAGTCTGTCAGCAGCAGCAGTTGATGATCTGTCCAGCCCTGATTTCCTCCCCCAAAGTTTGAATAATGGAGCCTGTGGGAACAGCTGGAGGAAGA",
-                  "hseq": "TTTGGGGTAGACCTGTCCTCATTATGGCAGGAACCCAGTCTGTCAGCAGCAGCAGTTGAT---CTGTCCAGCCCTGATTTCCTCCCCCCAGATTTGAATAATGGAGCCTGTGGGAACAGCTGGAGGAAGA",
-                  "midline": "||||||| || ||||||| ||| ||||||||||| |||||||||||||||||||||||||   ||||||||||||||||||||||||| |  ||||||||||||||||||||||||||||||||||||||"
-                }
-              ]
-            }
-          ],
-          "stat": {
-            "db_num": 151391,
-            "db_len": 1066425963,
-            "hsp_len": 31,
-            "eff_space": 3859398880670,
-            "kappa": 0.46,
-            "lambda": 1.28,
-            "entropy": 0.85
           }
         }
       }
     }
-  }
-]
+  ]
 }
 
