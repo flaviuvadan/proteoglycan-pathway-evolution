@@ -1,0 +1,98 @@
+GENE NAME
+ORGANISM TITLE
+QUERY COVERAGE (%), E-VALUE, IDENTITY (%)
+
+Ids
+PREDICTED: Gorilla gorilla gorilla iduronate 2-sulfatase (IDS), transcript variant X1, mRNA
+76.5%, 0, 98.8%
+
+Chsy3
+PREDICTED: Loxodonta africana chondroitin sulfate synthase 3 (CHSY3), mRNA
+84.89999999999999%, 0, 91.7%
+
+Chst7
+PREDICTED: Microcebus murinus carbohydrate sulfotransferase 7 (CHST7), mRNA
+88.1%, 0, 90.10000000000001%
+PREDICTED: Loxodonta africana carbohydrate sulfotransferase 7 (CHST7), mRNA
+94.5%, 0, 85.7%
+
+Ext1
+PREDICTED: Gorilla gorilla gorilla exostosin glycosyltransferase 1 (EXT1), mRNA
+99.4%, 0, 99.6%
+PREDICTED: Dipodomys ordii exostosin glycosyltransferase 1 (Ext1), mRNA
+83.39999999999999%, 0, 95.1%
+
+Arse
+PREDICTED: Theropithecus gelada arylsulfatase E (ARSE), transcript variant X1, mRNA
+86.9%, 0, 94.39999999999999%
+PREDICTED: Theropithecus gelada arylsulfatase E (ARSE), transcript variant X4, mRNA
+81.69999999999999%, 0, 94.39999999999999%
+PREDICTED: Theropithecus gelada arylsulfatase E (ARSE), transcript variant X3, mRNA
+79.60000000000001%, 0, 94.89999999999999%
+PREDICTED: Theropithecus gelada arylsulfatase E (ARSE), transcript variant X2, mRNA
+79.60000000000001%, 0, 94.89999999999999%
+
+Sumf1
+PREDICTED: Marmota marmota marmota sulfatase modifying factor 1 (Sumf1), mRNA
+99.0%, 0, 82.5%
+PREDICTED: Mesocricetus auratus sulfatase modifying factor 1 (Sumf1), mRNA
+93.5%, 0, 81.89999999999999%
+
+Xylt2
+PREDICTED: Macaca mulatta xylosyltransferase 2 (XYLT2), transcript variant X2, mRNA
+99.0%, 0, 96.3%
+
+Chst2
+PREDICTED: Panthera pardus carbohydrate sulfotransferase 2 (CHST2), mRNA
+93.4%, 0, 83.39999999999999%
+
+Sumf2
+PREDICTED: Piliocolobus tephrosceles sulfatase modifying factor 2 (SUMF2), transcript variant X2, mRNA
+99.9%, 0, 93.89999999999999%
+PREDICTED: Colobus angolensis palliatus sulfatase modifying factor 2 (SUMF2), transcript variant X3, mRNA
+95.1%, 0, 94.3%
+
+Chst14
+PREDICTED: Macaca fascicularis carbohydrate (N-acetylgalactosamine 4-0) sulfotransferase 14 (CHST14), mRNA
+99.1%, 0, 96.2%
+PREDICTED: Rhinopithecus bieti carbohydrate sulfotransferase 14 (CHST14), mRNA
+94.3%, 0, 96.39999999999999%
+PREDICTED: Cebus capucinus imitator carbohydrate sulfotransferase 14 (CHST14), mRNA
+99.2%, 0, 94.0%
+PREDICTED: Equus caballus carbohydrate sulfotransferase 14 (CHST14), mRNA
+95.8%, 0, 84.6%
+PREDICTED: Mesocricetus auratus carbohydrate sulfotransferase 14 (Chst14), mRNA
+84.5%, 0, 80.7%
+
+Arsf
+PREDICTED: Theropithecus gelada arylsulfatase F (ARSF), transcript variant X2, mRNA
+84.0%, 0, 95.8%
+PREDICTED: Theropithecus gelada arylsulfatase F (ARSF), transcript variant X1, mRNA
+84.0%, 0, 95.8%
+PREDICTED: Equus asinus arylsulfatase F-like (LOC106821914), mRNA
+80.7%, 0, 80.10000000000001%
+PREDICTED: Otolemur garnettii arylsulfatase F (ARSF), mRNA
+78.5%, 0, 79.80000000000001%
+PREDICTED: Ailuropoda melanoleuca arylsulfatase F (ARSF), transcript variant X3, mRNA
+80.0%, 0, 78.5%
+PREDICTED: Ailuropoda melanoleuca arylsulfatase F (ARSF), transcript variant X2, mRNA
+80.0%, 0, 78.5%
+PREDICTED: Ailuropoda melanoleuca arylsulfatase F (ARSF), transcript variant X1, mRNA
+80.0%, 0, 78.5%
+
+B3gat3
+PREDICTED: Gorilla gorilla gorilla beta-1,3-glucuronyltransferase 3 (B3GAT3), transcript variant X1, mRNA
+99.9%, 0, 99.3%
+PREDICTED: Gorilla gorilla gorilla beta-1,3-glucuronyltransferase 3 (B3GAT3), transcript variant X3, mRNA
+91.9%, 0, 99.2%
+
+B3galt6
+PREDICTED: Colobus angolensis palliatus UDP-Gal:betaGal beta 1,3-galactosyltransferase polypeptide 6 (B3GALT6), partial mRNA
+79.4%, 0, 90.5%
+
+Chst4
+PREDICTED: Nomascus leucogenys carbohydrate sulfotransferase 4 (CHST4), mRNA
+89.4%, 0, 96.89999999999999%
+PREDICTED: Cebus capucinus imitator carbohydrate sulfotransferase 4 (CHST4), mRNA
+92.60000000000001%, 0, 91.5%
+
