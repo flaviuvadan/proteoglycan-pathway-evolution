@@ -1,0 +1,65 @@
+{
+"BlastOutput2": [
+{
+    "report": {
+      "program": "blastn",
+      "version": "BLASTN 2.10.0+",
+      "reference": "Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), \"A greedy algorithm for aligning DNA sequences\", J Comput Biol 2000; 7(1-2):203-14.",
+      "search_target": {
+        "db": "nt_v5"
+      },
+      "params": {
+        "expect": 10,
+        "sc_match": 1,
+        "sc_mismatch": -2,
+        "gap_open": 0,
+        "gap_extend": 0,
+        "filter": "L;m;",
+        "entrez_query": "txid51511 [ORGN] OR txid7719 [ORGN] OR txid7757 [ORGN]"
+      },
+      "results": {
+        "search": {
+          "query_id": "NM_017565.4",
+          "query_title": "Homo sapiens FAM20A golgi associated secretory pathway pseudokinase (FAM20A), transcript variant 1, mRNA",
+          "query_len": 4688,
+          "query_masking": [
+            {
+              "from": 281,
+              "to": 370
+            },
+            {
+              "from": 625,
+              "to": 686
+            },
+            {
+              "from": 3060,
+              "to": 3068
+            },
+            {
+              "from": 3985,
+              "to": 3994
+            },
+            {
+              "from": 4111,
+              "to": 4142
+            }
+          ],
+          "hits": [
+          ],
+          "stat": {
+            "db_num": 36295,
+            "db_len": 74696198,
+            "hsp_len": 28,
+            "eff_space": 343348511080,
+            "kappa": 0.46,
+            "lambda": 1.28,
+            "entropy": 0.85
+          },
+          "message": "No hits found"
+        }
+      }
+    }
+  }
+]
+}
+

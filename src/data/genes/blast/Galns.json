@@ -1,0 +1,43 @@
+{
+"BlastOutput2": [
+{
+    "report": {
+      "program": "blastn",
+      "version": "BLASTN 2.10.0+",
+      "reference": "Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), \"A greedy algorithm for aligning DNA sequences\", J Comput Biol 2000; 7(1-2):203-14.",
+      "search_target": {
+        "db": "nt_v5"
+      },
+      "params": {
+        "expect": 10,
+        "sc_match": 1,
+        "sc_mismatch": -2,
+        "gap_open": 0,
+        "gap_extend": 0,
+        "filter": "L;m;",
+        "entrez_query": "txid6239 [ORGN]"
+      },
+      "results": {
+        "search": {
+          "query_id": "NM_000512.5",
+          "query_title": "Homo sapiens galactosamine (N-acetyl)-6-sulfatase (GALNS), transcript variant 1, mRNA",
+          "query_len": 2344,
+          "hits": [
+          ],
+          "stat": {
+            "db_num": 65421,
+            "db_len": 634542776,
+            "hsp_len": 29,
+            "eff_space": 1464574487605,
+            "kappa": 0.46,
+            "lambda": 1.28,
+            "entropy": 0.85
+          },
+          "message": "No hits found"
+        }
+      }
+    }
+  }
+]
+}
+

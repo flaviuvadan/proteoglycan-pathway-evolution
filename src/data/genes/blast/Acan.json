@@ -1,0 +1,217 @@
+{
+"BlastOutput2": [
+{
+    "report": {
+      "program": "blastn",
+      "version": "BLASTN 2.10.0+",
+      "reference": "Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), \"A greedy algorithm for aligning DNA sequences\", J Comput Biol 2000; 7(1-2):203-14.",
+      "search_target": {
+        "db": "nt_v5"
+      },
+      "params": {
+        "expect": 10,
+        "sc_match": 1,
+        "sc_mismatch": -2,
+        "gap_open": 0,
+        "gap_extend": 0,
+        "filter": "L;m;",
+        "entrez_query": "txid51511 [ORGN] OR txid7719 [ORGN] OR txid7227 [ORGN] OR txid6239 [ORGN] OR txid38626 [ORGN] OR txid9135 [ORGN]"
+      },
+      "results": {
+        "search": {
+          "query_id": "NM_001369268.1",
+          "query_title": "Homo sapiens aggrecan (ACAN), transcript variant 3, mRNA",
+          "query_len": 8960,
+          "query_masking": [
+            {
+              "from": 73,
+              "to": 84
+            },
+            {
+              "from": 1806,
+              "to": 1812
+            },
+            {
+              "from": 8212,
+              "to": 8218
+            },
+            {
+              "from": 8484,
+              "to": 8551
+            },
+            {
+              "from": 8844,
+              "to": 8864
+            }
+          ],
+          "hits": [
+            {
+              "num": 1,
+              "description": [
+                {
+                  "id": "gi|1190369295|ref|XM_020964841.1|",
+                  "accession": "XM_020964841",
+                  "title": "PREDICTED: Phascolarctos cinereus aggrecan (ACAN), mRNA",
+                  "taxid": 38626,
+                  "sciname": "Phascolarctos cinereus"
+                }
+              ],
+              "len": 8449,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 1026.01,
+                  "score": 555,
+                  "evalue": 0,
+                  "identity": 1006,
+                  "query_from": 365,
+                  "query_to": 1569,
+                  "query_strand": "Plus",
+                  "hit_from": 417,
+                  "hit_to": 1636,
+                  "hit_strand": "Plus",
+                  "align_len": 1225,
+                  "gaps": 25,
+                  "qseq": "ACTCTTCAAGGTGAACTATGACCACTTTACTCT--GGGTT-TTC-GTGACTCTGAGGGTCATCACTGCAGCTGTCACTGTAGAAACTTCAGACCATGACAACTCGCTGAGTGTCAGCATCCCCCAACCGTCCCCGCTGAGGGTCCTCCTGGGGACCTCCCTCACCATCCCCTGCTATTTCATCGACCCCATGCACCCTGTGACCACCGCCCCTTCTACCGCCCCACTGGCCCCAAGAATCAAGTGGAGCCGTGTGTCCAAGGAGAAGGAGGTAGTGCTGCTGGTGGCCACTGAAGGGCGCGTGCGGGTCAACAGTGCCTATCAGGACAAGGTCTCACTGCCCAACTACCCGGCCATCCCCAGTGACGCCACCTTGGAAGTCCAGAGCCTGCGCTCCAATGACTCTGGGGTCTACCGCTGCGAGGTGATGCATGGCATCGAGGACAGCGAGGCCACCCTGGAAGTCGTGGTGAAAGGCATCGTGTTCCATTACAGAGCCATCTCTACACGCTACACCCTCGACTTTGACAGGGCGCAGCGGGCCTGCCTGCAGAACAGTGCCATCATTGCCACGCCTGAGCAGCTGCAGGCCGCCTACGAAGACGGCTTCCACCAGTGTGACGCCGGCTGGCTGGCTGACCAGACTGTCAGATACCCCATCCACACTCCCCGGGAAGGCTGCTATGGAGACAAGGATGAGTTTCCTGGTGTGAGGACGTATGGCATCCGAGACACCAACGAGACCTATGATGTGTACTGCTT---C-GC----C-GAGGAGATGGAGGGTGAGGTCTTTTATGCAACATCTCCAGAGAAGTTCACCTTCCAGGAAGCAGCCAATGAGTGCCGGCGGCTGGGTGCCCGGCTGGCCACCACGGGCCAGCTCTACCTGGCCTGGCAGGCTGGCATGGACATGTGCAGCGCCGGCTGGCTGGCCGACCGCAGCGTGCGCTACCCCATCTCCAAGGCCCGGCCCAACTGCGGTGGCAACCTCCTGGGCGTGAGGACCGTCTACGTGCATGCCAACCAGACGGGCTACCCCGACCCCTCATCCCGCTACGACGCCATCTGCTACACAGGTGAAGACTTTGT-GG-A-CATCCCAGAAAACTTCTT-TG--GAG-TGGGGGGTGAGGAGGACATCACCGTCCAGACAGTGACCTGGCCTGACATGGAGCTGCCACTGCCTCGAAACATCACTGAGGGTGAAGCCCGAGGCAGC",
+                  "hseq": "ACTGTTTAAGGTAAATTATGACCACTTTACTCTTAGTGTTGTTCAGT-TTTC-GA--GTCATCACTGCAGCCATCTCTGTGGAAGTTTCAGACCATGGCAACTCACTGAGTGTGAGCATCCCAGAGCCTTCTCCCCTTCGTGTCCTCCTTGGGAACTCTCTCACCATCCCTTGCTATTTCATTGACCCTGTGCACCCTGTGACGACGGCCCCTTCCACACCCCCACTCTCCCCCCGGATCAAATGGAGCCGCCTCTCGGAGGAGAAGGAAGTGGTCCTTTTGGTAGCCACGGAGGGGCGTGTGCGGGTCAACAGTAACTACCAGGACAAGATCTCATTGCCCAATTACCCTGCCATCCCCAGTGACGCTACGCTGGAGATCAACAACCTTCGCTCCAATGACTCGGGCGTCTACCGCTGCGAGGTGATGCATGGCATCGAGGACAGCCAGGCTACCCTGGAGGTCCTTGTGAAAGGCATCGTGTTCCATTACAGAGCCATCTCTACCCGCTACACCCTGGATTTTGAGAAGGCACAGCAGGCTTGCCTACAGAATAGTGCCGTCATTGCCACCCCTGAGCAGCTGCAGGCTGCCTATGACGATGGCTACCACCAGTGTGATGCTGGCTGGCTGGCTGATCAAACTGTCAGATACCCTATCCACAGCCCCCGTGAAGGCTGCTATGGAGACAAGGATGAATTCCCTGGAGTAAGGACTTATGGCATCCGAGATACCAATGAGACCTATGATGTGTACTGCTTTTACTGCTTTGCAGAGGAGATGGAAGGGGAAGTCTTTTATTCTACATCCCCGGAGAAATTCACCTTCCAAGAGGCAGCAAATGAGTGTCGGCGCCTGGGAGCCCGGCTGGCAACCACTGGGCAGCTGTACCTGGCCTGGCAAAGTGGAATGGACGTGTGCAGTGCTGGCTGGCTGGCCGACCGCAGTGTCCGATACCCCATCTCGAAGGCACGTCCTAATTGCGGGGGCAACCTCCTAGGGGTAAGGACTGTGTACCTGCACGCCAATCAGACAGGCTATCCGGACCCCTTATCCCGCTACGATGCCATCTGCTACACAGGGGAGGACTTTGTTGGGATCATACCAGAGAG-TTTTACTGACGAGCTGAGCAGTGAGGGGGAGATCACTATTCAGACAGTCACTCAGCCCGATGTGGAACTGCAGCTGCCTCAAAATGTCACCAAGCAGGAGTCCCGAGGCAGC",
+                  "midline": "||| || ||||| || |||||||||||||||||  | ||| ||| ||   || ||  ||||||||||||||  || |||| |||  ||||||||||| |||||| |||||||| ||||||||  | || || || ||  | |||||||| |||| ||| ||||||||||| ||||||||||| |||||  ||||||||||||| || |||||||| ||  |||||||  ||||  | ||||| ||||||||  | ||  |||||||||| || || ||  |||| ||||| || ||||| |||||||||||||||  ||| ||||||||| ||||| ||||||| ||||| ||||||||||||||||| ||  ||||  || | | ||| |||||||||||||| || ||||||||||||||||||||||||||||||||||||||| |||| |||||||| ||| | |||||||||||||||||||||||||||||||||||||| ||||||||||| || ||||| | ||| |||| ||| ||||| ||||| |||||| |||||||||| ||||||||||||||||| ||||| || || |||| |||||||||||| || |||||||||||||| || |||||||||||||| |||||||  ||||| |||||||||||||||||||||||||| || ||||| || ||||| |||||||||||||| ||||| |||||||||||||||||||||||   | ||    | ||||||||||| || || ||||||||| | ||||| || ||||| ||||||||||| || ||||| |||||||| ||||| ||||| ||||||||||| ||||| || ||||| ||||||||||||||   ||| |||||| ||||||| || |||||||||||||||||||| || || ||||||||||| ||||| || || || ||||| ||||||||||| || || ||||| || ||| |||| ||||| ||||| ||||| || ||||||| |||||||||||| ||||||||||||||||| || |||||||| || | ||| ||||| |  || |  ||  ||| || |  |||||| ||| |||||  | |||||||| ||   ||| ||  |||| ||||  ||||||| |||  ||||  ||   ||  |||||||||||"
+                },
+                {
+                  "num": 2,
+                  "bit_score": 822.879,
+                  "score": 445,
+                  "evalue": 0,
+                  "identity": 876,
+                  "query_from": 7015,
+                  "query_to": 8090,
+                  "query_strand": "Plus",
+                  "hit_from": 6503,
+                  "hit_to": 7583,
+                  "hit_strand": "Plus",
+                  "align_len": 1087,
+                  "gaps": 17,
+                  "qseq": "GTCATCAGCACCAG-CATCCCAGAGTCTGAGTGGACCCAGCAGACCCAGCGCCCTGCAGAGACGCATCTAGAAATTGAGTCCTCAAGCCTCCT-GTACTCAGGAGAAGAGACTCACACAGTCGAAACAGCCACCTCCCCAACAGATGCTTCCA-T-C--C-C-AGCTTCTCCGGA-ATG-GA-AACGTGAATCAGAATCAACTGCTGCAGCCCCCGCCAGGTCCTGTGCAGAGGAGCCCTGTGGAGCTGGGACCTGCAAGGAGACAGAGGGACACGTCATATGCCTGTGCCCCCCTGGCTACACTGGCGAGCACTGTAACATAGACATTGATGAGTGCCTCTCAAGCCCTTGTCTGAATGGAGCCACCTGCGTGGATGCCATCGACTCTTTCACATGCTTATGCCTTCCCAGCTACGAAGGGGACCTGTGTGAGATTGACCAGGAGGTATGTGAGGAGGGCTGGAACAAGTACCAGGGCCACTGTTACCGCCACTTCCCGGACCGCGAGACCTGGGTGGATGCTGAGCGCCGGTGTCGGGAGCAGCAGTCACACCTGAGCAGCATCGTCACCCCCGAGGAGCAGGAGTTTGTCAACAACAATGCCCAAGACTACCAGTGGATCGGCCTGAACGACAGGACCATCGAAGGGGACTTCCGCTGGTCAGATGGACACCCCATGCAATTTGAGAACTGGCGCCCCAACCAGCCTGACAACTTTTTTGCCGCTGGAGAGGACTGTGTGGTGATGATCTGGCACGAGAAGGGCGAGTGGAATGATGTTCCCTGCAATTACCACCTCCCCTTCACGTGTAAAAAGGGCACAGTGGCCTGCGGAGAGCCCCCTGTGGTGGAGCATGCCAGGACCTTCGGGCAGAAGAAGGACCGGTATGAGATCAATTCCCTGGTGCGGTACCAGTGCACAGAGGGGTTTGTCCAGCGCCACATGCCCACCATCCGGTGCCAGCCCAGCGGGCACTGGGAGGAGCCTCAGATCACCTGCACAGACCCCACCACCTACAAACGCAGACTACAGAAGCGGAGCTCACGGCACCCTCGGAGGAGCCGCCCCAGCACAGCCCACTGAGA",
+                  "hseq": "GTCATCAGCACCAGTGCT-TCAGAGACTGAATTCAGGCATCAAACCCAGAGCCCTGAAGAGGCTCAAACAGAAATTGAGTCTTCTAGTCCCATAGTA-TCAGGGGAAGAGACTGAAAGAGCTGGAACAGTCCCTTCCCCTACAGACACTTCCACTGCATCTCAAGCTTCCTCAGACAAGAGAGAAC---AATCAGAATCCACAACTGAAGCCACCCCTAGGTCATGTGCTGAAGAGCCATGTGGAGCTGGGACCTGCCAGGAGAGGGAGGGAAGTGTCATCTGTCTATGCCCCCCTGGGTATATGGGCAATCGCTGTGACATAGACATCGATGAATGCCACTCAAACCCCTGTCTGAATGGAGGTACCTGCGTGGATGGCATCGACTCTTTCACATGCTTATGCCTTCCCAGCTACGGAGGGGACCTGTGTAAGATCGACCAGGAGATTTGTGAAGAGGGCTGGACCAAATTCCAGGGACACTGTTACCGGCACTTCCCGGACCGGGAAACCTGGGTAGATGCCGAGAGCCGATGCCGACAGCACCAGTCTCATCTGAGCAGCATTGTCACACCTGAAGAGCAGGAGTTTGTCAACAACAATGCCCAAGACTACCAATGGATTGGACTCAATGACAGAACTATCGAAGGTGATTTCCGTTGGTCAGATGGACACCCCTTGCAATTTGAGAACTGGAGACCCAACCAACCAGACAACTTCTTTGCCACTGGGGAAGACTGCGTAGTGATGATCTGGCATGAGAAGGGTGAATGGAATGATGTCCCTTGCAACTATCACCTGCCGTTCACGTGTAAAAAGGGCACAGTGGCTTGTGGAAACCCTCCTGCAGTTGAACATGCTAGGACCTTTGGACAGAAAAAGGATCGGTATGAAATCAACTCATTGGTCCGATACCAATGCAAGGAGGGCTTTGTCCAGCGCCATGTGCCCACAATCCGATGCCTACCTAGTGGAAACTGGGAAGAGCCACAGATAGCCTGCATAGACTCGACCACCTATAAGAGACGACTACAAAGGCGGAACTCTCAGCCTCAGCGCAGCAACGTCCACAGCACAGCCCACT-AGA",
+                  "midline": "||||||||||||||   |  ||||| |||| |  |  || || |||||| |||||| |||| | ||   |||||||||||| || || | | | ||| ||||| ||||||||| | | ||  | ||||| | | ||||| |||||  |||||| | |  | | ||||||  | || | | || |||   |||||||||| ||  ||| |||| || | ||||| ||||| || ||||| |||||||||||||||||| ||||||  ||||||   ||||| || || ||||||||||| || |  ||| | | |||| |||||||||| ||||| |||| ||||| ||| |||||||||||||  ||||||||||||| |||||||||||||||||||||||||||||||||||||| ||||||||||||| |||| ||||||||| | ||||| |||||||||| ||| | |||||| ||||||||||| |||||||||||||| || |||||||| ||||| ||| |||| || ||  |||| ||||| || ||||||||||| ||||| || || |||||||||||||||||||||||||||||||||||||| ||||| || || || ||||| || |||||||| || ||||| |||||||||||||||||| ||||||||||||||||| | |||||||| || |||||||| |||||| |||| || ||||| || |||||||||||||| |||||||| || ||||||||||| || ||||| || ||||| || |||||||||||||||||||||||||| || ||| | || ||||  || || ||||| |||||||| || ||||| ||||| |||||||| ||||| ||  |||| || ||||| ||||  ||||| ||||||||||||||  ||||||| ||||| ||||  || || ||  ||||||| ||||| |||||  |||||| |||| | |||||||| ||  |  ||||||| | ||||| ||| | ||  |  || || | |  || |||||||||||||| |||"
+                },
+                {
+                  "num": 3,
+                  "bit_score": 429.543,
+                  "score": 232,
+                  "evalue": 8.19782e-117,
+                  "identity": 477,
+                  "query_from": 1810,
+                  "query_to": 2404,
+                  "query_strand": "Plus",
+                  "hit_from": 1940,
+                  "hit_to": 2534,
+                  "hit_strand": "Plus",
+                  "align_len": 598,
+                  "gaps": 6,
+                  "qseq": "GGGGTCGTCTTCCACTACCGCCCGGGACCCACCCGCTACTCGCTGACCTTTGAGGAGGCACAGCAGGCCTGCCTGCG-CACGGGGGCGGTCATTGCCTCGCCGGAGCAGCTCCAGGCCGCCTACGAAGCAGGCTATGAGCAGTGTGACGCCGGCTGGCTGCGGGACCAGACCGTCAGATACCCCATTGTGAGCCCCCGGACCCCATGCGTGGGTGACAAGGACAGCAGCCCAGGGGTCAGGACCTATGGCGTGCGCCCATCAACAGAGACCTACGATGTCTACTGCTTTGTAGACAGACTTGAGGGGGAGGTGTTCTTCGCCACACGCCTTGAGCAGTTCACCTTCCAGGAAGCACTGGAGTTCTGTGAATCTCACAATGCTACGCTGGCCACCACGGGCCAGCTCTACGCCGCCTGGAGCCGCGGCCTGGACAAGTGCTATGCCGGCTGGCTGGCCGACGGCAGCCTCCGCTACCCCATCGTCACCCCAAGGCCTGCCTGCGGTGGGGACAAGCCAGGCGTGAGAACGGTCTACCTCTACCCTAACCAGACGGGCCT-CC-CAGACCCACTGTCCCGGCACCATGCCTTCTGCTTCC",
+                  "hseq": "GGTGTTGTGTTCCACTACCGTCCAGGCTCCACCAGATATTCTCTCAGCTTTGAAGAGGCCCAACAGGCCTG-TAGGGCCACGGGAGCTGTCATCGCTACACCAGAACAGCTACAGGCAGCCTATGAAGCTGGCTATGAACAATGCGATGCTGGCTGGCTGCAGGACCAGACAGTCAGATACCCCATTGTGAGTCCCCGGACCCCGTGTGTCGGAGATAAGGACAGCAGCCCAGGGGTCAGGACCTATGGCCTACGCCCAGCATCAGAGACCTATGATGTATACTGCTATGTAGACTGGCTACTGGGTGAGGTGTTTTTTGCCACTCGACCGGAGCTGTTCACCTTCCAAGAAGCCCAAGAATACTGCAAAGAACACAATGCCACCCTGGCTTCTACAGGGCAGCTTTATGCCGCCTGGCGCCGGGGCCTGGACAAATGCCATGCTGGCTGGCTGGCAGACGGCAGCGTCCGCTATCCTATCATCACTCCCCGCTCTGCATGTGGTGGGGATAAACCAGGTGTTAGAACTGTCTACCTGTACTCCAACCAGACTGGCTTTCCTCAT-CCC-CTATCCCGGCACCATGCTTTCTGTTTCC",
+                  "midline": "|| || || ||||||||||| || ||  ||||| | || || || | |||||| ||||| || ||||||||   | | |||||| || ||||| ||  | || || ||||| ||||| ||||| ||||| |||||||| || || || || |||||||||| ||||||||| |||||||||||||||||||| ||||||||||| || || || || ||||||||||||||||||||||||||||||||| | |||||| || |||||||||| ||||| ||||||| ||||||| | ||   ||| |||||||| || ||||| || |  |||| |||||||||||| ||||| |  || | |||  ||   |||||||| || |||||  | || || ||||| || ||||||||| |||| ||||||||||| ||| |||| ||||||||||| ||||||||| ||||||| || ||| |||| ||  |  |||| || |||||||| || ||||| || ||||| |||||||| ||| | |||||||| ||| | || ||  ||| || |||||||||||||| ||||| ||||"
+                },
+                {
+                  "num": 4,
+                  "bit_score": 100.839,
+                  "score": 54,
+                  "evalue": 7.30051e-18,
+                  "identity": 68,
+                  "query_from": 8861,
+                  "query_to": 8930,
+                  "query_strand": "Plus",
+                  "hit_from": 8357,
+                  "hit_to": 8430,
+                  "hit_strand": "Plus",
+                  "align_len": 74,
+                  "gaps": 4,
+                  "qseq": "CCCCCGGGACCGTGCAGG-CACCAGGGTTCCGTGCACCTATTTATATTTTTGAAAACTGA-A--GATTATAATA",
+                  "hseq": "CCCCCGGGACCGTGCAGGCCACCATGGTTCCGTGCACCTATTTATATTTTTGAAAACTGACAATGATGATAATA",
+                  "midline": "|||||||||||||||||| ||||| ||||||||||||||||||||||||||||||||||| |  ||| ||||||"
+                }
+              ]
+            },
+            {
+              "num": 2,
+              "description": [
+                {
+                  "id": "gi|1720473017|ref|XM_018914083.2|",
+                  "accession": "XM_018914083",
+                  "title": "PREDICTED: Serinus canaria aggrecan (ACAN), transcript variant X2, mRNA",
+                  "taxid": 9135,
+                  "sciname": "Serinus canaria"
+                }
+              ],
+              "len": 6768,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 573.582,
+                  "score": 310,
+                  "evalue": 3.5788e-160,
+                  "identity": 674,
+                  "query_from": 586,
+                  "query_to": 1429,
+                  "query_strand": "Plus",
+                  "hit_from": 193,
+                  "hit_to": 1036,
+                  "hit_strand": "Plus",
+                  "align_len": 852,
+                  "gaps": 16,
+                  "qseq": "CTGGCCCCAAGAATCAAGTGGAGCCGTGTGTCCAAGGAGAAGGAGGTAGTGCTGCTGGTGGCCACTGAAG-GGCGCG-TGCGGGTCAACAGTGCCTATCA-GGACAAGGTCTCACTGCCCAACTACCCGGCCATCCCCAGTGACGCCACCTTGGAAGTCCAGAGC-CTGCGCTCCAATGACTCTGGGGTCTACCGCTGCGAGGTGATGCATGGCATCGAGGACAGCGAGGCCACCCTGGAAGTCGTGGTGAAAGGCATCGTGTTCCATTACAGAGCCATCTCTACACGCTACACCCTCGACTTTGACAGGGCGCAGCGGGCCTGCCTGCAGAACAGTGCCATCATTGCCACGCCTGAGCAGCTGCAGGCCGCCTACGAAGACGGCTTCCACCAGTGTGACGCCGGCTGGCTGGCTGACCAGACTGTCAGATACCCCATCCACACTCCCCGGGAAGGCTGCTATGGAGACAAGGATGAGTTTCCTGGTGTGAGGACGTATGGCATCCGAGACACCA-ACGAGACCTATGATGTGTACTGCTTCGCCGAGGAGATGGAGGGTGAGGTCTTTTATGCAACATCTCCAGAGAAGTTCACCTTCCAGGAAGC---AGCCAATGAGTGCCGGCGGCTGGGTGCCCGGCTGGCCACCACGGGCCAGCTCTACCTGGCCTGGCAGGCTGGCATGGACATGTGCAGCGCCGGCTGGCTGGCCGACCGCAGCGTGCGCTACCCCATCTCCAAGGCCCGGCCCAACTGCGGTGGCAACCTCCTGGGCGTGAGGACCGTCTACGTGCATGCCAACCAGACGGGCTACCCCGACCCCTCATCCCGCTACGACGCCATCTGCTACA",
+                  "hseq": "CTGACCCCACGCATCAAGTGGAGCAAGCTCTCCAACGGCACCGAGGTTGTCTTGCTGGTGGCCAC--AGGCGGCAAGATCCGGCTCAACAGCGAGTA-CAGGGAGGTGATCTCCTTGCCCAACTACCCCGCCATCCCCACGGACGCCACGCTGGAGATCAAG-GCGCTGAGGTCCAACCACACCGGGATCTACCGCTGCGAAGTGATGTACGGCATCGAGGACAGACAGGACACGATAGAGGTCCTGGTGAAAGGCATCGTATTCCACTACAGAGCAATCTCCACAAGGTACACTCTGAACTTTGAGAAGGCAAAGCAGGCCTGTATCCAGAACAGTGCTGTCATTGCTACCCCCGAGCAGCTGCAGGCTGCCTACGAGGATGGGTACGAGCAGTGTGATGCTGGCTGGCTGGCTGATCAGACTGTCAGGTACCCCATCCACTGGCCCCGGGAGCGCTGCTATGGCGACAAGGATGAATTTCCAGGAGTGAGGACCTACGGTGTCCGTGA-GCCAGATGAAACCTATGATGTTTACTGCTATGCAGAGCAAATGCAAGGCAAAGTCTTCTACGCCACTGCCCCGGAGAAGTTCACCTTCCAAGAAGCTTTTGACAA--A-TGCCGCAGTTTGGGAGCGCGCTTGGCCACCACGGGGGAGCTGTACCTGGCCTGGAAGGACGGCATGGACATGTGCAGCGCGGGCTGGCTGGCCGACCGCAGCGTGCGCTACCCCATCTCCCGAGCGCGCCCCAACTGCGGGGGCAACCTGGTGGGCGTGAGGACGGTGTACCTGTACGTCAACCAGACGGGCTACCCGCACCCCGACTCGCGCTACGACGCCATCTGCTACA",
+                  "midline": "||| ||||| | ||||||||||||    | ||||| |  |  ||||| ||  |||||||||||||  | | |||  | | ||| ||||||| |  || || |||   | ||||  ||||||||||||| ||||||||||  ||||||||  ||||  || || || ||| | |||||  || | ||| ||||||||||||| |||||| | ||||||||||||||  ||| |||  | || ||| |||||||||||||||| ||||| |||||||| ||||| ||| | ||||| ||  ||||||| | |||  ||| ||||||  | |||||||||||  ||||||| || || |||||||||||||| |||||||| || || | | | |||||||| || |||||||||||||| ||||||||||| ||||||||||||   ||||||||  |||||||||| ||||||||||| ||||| || |||||||| || ||  |||| ||  ||| | || ||||||||||| |||||||  || ||| | ||| | ||  | ||||| || || ||  | || ||||||||||||||||| |||||    | |||  | |||||  |  |||| || ||  |||||||||||||  |||| |||||||||||| |||  |||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||   || || ||||||||||| ||||||||  ||||||||||||| || ||| || | | ||||||||||||||||||  |||||   || ||||||||||||||||||||||"
+                }
+              ]
+            },
+            {
+              "num": 3,
+              "description": [
+                {
+                  "id": "gi|1720473015|ref|XM_030228644.1|",
+                  "accession": "XM_030228644",
+                  "title": "PREDICTED: Serinus canaria aggrecan (ACAN), transcript variant X1, mRNA",
+                  "taxid": 9135,
+                  "sciname": "Serinus canaria"
+                }
+              ],
+              "len": 6654,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 573.582,
+                  "score": 310,
+                  "evalue": 3.5788e-160,
+                  "identity": 674,
+                  "query_from": 586,
+                  "query_to": 1429,
+                  "query_strand": "Plus",
+                  "hit_from": 193,
+                  "hit_to": 1036,
+                  "hit_strand": "Plus",
+                  "align_len": 852,
+                  "gaps": 16,
+                  "qseq": "CTGGCCCCAAGAATCAAGTGGAGCCGTGTGTCCAAGGAGAAGGAGGTAGTGCTGCTGGTGGCCACTGAAG-GGCGCG-TGCGGGTCAACAGTGCCTATCA-GGACAAGGTCTCACTGCCCAACTACCCGGCCATCCCCAGTGACGCCACCTTGGAAGTCCAGAGC-CTGCGCTCCAATGACTCTGGGGTCTACCGCTGCGAGGTGATGCATGGCATCGAGGACAGCGAGGCCACCCTGGAAGTCGTGGTGAAAGGCATCGTGTTCCATTACAGAGCCATCTCTACACGCTACACCCTCGACTTTGACAGGGCGCAGCGGGCCTGCCTGCAGAACAGTGCCATCATTGCCACGCCTGAGCAGCTGCAGGCCGCCTACGAAGACGGCTTCCACCAGTGTGACGCCGGCTGGCTGGCTGACCAGACTGTCAGATACCCCATCCACACTCCCCGGGAAGGCTGCTATGGAGACAAGGATGAGTTTCCTGGTGTGAGGACGTATGGCATCCGAGACACCA-ACGAGACCTATGATGTGTACTGCTTCGCCGAGGAGATGGAGGGTGAGGTCTTTTATGCAACATCTCCAGAGAAGTTCACCTTCCAGGAAGC---AGCCAATGAGTGCCGGCGGCTGGGTGCCCGGCTGGCCACCACGGGCCAGCTCTACCTGGCCTGGCAGGCTGGCATGGACATGTGCAGCGCCGGCTGGCTGGCCGACCGCAGCGTGCGCTACCCCATCTCCAAGGCCCGGCCCAACTGCGGTGGCAACCTCCTGGGCGTGAGGACCGTCTACGTGCATGCCAACCAGACGGGCTACCCCGACCCCTCATCCCGCTACGACGCCATCTGCTACA",
+                  "hseq": "CTGACCCCACGCATCAAGTGGAGCAAGCTCTCCAACGGCACCGAGGTTGTCTTGCTGGTGGCCAC--AGGCGGCAAGATCCGGCTCAACAGCGAGTA-CAGGGAGGTGATCTCCTTGCCCAACTACCCCGCCATCCCCACGGACGCCACGCTGGAGATCAAG-GCGCTGAGGTCCAACCACACCGGGATCTACCGCTGCGAAGTGATGTACGGCATCGAGGACAGACAGGACACGATAGAGGTCCTGGTGAAAGGCATCGTATTCCACTACAGAGCAATCTCCACAAGGTACACTCTGAACTTTGAGAAGGCAAAGCAGGCCTGTATCCAGAACAGTGCTGTCATTGCTACCCCCGAGCAGCTGCAGGCTGCCTACGAGGATGGGTACGAGCAGTGTGATGCTGGCTGGCTGGCTGATCAGACTGTCAGGTACCCCATCCACTGGCCCCGGGAGCGCTGCTATGGCGACAAGGATGAATTTCCAGGAGTGAGGACCTACGGTGTCCGTGA-GCCAGATGAAACCTATGATGTTTACTGCTATGCAGAGCAAATGCAAGGCAAAGTCTTCTACGCCACTGCCCCGGAGAAGTTCACCTTCCAAGAAGCTTTTGACAA--A-TGCCGCAGTTTGGGAGCGCGCTTGGCCACCACGGGGGAGCTGTACCTGGCCTGGAAGGACGGCATGGACATGTGCAGCGCGGGCTGGCTGGCCGACCGCAGCGTGCGCTACCCCATCTCCCGAGCGCGCCCCAACTGCGGGGGCAACCTGGTGGGCGTGAGGACGGTGTACCTGTACGTCAACCAGACGGGCTACCCGCACCCCGACTCGCGCTACGACGCCATCTGCTACA",
+                  "midline": "||| ||||| | ||||||||||||    | ||||| |  |  ||||| ||  |||||||||||||  | | |||  | | ||| ||||||| |  || || |||   | ||||  ||||||||||||| ||||||||||  ||||||||  ||||  || || || ||| | |||||  || | ||| ||||||||||||| |||||| | ||||||||||||||  ||| |||  | || ||| |||||||||||||||| ||||| |||||||| ||||| ||| | ||||| ||  ||||||| | |||  ||| ||||||  | |||||||||||  ||||||| || || |||||||||||||| |||||||| || || | | | |||||||| || |||||||||||||| ||||||||||| ||||||||||||   ||||||||  |||||||||| ||||||||||| ||||| || |||||||| || ||  |||| ||  ||| | || ||||||||||| |||||||  || ||| | ||| | ||  | ||||| || || ||  | || ||||||||||||||||| |||||    | |||  | |||||  |  |||| || ||  |||||||||||||  |||| |||||||||||| |||  |||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||   || || ||||||||||| ||||||||  ||||||||||||| || ||| || | | ||||||||||||||||||  |||||   || ||||||||||||||||||||||"
+                }
+              ]
+            }
+          ],
+          "stat": {
+            "db_num": 336526,
+            "db_len": 1574887339,
+            "hsp_len": 32,
+            "eff_space": 13964450030496,
+            "kappa": 0.46,
+            "lambda": 1.28,
+            "entropy": 0.85
+          }
+        }
+      }
+    }
+  }
+]
+}
+

@@ -1,0 +1,1230 @@
+{
+"BlastOutput2": [
+{
+    "report": {
+      "program": "blastn",
+      "version": "BLASTN 2.10.0+",
+      "reference": "Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), \"A greedy algorithm for aligning DNA sequences\", J Comput Biol 2000; 7(1-2):203-14.",
+      "search_target": {
+        "db": "nt_v5"
+      },
+      "params": {
+        "expect": 10,
+        "sc_match": 1,
+        "sc_mismatch": -2,
+        "gap_open": 0,
+        "gap_extend": 0,
+        "filter": "L;m;",
+        "entrez_query": "txid8364 [ORGN] OR txid8508 [ORGN] OR txid30608 [ORGN] OR txid379532 [ORGN] OR txid1868482 [ORGN] OR txid9627 [ORGN] OR txid29073 [ORGN] OR txid9694 [ORGN] OR txid9901 [ORGN] OR txid72004 [ORGN] OR txid9993 [ORGN] OR txid43179 [ORGN] OR txid99837 [ORGN] OR txid10020 [ORGN] OR txid37548 [ORGN] OR txid6239 [ORGN] OR txid7227 [ORGN] OR txid7757 [ORGN] OR txid7719 [ORGN] OR txid51511 [ORGN]"
+      },
+      "results": {
+        "search": {
+          "query_id": "NM_152889.3",
+          "query_title": "Homo sapiens carbohydrate sulfotransferase 13 (CHST13), mRNA",
+          "query_len": 1917,
+          "hits": [
+            {
+              "num": 1,
+              "description": [
+                {
+                  "id": "gi|826335380|ref|XM_012659037.1|",
+                  "accession": "XM_012659037",
+                  "title": "PREDICTED: Propithecus coquereli carbohydrate (chondroitin 4) sulfotransferase 13 (CHST13), mRNA",
+                  "taxid": 379532,
+                  "sciname": "Propithecus coquereli"
+                }
+              ],
+              "len": 1928,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 944.758,
+                  "score": 511,
+                  "evalue": 0,
+                  "identity": 742,
+                  "query_from": 357,
+                  "query_to": 1206,
+                  "query_strand": "Plus",
+                  "hit_from": 332,
+                  "hit_to": 1187,
+                  "hit_strand": "Plus",
+                  "align_len": 856,
+                  "gaps": 6,
+                  "qseq": "AGGACCCGCGCTCGACCCTGGCGAAGGTGCACCGGCAGCGGCGCGACCTGCTGAACAGCGCCTGTAGCCGCCACTCACGCCGGCAGCGCCTGCTACAGCCGGAGGACCTGCGGCACGTGCTGGTGGACGACGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCGGCCAAGCCCGCGGCGACCCGCGCGCCATCTCCGCGCAAGAGGCGCACGCGCCTGGCCGCCTGCCCTCACTGGCCGACTTCAGCCCCGCCGAGATCAACCGGCGCCTGCGCGCCTACTTGGCCTTCCTGTTCGTGCGGGAGCCCTTCGAGCGCCTGGCATCGGCTTACCGCAACAAGCTCGCGCGCCCCTACAGCGCCGCCTTCCAGAGGCGCTACGGTGCACGCATCGTTCAGCGCCTGCGGCCGCGCGCGCTCCCCGACGCCCGGGCCCGCGGCCACGACGTGCGCTTCGCGGAGTTCCTGGCCTACCTGCTGGACCCGCGCACGCGGCGTGAGGAGCCCTTCAACGAGCACTGGGAGCGCGCGCACGCGCTCTGCCACCCGTGTCGCCTCCGCTACGACGTCGTGGGCAAGTTCGAGACGCTGGCGGAGGACGCGGCCTTCGTGCTGGGCCTGGCGGGCGCATCCGACCTGAGCTTCCCTGGGCCGCCGC---GGCCCCG-G-GGA-GCCGCCGCCTCCCGCGACCTGGCAGCGCGCCTCTTCCGGGACATCAGCCCCTTCTACCAGCGGCGCCTCTTCGACCTCTACAAGATGGACTTCCTGCTTTTCAACTACTCCGCCCCCTCCTACCTGCGGCTGCTCTAGCG",
+                  "hseq": "AGGGCCCGCGCTCAGCCCTGGCCGAGGTGCACCGTCAGCGGCGCGACCTCCTGCGCCGCGCCTGCAGCCTCCACACGCGCCGGCAGCGCCTGCTGCAGCCGCGGGACCTGCGGCACGTGCTGGTGGACGACGCGCACGGGCTGCTCTACTGCTACGTGCCCAAGGTGGCCTCCACCAACTGGAAGCGCGTGCTGCTGGCGCTCAGCGGCCGCGCCCCCGGGGACCCGCGCGCCATCCCCGCGCACGAGGCGCACGCCCCGGGTCGCCTGCCCTCGCTGGCCGACTTCGGCCCGGCCGACGTCAACCGCCGCCTGCGGTCCTACCTGGCCTTCCTGTTCGTGCGCGAGCCCTTCGAGCGCCTGGCCTCGGCCTACCGCAACAAGCTGGCGCGGCCCTGGGGGGCGGCCTTCCAGCTGCGTTATGGCACGCGCATCGTGCGGCGCCTGCGGCCCGGGGCGCGGCCGGACGCGGTGGCCCGCGGCCACGACGTGCGCTTCGCCGAGTTCCTGGCCTACCTGCTGGACCCGCGCACGCGGCGCGAAGAGCCCTTCAACGAGCACTGGGAGCGCGTGCACGCGCTGTGCCACCCGTGCCTGCTGCGCTACGACGTGGTGGGCAAGTTCGAGACCCTGGCCGAGGACGCCGCCTTCGTGCTGGGCCTGGCCGGCGCGTCGGGCCTCAGCTTCCCCGGGCCGCCTCCACGGCCCAAAGCGGCTGCCACTGCCCCGCGCGAGCTGGCGGCGCGTCTCTTCCAGGACATCAGCCCGTTCTACCAGCGGCGCCTCTACGACCTGTACAAGATGGATTTCCTGCTCTTCAACTACTCTGTCCCCTCTTACCTGCGGCTCCGCTAGCG",
+                  "midline": "||| |||||||||  |||||||  |||||||||| |||||||||||||| |||  | ||||||| |||| |||| | ||||||||||||||||| ||||||  ||||||||||||||||||||||||||||||||| || ||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||| |||||||  |||| ||| ||||||||||||||| ||||||| ||||||||||| || || ||||||||||| |||||||||||| |||| |||||  ||||||| ||||||||  ||||| ||||||||||||||||||| |||||||||||||||||||| ||||| |||||||||||||| ||||| ||||   | || |||||||||  ||| || ||  | |||||||| | ||||||||||||  | ||||  || |||||   ||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||| || |||||||||||||||||||||||||||| ||||||||| ||||||||||| |  || ||||||||||| ||||||||||||||||| ||||| |||||||| |||||||||||||||||||| ||||| || | ||| |||||||| |||||||| |   |||||   | ||  ||| | ||| | ||||| ||||| ||||| ||||||| |||||||||||| ||||||||||||||||||| |||||| ||||||||||| |||||||| ||||||||||| | |||||| ||||||||||| | ||||||"
+                }
+              ]
+            },
+            {
+              "num": 2,
+              "description": [
+                {
+                  "id": "gi|984117890|ref|XM_015495110.1|",
+                  "accession": "XM_015495110",
+                  "title": "PREDICTED: Marmota marmota marmota carbohydrate (chondroitin 4) sulfotransferase 13 (Chst13), mRNA",
+                  "taxid": 9994,
+                  "sciname": "Marmota marmota marmota"
+                }
+              ],
+              "len": 1123,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 573.582,
+                  "score": 310,
+                  "evalue": 1.48442e-160,
+                  "identity": 467,
+                  "query_from": 662,
+                  "query_to": 1204,
+                  "query_strand": "Plus",
+                  "hit_from": 256,
+                  "hit_to": 791,
+                  "hit_strand": "Plus",
+                  "align_len": 544,
+                  "gaps": 9,
+                  "qseq": "CGGCGCCTGCGCGCCTACTTGGCCTTCCTGTTCGTGCGGGAGCCCTTCGAGCGCCTGGCATCGGCTTACCGC-AACAAGCTCGCGCGCCCCTACAGCGCCGCCTTCCAGAGGCGCTACGGTGCACGCATCGTTCAGCGCCTGCGGCCGCGCGCGCTCCCCGACGCCCGGGCCCGCGGCCACGACGTGCGCTTCGCGGAGTTCCTGGCCTACCTGCTGGACCCGCGCACGCGGCGTGAGGAGCCCTTCAACGAGCACTGGGAGCGCGCGCACGCGCTCTGCCACCCGTGTCGCCTCCGCTACGACGTCGTGGGCAAGTTCGAGACGCTGGCGGAGGACGCGGCCTTCGTGCTGGGCCTGGCGGGCGCATCCGACCTGAGCTTCCCTGGGCCGCCGCGGCCCCGGGGAGCCGCCGCCTCCCGCGACCTGGCAGCGCGCCTCTTCCGGGACATCAGCCCCTTCTACCAGCGGCGCCTCTTCGACCTCTACAAGATGGACTTCCTGCTTTTCAACTACTCCGCCCCCTCCTACCTGCGGCTGCTCTAG",
+                  "hseq": "CGGC-CCTGCGCGCCTACCTGGCGGTGCTGTTCGTGCGCGAGCCCTTCGAGCGCCTG-C-GCCGC-TACCGCNNAC-AGCTCGCGCGACCCTACAGCGCCACCTTCCAGCGCCGCTATGGCACTCGCATCGTGCGGCGCCTGCGTCCCGGCGCCCAGCCCGAGGCGCTGACTCGCGGCCATGATGTGCGCTTTGCCGAGTTCCTCGCCTACCTGCTGGACCCGCGCACGCGGCGCGACGAGCCCTTCAACGAGCATTGGGAGCGTGCCCACGCGCTCTGCCACCCGTGTCGCCTGCGCTATGACATCGTGGGCAAGTTCGAGACGCTGGCCGAGGACGCGGCTTTCGTGCTGGGCCTGNGTGGCGCCCCGGACCTGCGCTTCCCTGCGCCTCCGCGACCCCGGG-CGGTG-C-CCGCGCGCGATCTGGCTGCGCGCCTCTTCCAGGACATCAGCCCCTTCTACCAGCGGCGCCTGTTCGATCTGTACAAGATGGACTTCCTGCTCTTCAACTACTCGGCCCCCTCCTACCTGCGGCTGCGCTAG",
+                  "midline": "|||| ||||||||||||| ||||  | ||||||||||| |||||||||||||||||| |  | || ||||||  || |||||||||| |||||||||||| |||||||| | ||||| ||  | |||||||| | ||||||||| ||  |||| |  ||||| || | | | |||||||| || |||||||| || |||||||| ||||||||||||||||||||||||||||| || ||||||||||||||||| |||||||| || |||||||||||||||||||||||||| ||||| ||| ||||||||||||||||||||||||| ||||||||||| |||||||||||||||   |||||  | |||||| ||||||||| ||| ||||| |||||||  |  | | || | ||||| ||||| ||||||||||||| |||||||||||||||||||||||||||||| ||||| || |||||||||||||||||||| ||||||||||| |||||||||||||||||||||| ||||"
+                }
+              ]
+            },
+            {
+              "num": 3,
+              "description": [
+                {
+                  "id": "gi|852810815|ref|XM_013037711.1|",
+                  "accession": "XM_013037711",
+                  "title": "PREDICTED: Dipodomys ordii carbohydrate sulfotransferase 13-like (LOC106002969), partial mRNA",
+                  "taxid": 10020,
+                  "sciname": "Dipodomys ordii"
+                }
+              ],
+              "len": 590,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 333.517,
+                  "score": 180,
+                  "evalue": 2.74258e-88,
+                  "identity": 313,
+                  "query_from": 356,
+                  "query_to": 718,
+                  "query_strand": "Plus",
+                  "hit_from": 174,
+                  "hit_to": 548,
+                  "hit_strand": "Plus",
+                  "align_len": 376,
+                  "gaps": 14,
+                  "qseq": "CAGGACCCGCGCTCGACCCTGGCGAAGGTGCACCGGCAGCGGCGCGACCTGCTG-AACAGCGCCTGTAGCCGCCACTCACGCCGGCAGCGCCTGCTACAGCCGGAGGACCTGCGGCACGTGCTGGTGGACGACGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAG--C--G-GCCAA-G------CCCGCGGCGACCCGCGCGCCATCTCCGCGCAAGAGGCGCACGCGCCTGGCCGCCTGCCCTCACTGGCCGACTTCAGCCCCGCCGAGATCAACCGGCGCCTGCGCGCCTACTTGGCCTTCCTGTTCGTGCGGGAGCCCTTCGAGCGCCTG",
+                  "hseq": "CAGGCCCCGCGCTCCGCGCTGGCCGAGGTGCACCGGCAGCGGCGCGACCTGCTGCGCCAG-GCCTGCAGCCGCCACTCGCGCCGGCCGCGCGCGCTGCGCCCCGAGGAGCTGCGGCACGTGCTGGTGGACGACGCACACGGGCTGCTGTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGCGGGCCCGCGCCCACGGGGACACCCGCGACGACCCCCGCGCCATCCCCGCGCGCGAGGCGCACGCGCCGGGCCGCCTGCCCTCGCTGGCTGACTTCCGCCCCTCTAATATCCACCGGCGCCTGCTTAACTACCTGACCTTCCTGTACGTGCACGACCCCTTCCAGCGCCTG",
+                  "midline": "|||| |||||||||  | |||||  |||||||||||||||||||||||||||||   ||| ||||| ||||||||||| ||||||| ||||  ||| |  || ||||| |||||||||||||||||||||||||| || || ||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |  |  | ||| | |      |||||| |||||| ||||||||| ||||||  |||||||||||||| |||||||||||||| ||||| |||||| ||||| |  | ||| ||||||||||||    |||| || ||||||||| |||||  || |||||| ||||||||"
+                }
+              ]
+            },
+            {
+              "num": 4,
+              "description": [
+                {
+                  "id": "gi|987427181|ref|XM_007096466.2|",
+                  "accession": "XM_007096466",
+                  "title": "PREDICTED: Panthera tigris altaica carbohydrate (chondroitin 4) sulfotransferase 11 (CHST11), transcript variant X2, mRNA",
+                  "taxid": 74533,
+                  "sciname": "Panthera tigris altaica"
+                }
+              ],
+              "len": 5291,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 244.878,
+                  "score": 132,
+                  "evalue": 1.32194e-61,
+                  "identity": 426,
+                  "query_from": 461,
+                  "query_to": 1023,
+                  "query_strand": "Plus",
+                  "hit_from": 360,
+                  "hit_to": 925,
+                  "hit_strand": "Plus",
+                  "align_len": 570,
+                  "gaps": 11,
+                  "qseq": "GACCTGCGGCACGTGCTGGTGGACGACGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCGGCC-AAGCCCG--CGGCGACCCGCGCGCCATCTCCGCGCAA-GAGGCGCACGCGCCTGGCC-GCCTGCCCTCACTGGCCGACTTCAGCCCCGCCGAGATCAACCGGCGCCTGCGCGCCTACTTGGCCTTCCTGTTCGTGCGGGAGCCCTTCGAGCGCCTGGCATCGGCTTACCGCAACAAGCTCGCGCGCCCCTACAGCGCCGCCTTCCAGAGGCGCTACGGTGC-ACGCATCGTTCAGCGCCTGCGGCCGCGCGCGCTCCCCG-ACGCCCGGGCCCGCGGCCACGACGTGCGCTTCGCGGAGTTCCTGGCCTACCTGCTGGACCCGCGCACGCGGCGTGAGGAGCCCTTCAACGAGCACTGGGAGCGCGCGCACGCGCTCTGCCACCCGTGTCGCCTCCGCTACGACGTCGTGGGCAAGTTCGAGACGCTGGCGGAGGACGCGGCCTTCGTGCTGGGCCTGGCGGG",
+                  "hseq": "GACCTGAAGCACCTGGTGGTGGACGAGGACCACGAGCTCATCTACTGCTACGTGCCCAAGGTGGCGTGCACCAACTGGAAGCGGCTCATGATGGTGCTGAGCGGCCGGGGCAAGTACAGCGACCCCATGGAGATCCCGGC-CAACGAGGCTCACGTGGC-GGCCAACCTCAAGACCCTGAACCAGTACAGCATCCCCGAGATCAACCACCGCTTGAAAAGCTACATGAAGTTCCTGTTCGTGCGGGAGCCCTTCGAGCGGCTGGTGTCGGCCTACCGGAACAAGTTCACGCAGAAGTACAACACGTCCTTCCACAAGCGCTACGGCACCAAG-ATCATCCGGCGCCAGCGGAAGAACGC-CACCCAGGAGGCGCTGCGCAGGGGCGACGACGTCAGGTTCGAGGAGTTCGTGGCCTATCTCATCGACCCGCACACGCAGCGCGAGGAGCCCTTCAACGAGCACTGGCAGACCGTGCACTCGCTGTGCCACCCGTGCCACATCCGCTACGACCTCGTGGGCAAGTACGAGACGCTGGAGGAGGATTCCAACTACGTGCTGCGGCTGGCGGG",
+                  "midline": "||||||  |||| || |||||||||| |  || |  ||  ||||||||||||||||||||||||| |||||||||||||||||  |  || ||| |||||||||||   ||  |  | |||||||    |  ||| | || ||| ||||| |||| | | ||||  |||     | |||  | | | ||||  | ||||||||||||  ||| ||     |||| ||   ||||||||||||||||||||||||||||| ||||  ||||| ||||| |||||| || |||     |||| | |  ||||||| | |||||||||  | | | ||| | | ||||| ||||  |  ||| | ||| | | || | |  | | ||| |||||||  | |||| ||||||| ||||||| ||  | ||||||| ||||| ||| |||||||||||||||||||||||| ||  || |||| |||| ||||||||||| | | ||||||||||| |||||||||||| ||||||||||| ||||||  |   || ||||||| | ||||||||"
+                }
+              ]
+            },
+            {
+              "num": 5,
+              "description": [
+                {
+                  "id": "gi|987427180|ref|XM_007096465.2|",
+                  "accession": "XM_007096465",
+                  "title": "PREDICTED: Panthera tigris altaica carbohydrate (chondroitin 4) sulfotransferase 11 (CHST11), transcript variant X1, mRNA",
+                  "taxid": 74533,
+                  "sciname": "Panthera tigris altaica"
+                }
+              ],
+              "len": 5306,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 244.878,
+                  "score": 132,
+                  "evalue": 1.32194e-61,
+                  "identity": 426,
+                  "query_from": 461,
+                  "query_to": 1023,
+                  "query_strand": "Plus",
+                  "hit_from": 375,
+                  "hit_to": 940,
+                  "hit_strand": "Plus",
+                  "align_len": 570,
+                  "gaps": 11,
+                  "qseq": "GACCTGCGGCACGTGCTGGTGGACGACGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCGGCC-AAGCCCG--CGGCGACCCGCGCGCCATCTCCGCGCAA-GAGGCGCACGCGCCTGGCC-GCCTGCCCTCACTGGCCGACTTCAGCCCCGCCGAGATCAACCGGCGCCTGCGCGCCTACTTGGCCTTCCTGTTCGTGCGGGAGCCCTTCGAGCGCCTGGCATCGGCTTACCGCAACAAGCTCGCGCGCCCCTACAGCGCCGCCTTCCAGAGGCGCTACGGTGC-ACGCATCGTTCAGCGCCTGCGGCCGCGCGCGCTCCCCG-ACGCCCGGGCCCGCGGCCACGACGTGCGCTTCGCGGAGTTCCTGGCCTACCTGCTGGACCCGCGCACGCGGCGTGAGGAGCCCTTCAACGAGCACTGGGAGCGCGCGCACGCGCTCTGCCACCCGTGTCGCCTCCGCTACGACGTCGTGGGCAAGTTCGAGACGCTGGCGGAGGACGCGGCCTTCGTGCTGGGCCTGGCGGG",
+                  "hseq": "GACCTGAAGCACCTGGTGGTGGACGAGGACCACGAGCTCATCTACTGCTACGTGCCCAAGGTGGCGTGCACCAACTGGAAGCGGCTCATGATGGTGCTGAGCGGCCGGGGCAAGTACAGCGACCCCATGGAGATCCCGGC-CAACGAGGCTCACGTGGC-GGCCAACCTCAAGACCCTGAACCAGTACAGCATCCCCGAGATCAACCACCGCTTGAAAAGCTACATGAAGTTCCTGTTCGTGCGGGAGCCCTTCGAGCGGCTGGTGTCGGCCTACCGGAACAAGTTCACGCAGAAGTACAACACGTCCTTCCACAAGCGCTACGGCACCAAG-ATCATCCGGCGCCAGCGGAAGAACGC-CACCCAGGAGGCGCTGCGCAGGGGCGACGACGTCAGGTTCGAGGAGTTCGTGGCCTATCTCATCGACCCGCACACGCAGCGCGAGGAGCCCTTCAACGAGCACTGGCAGACCGTGCACTCGCTGTGCCACCCGTGCCACATCCGCTACGACCTCGTGGGCAAGTACGAGACGCTGGAGGAGGATTCCAACTACGTGCTGCGGCTGGCGGG",
+                  "midline": "||||||  |||| || |||||||||| |  || |  ||  ||||||||||||||||||||||||| |||||||||||||||||  |  || ||| |||||||||||   ||  |  | |||||||    |  ||| | || ||| ||||| |||| | | ||||  |||     | |||  | | | ||||  | ||||||||||||  ||| ||     |||| ||   ||||||||||||||||||||||||||||| ||||  ||||| ||||| |||||| || |||     |||| | |  ||||||| | |||||||||  | | | ||| | | ||||| ||||  |  ||| | ||| | | || | |  | | ||| |||||||  | |||| ||||||| ||||||| ||  | ||||||| ||||| ||| |||||||||||||||||||||||| ||  || |||| |||| ||||||||||| | | ||||||||||| |||||||||||| ||||||||||| ||||||  |   || ||||||| | ||||||||"
+                }
+              ]
+            },
+            {
+              "num": 6,
+              "description": [
+                {
+                  "id": "gi|1214036703|ref|XM_021715153.1|",
+                  "accession": "XM_021715153",
+                  "title": "PREDICTED: Carlito syrichta carbohydrate sulfotransferase 11 (CHST11), transcript variant X1, mRNA",
+                  "taxid": 1868482,
+                  "sciname": "Carlito syrichta"
+                }
+              ],
+              "len": 1348,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 135.926,
+                  "score": 73,
+                  "evalue": 8.30103e-29,
+                  "identity": 389,
+                  "query_from": 461,
+                  "query_to": 997,
+                  "query_strand": "Plus",
+                  "hit_from": 293,
+                  "hit_to": 832,
+                  "hit_strand": "Plus",
+                  "align_len": 544,
+                  "gaps": 11,
+                  "qseq": "GACCTGCGGCACGTGCTGGTGGACGACGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCGGCCAAGCCC-G--CGGCGACCCGCGCGCCATCTCCGCGCAA-GAGGCGCACGCGCCTGGCCG-CCTGCCCTCACTGGCCGACTTCAGCCCCGCCGAGATCAACCGGCGCCTGCGCGCCTACTTGGCCTTCCTGTTCGTGCGGGAGCCCTTCGAGCGCCTGGCATCGGCTTACCGCAACAAGCTCGCGCGCCCCTACAGCGCCGCCTTCCAGAGGCGCTACGGTGC-ACGCATCGTTCAGCGCCTGCGGCCGCGCGCGCTCCCCG-ACGCCCGGGCCCGCGGCCACGACGTGCGCTTCGCGGAGTTCCTGGCCTACCTGCTGGACCCGCGCACGCGGCGTGAGGAGCCCTTCAACGAGCACTGGGAGCGCGCGCACGCGCTCTGCCACCCGTGTCGCCTCCGCTACGACGTCGTGGGCAAGTTCGAGACGCTGGCGGAGGAC",
+                  "hseq": "GACCTGAAGCACCTGGTGGTGGACGAGGACCACGAGCTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGGCTCATGATGGTCCTGACCGGGCGGGGCAAGTACAGCGACCCCATGGAGATC-CCGGCCAACGAGGCCCACGTGTC-GGCCAACCTGAAGACGCTGAACCAGTACAGCATCCCGGAGATCAACCACCGCTTGAAAAGCTACATGAAGTTTCTGTTCGTCCGCGAGCCCTTCGAACGGCTGGTGTCAGCCTACCGCAACAAGTTCACCCAGAAATACAACACCTCCTTCCACAAGCGGTACGGCACCAAG-ATCATCAAGCGACAGCGCAAGAATGC-CACCCAGGAAGCCCTGCGCAAAGGCGACGATGTCAAGTTCGAGGAGTTCGTGGCCTATCTCATCGACCCGCACACCCAGCGCGAGGAGCCCTTCAACGAACACTGGCAGACCGTCTACTCCCTCTGCCACCCCTGCCACATCCGCTACGACCTCGTGGGCAAGTACGAGACCCTGGAAGAGGAC",
+                  "midline": "||||||  |||| || |||||||||| |  || |  ||  |||||||||||||||||||||||||||||||||||||||||||  |  || |||  |||| ||| |  | |  |  | |||||||    |  ||| |||  ||| ||||| |||| | | ||||  ||||    | |||  | | | ||||  | | ||||||||||  ||| ||     |||| ||   || |||||||| || ||||||||||| || ||||  || || |||||||||||| || | |     |||| | || ||||||| | ||| |||||  | | | ||| |  |||| | |||   |   || | ||| | | |||| |  |   ||| |||| ||    |||| ||||||| ||||||| ||  | ||||||| ||| | ||| ||||||||||||||||| |||||| ||  ||   || | ||||||||||| || | | ||||||||||| |||||||||||| |||||| ||||  ||||||"
+                }
+              ]
+            },
+            {
+              "num": 7,
+              "description": [
+                {
+                  "id": "gi|640809902|ref|XM_008063332.1|",
+                  "accession": "XM_008063332",
+                  "title": "PREDICTED: Carlito syrichta carbohydrate sulfotransferase 11 (CHST11), transcript variant X3, mRNA",
+                  "taxid": 1868482,
+                  "sciname": "Carlito syrichta"
+                }
+              ],
+              "len": 1229,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 135.926,
+                  "score": 73,
+                  "evalue": 8.30103e-29,
+                  "identity": 389,
+                  "query_from": 461,
+                  "query_to": 997,
+                  "query_strand": "Plus",
+                  "hit_from": 174,
+                  "hit_to": 713,
+                  "hit_strand": "Plus",
+                  "align_len": 544,
+                  "gaps": 11,
+                  "qseq": "GACCTGCGGCACGTGCTGGTGGACGACGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCGGCCAAGCCC-G--CGGCGACCCGCGCGCCATCTCCGCGCAA-GAGGCGCACGCGCCTGGCCG-CCTGCCCTCACTGGCCGACTTCAGCCCCGCCGAGATCAACCGGCGCCTGCGCGCCTACTTGGCCTTCCTGTTCGTGCGGGAGCCCTTCGAGCGCCTGGCATCGGCTTACCGCAACAAGCTCGCGCGCCCCTACAGCGCCGCCTTCCAGAGGCGCTACGGTGC-ACGCATCGTTCAGCGCCTGCGGCCGCGCGCGCTCCCCG-ACGCCCGGGCCCGCGGCCACGACGTGCGCTTCGCGGAGTTCCTGGCCTACCTGCTGGACCCGCGCACGCGGCGTGAGGAGCCCTTCAACGAGCACTGGGAGCGCGCGCACGCGCTCTGCCACCCGTGTCGCCTCCGCTACGACGTCGTGGGCAAGTTCGAGACGCTGGCGGAGGAC",
+                  "hseq": "GACCTGAAGCACCTGGTGGTGGACGAGGACCACGAGCTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGGCTCATGATGGTCCTGACCGGGCGGGGCAAGTACAGCGACCCCATGGAGATC-CCGGCCAACGAGGCCCACGTGTC-GGCCAACCTGAAGACGCTGAACCAGTACAGCATCCCGGAGATCAACCACCGCTTGAAAAGCTACATGAAGTTTCTGTTCGTCCGCGAGCCCTTCGAACGGCTGGTGTCAGCCTACCGCAACAAGTTCACCCAGAAATACAACACCTCCTTCCACAAGCGGTACGGCACCAAG-ATCATCAAGCGACAGCGCAAGAATGC-CACCCAGGAAGCCCTGCGCAAAGGCGACGATGTCAAGTTCGAGGAGTTCGTGGCCTATCTCATCGACCCGCACACCCAGCGCGAGGAGCCCTTCAACGAACACTGGCAGACCGTCTACTCCCTCTGCCACCCCTGCCACATCCGCTACGACCTCGTGGGCAAGTACGAGACCCTGGAAGAGGAC",
+                  "midline": "||||||  |||| || |||||||||| |  || |  ||  |||||||||||||||||||||||||||||||||||||||||||  |  || |||  |||| ||| |  | |  |  | |||||||    |  ||| |||  ||| ||||| |||| | | ||||  ||||    | |||  | | | ||||  | | ||||||||||  ||| ||     |||| ||   || |||||||| || ||||||||||| || ||||  || || |||||||||||| || | |     |||| | || ||||||| | ||| |||||  | | | ||| |  |||| | |||   |   || | ||| | | |||| |  |   ||| |||| ||    |||| ||||||| ||||||| ||  | ||||||| ||| | ||| ||||||||||||||||| |||||| ||  ||   || | ||||||||||| || | | ||||||||||| |||||||||||| |||||| ||||  ||||||"
+                }
+              ]
+            },
+            {
+              "num": 8,
+              "description": [
+                {
+                  "id": "gi|640809900|ref|XM_008063331.1|",
+                  "accession": "XM_008063331",
+                  "title": "PREDICTED: Carlito syrichta carbohydrate sulfotransferase 11 (CHST11), transcript variant X2, mRNA",
+                  "taxid": 1868482,
+                  "sciname": "Carlito syrichta"
+                }
+              ],
+              "len": 1259,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 135.926,
+                  "score": 73,
+                  "evalue": 8.30103e-29,
+                  "identity": 389,
+                  "query_from": 461,
+                  "query_to": 997,
+                  "query_strand": "Plus",
+                  "hit_from": 204,
+                  "hit_to": 743,
+                  "hit_strand": "Plus",
+                  "align_len": 544,
+                  "gaps": 11,
+                  "qseq": "GACCTGCGGCACGTGCTGGTGGACGACGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCGGCCAAGCCC-G--CGGCGACCCGCGCGCCATCTCCGCGCAA-GAGGCGCACGCGCCTGGCCG-CCTGCCCTCACTGGCCGACTTCAGCCCCGCCGAGATCAACCGGCGCCTGCGCGCCTACTTGGCCTTCCTGTTCGTGCGGGAGCCCTTCGAGCGCCTGGCATCGGCTTACCGCAACAAGCTCGCGCGCCCCTACAGCGCCGCCTTCCAGAGGCGCTACGGTGC-ACGCATCGTTCAGCGCCTGCGGCCGCGCGCGCTCCCCG-ACGCCCGGGCCCGCGGCCACGACGTGCGCTTCGCGGAGTTCCTGGCCTACCTGCTGGACCCGCGCACGCGGCGTGAGGAGCCCTTCAACGAGCACTGGGAGCGCGCGCACGCGCTCTGCCACCCGTGTCGCCTCCGCTACGACGTCGTGGGCAAGTTCGAGACGCTGGCGGAGGAC",
+                  "hseq": "GACCTGAAGCACCTGGTGGTGGACGAGGACCACGAGCTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGGCTCATGATGGTCCTGACCGGGCGGGGCAAGTACAGCGACCCCATGGAGATC-CCGGCCAACGAGGCCCACGTGTC-GGCCAACCTGAAGACGCTGAACCAGTACAGCATCCCGGAGATCAACCACCGCTTGAAAAGCTACATGAAGTTTCTGTTCGTCCGCGAGCCCTTCGAACGGCTGGTGTCAGCCTACCGCAACAAGTTCACCCAGAAATACAACACCTCCTTCCACAAGCGGTACGGCACCAAG-ATCATCAAGCGACAGCGCAAGAATGC-CACCCAGGAAGCCCTGCGCAAAGGCGACGATGTCAAGTTCGAGGAGTTCGTGGCCTATCTCATCGACCCGCACACCCAGCGCGAGGAGCCCTTCAACGAACACTGGCAGACCGTCTACTCCCTCTGCCACCCCTGCCACATCCGCTACGACCTCGTGGGCAAGTACGAGACCCTGGAAGAGGAC",
+                  "midline": "||||||  |||| || |||||||||| |  || |  ||  |||||||||||||||||||||||||||||||||||||||||||  |  || |||  |||| ||| |  | |  |  | |||||||    |  ||| |||  ||| ||||| |||| | | ||||  ||||    | |||  | | | ||||  | | ||||||||||  ||| ||     |||| ||   || |||||||| || ||||||||||| || ||||  || || |||||||||||| || | |     |||| | || ||||||| | ||| |||||  | | | ||| |  |||| | |||   |   || | ||| | | |||| |  |   ||| |||| ||    |||| ||||||| ||||||| ||  | ||||||| ||| | ||| ||||||||||||||||| |||||| ||  ||   || | ||||||||||| || | | ||||||||||| |||||||||||| |||||| ||||  ||||||"
+                }
+              ]
+            },
+            {
+              "num": 9,
+              "description": [
+                {
+                  "id": "gi|852770410|ref|XM_013023550.1|",
+                  "accession": "XM_013023550",
+                  "title": "PREDICTED: Dipodomys ordii carbohydrate (chondroitin 4) sulfotransferase 12 (Chst12), transcript variant X3, mRNA",
+                  "taxid": 10020,
+                  "sciname": "Dipodomys ordii"
+                }
+              ],
+              "len": 1653,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 104.533,
+                  "score": 56,
+                  "evalue": 2.34088e-19,
+                  "identity": 77,
+                  "query_from": 479,
+                  "query_to": 564,
+                  "query_strand": "Plus",
+                  "hit_from": 588,
+                  "hit_to": 673,
+                  "hit_strand": "Plus",
+                  "align_len": 87,
+                  "gaps": 2,
+                  "qseq": "GTGGACGA-CGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCGG",
+                  "hseq": "GTGGACGATCGC-CATGGCATCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGGGTGATGATCGTGCTGAGCGG",
+                  "midline": "|||||||| ||| |||||| |  ||||||||||||||||||||||||||||||||||||||||||| ||| || | | |||||||||"
+                }
+              ]
+            },
+            {
+              "num": 10,
+              "description": [
+                {
+                  "id": "gi|852770407|ref|XM_013023549.1|",
+                  "accession": "XM_013023549",
+                  "title": "PREDICTED: Dipodomys ordii carbohydrate (chondroitin 4) sulfotransferase 12 (Chst12), transcript variant X2, mRNA",
+                  "taxid": 10020,
+                  "sciname": "Dipodomys ordii"
+                }
+              ],
+              "len": 1706,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 104.533,
+                  "score": 56,
+                  "evalue": 2.34088e-19,
+                  "identity": 77,
+                  "query_from": 479,
+                  "query_to": 564,
+                  "query_strand": "Plus",
+                  "hit_from": 641,
+                  "hit_to": 726,
+                  "hit_strand": "Plus",
+                  "align_len": 87,
+                  "gaps": 2,
+                  "qseq": "GTGGACGA-CGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCGG",
+                  "hseq": "GTGGACGATCGC-CATGGCATCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGGGTGATGATCGTGCTGAGCGG",
+                  "midline": "|||||||| ||| |||||| |  ||||||||||||||||||||||||||||||||||||||||||| ||| || | | |||||||||"
+                }
+              ]
+            },
+            {
+              "num": 11,
+              "description": [
+                {
+                  "id": "gi|852770403|ref|XM_013023548.1|",
+                  "accession": "XM_013023548",
+                  "title": "PREDICTED: Dipodomys ordii carbohydrate (chondroitin 4) sulfotransferase 12 (Chst12), transcript variant X1, mRNA",
+                  "taxid": 10020,
+                  "sciname": "Dipodomys ordii"
+                }
+              ],
+              "len": 1693,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 104.533,
+                  "score": 56,
+                  "evalue": 2.34088e-19,
+                  "identity": 77,
+                  "query_from": 479,
+                  "query_to": 564,
+                  "query_strand": "Plus",
+                  "hit_from": 628,
+                  "hit_to": 713,
+                  "hit_strand": "Plus",
+                  "align_len": 87,
+                  "gaps": 2,
+                  "qseq": "GTGGACGA-CGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCGG",
+                  "hseq": "GTGGACGATCGC-CATGGCATCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGGGTGATGATCGTGCTGAGCGG",
+                  "midline": "|||||||| ||| |||||| |  ||||||||||||||||||||||||||||||||||||||||||| ||| || | | |||||||||"
+                }
+              ]
+            },
+            {
+              "num": 12,
+              "description": [
+                {
+                  "id": "gi|1435639283|ref|XM_026011320.1|",
+                  "accession": "XM_026011320",
+                  "title": "PREDICTED: Vulpes vulpes carbohydrate sulfotransferase 12 (CHST12), transcript variant X2, mRNA",
+                  "taxid": 9627,
+                  "sciname": "Vulpes vulpes"
+                }
+              ],
+              "len": 2547,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 102.686,
+                  "score": 55,
+                  "evalue": 8.41932e-19,
+                  "identity": 76,
+                  "query_from": 479,
+                  "query_to": 563,
+                  "query_strand": "Plus",
+                  "hit_from": 1399,
+                  "hit_to": 1483,
+                  "hit_strand": "Plus",
+                  "align_len": 86,
+                  "gaps": 2,
+                  "qseq": "GTGGACGA-CGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCG",
+                  "hseq": "GTGGACGACCGC-CATGGGGTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGATGATCGTGCTGAGCG",
+                  "midline": "|||||||| ||| |||||  |  ||||||||||||||||||||||||||||||||||||||||||||||| || | | ||||||||"
+                }
+              ]
+            },
+            {
+              "num": 13,
+              "description": [
+                {
+                  "id": "gi|1435639281|ref|XM_026011319.1|",
+                  "accession": "XM_026011319",
+                  "title": "PREDICTED: Vulpes vulpes carbohydrate sulfotransferase 12 (CHST12), transcript variant X1, mRNA",
+                  "taxid": 9627,
+                  "sciname": "Vulpes vulpes"
+                }
+              ],
+              "len": 2633,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 102.686,
+                  "score": 55,
+                  "evalue": 8.41932e-19,
+                  "identity": 76,
+                  "query_from": 479,
+                  "query_to": 563,
+                  "query_strand": "Plus",
+                  "hit_from": 1485,
+                  "hit_to": 1569,
+                  "hit_strand": "Plus",
+                  "align_len": 86,
+                  "gaps": 2,
+                  "qseq": "GTGGACGA-CGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCG",
+                  "hseq": "GTGGACGACCGC-CATGGGGTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGATGATCGTGCTGAGCG",
+                  "midline": "|||||||| ||| |||||  |  ||||||||||||||||||||||||||||||||||||||||||||||| || | | ||||||||"
+                }
+              ]
+            },
+            {
+              "num": 14,
+              "description": [
+                {
+                  "id": "gi|1149812561|ref|XM_012759447.2|",
+                  "accession": "XM_012759447",
+                  "title": "PREDICTED: Microcebus murinus carbohydrate sulfotransferase 12 (CHST12), transcript variant X8, mRNA",
+                  "taxid": 30608,
+                  "sciname": "Microcebus murinus"
+                }
+              ],
+              "len": 2150,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 102.686,
+                  "score": 55,
+                  "evalue": 8.41932e-19,
+                  "identity": 75,
+                  "query_from": 479,
+                  "query_to": 563,
+                  "query_strand": "Plus",
+                  "hit_from": 1165,
+                  "hit_to": 1249,
+                  "hit_strand": "Plus",
+                  "align_len": 85,
+                  "gaps": 0,
+                  "qseq": "GTGGACGACGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCG",
+                  "hseq": "GTGGACGACCGGCACGGCGTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGATGATCGTGCTGAGCG",
+                  "midline": "|||||||||  ||| ||| |  ||||||||||||||||||||||||||||||||||||||||||||||| || | | ||||||||"
+                }
+              ]
+            },
+            {
+              "num": 15,
+              "description": [
+                {
+                  "id": "gi|1149812556|ref|XM_012759444.2|",
+                  "accession": "XM_012759444",
+                  "title": "PREDICTED: Microcebus murinus carbohydrate sulfotransferase 12 (CHST12), transcript variant X5, mRNA",
+                  "taxid": 30608,
+                  "sciname": "Microcebus murinus"
+                }
+              ],
+              "len": 5879,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 102.686,
+                  "score": 55,
+                  "evalue": 8.41932e-19,
+                  "identity": 75,
+                  "query_from": 479,
+                  "query_to": 563,
+                  "query_strand": "Plus",
+                  "hit_from": 4894,
+                  "hit_to": 4978,
+                  "hit_strand": "Plus",
+                  "align_len": 85,
+                  "gaps": 0,
+                  "qseq": "GTGGACGACGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCG",
+                  "hseq": "GTGGACGACCGGCACGGCGTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGATGATCGTGCTGAGCG",
+                  "midline": "|||||||||  ||| ||| |  ||||||||||||||||||||||||||||||||||||||||||||||| || | | ||||||||"
+                }
+              ]
+            },
+            {
+              "num": 16,
+              "description": [
+                {
+                  "id": "gi|1149812547|ref|XM_012759443.2|",
+                  "accession": "XM_012759443",
+                  "title": "PREDICTED: Microcebus murinus carbohydrate sulfotransferase 12 (CHST12), transcript variant X4, mRNA",
+                  "taxid": 30608,
+                  "sciname": "Microcebus murinus"
+                }
+              ],
+              "len": 2310,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 102.686,
+                  "score": 55,
+                  "evalue": 8.41932e-19,
+                  "identity": 75,
+                  "query_from": 479,
+                  "query_to": 563,
+                  "query_strand": "Plus",
+                  "hit_from": 1325,
+                  "hit_to": 1409,
+                  "hit_strand": "Plus",
+                  "align_len": 85,
+                  "gaps": 0,
+                  "qseq": "GTGGACGACGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCG",
+                  "hseq": "GTGGACGACCGGCACGGCGTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGATGATCGTGCTGAGCG",
+                  "midline": "|||||||||  ||| ||| |  ||||||||||||||||||||||||||||||||||||||||||||||| || | | ||||||||"
+                }
+              ]
+            },
+            {
+              "num": 17,
+              "description": [
+                {
+                  "id": "gi|1149812544|ref|XM_012759442.2|",
+                  "accession": "XM_012759442",
+                  "title": "PREDICTED: Microcebus murinus carbohydrate sulfotransferase 12 (CHST12), transcript variant X3, mRNA",
+                  "taxid": 30608,
+                  "sciname": "Microcebus murinus"
+                }
+              ],
+              "len": 4000,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 102.686,
+                  "score": 55,
+                  "evalue": 8.41932e-19,
+                  "identity": 75,
+                  "query_from": 479,
+                  "query_to": 563,
+                  "query_strand": "Plus",
+                  "hit_from": 3015,
+                  "hit_to": 3099,
+                  "hit_strand": "Plus",
+                  "align_len": 85,
+                  "gaps": 0,
+                  "qseq": "GTGGACGACGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCG",
+                  "hseq": "GTGGACGACCGGCACGGCGTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGATGATCGTGCTGAGCG",
+                  "midline": "|||||||||  ||| ||| |  ||||||||||||||||||||||||||||||||||||||||||||||| || | | ||||||||"
+                }
+              ]
+            },
+            {
+              "num": 18,
+              "description": [
+                {
+                  "id": "gi|1149812531|ref|XM_012759439.2|",
+                  "accession": "XM_012759439",
+                  "title": "PREDICTED: Microcebus murinus carbohydrate sulfotransferase 12 (CHST12), transcript variant X1, mRNA",
+                  "taxid": 30608,
+                  "sciname": "Microcebus murinus"
+                }
+              ],
+              "len": 6039,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 102.686,
+                  "score": 55,
+                  "evalue": 8.41932e-19,
+                  "identity": 75,
+                  "query_from": 479,
+                  "query_to": 563,
+                  "query_strand": "Plus",
+                  "hit_from": 5054,
+                  "hit_to": 5138,
+                  "hit_strand": "Plus",
+                  "align_len": 85,
+                  "gaps": 0,
+                  "qseq": "GTGGACGACGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCG",
+                  "hseq": "GTGGACGACCGGCACGGCGTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGATGATCGTGCTGAGCG",
+                  "midline": "|||||||||  ||| ||| |  ||||||||||||||||||||||||||||||||||||||||||||||| || | | ||||||||"
+                }
+              ]
+            },
+            {
+              "num": 19,
+              "description": [
+                {
+                  "id": "gi|830020360|ref|XM_012759446.1|",
+                  "accession": "XM_012759446",
+                  "title": "PREDICTED: Microcebus murinus carbohydrate sulfotransferase 12 (CHST12), transcript variant X7, mRNA",
+                  "taxid": 30608,
+                  "sciname": "Microcebus murinus"
+                }
+              ],
+              "len": 1538,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 102.686,
+                  "score": 55,
+                  "evalue": 8.41932e-19,
+                  "identity": 75,
+                  "query_from": 479,
+                  "query_to": 563,
+                  "query_strand": "Plus",
+                  "hit_from": 553,
+                  "hit_to": 637,
+                  "hit_strand": "Plus",
+                  "align_len": 85,
+                  "gaps": 0,
+                  "qseq": "GTGGACGACGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCG",
+                  "hseq": "GTGGACGACCGGCACGGCGTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGATGATCGTGCTGAGCG",
+                  "midline": "|||||||||  ||| ||| |  ||||||||||||||||||||||||||||||||||||||||||||||| || | | ||||||||"
+                }
+              ]
+            },
+            {
+              "num": 20,
+              "description": [
+                {
+                  "id": "gi|830020357|ref|XM_012759445.1|",
+                  "accession": "XM_012759445",
+                  "title": "PREDICTED: Microcebus murinus carbohydrate sulfotransferase 12 (CHST12), transcript variant X6, mRNA",
+                  "taxid": 30608,
+                  "sciname": "Microcebus murinus"
+                }
+              ],
+              "len": 1559,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 102.686,
+                  "score": 55,
+                  "evalue": 8.41932e-19,
+                  "identity": 75,
+                  "query_from": 479,
+                  "query_to": 563,
+                  "query_strand": "Plus",
+                  "hit_from": 574,
+                  "hit_to": 658,
+                  "hit_strand": "Plus",
+                  "align_len": 85,
+                  "gaps": 0,
+                  "qseq": "GTGGACGACGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCG",
+                  "hseq": "GTGGACGACCGGCACGGCGTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGATGATCGTGCTGAGCG",
+                  "midline": "|||||||||  ||| ||| |  ||||||||||||||||||||||||||||||||||||||||||||||| || | | ||||||||"
+                }
+              ]
+            },
+            {
+              "num": 21,
+              "description": [
+                {
+                  "id": "gi|830020340|ref|XM_012759440.1|",
+                  "accession": "XM_012759440",
+                  "title": "PREDICTED: Microcebus murinus carbohydrate sulfotransferase 12 (CHST12), transcript variant X2, mRNA",
+                  "taxid": 30608,
+                  "sciname": "Microcebus murinus"
+                }
+              ],
+              "len": 1712,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 102.686,
+                  "score": 55,
+                  "evalue": 8.41932e-19,
+                  "identity": 75,
+                  "query_from": 479,
+                  "query_to": 563,
+                  "query_strand": "Plus",
+                  "hit_from": 727,
+                  "hit_to": 811,
+                  "hit_strand": "Plus",
+                  "align_len": 85,
+                  "gaps": 0,
+                  "qseq": "GTGGACGACGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCG",
+                  "hseq": "GTGGACGACCGGCACGGCGTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGATGATCGTGCTGAGCG",
+                  "midline": "|||||||||  ||| ||| |  ||||||||||||||||||||||||||||||||||||||||||||||| || | | ||||||||"
+                }
+              ]
+            },
+            {
+              "num": 22,
+              "description": [
+                {
+                  "id": "gi|826278355|ref|XM_012638935.1|",
+                  "accession": "XM_012638935",
+                  "title": "PREDICTED: Propithecus coquereli carbohydrate (chondroitin 4) sulfotransferase 12 (CHST12), mRNA",
+                  "taxid": 379532,
+                  "sciname": "Propithecus coquereli"
+                }
+              ],
+              "len": 1406,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 102.686,
+                  "score": 55,
+                  "evalue": 8.41932e-19,
+                  "identity": 75,
+                  "query_from": 479,
+                  "query_to": 563,
+                  "query_strand": "Plus",
+                  "hit_from": 468,
+                  "hit_to": 552,
+                  "hit_strand": "Plus",
+                  "align_len": 85,
+                  "gaps": 0,
+                  "qseq": "GTGGACGACGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCG",
+                  "hseq": "GTGGACGACCGGCACGGCGTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGATGATCGTGCTGAGCG",
+                  "midline": "|||||||||  ||| ||| |  ||||||||||||||||||||||||||||||||||||||||||||||| || | | ||||||||"
+                }
+              ]
+            },
+            {
+              "num": 23,
+              "description": [
+                {
+                  "id": "gi|78709540|gb|DQ240582.1|",
+                  "accession": "DQ240582",
+                  "title": "Vulpes vulpes isolate 1303 carbohydrate sulfotransferase 12 (CHST12) gene, exon 1 and partial cds",
+                  "taxid": 9627,
+                  "sciname": "Vulpes vulpes"
+                }
+              ],
+              "len": 705,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 98.9927,
+                  "score": 53,
+                  "evalue": 1.08911e-17,
+                  "identity": 75,
+                  "query_from": 479,
+                  "query_to": 563,
+                  "query_strand": "Plus",
+                  "hit_from": 7,
+                  "hit_to": 91,
+                  "hit_strand": "Plus",
+                  "align_len": 86,
+                  "gaps": 2,
+                  "qseq": "GTGGACGA-CGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCG",
+                  "hseq": "GTGGACGACCGC-CAYGGGGTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGATGATCGTGCTGAGCG",
+                  "midline": "|||||||| ||| || ||  |  ||||||||||||||||||||||||||||||||||||||||||||||| || | | ||||||||"
+                }
+              ]
+            },
+            {
+              "num": 24,
+              "description": [
+                {
+                  "id": "gi|984141954|ref|XM_015507602.1|",
+                  "accession": "XM_015507602",
+                  "title": "PREDICTED: Marmota marmota marmota carbohydrate (chondroitin 4) sulfotransferase 12 (Chst12), mRNA",
+                  "taxid": 9994,
+                  "sciname": "Marmota marmota marmota"
+                }
+              ],
+              "len": 1744,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 97.1461,
+                  "score": 52,
+                  "evalue": 3.91713e-17,
+                  "identity": 75,
+                  "query_from": 479,
+                  "query_to": 563,
+                  "query_strand": "Plus",
+                  "hit_from": 648,
+                  "hit_to": 732,
+                  "hit_strand": "Plus",
+                  "align_len": 86,
+                  "gaps": 2,
+                  "qseq": "GTGGACGA-CGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCG",
+                  "hseq": "GTGGACGACCGC-CACGGAATCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGATGATCGTGCTGAGCG",
+                  "midline": "|||||||| ||| || ||  |  ||||||||||||||||||||||||||||||||||||||||||||||| || | | ||||||||"
+                }
+              ]
+            },
+            {
+              "num": 25,
+              "description": [
+                {
+                  "id": "gi|1214264376|ref|XM_013365469.2|",
+                  "accession": "XM_013365469",
+                  "title": "PREDICTED: Ictidomys tridecemlineatus carbohydrate sulfotransferase 12 (Chst12), transcript variant X3, mRNA",
+                  "taxid": 43179,
+                  "sciname": "Ictidomys tridecemlineatus"
+                }
+              ],
+              "len": 4580,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 91.6061,
+                  "score": 49,
+                  "evalue": 1.82246e-15,
+                  "identity": 74,
+                  "query_from": 479,
+                  "query_to": 563,
+                  "query_strand": "Plus",
+                  "hit_from": 716,
+                  "hit_to": 800,
+                  "hit_strand": "Plus",
+                  "align_len": 86,
+                  "gaps": 2,
+                  "qseq": "GTGGACGA-CGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCG",
+                  "hseq": "GTGGACGACCGC-CACGGGGTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCATGATGATCGTGCTGAGCG",
+                  "midline": "|||||||| ||| || ||  |  |||||||||||||||||||||||||||||||||||||||||||| || || | | ||||||||"
+                }
+              ]
+            },
+            {
+              "num": 26,
+              "description": [
+                {
+                  "id": "gi|1214264374|ref|XM_021720577.1|",
+                  "accession": "XM_021720577",
+                  "title": "PREDICTED: Ictidomys tridecemlineatus carbohydrate sulfotransferase 12 (Chst12), transcript variant X2, mRNA",
+                  "taxid": 43179,
+                  "sciname": "Ictidomys tridecemlineatus"
+                }
+              ],
+              "len": 4590,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 91.6061,
+                  "score": 49,
+                  "evalue": 1.82246e-15,
+                  "identity": 74,
+                  "query_from": 479,
+                  "query_to": 563,
+                  "query_strand": "Plus",
+                  "hit_from": 726,
+                  "hit_to": 810,
+                  "hit_strand": "Plus",
+                  "align_len": 86,
+                  "gaps": 2,
+                  "qseq": "GTGGACGA-CGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCG",
+                  "hseq": "GTGGACGACCGC-CACGGGGTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCATGATGATCGTGCTGAGCG",
+                  "midline": "|||||||| ||| || ||  |  |||||||||||||||||||||||||||||||||||||||||||| || || | | ||||||||"
+                }
+              ]
+            },
+            {
+              "num": 27,
+              "description": [
+                {
+                  "id": "gi|1214264373|ref|XM_005340833.3|",
+                  "accession": "XM_005340833",
+                  "title": "PREDICTED: Ictidomys tridecemlineatus carbohydrate sulfotransferase 12 (Chst12), transcript variant X1, mRNA",
+                  "taxid": 43179,
+                  "sciname": "Ictidomys tridecemlineatus"
+                }
+              ],
+              "len": 4502,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 91.6061,
+                  "score": 49,
+                  "evalue": 1.82246e-15,
+                  "identity": 74,
+                  "query_from": 479,
+                  "query_to": 563,
+                  "query_strand": "Plus",
+                  "hit_from": 638,
+                  "hit_to": 722,
+                  "hit_strand": "Plus",
+                  "align_len": 86,
+                  "gaps": 2,
+                  "qseq": "GTGGACGA-CGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCG",
+                  "hseq": "GTGGACGACCGC-CACGGGGTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCATGATGATCGTGCTGAGCG",
+                  "midline": "|||||||| ||| || ||  |  |||||||||||||||||||||||||||||||||||||||||||| || || | | ||||||||"
+                }
+              ]
+            },
+            {
+              "num": 28,
+              "description": [
+                {
+                  "id": "gi|987424650|ref|XM_007094850.2|",
+                  "accession": "XM_007094850",
+                  "title": "PREDICTED: Panthera tigris altaica carbohydrate (chondroitin 4) sulfotransferase 12 (CHST12), mRNA",
+                  "taxid": 74533,
+                  "sciname": "Panthera tigris altaica"
+                }
+              ],
+              "len": 1334,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 91.6061,
+                  "score": 49,
+                  "evalue": 1.82246e-15,
+                  "identity": 80,
+                  "query_from": 470,
+                  "query_to": 563,
+                  "query_strand": "Plus",
+                  "hit_from": 471,
+                  "hit_to": 564,
+                  "hit_strand": "Plus",
+                  "align_len": 95,
+                  "gaps": 2,
+                  "qseq": "CACGTGCTGGTGGACGAC-GCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCG",
+                  "hseq": "CACCTGATCGTGGACGACCGC-CACGGCGTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAACGCGTCATGATCGTGCTGAGCG",
+                  "midline": "||| || | ||||||||| || || ||| |  |||||||||||||||||||||||||||||||||||||||| |||||  || | | ||||||||"
+                }
+              ]
+            },
+            {
+              "num": 29,
+              "description": [
+                {
+                  "id": "gi|671011396|ref|XM_008698306.1|",
+                  "accession": "XM_008698306",
+                  "title": "PREDICTED: Ursus maritimus carbohydrate sulfotransferase 12-like (LOC103669940), transcript variant X4, mRNA",
+                  "taxid": 29073,
+                  "sciname": "Ursus maritimus"
+                }
+              ],
+              "len": 1898,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 91.6061,
+                  "score": 49,
+                  "evalue": 1.82246e-15,
+                  "identity": 73,
+                  "query_from": 479,
+                  "query_to": 563,
+                  "query_strand": "Plus",
+                  "hit_from": 750,
+                  "hit_to": 834,
+                  "hit_strand": "Plus",
+                  "align_len": 85,
+                  "gaps": 0,
+                  "qseq": "GTGGACGACGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCG",
+                  "hseq": "GTGGACGACCGGCACGGGGTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGTGTGATGATCGTGCTGAGCG",
+                  "midline": "|||||||||  ||| ||  |  ||||||||||||||||||||||||||||||||||||||||||| ||| || | | ||||||||"
+                }
+              ]
+            },
+            {
+              "num": 30,
+              "description": [
+                {
+                  "id": "gi|671011394|ref|XM_008698305.1|",
+                  "accession": "XM_008698305",
+                  "title": "PREDICTED: Ursus maritimus carbohydrate sulfotransferase 12-like (LOC103669940), transcript variant X3, mRNA",
+                  "taxid": 29073,
+                  "sciname": "Ursus maritimus"
+                }
+              ],
+              "len": 1907,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 91.6061,
+                  "score": 49,
+                  "evalue": 1.82246e-15,
+                  "identity": 73,
+                  "query_from": 479,
+                  "query_to": 563,
+                  "query_strand": "Plus",
+                  "hit_from": 759,
+                  "hit_to": 843,
+                  "hit_strand": "Plus",
+                  "align_len": 85,
+                  "gaps": 0,
+                  "qseq": "GTGGACGACGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCG",
+                  "hseq": "GTGGACGACCGGCACGGGGTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGTGTGATGATCGTGCTGAGCG",
+                  "midline": "|||||||||  ||| ||  |  ||||||||||||||||||||||||||||||||||||||||||| ||| || | | ||||||||"
+                }
+              ]
+            },
+            {
+              "num": 31,
+              "description": [
+                {
+                  "id": "gi|671011392|ref|XM_008698304.1|",
+                  "accession": "XM_008698304",
+                  "title": "PREDICTED: Ursus maritimus carbohydrate sulfotransferase 12-like (LOC103669940), transcript variant X2, mRNA",
+                  "taxid": 29073,
+                  "sciname": "Ursus maritimus"
+                }
+              ],
+              "len": 1808,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 91.6061,
+                  "score": 49,
+                  "evalue": 1.82246e-15,
+                  "identity": 73,
+                  "query_from": 479,
+                  "query_to": 563,
+                  "query_strand": "Plus",
+                  "hit_from": 660,
+                  "hit_to": 744,
+                  "hit_strand": "Plus",
+                  "align_len": 85,
+                  "gaps": 0,
+                  "qseq": "GTGGACGACGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCG",
+                  "hseq": "GTGGACGACCGGCACGGGGTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGTGTGATGATCGTGCTGAGCG",
+                  "midline": "|||||||||  ||| ||  |  ||||||||||||||||||||||||||||||||||||||||||| ||| || | | ||||||||"
+                }
+              ]
+            },
+            {
+              "num": 32,
+              "description": [
+                {
+                  "id": "gi|671011390|ref|XM_008698302.1|",
+                  "accession": "XM_008698302",
+                  "title": "PREDICTED: Ursus maritimus carbohydrate sulfotransferase 12-like (LOC103669940), transcript variant X1, mRNA",
+                  "taxid": 29073,
+                  "sciname": "Ursus maritimus"
+                }
+              ],
+              "len": 3565,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 91.6061,
+                  "score": 49,
+                  "evalue": 1.82246e-15,
+                  "identity": 73,
+                  "query_from": 479,
+                  "query_to": 563,
+                  "query_strand": "Plus",
+                  "hit_from": 2417,
+                  "hit_to": 2501,
+                  "hit_strand": "Plus",
+                  "align_len": 85,
+                  "gaps": 0,
+                  "qseq": "GTGGACGACGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCG",
+                  "hseq": "GTGGACGACCGGCACGGGGTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGTGTGATGATCGTGCTGAGCG",
+                  "midline": "|||||||||  ||| ||  |  ||||||||||||||||||||||||||||||||||||||||||| ||| || | | ||||||||"
+                }
+              ]
+            },
+            {
+              "num": 33,
+              "description": [
+                {
+                  "id": "gi|671011388|ref|XM_008698301.1|",
+                  "accession": "XM_008698301",
+                  "title": "PREDICTED: Ursus maritimus carbohydrate sulfotransferase 12-like (LOC103669939), mRNA",
+                  "taxid": 29073,
+                  "sciname": "Ursus maritimus"
+                }
+              ],
+              "len": 2405,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 91.6061,
+                  "score": 49,
+                  "evalue": 1.82246e-15,
+                  "identity": 73,
+                  "query_from": 479,
+                  "query_to": 563,
+                  "query_strand": "Plus",
+                  "hit_from": 543,
+                  "hit_to": 627,
+                  "hit_strand": "Plus",
+                  "align_len": 85,
+                  "gaps": 0,
+                  "qseq": "GTGGACGACGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGCG",
+                  "hseq": "GTGGACGACCGGCACGGGGTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGTGTGATGATCGTGCTGAGCG",
+                  "midline": "|||||||||  ||| ||  |  ||||||||||||||||||||||||||||||||||||||||||| ||| || | | ||||||||"
+                }
+              ]
+            },
+            {
+              "num": 34,
+              "description": [
+                {
+                  "id": "gi|1353793183|gb|CP027093.1|",
+                  "accession": "CP027093",
+                  "title": "Bos mutus isolate yakQH1 chromosome 25",
+                  "taxid": 72004,
+                  "sciname": "Bos mutus"
+                }
+              ],
+              "len": 42522029,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 89.7595,
+                  "score": 48,
+                  "evalue": 6.55474e-15,
+                  "identity": 73,
+                  "query_from": 479,
+                  "query_to": 562,
+                  "query_strand": "Plus",
+                  "hit_from": 41138997,
+                  "hit_to": 41138914,
+                  "hit_strand": "Minus",
+                  "align_len": 85,
+                  "gaps": 2,
+                  "qseq": "GTGGACGA-CGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGCTGCTGGCGCTGAGC",
+                  "hseq": "GTGGACGACCGC-CACGGGGTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTGATGATCGTCCTGAGC",
+                  "midline": "|||||||| ||| || ||  |  ||||||||||||||||||||||||||||||||||||||||||||||| || | |  ||||||"
+                }
+              ]
+            },
+            {
+              "num": 35,
+              "description": [
+                {
+                  "id": "gi|942031285|ref|XM_005887318.2|",
+                  "accession": "XM_005887318",
+                  "title": "PREDICTED: Bos mutus carbohydrate (chondroitin 4) sulfotransferase 12 (CHST12), mRNA",
+                  "taxid": 72004,
+                  "sciname": "Bos mutus"
+                }
+              ],
+              "len": 1749,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 89.7595,
+                  "score": 48,
+                  "evalue": 6.55474e-15,
+                  "identity": 63,
+                  "query_from": 479,
+                  "query_to": 547,
+                  "query_strand": "Plus",
+                  "hit_from": 559,
+                  "hit_to": 627,
+                  "hit_strand": "Plus",
+                  "align_len": 70,
+                  "gaps": 2,
+                  "qseq": "GTGGACGA-CGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTG",
+                  "hseq": "GTGGACGACCGC-CACGGGGTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTG",
+                  "midline": "|||||||| ||| || ||  |  |||||||||||||||||||||||||||||||||||||||||||||||"
+                }
+              ]
+            },
+            {
+              "num": 36,
+              "description": [
+                {
+                  "id": "gi|742087598|ref|XM_010832658.1|",
+                  "accession": "XM_010832658",
+                  "title": "PREDICTED: Bison bison bison carbohydrate (chondroitin 4) sulfotransferase 12 (CHST12), mRNA",
+                  "taxid": 43346,
+                  "sciname": "Bison bison bison"
+                }
+              ],
+              "len": 2189,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 89.7595,
+                  "score": 48,
+                  "evalue": 6.55474e-15,
+                  "identity": 63,
+                  "query_from": 479,
+                  "query_to": 547,
+                  "query_strand": "Plus",
+                  "hit_from": 999,
+                  "hit_to": 1067,
+                  "hit_strand": "Plus",
+                  "align_len": 70,
+                  "gaps": 2,
+                  "qseq": "GTGGACGA-CGCGCATGGCCTGCTCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTG",
+                  "hseq": "GTGGACGACCGC-CACGGGGTCATCTACTGCTACGTGCCCAAGGTGGCCTGCACCAACTGGAAGCGCGTG",
+                  "midline": "|||||||| ||| || ||  |  |||||||||||||||||||||||||||||||||||||||||||||||"
+                }
+              ]
+            }
+          ],
+          "stat": {
+            "db_num": 55358024,
+            "db_len": 253052128426,
+            "hsp_len": 31,
+            "eff_space": 6890279864614,
+            "kappa": 0.46,
+            "lambda": 1.28,
+            "entropy": 0.85
+          }
+        }
+      }
+    }
+  }
+]
+}
+

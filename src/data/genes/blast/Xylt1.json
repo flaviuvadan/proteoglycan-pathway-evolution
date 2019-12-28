@@ -1,0 +1,116 @@
+{
+"BlastOutput2": [
+{
+    "report": {
+      "program": "blastn",
+      "version": "BLASTN 2.10.0+",
+      "reference": "Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), \"A greedy algorithm for aligning DNA sequences\", J Comput Biol 2000; 7(1-2):203-14.",
+      "search_target": {
+        "db": "nt_v5"
+      },
+      "params": {
+        "expect": 10,
+        "sc_match": 1,
+        "sc_mismatch": -2,
+        "gap_open": 0,
+        "gap_extend": 0,
+        "filter": "L;m;",
+        "entrez_query": "txid9643 [ORGN] OR txid7764 [ORGN]"
+      },
+      "results": {
+        "search": {
+          "query_id": "NM_022166.4",
+          "query_title": "Homo sapiens xylosyltransferase 1 (XYLT1), mRNA",
+          "query_len": 9970,
+          "query_masking": [
+            {
+              "from": 12,
+              "to": 139
+            },
+            {
+              "from": 282,
+              "to": 484
+            },
+            {
+              "from": 4761,
+              "to": 4789
+            },
+            {
+              "from": 4916,
+              "to": 4922
+            },
+            {
+              "from": 5591,
+              "to": 5603
+            },
+            {
+              "from": 5787,
+              "to": 5819
+            },
+            {
+              "from": 5885,
+              "to": 5891
+            },
+            {
+              "from": 6307,
+              "to": 6314
+            },
+            {
+              "from": 7068,
+              "to": 7097
+            },
+            {
+              "from": 7760,
+              "to": 7795
+            },
+            {
+              "from": 7801,
+              "to": 7834
+            },
+            {
+              "from": 8114,
+              "to": 8139
+            },
+            {
+              "from": 8771,
+              "to": 8782
+            },
+            {
+              "from": 8966,
+              "to": 8997
+            },
+            {
+              "from": 9168,
+              "to": 9197
+            },
+            {
+              "from": 9202,
+              "to": 9218
+            },
+            {
+              "from": 9237,
+              "to": 9243
+            },
+            {
+              "from": 9392,
+              "to": 9398
+            }
+          ],
+          "hits": [
+          ],
+          "stat": {
+            "db_num": 5523,
+            "db_len": 11757796,
+            "hsp_len": 26,
+            "eff_space": 115491584912,
+            "kappa": 0.46,
+            "lambda": 1.28,
+            "entropy": 0.85
+          },
+          "message": "Informational Message: Query 'NM_022166 Homo sapiens xy.. ' (# 1): Warning: Filtering resulted in an empty database.\u000ANo hits found"
+        }
+      }
+    }
+  }
+]
+}

@@ -1,0 +1,77 @@
+{
+"BlastOutput2": [
+{
+    "report": {
+      "program": "blastn",
+      "version": "BLASTN 2.10.0+",
+      "reference": "Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), \"A greedy algorithm for aligning DNA sequences\", J Comput Biol 2000; 7(1-2):203-14.",
+      "search_target": {
+        "db": "nt_v5"
+      },
+      "params": {
+        "expect": 10,
+        "sc_match": 1,
+        "sc_mismatch": -2,
+        "gap_open": 0,
+        "gap_extend": 0,
+        "filter": "L;m;",
+        "entrez_query": "txid32473 [ORGN] OR txid7764 [ORGN] OR txid7757 [ORGN] OR txid51511 [ORGN] OR txid7719 [ORGN] OR txid7227 [ORGN] OR txid6239 [ORGN]"
+      },
+      "results": {
+        "search": {
+          "query_id": "NM_018413.6",
+          "query_title": "Homo sapiens carbohydrate sulfotransferase 11 (CHST11), transcript variant 1, mRNA",
+          "query_len": 5734,
+          "query_masking": [
+            {
+              "from": 146,
+              "to": 241
+            },
+            {
+              "from": 2124,
+              "to": 2132
+            },
+            {
+              "from": 2572,
+              "to": 2578
+            },
+            {
+              "from": 3156,
+              "to": 3184
+            },
+            {
+              "from": 3213,
+              "to": 3235
+            },
+            {
+              "from": 3977,
+              "to": 3986
+            },
+            {
+              "from": 4518,
+              "to": 4525
+            },
+            {
+              "from": 5184,
+              "to": 5220
+            }
+          ],
+          "hits": [
+          ],
+          "stat": {
+            "db_num": 308278,
+            "db_len": 1498435227,
+            "hsp_len": 31,
+            "eff_space": 8491074707127,
+            "kappa": 0.46,
+            "lambda": 1.28,
+            "entropy": 0.85
+          },
+          "message": "No hits found"
+        }
+      }
+    }
+  }
+]
+}
+

@@ -1,0 +1,510 @@
+{
+"BlastOutput2": [
+{
+    "report": {
+      "program": "blastn",
+      "version": "BLASTN 2.10.0+",
+      "reference": "Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), \"A greedy algorithm for aligning DNA sequences\", J Comput Biol 2000; 7(1-2):203-14.",
+      "search_target": {
+        "db": "nt_v5"
+      },
+      "params": {
+        "expect": 10,
+        "sc_match": 1,
+        "sc_mismatch": -2,
+        "gap_open": 0,
+        "gap_extend": 0,
+        "filter": "L;m;",
+        "entrez_query": "txid8508 [ORGN] OR txid9258 [ORGN] OR txid32473 [ORGN]"
+      },
+      "results": {
+        "search": {
+          "query_id": "NM_001012301.4",
+          "query_title": "Homo sapiens arylsulfatase family member I (ARSI), mRNA",
+          "query_len": 3113,
+          "query_masking": [
+            {
+              "from": 2753,
+              "to": 2759
+            }
+          ],
+          "hits": [
+            {
+              "num": 1,
+              "description": [
+                {
+                  "id": "gi|1626097980|ref|XM_029049989.1|",
+                  "accession": "XM_029049989",
+                  "title": "PREDICTED: Ornithorhynchus anatinus arylsulfatase family member I (ARSI), mRNA",
+                  "taxid": 9258,
+                  "sciname": "Ornithorhynchus anatinus"
+                }
+              ],
+              "len": 3231,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 1537.53,
+                  "score": 832,
+                  "evalue": 0,
+                  "identity": 1460,
+                  "query_from": 525,
+                  "query_to": 2256,
+                  "query_strand": "Plus",
+                  "hit_from": 420,
+                  "hit_to": 2182,
+                  "hit_strand": "Plus",
+                  "align_len": 1765,
+                  "gaps": 35,
+                  "qseq": "GCTTGGCGATGCACACCCTCACTGGCTTCTCCCTGGTCAGCCTGCTCAGCTTCGGCTACCTGTCCTGGGACTGGGCCAAGCCGAGCTTCGTGGCCGACGGGCCCG--GG--GAGGCTG--GCG-A-G-CAGCCCT-CGGCCG-CTCCGCCCCAGCCTCCCCACATCATCTTCATCCTCACGGACGACCAAGGCTACCACGACGTGGGCTACCATGGTTCAGATATCGAGACCCCTACGCTGGACAGGCTGGCGGCCAAGGGGGTCAAGTTGGAGAATTATTACATCCAGCCCATCTGCACGCCTTCGCGGAGCCAGCTCCTCACTGGCAGGTACCAGATCCACACAGGACTCCAGCATTCCATCATCCGCCCACAGCAGCCCAACTGCCTGCCCCTGGACCAGGTGACACTGCCACAGAAGCTGCAGGAGGCAGGTTATTCCACCCATATGGTGGGCAAGTGGCACCTGGGCTTCTACCGGAAGGAGTGTCTGCCCACCCGTCGGGGCTTCGACACCTTCCTGGGCTCGCTCACGGGCAATGTGGACTATTACACCTATGACAACTGTGATGGCCCAGGCGTGTGCGGCTTCGACCTGCACGAGGGTGAGAATGTGGCCTGGGGGCTCAGCGGCCAGTACTCCACTATGCTTTATGCCCAGCGCGCCAGCCATATCCTGGCCAGCCACAGCCCTCAGCGTCCCCTCTTCCTCTATGTGGCCTTCCAGGCAGTACACACACCCCTGCAGTCCCCTCGTGAGTACCTGTACCGCTACCGCACCATGGGCAATGTGGCCCGGCGGAAGTACGCGGCCATGGTGACCTGCATGGATGAGGCTGTGCGCAACATCACCTGGGCCCTCAAGCGCTACGGTTTCTACAACAACAGTGTCATCATCTTCTCCAGTGACAATGGTGGCCAGACTTTCTCGGGGGGCAGCAACTGGCCGCTCCGAGGACGCAAGGGCACTTATTGGGAAGGTGGCGTGCGGGGCCTAGGCTTTGTCCACAGTCCCCTGCTCAAGCGAAAGCAACGGACAAGCCGGGCACTGATGCACATCACTGACTGGTACCCGACCCTGGTGGGTCTGGCAGGTGGTACCACCTCAGCAGCCGATGGGCTAGATGGCTACGACGTGTGGCCGGCCATCAGCGAGGGCCGGGCCTCACCACGCACGGAGATCCTGCACAACATTGACCCACTCTACAACCATGCCCAGCATGGCTCCCTGGAGGGCGGCTTTGGCATCTGGAACACCGCCGTGCAGGCTGCCATCCGCGTGGGTGAGTGGAAGCTGCTGACAGGAGACCCCGGCTATGGCGATTGGATCCCACCGCAGACACTGGCCACCTTCCCGGGTAGCTGGTGGAACCTGGAACGAATGGCC-A-GTGTC-CGCCAGGCCGTGTGGCTCTTCAACATCAGTGCTGACCCTTATGAACGGGAGGACCTGGCTGGCCAGCGGCCTGATGTGGTCCGCACCCTGCTGGCTCGCCTGGCCGAATATAACCGCACAGCCATCCCGGTACGCTACCCAGCTGAGAACCCCCGGGCTCATCCTGACTTTAATGGGGGTGCTTGGGGGCCCTGGGCCAGTGATGAGGAAGAGGAGGAAGAGGA--AGGG--AGGGCTCGA-AGCTTCTCC----CGGGGTC-GTC--G---C---AAGAAAAAATGCAAGATTTGCAAGCTTCGATCCTTTTTCCGTAAACTCAACACCAGGCTAATGTCCCAACGGATCTGATGGTGGG-GAGGGAG",
+                  "hseq": "GCATGGCCCTGCACGCCCTCACCGGCTTCTCCCTGGTCAGCCTCCTGACCTTCGGCTACCTCTCTTGGGACTGGGTCAAGCCCAGCCTGGTGGCAGA-GAGCCCGATGGACGCGGCCGAAGAGAAGGCCTCCCCTCCGACGGCCTTCG-CCGGGCCCCCCCACATCATTTTCATCCTGACCGATGACCAGGGCTACCACGACGTGGGCTACCATGGGTCGGACATCCAGACTCCCACCCTGGACCGGCTGGCGGCCGAGGGGGTGAAGCTGGAGAACTATTACATCCAGCCCATCTGCACCCCGTCCCGGAGCCAGTTGATCACGGGCAGGTACCAGATCCACACAGGGCTCCAGCACTCCATCATCCGGCCCCGCCAGCCCAACTGCCTCCCTCTGGACCAGGTGACCCTGCCCCAGAAACTGCAGGAGGCGGGCTACTCCACCCACATGGTGGGCAAATGGCACCTGGGCTTCTACAAGAAGGAGTGCCTGCCCACCCGGCGGGGCTTCGACACCTTCCTGGGCTCGCTCACGGGCAACGTGGACTACTACACCTACGACAACTGCGACGGGCCCGGCGTCTGCGGCTACGACCTGCACGAGGGGGAGAACGTGGCCTGGGAGCAGAGCGGCAAGTACTCCACCCTGCTGTACGCCCAGCGGGCCGGCAAGATCCTGGCCAGCCACGACCCCCGCCGGCCCCTCTTCCTCTACGTGGCCTTCCAGGCGGTGCACACGCCCCTGCAGTCCCCCCGCGAGTACCTCTACCGCTACCGGGCCATGGGCAACGTGGCCCGGCGCAAGTACGCCGCCATGGTGACCTGCATGGACGAGGCCGTCCGCAACATCACCCGGGCCCTGAAGAAGTACGGTTACTATGACAACAGCGTGATCGTCTTCTCCACCGACAACGGCGGCCAGACCTTCTCCGGGGGCAGCAACTGGCCCCTCCGCGGCCGGAAGGGCACCTACTGGGAGGGCGGGGTGCGGGGCATAGGCTTCGTCCACAGCCCCCTGCTCAAGAGGAAGCGCAGGACCAGCCGGGCCCTGGTACACATCACGGACTGGTACCCGACCCTGGTCTCCCTGGCCGGGGGCAACGTGTCGGAAGCGGAGGGGCTGGACGGCTACGACGTGTGGCCGGCGATCAGCGAGGGGCGGGAGTCCCCGCGCACGGAGATCCTGCACAACATCGACCCGCTGTACAACCACGCCAAGCACGGCTCCCTGGAGGGCGGCTTCGGGATCTGGAACACGGCCGTGCAGGCCTCCATCCGGGTCGGCGAGTGGAAGCTGCTGACCGGGGACCCCGGCTACAGCGACTGGATCCCCCCGCAGACGCTGACCAACTTCCCGGGCAGCTGGTGGAACCTGGAGCGGCTGACGGACGGCGCGCGCCAGGCCGTGTGGCTCTTCAACATCAGCGCCGACCCCTACGAGCGCGAGGACCTGGCCGCCCGCCGGCCCGACGTGGTGCGTGCCCTTCTGGCCCGCCTGGCCTACTACAACCGGACCGCCATCCCCGTGCGCTACCCGGCCGAGAATCCCCGGGCCCACCCGGACTTCAATGGGGGTGCCTGGGGCCCCTGGGCCAGCGAGGAGGAGGAGGAGGAGGAGGAGGAGGGCGAGGGCGAGGGAGGGTGGAGGAGTCGGGGCCCGTCTCGGGGCCGGAAGAAGAAATGCAAGATCTGTAAACTGCGCTCCTTCTTCCGCAAACTCAACACCAGGCTGATGTCCAATCGGATCTGATGAGGAGAGAGGGAG",
+                  "midline": "|| ||||  ||||| ||||||| |||||||||||||||||||| || | |||||||||||| || |||||||||| |||||| ||| | ||||| || | |||||  ||  | ||| |  | | | | |  |||| || | | || || ||  ||| ||||||||||| |||||||| || || ||||| |||||||||||||||||||||||||| || || ||| |||| || || |||||| ||||||||||| ||||||| ||| ||||||| ||||||||||||||||||||||| || || ||||||||| |  |||| ||||||||||||||||||||||| |||||||| ||||||||||| || |  |||||||||||||| || |||||||||||||| ||||| ||||| ||||||||||| || || |||||||| ||||||||||| ||||||||||||||||||  ||||||||| ||||||||||| |||||||||||||||||||||||||||||||||||||| |||||||| |||||||| |||||||| || || || ||||| ||||||| ||||||||||||||| ||||| |||||||||| ||  |||||| ||||||||||  |||| || |||||||| ||| || | |||||||||||||||  ||| |  || |||||||||||||| |||||||||||||| || ||||| |||||||||||||| || |||||||| |||||||||||  |||||||||| ||||||||||| |||||||| |||||||||||||||||||| ||||| || |||||||||||| ||||||| |||   ||||||| |||  ||||||| || ||| |||||||||  ||||| || |||||||| ||||| ||||||||||||||||| ||||| || || |||||||| || ||||| || || ||||||||| ||||||| |||||||| |||||||||||| | ||||   |||| |||||||| ||| | |||||||| ||||||||||||||||||||    ||||| || || | |   || | ||| || ||||| || |||||||||||||||||||| ||||||||||| ||||  || || ||||||||||||||||||||||| ||||| || |||||||| ||| |||| |||||||||||||||||||| || ||||||||||| |||||||||||  ||||||| || || ||||||||||||||||| || |||||||||||  |||| |||||||| |||||||| ||| ||| ||||||||| ||||||||||||||||| ||  || |  | |   | ||||||||||||||||||||||||||||| || ||||| || || || ||||||||||| | ||  ||||| || ||||| ||  |||| ||||| ||||||||| | || ||||| || |||||||| || |||||||| || ||||| |||||||| || || ||||| ||||||||||| ||||| ||||||||||| || ||||| |||||||| |||||  ||||  |||||  |  ||  |        ||||| | |||  |   |   ||||| ||||||||||| || || || || ||||| ||||| ||||||||||||||||| |||||| | |||||||||||  | | |||||||"
+                }
+              ]
+            },
+            {
+              "num": 2,
+              "description": [
+                {
+                  "id": "gi|1570581446|ref|XM_028021035.1|",
+                  "accession": "XM_028021035",
+                  "title": "PREDICTED: Xiphophorus couchianus arylsulfatase I-like (LOC114146727), transcript variant X2, mRNA",
+                  "taxid": 32473,
+                  "sciname": "Xiphophorus couchianus"
+                }
+              ],
+              "len": 4094,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 418.463,
+                  "score": 226,
+                  "evalue": 1.23477e-114,
+                  "identity": 792,
+                  "query_from": 671,
+                  "query_to": 1726,
+                  "query_strand": "Plus",
+                  "hit_from": 333,
+                  "hit_to": 1391,
+                  "hit_strand": "Plus",
+                  "align_len": 1069,
+                  "gaps": 23,
+                  "qseq": "CCCCACATCATCTTCATCCTCACGGACGACCAAGGCTACCACGACGTGGGCTACCATGGTTCAGATATCGAGACCCCTACGCTGGACAGGCTGGCGGCCAAGGGGGTCAAGTTGGAGAATTATTACATCCAGCCCATCTGCACGCCTTCGCGGAGCCAGCTCCTCACTGGCAGGTACCAGATCCACACAGGACTCCAGCATTCCATCATCCG-CCCACAGCAGCCCAACTGCCTGCCCCTGGACCAGGTGACACTGCCACAGAAGCTGCAGGAGGCAGGTTATTCCACCCATATGGTGGGCAAGTGGCACCTGGGCTTCTACCGGAAGGAGTGTCTGCCCACCCGTCGGGGCTTCGACACCTTCCTGGGCTCGCTCACGGGCAATGTGGACTATTACACCTAT-GACAACTGTGATGGCCCAGGCGTGTGCGGCTTCGACCTGCACGAGGGTGAGAATGTGGCCTGGGGGCTCAGC-GGCCAG-TACTCCACTATGCT-TTATGCCCAGCGCGCCAGCCATATCCTGGCCAGCCACAGCCCT-CAG-CGTCCC-CTCTTCCTCTATG-TGGCCTTCCAGGCAGTACACACACCCCTGCAGTC-CCCTCGTGAGTACCTGTACCGCTACCGCACCATGGGCAATGTGGCCCGGCGGAAGTACGCGGCCATGGTGACCTGCATGGATGAGGCTGTGCGCAACATCACCTGGGCCCTCAAGCGCTACGGTTTCTACAACAACAGTGTCATCATCTTCTCCAGTGACAATGGTGGCCAGACTTTCTCGGGGGGCAGCAACTGGCCGCTCCGAGGACGCAAGGGCACTTATTGGGAAGGTGGCGTGCGGGGCCTAGGC-TTTGTCCACAGTCCCCTGCTCAAGCGAAAGCAACGGACAAGCCGGGCACTGATGCACATCACTGACTGGTACCCGACCCTGGTGGGTCTGGCAGGTGGTACCA--CCTCAGCAGCCGATGGGCTAGATGGCTACGACGTGTGGCCGGCCATCAGCGAGGGCCGGGCCTCACCACGCACGGAGATCCTGCACAACATTGACCCACTCTACAACCAT",
+                  "hseq": "CCGCACATCATCTTTATTCTGATCGACGACCAAGGCTACAACGACATCGGCTACCACAACCCCAACATCATGACCCCAACTCTGGACAAACTGGCAGCAGAGGGCGTGATACTGGAGAACTACTACGTTCAACCGATCTGCACGCCGTCACGGAGCCAGCTGATGACCGGCAGATATCAGATCCACACAGGATTGCAGCACTCCATCATCAGACCCA-GGCAGCCCAGCTGTTTGCCCTCACACCTGGACACGCTGCCTGAGAGGCTCCGCCAGGCCGGGTACGCCACACACATGGTGGGCAAGTGGCACCTGGGCTTCTACAGGAAGGCCTGCCTGCCCACCAGAAAAGGTTTTGACTCTTTCTTTGGTTCGTTAACAGGAAGTGTGGATTATTACAGCTATCGGTC-CTGTGACGGCCCTGGTTTGTGTGGCTACGACCTGCATGAAAATGAGAGCGTCGCGTGGGG-C-CAGGAGGGAAAATACTCCACGACGCTGTTCA-CCCAGAGAGCCAGGAAGATCCTGGAGAGCCGCAGCCCGACGGACGGGCCGCTCTTCCTG-ATGCTGTCCCTCCAGGCAGTTCACACTCCTCTGCAGCCTCCCAAGTCC-TACATCTACCCCTACCACAACATGGCCAACGTCGCCAGGCGGAAGTTCGCCGCCATGGTTTCCACGGTGGACGAAGCCGTCCGAAATGTGACCTACGCCCTCAGGAAGTACGGCTACTACAGGAACAGTGTGATCATCTACTCCACTGACAATGGAGCCCAGCCTTTCACTGGAGGGAGCAACTGGCCGCTACGAGGCAGGAAGGGCACGTATTGGGAGGGCGGGGTGCGTGGCGT-GGCGTTTGTCCACAGCCCGCTGCTGAAGCGAAGGAGGCGGGTCTCCAGAGCTCTGCTCCACATCACGGACTGGTTCCCCACACTGGTAGGACTGGCCGGCGGCAACATAACCCAG-AGCCAA-GGTCTGGACGGGTTTGACGTTTGGCCCGCCATCAGCGAGGGGAAGGAGTCTCCACGAAAAGAGATTCTCCACAACATCGACCCGCTGCACAAACAT",
+                  "midline": "|| ||||||||||| || || |  ||||||||||||||| ||||| | ||||||||     |  | |||  |||||| || |||||||  ||||| ||  |||| || |   ||||||| || ||| | || || ||||||||||| || |||||||||||  | || ||||| || ||||||||||||||| | ||||| ||||||||| | ||||  |||||||| |||  |||||    ||| ||  || |||||  ||| ||| |   |||| || ||  |||| || |||||||||||||||||||||||||||||| ||||||  || ||||||||| |    || || ||| | ||| | || ||| | || || | |||||| ||||||| |||| |    |||||| ||||| ||  |||| |||| ||||||||| ||   |||||  || || ||||| | |||  ||  |  |||||||| | ||| ||   ||||| | |||||  | |||||||  |||| ||||||  | | ||  || ||||||||  ||| || || |||||||||| ||||| || |||||| | |||  ||   ||| | |||| ||||| || ||||| ||| || ||| ||||||||| ||| ||||||||  ||    |||| || || || || ||  | ||||  ||||||| |   ||||| | |||||  |||||||| ||||||| ||||| ||||||||| | |||| ||||| | || || |||||||||||||| |||||  | |||||||| |||||||| || || ||||| ||| | ||| ||||||||||| || ||||| ||||||| |   |||     | | || ||| | |||||||| ||||||| ||| || ||||| || ||||| || || | ||   | ||| |||| | || || || || |  ||||| ||||| ||||||||||||||   ||  || ||||| |  ||||| || |||||||| ||||| ||  |||| |||"
+                }
+              ]
+            },
+            {
+              "num": 3,
+              "description": [
+                {
+                  "id": "gi|1570581444|ref|XM_028021034.1|",
+                  "accession": "XM_028021034",
+                  "title": "PREDICTED: Xiphophorus couchianus arylsulfatase I-like (LOC114146727), transcript variant X1, mRNA",
+                  "taxid": 32473,
+                  "sciname": "Xiphophorus couchianus"
+                }
+              ],
+              "len": 4106,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 418.463,
+                  "score": 226,
+                  "evalue": 1.23477e-114,
+                  "identity": 792,
+                  "query_from": 671,
+                  "query_to": 1726,
+                  "query_strand": "Plus",
+                  "hit_from": 333,
+                  "hit_to": 1391,
+                  "hit_strand": "Plus",
+                  "align_len": 1069,
+                  "gaps": 23,
+                  "qseq": "CCCCACATCATCTTCATCCTCACGGACGACCAAGGCTACCACGACGTGGGCTACCATGGTTCAGATATCGAGACCCCTACGCTGGACAGGCTGGCGGCCAAGGGGGTCAAGTTGGAGAATTATTACATCCAGCCCATCTGCACGCCTTCGCGGAGCCAGCTCCTCACTGGCAGGTACCAGATCCACACAGGACTCCAGCATTCCATCATCCG-CCCACAGCAGCCCAACTGCCTGCCCCTGGACCAGGTGACACTGCCACAGAAGCTGCAGGAGGCAGGTTATTCCACCCATATGGTGGGCAAGTGGCACCTGGGCTTCTACCGGAAGGAGTGTCTGCCCACCCGTCGGGGCTTCGACACCTTCCTGGGCTCGCTCACGGGCAATGTGGACTATTACACCTAT-GACAACTGTGATGGCCCAGGCGTGTGCGGCTTCGACCTGCACGAGGGTGAGAATGTGGCCTGGGGGCTCAGC-GGCCAG-TACTCCACTATGCT-TTATGCCCAGCGCGCCAGCCATATCCTGGCCAGCCACAGCCCT-CAG-CGTCCC-CTCTTCCTCTATG-TGGCCTTCCAGGCAGTACACACACCCCTGCAGTC-CCCTCGTGAGTACCTGTACCGCTACCGCACCATGGGCAATGTGGCCCGGCGGAAGTACGCGGCCATGGTGACCTGCATGGATGAGGCTGTGCGCAACATCACCTGGGCCCTCAAGCGCTACGGTTTCTACAACAACAGTGTCATCATCTTCTCCAGTGACAATGGTGGCCAGACTTTCTCGGGGGGCAGCAACTGGCCGCTCCGAGGACGCAAGGGCACTTATTGGGAAGGTGGCGTGCGGGGCCTAGGC-TTTGTCCACAGTCCCCTGCTCAAGCGAAAGCAACGGACAAGCCGGGCACTGATGCACATCACTGACTGGTACCCGACCCTGGTGGGTCTGGCAGGTGGTACCA--CCTCAGCAGCCGATGGGCTAGATGGCTACGACGTGTGGCCGGCCATCAGCGAGGGCCGGGCCTCACCACGCACGGAGATCCTGCACAACATTGACCCACTCTACAACCAT",
+                  "hseq": "CCGCACATCATCTTTATTCTGATCGACGACCAAGGCTACAACGACATCGGCTACCACAACCCCAACATCATGACCCCAACTCTGGACAAACTGGCAGCAGAGGGCGTGATACTGGAGAACTACTACGTTCAACCGATCTGCACGCCGTCACGGAGCCAGCTGATGACCGGCAGATATCAGATCCACACAGGATTGCAGCACTCCATCATCAGACCCA-GGCAGCCCAGCTGTTTGCCCTCACACCTGGACACGCTGCCTGAGAGGCTCCGCCAGGCCGGGTACGCCACACACATGGTGGGCAAGTGGCACCTGGGCTTCTACAGGAAGGCCTGCCTGCCCACCAGAAAAGGTTTTGACTCTTTCTTTGGTTCGTTAACAGGAAGTGTGGATTATTACAGCTATCGGTC-CTGTGACGGCCCTGGTTTGTGTGGCTACGACCTGCATGAAAATGAGAGCGTCGCGTGGGG-C-CAGGAGGGAAAATACTCCACGACGCTGTTCA-CCCAGAGAGCCAGGAAGATCCTGGAGAGCCGCAGCCCGACGGACGGGCCGCTCTTCCTG-ATGCTGTCCCTCCAGGCAGTTCACACTCCTCTGCAGCCTCCCAAGTCC-TACATCTACCCCTACCACAACATGGCCAACGTCGCCAGGCGGAAGTTCGCCGCCATGGTTTCCACGGTGGACGAAGCCGTCCGAAATGTGACCTACGCCCTCAGGAAGTACGGCTACTACAGGAACAGTGTGATCATCTACTCCACTGACAATGGAGCCCAGCCTTTCACTGGAGGGAGCAACTGGCCGCTACGAGGCAGGAAGGGCACGTATTGGGAGGGCGGGGTGCGTGGCGT-GGCGTTTGTCCACAGCCCGCTGCTGAAGCGAAGGAGGCGGGTCTCCAGAGCTCTGCTCCACATCACGGACTGGTTCCCCACACTGGTAGGACTGGCCGGCGGCAACATAACCCAG-AGCCAA-GGTCTGGACGGGTTTGACGTTTGGCCCGCCATCAGCGAGGGGAAGGAGTCTCCACGAAAAGAGATTCTCCACAACATCGACCCGCTGCACAAACAT",
+                  "midline": "|| ||||||||||| || || |  ||||||||||||||| ||||| | ||||||||     |  | |||  |||||| || |||||||  ||||| ||  |||| || |   ||||||| || ||| | || || ||||||||||| || |||||||||||  | || ||||| || ||||||||||||||| | ||||| ||||||||| | ||||  |||||||| |||  |||||    ||| ||  || |||||  ||| ||| |   |||| || ||  |||| || |||||||||||||||||||||||||||||| ||||||  || ||||||||| |    || || ||| | ||| | || ||| | || || | |||||| ||||||| |||| |    |||||| ||||| ||  |||| |||| ||||||||| ||   |||||  || || ||||| | |||  ||  |  |||||||| | ||| ||   ||||| | |||||  | |||||||  |||| ||||||  | | ||  || ||||||||  ||| || || |||||||||| ||||| || |||||| | |||  ||   ||| | |||| ||||| || ||||| ||| || ||| ||||||||| ||| ||||||||  ||    |||| || || || || ||  | ||||  ||||||| |   ||||| | |||||  |||||||| ||||||| ||||| ||||||||| | |||| ||||| | || || |||||||||||||| |||||  | |||||||| |||||||| || || ||||| ||| | ||| ||||||||||| || ||||| ||||||| |   |||     | | || ||| | |||||||| ||||||| ||| || ||||| || ||||| || || | ||   | ||| |||| | || || || || |  ||||| ||||| ||||||||||||||   ||  || ||||| |  ||||| || |||||||| ||||| ||  |||| |||"
+                }
+              ]
+            },
+            {
+              "num": 4,
+              "description": [
+                {
+                  "id": "gi|94537053|gb|AC186169.1|",
+                  "accession": "AC186169",
+                  "title": "Ornithorhynchus anatinus chromosome UNK clone OABb-2K17, complete sequence",
+                  "taxid": 9258,
+                  "sciname": "Ornithorhynchus anatinus"
+                }
+              ],
+              "len": 117478,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 56.5198,
+                  "score": 30,
+                  "evalue": 1.11529e-05,
+                  "identity": 33,
+                  "query_from": 2485,
+                  "query_to": 2518,
+                  "query_strand": "Plus",
+                  "hit_from": 56448,
+                  "hit_to": 56416,
+                  "hit_strand": "Minus",
+                  "align_len": 34,
+                  "gaps": 1,
+                  "qseq": "CTTTTAGCCTCAGTTTCCTCATCTGTAAAATGAG",
+                  "hseq": "CTTTT-GCCTCAGTTTCCTCATCTGTAAAATGAG",
+                  "midline": "||||| ||||||||||||||||||||||||||||"
+                }
+              ]
+            },
+            {
+              "num": 5,
+              "description": [
+                {
+                  "id": "gi|55831601|gb|AC151794.1|",
+                  "accession": "AC151794",
+                  "title": "Ornithorhynchus anatinus chromosome UNK clone OABb-58A1, complete sequence",
+                  "taxid": 9258,
+                  "sciname": "Ornithorhynchus anatinus"
+                }
+              ],
+              "len": 148132,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 54.6731,
+                  "score": 29,
+                  "evalue": 4.01128e-05,
+                  "identity": 29,
+                  "query_from": 2490,
+                  "query_to": 2518,
+                  "query_strand": "Plus",
+                  "hit_from": 90552,
+                  "hit_to": 90524,
+                  "hit_strand": "Minus",
+                  "align_len": 29,
+                  "gaps": 0,
+                  "qseq": "AGCCTCAGTTTCCTCATCTGTAAAATGAG",
+                  "hseq": "AGCCTCAGTTTCCTCATCTGTAAAATGAG",
+                  "midline": "|||||||||||||||||||||||||||||"
+                }
+              ]
+            },
+            {
+              "num": 6,
+              "description": [
+                {
+                  "id": "gi|58036726|gb|AC152000.3|",
+                  "accession": "AC152000",
+                  "title": "Ornithorhynchus anatinus chromosome UNK clone OABb-501A1, complete sequence",
+                  "taxid": 9258,
+                  "sciname": "Ornithorhynchus anatinus"
+                }
+              ],
+              "len": 149165,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 54.6731,
+                  "score": 29,
+                  "evalue": 4.01128e-05,
+                  "identity": 29,
+                  "query_from": 2490,
+                  "query_to": 2518,
+                  "query_strand": "Plus",
+                  "hit_from": 75055,
+                  "hit_to": 75083,
+                  "hit_strand": "Plus",
+                  "align_len": 29,
+                  "gaps": 0,
+                  "qseq": "AGCCTCAGTTTCCTCATCTGTAAAATGAG",
+                  "hseq": "AGCCTCAGTTTCCTCATCTGTAAAATGAG",
+                  "midline": "|||||||||||||||||||||||||||||"
+                }
+              ]
+            },
+            {
+              "num": 7,
+              "description": [
+                {
+                  "id": "gi|1626042097|ref|XR_003764513.1|",
+                  "accession": "XR_003764513",
+                  "title": "PREDICTED: Ornithorhynchus anatinus uncharacterized LOC114816704 (LOC114816704), ncRNA",
+                  "taxid": 9258,
+                  "sciname": "Ornithorhynchus anatinus"
+                }
+              ],
+              "len": 871,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 52.8265,
+                  "score": 28,
+                  "evalue": 0.000144271,
+                  "identity": 28,
+                  "query_from": 2491,
+                  "query_to": 2518,
+                  "query_strand": "Plus",
+                  "hit_from": 523,
+                  "hit_to": 550,
+                  "hit_strand": "Plus",
+                  "align_len": 28,
+                  "gaps": 0,
+                  "qseq": "GCCTCAGTTTCCTCATCTGTAAAATGAG",
+                  "hseq": "GCCTCAGTTTCCTCATCTGTAAAATGAG",
+                  "midline": "||||||||||||||||||||||||||||"
+                }
+              ]
+            },
+            {
+              "num": 8,
+              "description": [
+                {
+                  "id": "gi|240851460|gb|AC199681.3|",
+                  "accession": "AC199681",
+                  "title": "Ornithorhynchus anatinus clone OA_Bb-177J19, complete sequence",
+                  "taxid": 9258,
+                  "sciname": "Ornithorhynchus anatinus"
+                }
+              ],
+              "len": 64769,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 52.8265,
+                  "score": 28,
+                  "evalue": 0.000144271,
+                  "identity": 28,
+                  "query_from": 2491,
+                  "query_to": 2518,
+                  "query_strand": "Plus",
+                  "hit_from": 14322,
+                  "hit_to": 14349,
+                  "hit_strand": "Plus",
+                  "align_len": 28,
+                  "gaps": 0,
+                  "qseq": "GCCTCAGTTTCCTCATCTGTAAAATGAG",
+                  "hseq": "GCCTCAGTTTCCTCATCTGTAAAATGAG",
+                  "midline": "||||||||||||||||||||||||||||"
+                }
+              ]
+            },
+            {
+              "num": 9,
+              "description": [
+                {
+                  "id": "gi|239787893|emb|FP245440.7|",
+                  "accession": "FP245440",
+                  "title": "Platypus DNA sequence from clone CH236-654N13, complete sequence",
+                  "taxid": 9258,
+                  "sciname": "Ornithorhynchus anatinus"
+                }
+              ],
+              "len": 154597,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 52.8265,
+                  "score": 28,
+                  "evalue": 0.000144271,
+                  "identity": 28,
+                  "query_from": 2491,
+                  "query_to": 2518,
+                  "query_strand": "Plus",
+                  "hit_from": 70008,
+                  "hit_to": 70035,
+                  "hit_strand": "Plus",
+                  "align_len": 28,
+                  "gaps": 0,
+                  "qseq": "GCCTCAGTTTCCTCATCTGTAAAATGAG",
+                  "hseq": "GCCTCAGTTTCCTCATCTGTAAAATGAG",
+                  "midline": "||||||||||||||||||||||||||||"
+                }
+              ]
+            },
+            {
+              "num": 10,
+              "description": [
+                {
+                  "id": "gi|161338707|emb|CU582829.1|",
+                  "accession": "CU582829",
+                  "title": "Platypus DNA sequence from clone CLM1-393O16, complete sequence",
+                  "taxid": 9258,
+                  "sciname": "Ornithorhynchus anatinus"
+                }
+              ],
+              "len": 70408,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 52.8265,
+                  "score": 28,
+                  "evalue": 0.000144271,
+                  "identity": 28,
+                  "query_from": 2491,
+                  "query_to": 2518,
+                  "query_strand": "Plus",
+                  "hit_from": 69261,
+                  "hit_to": 69234,
+                  "hit_strand": "Minus",
+                  "align_len": 28,
+                  "gaps": 0,
+                  "qseq": "GCCTCAGTTTCCTCATCTGTAAAATGAG",
+                  "hseq": "GCCTCAGTTTCCTCATCTGTAAAATGAG",
+                  "midline": "||||||||||||||||||||||||||||"
+                }
+              ]
+            },
+            {
+              "num": 11,
+              "description": [
+                {
+                  "id": "gi|94537056|gb|AC186172.1|",
+                  "accession": "AC186172",
+                  "title": "Ornithorhynchus anatinus chromosome UNK clone OABb-43A1, complete sequence",
+                  "taxid": 9258,
+                  "sciname": "Ornithorhynchus anatinus"
+                }
+              ],
+              "len": 180865,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 52.8265,
+                  "score": 28,
+                  "evalue": 0.000144271,
+                  "identity": 28,
+                  "query_from": 2491,
+                  "query_to": 2518,
+                  "query_strand": "Plus",
+                  "hit_from": 48908,
+                  "hit_to": 48935,
+                  "hit_strand": "Plus",
+                  "align_len": 28,
+                  "gaps": 0,
+                  "qseq": "GCCTCAGTTTCCTCATCTGTAAAATGAG",
+                  "hseq": "GCCTCAGTTTCCTCATCTGTAAAATGAG",
+                  "midline": "||||||||||||||||||||||||||||"
+                }
+              ]
+            },
+            {
+              "num": 12,
+              "description": [
+                {
+                  "id": "gi|55831587|gb|AC151766.1|",
+                  "accession": "AC151766",
+                  "title": "Ornithorhynchus anatinus chromosome UNK clone OABb-433A1, complete sequence",
+                  "taxid": 9258,
+                  "sciname": "Ornithorhynchus anatinus"
+                }
+              ],
+              "len": 161653,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 52.8265,
+                  "score": 28,
+                  "evalue": 0.000144271,
+                  "identity": 28,
+                  "query_from": 2491,
+                  "query_to": 2518,
+                  "query_strand": "Plus",
+                  "hit_from": 137629,
+                  "hit_to": 137602,
+                  "hit_strand": "Minus",
+                  "align_len": 28,
+                  "gaps": 0,
+                  "qseq": "GCCTCAGTTTCCTCATCTGTAAAATGAG",
+                  "hseq": "GCCTCAGTTTCCTCATCTGTAAAATGAG",
+                  "midline": "||||||||||||||||||||||||||||"
+                }
+              ]
+            },
+            {
+              "num": 13,
+              "description": [
+                {
+                  "id": "gi|45598044|emb|BX936288.8|",
+                  "accession": "BX936288",
+                  "title": "Platypus DNA sequence from clone XX-534O22, complete sequence",
+                  "taxid": 9258,
+                  "sciname": "Ornithorhynchus anatinus"
+                }
+              ],
+              "len": 153564,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 52.8265,
+                  "score": 28,
+                  "evalue": 0.000144271,
+                  "identity": 32,
+                  "query_from": 2485,
+                  "query_to": 2518,
+                  "query_strand": "Plus",
+                  "hit_from": 12657,
+                  "hit_to": 12690,
+                  "hit_strand": "Plus",
+                  "align_len": 34,
+                  "gaps": 0,
+                  "qseq": "CTTTTAGCCTCAGTTTCCTCATCTGTAAAATGAG",
+                  "hseq": "CTTTGTGCCTCAGTTTCCTCATCTGTAAAATGAG",
+                  "midline": "||||  ||||||||||||||||||||||||||||"
+                }
+              ]
+            },
+            {
+              "num": 14,
+              "description": [
+                {
+                  "id": "gi|84872423|gb|AC175465.1|",
+                  "accession": "AC175465",
+                  "title": "Ornithorhynchus anatinus BAC clone OABb-36D11 from chromosome unknown, complete sequence",
+                  "taxid": 9258,
+                  "sciname": "Ornithorhynchus anatinus"
+                }
+              ],
+              "len": 128273,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 52.8265,
+                  "score": 28,
+                  "evalue": 0.000144271,
+                  "identity": 28,
+                  "query_from": 2491,
+                  "query_to": 2518,
+                  "query_strand": "Plus",
+                  "hit_from": 51338,
+                  "hit_to": 51365,
+                  "hit_strand": "Plus",
+                  "align_len": 28,
+                  "gaps": 0,
+                  "qseq": "GCCTCAGTTTCCTCATCTGTAAAATGAG",
+                  "hseq": "GCCTCAGTTTCCTCATCTGTAAAATGAG",
+                  "midline": "||||||||||||||||||||||||||||"
+                }
+              ]
+            }
+          ],
+          "stat": {
+            "db_num": 114366,
+            "db_len": 370081890,
+            "hsp_len": 29,
+            "eff_space": 1131104111184,
+            "kappa": 0.46,
+            "lambda": 1.28,
+            "entropy": 0.85
+          }
+        }
+      }
+    }
+  }
+]
+}
+

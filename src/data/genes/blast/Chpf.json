@@ -1,0 +1,49 @@
+{
+"BlastOutput2": [
+{
+    "report": {
+      "program": "blastn",
+      "version": "BLASTN 2.10.0+",
+      "reference": "Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), \"A greedy algorithm for aligning DNA sequences\", J Comput Biol 2000; 7(1-2):203-14.",
+      "search_target": {
+        "db": "nt_v5"
+      },
+      "params": {
+        "expect": 10,
+        "sc_match": 1,
+        "sc_mismatch": -2,
+        "gap_open": 0,
+        "gap_extend": 0,
+        "filter": "L;m;",
+        "entrez_query": "txid8502 [ORGN] OR txid9258 [ORGN] OR txid99837 [ORGN] OR txid7757 [ORGN] OR txid7764 [ORGN]"
+      },
+      "results": {
+        "search": {
+          "query_id": "NM_024536.6",
+          "query_title": "Homo sapiens chondroitin polymerizing factor (CHPF), transcript variant 1, mRNA",
+          "query_len": 3028,
+          "query_masking": [
+            {
+              "from": 154,
+              "to": 208
+            }
+          ],
+          "hits": [
+          ],
+          "stat": {
+            "db_num": 103742,
+            "db_len": 297847552,
+            "hsp_len": 29,
+            "eff_space": 884222262966,
+            "kappa": 0.46,
+            "lambda": 1.28,
+            "entropy": 0.85
+          },
+          "message": "No hits found"
+        }
+      }
+    }
+  }
+]
+}
+

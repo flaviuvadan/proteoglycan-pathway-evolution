@@ -1,0 +1,133 @@
+{
+"BlastOutput2": [
+{
+    "report": {
+      "program": "blastn",
+      "version": "BLASTN 2.10.0+",
+      "reference": "Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), \"A greedy algorithm for aligning DNA sequences\", J Comput Biol 2000; 7(1-2):203-14.",
+      "search_target": {
+        "db": "nt_v5"
+      },
+      "params": {
+        "expect": 10,
+        "sc_match": 1,
+        "sc_mismatch": -2,
+        "gap_open": 0,
+        "gap_extend": 0,
+        "filter": "L;m;",
+        "entrez_query": "txid52904 [ORGN] OR txid69293 [ORGN] OR txid64144 [ORGN] OR txid80972 [ORGN] OR txid109280 [ORGN] OR txid409849 [ORGN] OR txid8363 [ORGN] OR txid43700 [ORGN] OR txid302047 [ORGN] OR txid99883 [ORGN] OR txid303518 [ORGN] OR txid32507 [ORGN] OR txid8128 [ORGN] OR txid30732 [ORGN] OR txid37003 [ORGN] OR txid32473 [ORGN] OR txid48699 [ORGN] OR txid8078 [ORGN] OR txid8005 [ORGN] OR txid7955 [ORGN] OR txid7719 [ORGN]"
+      },
+      "results": {
+        "search": {
+          "query_id": "NM_031422.6",
+          "query_title": "Homo sapiens carbohydrate sulfotransferase 9 (CHST9), transcript variant 1, mRNA",
+          "query_len": 11379,
+          "query_masking": [
+            {
+              "from": 543,
+              "to": 549
+            },
+            {
+              "from": 2839,
+              "to": 2845
+            },
+            {
+              "from": 2876,
+              "to": 2884
+            },
+            {
+              "from": 3025,
+              "to": 3031
+            },
+            {
+              "from": 3611,
+              "to": 3617
+            },
+            {
+              "from": 5446,
+              "to": 5484
+            },
+            {
+              "from": 6455,
+              "to": 6462
+            },
+            {
+              "from": 7050,
+              "to": 7056
+            },
+            {
+              "from": 7680,
+              "to": 7686
+            },
+            {
+              "from": 8038,
+              "to": 8097
+            },
+            {
+              "from": 8385,
+              "to": 8391
+            },
+            {
+              "from": 9268,
+              "to": 9333
+            },
+            {
+              "from": 9431,
+              "to": 9441
+            },
+            {
+              "from": 10020,
+              "to": 10026
+            }
+          ],
+          "hits": [
+            {
+              "num": 1,
+              "description": [
+                {
+                  "id": "gi|46367791|gb|AC147177.2|",
+                  "accession": "AC147177",
+                  "title": "Xenopus tropicalis clone CH216-5M3, complete sequence",
+                  "taxid": 8364,
+                  "sciname": "Xenopus tropicalis"
+                }
+              ],
+              "len": 56563,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 233.798,
+                  "score": 126,
+                  "evalue": 2.44573e-57,
+                  "identity": 243,
+                  "query_from": 9432,
+                  "query_to": 9712,
+                  "query_strand": "Plus",
+                  "hit_from": 16224,
+                  "hit_to": 15929,
+                  "hit_strand": "Minus",
+                  "align_len": 297,
+                  "gaps": 17,
+                  "qseq": "tttttttttttGAGACAGAGTTTCACTCTTGTCGCCCAGGCTGCAGTGCAGTGGCACCATCTCTGCTCACTGCAACCTCCACGTCCTGGGTTCAAGCTATTCTCCTGTCTCAGCCTCCCGAGTAGCTGGGACTACAGGTGCACAGCACCACGCCCAGCTAATTTTT-GTATTTTTAGTAGAGATTGGGTTTCAC--C--ACATTGG--C-C------A-G-GATGGTCTCGATCTCTTGACCTCGTGACCCATCCGCCACAGCCTCCCAAAGTGCTGGGATTACAGGCATGAGCCAC",
+                  "hseq": "TTTTTTTTTTTAAGACAGAGTCTTGCTC-TGTCGCCCAGGCTGGACTGCAGTGGCACAATCTCAGCTCACTGCAAACTCTGCCTCCCGTGTTCACACCATTCTCCTGTTTCAGCCTCCCGAGTAACTGGGACTACAGGCTCCCGCCACCATGCCTGGCTAATTTTTTGTATTTTTAGTAGAGATGGGGTTTCACTACTAACATGGTTTCACAGTGTTAGGTGATGGTCTCGATCTCCTGACCTCGTGATCCACCTGTCTCGGCCTCCCAAAGTGCTGGGATTACAGGCATGAGCCAC",
+                  "midline": "||||||||||| ||||||||| |  ||| |||||||||||||| | ||||||||||| ||||| ||||||||||| |||  | ||| | |||||  | |||||||||| ||||||||||||||| |||||||||||||  | |  ||||| |||  |||||||||| ||||||||||||||||| |||||||||  |  |||| |   | |      | | ||||||||||||||| ||||||||||| ||| | | | | ||||||||||||||||||||||||||||||||||||"
+                }
+              ]
+            }
+          ],
+          "stat": {
+            "db_num": 905405,
+            "db_len": 910219314,
+            "hsp_len": 34,
+            "eff_space": 58703600219800,
+            "kappa": 0.46,
+            "lambda": 1.28,
+            "entropy": 0.85
+          }
+        }
+      }
+    }
+  }
+]
+}
+

@@ -1,0 +1,331 @@
+{
+"BlastOutput2": [
+{
+    "report": {
+      "program": "blastn",
+      "version": "BLASTN 2.10.0+",
+      "reference": "Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), \"A greedy algorithm for aligning DNA sequences\", J Comput Biol 2000; 7(1-2):203-14.",
+      "search_target": {
+        "db": "nt_v5"
+      },
+      "params": {
+        "expect": 10,
+        "sc_match": 1,
+        "sc_mismatch": -2,
+        "gap_open": 0,
+        "gap_extend": 0,
+        "filter": "L;m;",
+        "entrez_query": "txid158456 [ORGN] OR txid210632 [ORGN] OR txid9103 [ORGN] OR txid40217 [ORGN] OR txid9627 [ORGN] OR txid9986 [ORGN] OR txid99837 [ORGN] OR txid6239 [ORGN] OR txid7757 [ORGN]"
+      },
+      "results": {
+        "search": {
+          "query_id": "NM_000046.5",
+          "query_title": "Homo sapiens arylsulfatase B (ARSB), transcript variant 1, mRNA",
+          "query_len": 4852,
+          "query_masking": [
+            {
+              "from": 3003,
+              "to": 3036
+            },
+            {
+              "from": 4189,
+              "to": 4208
+            },
+            {
+              "from": 4492,
+              "to": 4498
+            },
+            {
+              "from": 4787,
+              "to": 4851
+            }
+          ],
+          "hits": [
+            {
+              "num": 1,
+              "description": [
+                {
+                  "id": "gi|1435562645|ref|XM_025998047.1|",
+                  "accession": "XM_025998047",
+                  "title": "PREDICTED: Vulpes vulpes arylsulfatase B (ARSB), mRNA",
+                  "taxid": 9627,
+                  "sciname": "Vulpes vulpes"
+                }
+              ],
+              "len": 3743,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 2194.94,
+                  "score": 1188,
+                  "evalue": 0,
+                  "identity": 2143,
+                  "query_from": 131,
+                  "query_to": 2695,
+                  "query_strand": "Plus",
+                  "hit_from": 237,
+                  "hit_to": 2826,
+                  "hit_strand": "Plus",
+                  "align_len": 2606,
+                  "gaps": 57,
+                  "qseq": "CCTCCCGCTGCTGCTGCTGCTGTTGTTGGCGCCGCCGGGCTCGGGCGCCGGGGCCAGCC-GGCCGCCCCACCTGGTCTTCTTGCTGGCAGACGACCTAGGCTGGAACGACGTCGGCTTCCACGGCTCCCGCATCCGCACGCCGCACCTGGACGCGCTGGCGGCCGGCGGGGTGCTCCTGGACAACTACTACACGCAGCCGCTGTGCACGCCGTCGCGGAGCCAGCTGCTCACTGGCCGCTACCAGATCCGTACAGGTTTACAGCACCAAATAATCTGGCCCTGTCAGCCCAGCTGTGTTCCTCTGGATGAAAAACTCCTGCCCCAGCTCCTAAAAGAAGCAGGTTATACTACCCATATGGTCGGAAAATGGCACCTGGGAATGTACCGGAAAGAATGCCTTCCAACCCGCCGAGGATTTGATACCTACTTTGGATATCTCCTGGGTAGTGAAGATTATTATTCCCATGAACGCTGTACATTAATTGACGCTCTGAATGTCACACGATGTGCTCTTGATTTTCGAGATGGCGAAGAAGTTGCAACAGGATATAAAAATATGTATTCAACAAACATATTCACCAAAAGGGCTATAGCCCTCATAACTAACCATCCACCAGAGAAGCCTCTGTTTCTCTACCTTGCTCTCCAGTCTGTGCATGAGCCCCTTCAGGTCCCTGAGGAATACTTGAAGCCATATGACTTTATCCAAGACAAGAACAGGCATCACTATGCAGGAATGGTGTCCCTTATGGATGAAGCAGTAGGAAATGTCACTGCAGCTTTAAAAAGCAGTGGGCTCTGGAACAACACGGTGTTCATCTTTTCTACAGATAACGGAGGGCAGACTTTGGCAGGGGGTAATAACTGGCCCCTTCGAGGAAGAAAATGGAGCCTGTGGGAAGGAGGCGTCCGAGGGGTGGGCTTTGTGGCAAGCCCCTTGCTGAAGCAGAAGGGCGTGAAGAACCGGGAGCTCATCCACATCTCTGACTGGCTGCCAACACTCGTGAAGCTGGCCAGGGGACA-CACCAATGGCACAAAGCCTCTGGATGGCTTCGACGTGTGGAAAACCATCAGTGAAGGAAGCCCATCCCCCAGAATTGAGCTGCTGCATAATATTGACCCGAACTTCGTGGACTCTTCACCGTGTCCCAGGAACAGCATGGCTCCAGCAAAGGATGACTCTTCTCTTCCAGAATATTCAGCCTTTAACACATCTGTCCATGCTGCAATTAGACATGGAAATTGGAAACTCCTCACGGGCTACCCAGGCTGTGGTTACTGGTTCCCTCCACCGTCTCAATACAATGTTTCTGAGATACCCTCATCAGACCCACCAACCAAGACCCTCTGGCTCTTTGATATTGATCGGGACCCTGAAGAAAGACATGACCTGTCCAGAGAATATCCTCACATCGTCACAAAGCTCCTGTCCCGCCTACAGTTCTACCATAAACACTCAGTCCCCGTGTACTTCCCTGCACAGGACCCCCGCTGTGATCCCAAGGCCACTGGGGTGTGGGGCCCTTGGATGTAGGATTTCAGGG-AGGCTA-GAAAACCTTTCAA--TT-G-G----AAGTTGGACCTCAGGCCTTTTCTCACGA--CTCTTGTCTCATTTGTTATCCCAACCTGGGTTCACTTGGCCCTTCTCTTGCTCTTAAACCACACCGAGGTGTCTAATTTCAACCCCTAATGCATTTAAGAAGCTGATAAAATCTGCAACACTCCTGCTGTTGGCTGGAGCATGTGTCTAGAGGTGGGGGTGGCTGGGTTTATCCCCCTTT-CCTAAGCCTTGGGACAGCTGGGAACTTAACTTGAAATAGGAAGTTCTCACTGAATCCTGGAGGCTGGAACAGCTGGCTCTTTTAGACTCACAAGTCAGACGTTCGATTCCCCTCTGCCAATAGCCA-GTTTTATTGGAGTGAATCACATTTCTT-ACGCAAATGAAGGGAGCAGACAGTGATTAATGGTTCTGTTGGCCAAGGCTTCTCCCTGTCGGTGAAGGATCATGTTCAGGCACTCCAAGTGAACCACCCCTCTTGGTTCA-CCC-C--TTACTCACT-TATC--TCATCACA-GA-GCA---TAAGGCCCATTTTGTTGTTCAGGTCAACA--GCAAAATGCCTGCACCATGACTGTGGCTT-TTAAAATAAAG-AAATGTGTTTTTATCGTAATTTATTTCCCCCCAGCCATTGCTCACTCTGTCTAGACTTCCTGCCACTTCCAAT-TCTTCTGTGG--CTTTTCCTGCCTTTCCTTTTGACCTCAGTAGTCCTATCCCTGGGAAGGCCACTTTGCTTCTCTAC-CTGAGCACCCCTGATTTCTGGAACGCTGCTGAGCCCTGCCTTACTTTTGCCCCTAGGGCTGAAGCTAGAGGCCTCCCC-GTAATAGGCGGTGGAGT-TG-CTCTGTGAGG-ATGTTCATGGTAGACACTAAGAGGGCTGGGTGGGAGATGCTTGGCTCTGTGGCATCTGTTCAGCGAGGCTTTTCCTATATTGCATGGAGTTAGTCATTGTGATTGTAGCTTTATTTCATAATATATTAAGACTTGCACTGCTATTTACTAGCAGTGAGAAGAAACCTCAGGAA",
+                  "hseq": "CCTGCTGCTGCGGCTGCTGCTGCTGCTCGCCCCGCCGGGCGCCGGCGCTCGGG-CAGCCGGGCCGCCGCACCTGGTCTTCGTGCTGGCGGACGACCTGGGCTGGCACGACGTGGGCTTCCACGGCTCGCGCATCCGCACGCCGCACCTGGACGCGCTGGCGGCCGCCGGGGTGCTCCTGGACAACTACTACACGCAGCCGCTATGCACGCCCTCGCGCAGCCAGCTGCTCACCGGCCGCTACCAGATCCACACAGGTTTACAACACCAAATAATCTGGCCCTGTCAGCCCAGCTGTGTGCCTCTGGATGAAAAACTCCTTCCCCAGCTTCTAAAAGAAGCAGGCTACACTACCCATATGGTCGGAAAGTGGCACCTGGGAATGTACCGGAAAGAATGCCTTCCAACCCGCCGAGGATTTGATACTTACTTTGGATATCTCCTAGGTAGTGAAGATTACTATTCCCATGAGCGCTGTACATTAATTGATGCTCTAAATGTCACACGATGTGCTCTTGATTTTCGAGATGGTGAAGAAGTTGCAACAGGATATAAAAATATGTATTCAACAAACATATTTACTGAAAGAGCAACAGCCCTCATATCTAACCATCCACCAGAGAAGCCTCTATTTCTCTACCTTGCTCTTCAGTCTGTCCACGAGCCTCTCCAGGTCCCCGAGGAATACCTGAAACTCTACGACTTTATCCACGATAAGAATAGGCGTTACTATGCAGGAATGGTGTCTCTCATGGATGAAGCAGTGGGAAATGTCACGGCAGCCTTAAAAAGCCACGGGCTCTGGAACAACACGGTGTTCATCTTCTCCACGGATAACGGAGGACAGACGCTGGCGGGGGGCAACAACTGGCCGCTTCGAGGACGAAAATGGAGCCTGTGGGAAGGAGGCGTTCGAGGGGTGGGCTTCGTGGCGAGCCCCCTGCTGAAGCGGAAGGGGGTGAAGAGCCGGGAGCTCGTCCACATCTCCGACTGGCTGCCCACCCTCGTGGGGCTGGCCGGGGG-CAGCACGAAGGGCACCAAGCCTCTGGATGGCTTCGACGTGTGGAGGACCATCAGCGAAGGAAGCCCGTCCCCCAGAATGGAGCTGCTGCATAATATCGACCCCAACTTTGTGGATATTTCACCATGTCCTGGGCAGAGCCTGGCTCCAGCAAAGGATGACTCTTCTCATCCAGGATATTTCTCCTTCAACACATCTCTCCATGCTGCAATTAGACACGGGAACTGGAAACTTCTCACCGGCTACCCAGGCTGTGGTTGCTGGTTTCCTCCACCGTCTCAGCACAACGTCTCTGTGATCCCCTCTTCGGACCCACCGACCAAGACCCTGTGGCTCTTTGATATTGACCAGGACCCAGAAGAAAGACATGACCTGTCGAGAGACCACCCCCACGTTGTCAAGCAGCTCCTTTCCCGCCTGCAGTTCTACCACAAACACTCGGTGCCTGTGTACTTCCCGGCGCAGGACCCCCGCTGTGACCCCAAGGGCACTGGGGCCTGGGGCCCGTGGATCTAGGCCTCCCCGGCAGCCTGCGACAGCCAGGCCACCTTTGTGCTACAAGCTGGACTTCAGGCCTTCACTCCTGTGTCTCTTGTCTCATTTGCTCTCCCAGCCCAGGTTCACCTGGCCCCCCTCTTGTTCCCAGCCCACCCTGAGGTGTCTCATTTCAACCCCCAGTGCACTGAAGAGGCTGACGACGCCCGCAGCGCCCCTGCTGTTGGCCAGGGTATGTGTCTAGAGGAGAGGGTGGCTGAGTTCAGCCTCTTTTTCCTGAGCTGTGGGACCGCTGGGAACTCGGCTTGAAATAGGAAGTTCTCGTCGATTCCCGGAGGCTGGAACAGCTGGCTCTCTTTGCCTCACAAGTCAGATGTTAGACTTCCCTCTGCCAATAGCTGGGTTTTATTGGAGTGCTTCATGTTTCTTGTAACAAATGTGGGGAGCAGACAGTTTGTAATGGTTCTGCTGGCCGGGGGATCTCCCCGTCTGTGAGATATCATGTTCGGGCATGCCA--TGAATAACCCCCCG-GGTTCAGCCCTCACTTACTCACCCTGTCACTCATCTCATGATGGAGTGTAAGGCCCGTCTCATAGTTACGGTCAGCATGGCAATATGCCTGCTTCTCGGTT-TGGGTTATTACAATAAAAAAAATGTGGTTTTATCCCCAGTT-TTTCTTTCCAGCTGCTGCTCATTTTGTCTAGACTTCCTGCTAC--CCTCTCTCCCCTGCGGTTCTTTTCCTAACCT-CCTCTTCAC-TCAGGCATCCTGTGCCTAGGAAGGCTGCCTCGCCTCCCTACTCTGAACACCACTGGGTTTTGGAACACTGCTGTGGCCTGCCTTCCCTTCGCCTCTAACCCTGAAACGGGAGCCCCACCCAGGGA-AGGTGGTCAAGTCTGGCCCTGC-AGGCACGCTTGTGGTGGACAGGA-G-GGGCTGGGCAGGTGATGTTCAACTCTGTGTCATCTGTTTGGTAAAGATTTTTCTAAGTTGCATGGAGTTCATTATCATGATGGTGGCTTTGTCTTGTAATGTATTAAGAGTTGCA-TGCTATTCCCCAGCAGTGAGGAGAAACCCCAGGAA",
+                  "midline": "||| | ||||| |||||||||| || | || ||||||||| | |||||  ||| ||||| ||||||| |||||||||||| ||||||| |||||||| |||||| ||||||| |||||||||||||| ||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||| |||||||| ||||| |||||||||||||| ||||||||||||||||  ||||||||||| ||||||||||||||||||||||||||||||||||| |||||||||||||||||||| |||||||| |||||||||||||| || |||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||| |||||||||||||| ||||||||||| ||||||||||||||||| ||||| ||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||| ||  |||| || | |||||||||| ||||||||||||||||||||||||| ||||||||||||||||| |||||||| || ||||| || |||||||| ||||||||| |||| |  || ||||||||||| || ||||| |||| | ||||||||||||||||||| || |||||||||||||| ||||||||||| ||||| |||||||||   ||||||||||||||||||||||||||||| || || ||||||||||| |||||  |||| ||||| || |||||||| ||||||||| |||||||||||||||||||||||||||| |||||||||||||| ||||| |||||| ||||||||| |||||| ||||||| |||||||||| |||||||||| ||||||||||| || ||||||  ||||||| |||| || ||| || ||||| ||||||||||||||||||||||||||||  |||||||| ||||||||||| ||||||||||| ||||||||||||||||| ||||| ||||| |||||   |||||| |||||  || | ||| ||||||||||||||||||||||||||| ||||| |||||   |||| ||||||||| ||||||||||||||||||| || || |||||||| ||||| ||||||||||||||||||| |||||| ||||||||||||||  |||| || |||| ||| ||||| || |||||||| ||||||||||| ||||||||||||||||| | |||||| |||||||||||||||||||| |||||  | || ||| | ||||   ||||||| |||||||| ||||||||||| |||||||| || || ||||||||||| || ||||||||||||||||| ||||||| ||||||||  |||||||| ||||| ||||  | |  || || ||  || | ||   | |  || | |    ||| ||||| |||||||||  |||  |   ||||||||||||||| | ||||| ||  ||||||| ||||||  |||||| ||  |  |||| | ||||||||| ||||||||||| | |||| | |||| |||||  |   | ||| | | ||||||||||||  | | ||||||||||||| | ||||||||| ||| | || | ||| ||| |||  |||||| ||||||||||   |||||||||||||||||||   || ||| |||||||||||||||||||||| || | ||||||||||||| ||| || | |||||||||||||||   ||||||||||||||  |||  ||||||    ||||||  |||||||||||||   ||||||||||| |||||  ||  |||||| ||| ||||   ||||||||| ||||  |||  ||||  ||||| |  |||||| ||| |  ||||||||  | ||  ||||| || || | |   |||||||| | |  | |||  ||||| ||  |||| ||||||||  |  |  | ||| || ||| ||||||  ||||||| |||||||   | || ||||   |||||   |||||| | |||||||||||||||| ||  ||  | ||  ||| ||  ||||||||  | | ||| || || ||||   |||| | ||| |||||||  | | || || |||| |||| |||| |||  || |||||| |||||| | |||||||| | || ||| |||   ||||| |  ||| ||  ||| |  | ||| |||  ||| || | |||  ||| | | |  |||| ||||  | | ||||||||  || |||| |   ||||||| ||||||||  |  | | |||| |||  ||||||||||||  | ||  |||| || ||||| | |  |||| |||||||| ||||| |||||||  | ||||||||| ||||||| ||||||"
+                }
+              ]
+            },
+            {
+              "num": 2,
+              "description": [
+                {
+                  "id": "gi|1040137949|ref|XM_008252856.2|",
+                  "accession": "XM_008252856",
+                  "title": "PREDICTED: Oryctolagus cuniculus arylsulfatase B (LOC103346606), mRNA",
+                  "taxid": 9986,
+                  "sciname": "Oryctolagus cuniculus"
+                }
+              ],
+              "len": 3385,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 1160.82,
+                  "score": 628,
+                  "evalue": 0,
+                  "identity": 1235,
+                  "query_from": 135,
+                  "query_to": 1665,
+                  "query_strand": "Plus",
+                  "hit_from": 118,
+                  "hit_to": 1648,
+                  "hit_strand": "Plus",
+                  "align_len": 1536,
+                  "gaps": 10,
+                  "qseq": "CCGCTGCTGCTGCTGCTGTTGTTGGCGCCGCCGG-GCTCGGGCGCCGGGGCC-AGCCGGCCGCCCCACCTGGTCTTCTTGCTGGCAGACGACCTAGGCTGGAACGACGTCGGCTTCCACGGCTCCCGCATCCGCACGCCGCACCTGGACGCGCTGGCGGCCGGCGGGGTGCTCCTGGACAACTACTACACGCAGCCGCTGTGCACGCCGTCGCGGAGCCAGCTGCTCACTGGCCGCTACCAGATCCGTACAGGTTTACAGCACCAAATAATCTGGCCCTGTCAGCCCAGCTGTGTTCCTCTGGATGAAAAACTCCTGCCCCAGCTCCTAAAAGAAGCAGGTTATACTACCCATATGGTCGGAAAATGGCACCTGGGAATGTACCGGAAAGAATGCCTTCCAACCCGCCGAGGATTTGATACCTACTTTGGATATCTCCTGGGTAGTGAAGATTATTATTCCCATGAACGCTGTACATTAATTGACGCTCTGAATGTCACACGATGTGCTCTTGATTTTCGAGATGGCGAAGAAGTTGCAACAGGATATAAAAATATGTATTCAACAAACATATTCACCAAAAGGGCTATAGCCCTCATAACTAACCATCCACCAGAGAAGCCTCTGTTTCTCTACCTTGCTCTCCAGTCTGTGCATGAGCCCCTTCAGGTCCCTGAGGAATACTTGAAGCCATATGACTTTATCCAAGACAAGAACAGGCATCACTATGCAGGAATGGTGTCCCTTATGGATGAAGCAGTAGGAAATGTCACTGCAGCTTTAAAAAGCAGTGGGCTCTGGAACAACACGGTGTTCATCTTTTCTACAGATAACGGAGGGCAGACTTTGGCAGGGGGTAATAACTGGCCCCTTCGAGGAAGAAAATGGAGCCTGTGGGAAGGAGGCGTCCGAGGGGTGGGCTTTGTGGCAAGCCCCTTGCTGAAGCAGAAGGGCGTGAAGAACCGGGAGCTCATCCACATCTCTGACTGGCTGCCAACACTCGTGAAGCTGGCCAGGGGA-CACACCAATGGCACAAAGCCTCTGGATGGCTTCGACGTGTGGAAAACCATCAGTGAAGGAAGCCCATCCCCCAGAATTGAGCTGCTGCATAATATTGACCCGAACTTCGTGGACTCTTCACCGTGTCCCAGGAACAGCATGGCTCCAGCAAAGGATGACTCTTCTCTTCCAGAATATTCAGCCTTTAACACATCTGTCCATGCTGCAATTAGACATGGAAATTGGAAACTCCTCACGGGCTACCCAGGCTGTGGTTACTGGTTCCCTCCACCGTCTCAATACAATGTTTCTGAGA--TACCCTCATCAGACCCACCAACCAAGACCCTCTGGCTCTTTGATATTGATCGGGACCCTGAAGAAAGACATGACCTGTCCAGAGAATATCCTCACATCGTCACAAAGCTCCTGTCCCGCCTACAGTTCTACCATAAACACTCAGTCCCCGTGTACTTCCCTGCACAGGACCCCCGCTGTGATCCCAAGGCCACTGGGGTGTGGGGCCCTTGGATGTAGG",
+                  "hseq": "CCGCTGCTGCTCCTGCTCCTGCTGCTGCGGCCGGCGC-CGGGCGCGGGGGCCGAG-CGGCCGCCGCACCTGGTCTTCGTGCTGGCCGACGACCTGGGCTGGAACGACGTGGGCTTCCACGGCTCGTCCATCCGCACGCCGCACCTGGACGCGCTGGCGGCGGGCGGCGTGCTGCTGGACAACTACTACACGCAGCCGCTGTGCACGCCCTCGCGCAGCCAGCTGCTCAGCGGCCGCTACCAGATCCACACGGGGCTGCAGCATGAGATCATCTGGCCCTGCCAGCCCAGCTGCCTTCCCCTGGACGAGAAGCTTCTTCCCCAGCTGCTCAAGGACGCCGGCTACGCCACCCACATGGTGGGCAAGTGGCACCTCGGAATGTACCGGAAGGAGTGCCTCCCCACCCGCCGTGGCTTCGACACCTACTTCGGCTACCTGCTGGGCAGTGAAGATTACTATTCCCACGAGCGCTGCACCCCGATCCACGCCCTCAACGTCACGCGCTGTGCTCTGGATTTTCGAGACGGCGAGGAGGTGGCGACAGGTTACAAGAACATGTACTCAACGAACGTGTTTACCGAACGGGCCACAGCCCTCATAGCTGACCATCCGCCCCAGAAGCCTCTGTTTCTGTACCTGGCCCTGCAGTCTGTGCACGAGCCCCTGCAGGTGCCCGAGGCGTACCTGAAGCCCTACGACTTCATCCAAGACAAGAAGAGGCAGCACTATGCCGGCATGGTGTCCCTGATGGACGAAGCCGTGGGGAACGTCACGGCAGCCCTGAGGCGCCATGGGCTCTGGAACAACACGGTGCTCATCTTCTCCACGGATAACGGCGGACAGACTCTGGCCGGGGGCAACAACTGGCCCCTCCGCGGCAGGAAGTGGAGCCTGTGGGAGGGCGGCGTGCGCGGCGTGGGCTTTGTGGCCAGCCCCCTGCTGAAGCGGAAGGGCGTGAAGAGCCGGGAGCTGCTGCACATCTCCGACTGGCTGCCGACGCTGGCGCGGCTGGC-AGGGGCGCACACCGGCGGCACCAAGCCCCTGGACGGCTTCGACGTGTGGGACACCATCAGTGAAGGACGCCCGTCGCCCAGAATAGAACTGCTGCACAACATCGACCCGTACTTTGTGGACTACTCCCCGTGCCCCGGGAGCAGCGCGATCCCAGCACAGGCGGAGCCTGCCCTGCCCGCGTCTCCAGCCTTTAACACGTCCATCCACGCCGCCATCAGACACGGGAGCTGGAAACTCCTCACGGGCTACCCAGGCTGTGGCTACTGGATCCCCCCGCCGTCGC--TGCATGGCGCCACAGAGGTGCCCTCCCCGGACCCCCCCAACAAGACCCTGTGGCTCTTCAACATCGAGTGGGACCCCGAGGAGAGACACGACCTGTCCCAAGAGTACCCGCACATCGTGGCCAAGCTGCTGGCGCGCCTGGGCTTCTACCAGAAGCACTCGGTGCCCGTGTTCTTCCCTGCCGAGGACCCCCGCTGCGACCCCAAGGCCACCGGCGCCTGGGGGCCCTGGCTGTAGG",
+                  "midline": "||||||||||| |||||  || ||  || ||||| || ||||||| |||||| || |||||||| |||||||||||| ||||||| |||||||| |||||||||||||| ||||||||||||||   ||||||||||||||||||||||||||||||||| ||||| ||||| ||||||||||||||||||||||||||||||||||| ||||| |||||||||||||  ||||||||||||||||  || ||  | |||||  | || ||||||||||| |||||||||||  |||| ||||| || || || || |||||||| || || || || || ||  | ||||| ||||| || || |||||||| |||||||||||||| || ||||| || |||||||| || || || |||||||| || || || ||||| ||||||||||| |||||||| || ||||| ||    ||  |||| || || ||||| || |||||||| ||||||||||| ||||| || || || ||||| || || || ||||| ||||| ||| | || ||| || |||| | |||||||||| || ||||||| ||  |||||||||||||||| ||||| || || ||||||||||| |||||||| ||||| || ||||  ||| ||||||| || ||||| |||||||||||||| ||||| |||||||| || ||||||||||| ||||| ||||| || || || ||||| |||||  | |   ||  |||||||||||||||||||||| ||||||| || || |||||||| || |||||| |||| ||||| || ||||||||||| || || || || |||||||||||||| || ||||| || || |||||||||||||| |||||| ||||||||| |||||||||||||| |||||||||  | |||||||| ||||||||||| || || | |  |||||| |||||  ||||||   ||||| ||||| ||||| ||||||||||||||| | ||||||||||||||| |||| || |||||||| || |||||||| || || |||||| |||| |||||||  || ||||| ||| ||| ||||  |   |||||| |||  ||  || | || || |  | | ||||||||||||| ||  |||| || || || ||||| || |  |||||||||||||||||||||||||||||||| |||||| |||| || ||||| |  | ||  |   |  |||  | |||||  | ||||| || | ||||||||| ||||||||  | || ||  ||||||| || || ||||| |||||||||  ||| || || ||||||||  | ||||| ||| | |||||    |||||||| || ||||| || ||||||| |||||||||  ||||||||||||| || ||||||||||| || |  ||||| || ||| ||||||"
+                }
+              ]
+            },
+            {
+              "num": 3,
+              "description": [
+                {
+                  "id": "gi|126723635|ref|NM_001082382.1|",
+                  "accession": "NM_001082382",
+                  "title": "Oryctolagus cuniculus pipecolic acid oxidase (PIPOX), mRNA",
+                  "taxid": 9986,
+                  "sciname": "Oryctolagus cuniculus"
+                },
+                {
+                  "id": "gi|1857444|gb|U82267.1|OCU82267",
+                  "accession": "U82267",
+                  "title": "Oryctolagus cuniculus sarcosine oxidase (SOX) mRNA, complete cds",
+                  "taxid": 9986,
+                  "sciname": "Oryctolagus cuniculus"
+                }
+              ],
+              "len": 2095,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 272.578,
+                  "score": 147,
+                  "evalue": 5.61816e-70,
+                  "identity": 246,
+                  "query_from": 4190,
+                  "query_to": 4479,
+                  "query_strand": "Plus",
+                  "hit_from": 1885,
+                  "hit_to": 1593,
+                  "hit_strand": "Minus",
+                  "align_len": 294,
+                  "gaps": 5,
+                  "qseq": "ttttttt-tttt-tttttttttGAGATGGAGTCTCGCTCT-GTCACCCAGGCTGGAGTGCAGTGGTGTGATCTCGGCTCACTGCAGCCTCTAACTCCCAGGTTCAAGCTATTCTCCTGCCTCAGCCTCCCAAGTAGCTGG-ATTACAGGCATACACCACCACGCCTGGCTATGTTTTGTATTTTTCGTAGAGATAGGGTTTCACCATGTTGGCCAGGCTGGTCTCAAACTCCTGACCTCAAGTGATCCACCCACTTCAGCTTCCCAAAGCACTGGGATTACAGGTGTGAGCCAC",
+                  "hseq": "TTTTTTTGTTTTGTTTTTTTTTGAGACAGAGTCTCACTCTTTTTGCCCAGGCTGGAGTGCAATGGCGCAATCTCGGCTCACTGCCACCTCCACCTCCCGGGTTCAAGTGATTCTCTTGCCTCAGTCTCCCAAGTAGCTGGGATTACAGGCATGCGCCACCACACCCAGCTA-ATTTTGTATTTTTAGTGGAGATAGGGTTTCACCATGTTGGCCAGGCTGGTCTTGAATTCCTGGCCTCAGGTGATCCGCCTGTCTCAGCCCCCCAAAGTGCCGAGATTACAGGTGTGAGCCAC",
+                  "midline": "||||||| |||| |||||||||||||  ||||||| ||||  |  |||||||||||||||| ||| |  |||||||||||||||  |||| | ||||| ||||||||  |||||| |||||||| ||||||||||||||| ||||||||||| | ||||||| ||  ||||  |||||||||||| || |||||||||||||||||||||||||||||||||||  || ||||| ||||| ||||||| ||    |||||  |||||||  | | |||||||||||||||||||"
+                }
+              ]
+            },
+            {
+              "num": 4,
+              "description": [
+                {
+                  "id": "gi|1591486615|ref|XM_028417332.1|",
+                  "accession": "XM_028417332",
+                  "title": "PREDICTED: Parambassis ranga arylsulfatase B (arsb), mRNA",
+                  "taxid": 210632,
+                  "sciname": "Parambassis ranga"
+                }
+              ],
+              "len": 2547,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 226.412,
+                  "score": 122,
+                  "evalue": 4.43626e-56,
+                  "identity": 266,
+                  "query_from": 924,
+                  "query_to": 1252,
+                  "query_strand": "Plus",
+                  "hit_from": 1109,
+                  "hit_to": 1438,
+                  "hit_strand": "Plus",
+                  "align_len": 335,
+                  "gaps": 11,
+                  "qseq": "GGGCTCTGGAACAACACGGTGTTCATCTTTTCTACAGATAACGGAGGGCAGACTTTGGCAGGGGGTAATAACTGGCCCCTTCGAGGAAGAAAATGGAGCCTGTGGGAAGGAGGCGTCCGAGGGGTGGGCTTTGTGGCAAGCCCCTTGCTGAAGCAGA--A-GG-GCGTGAAGAACCGGGAGCTCATCCACATCTCTGACTGGCTGCCAACACTCGTGAAGCTGGCCAGGGGACA-CACCAATGGCACAAAGCCTCTGGATGGCTTCGACGTGTGGAAAACCATCAGTGAAGGAAGCCCATCCCCCAGAATTGAGCTGCTGCATAATATTGA-CCC",
+                  "hseq": "GGACTCTGGAACAACACGGTGCTCATCTTCTCAACAGATAACGGGGGTCAGACTCTGTCTGGTGGCAGCAACTGGCCTCTCCGGGGGAGGAAGTGGTCCCTGTGGGAAGGAGGGGTCCGGGGAGTGGGATTTGTCACCGGCCCGCTGCTGAAGC-GACCAGGGAGCGT-CAG--CCGCGAGCTCATCCACATCTCTGACTGGCTGCCGACGCTCGTGGGCCTGGCCGGGGG-CAGCGCCAATGGCACCAAGCCGCTGGATGGATTCAATGTGTGGAACACCATCAGCAAAGGCTTCGCTTCACCCAGACTGGAGCTGCTGCACAACATTGATCCC",
+                  "midline": "|| |||||||||||||||||| ||||||| || ||||||||||| || |||||| || | || || |  |||||||| || || || || || |||  ||||||||||||||| ||||| || ||||| |||||  |  ||||  ||||||||| ||  | || ||||  ||  ||| ||||||||||||||||||||||||||||| || ||||||   |||||| |||| || | |||||||||| ||||| |||||||| ||| | |||||||| ||||||||  ||||   | | || |||||| | ||||||||||| || ||||| |||"
+                }
+              ]
+            },
+            {
+              "num": 5,
+              "description": [
+                {
+                  "id": "gi|34809229|gb|AY386696.1|",
+                  "accession": "AY386696",
+                  "title": "Oryctolagus cuniculus clone 27N5, complete sequence",
+                  "taxid": 9986,
+                  "sciname": "Oryctolagus cuniculus"
+                }
+              ],
+              "len": 146676,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 189.479,
+                  "score": 102,
+                  "evalue": 5.82044e-45,
+                  "identity": 156,
+                  "query_from": 284,
+                  "query_to": 466,
+                  "query_strand": "Plus",
+                  "hit_from": 12778,
+                  "hit_to": 12596,
+                  "hit_strand": "Minus",
+                  "align_len": 183,
+                  "gaps": 0,
+                  "qseq": "GCTGGCGGCCGGCGGGGTGCTCCTGGACAACTACTACACGCAGCCGCTGTGCACGCCGTCGCGGAGCCAGCTGCTCACTGGCCGCTACCAGATCCGTACAGGTTTACAGCACCAAATAATCTGGCCCTGTCAGCCCAGCTGTGTTCCTCTGGATGAAAAACTCCTGCCCCAGCTCCTAAAAGA",
+                  "hseq": "GCTGGCCGCCGGCCACGTGCTGCTGGACAACTACTACACGCAGCCGCTGTGCACGCCGTCGCAGAGCCAGCTGCTCAGCGGCCGCTACCAGATCCGCACGGGGCTGCAGCACGAGGTCATCTGGCCCTGCCCGCCCAGCTGCCTTCCTCTGGAGGAGAAGCTCCTGCCCCAGCTGCTCAAGGA",
+                  "midline": "|||||| ||||||   ||||| |||||||||||||||||||||||||||||||||||||||| ||||||||||||||  ||||||||||||||||| || ||  | |||||| |  | ||||||||||| | |||||||||  |||||||||| || || |||||||||||||| || || ||"
+                }
+              ]
+            },
+            {
+              "num": 6,
+              "description": [
+                {
+                  "id": "gi|34809228|gb|AY386695.1|",
+                  "accession": "AY386695",
+                  "title": "Oryctolagus cuniculus clone 219D23, complete sequence",
+                  "taxid": 9986,
+                  "sciname": "Oryctolagus cuniculus"
+                }
+              ],
+              "len": 137302,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 189.479,
+                  "score": 102,
+                  "evalue": 5.82044e-45,
+                  "identity": 156,
+                  "query_from": 284,
+                  "query_to": 466,
+                  "query_strand": "Plus",
+                  "hit_from": 116343,
+                  "hit_to": 116161,
+                  "hit_strand": "Minus",
+                  "align_len": 183,
+                  "gaps": 0,
+                  "qseq": "GCTGGCGGCCGGCGGGGTGCTCCTGGACAACTACTACACGCAGCCGCTGTGCACGCCGTCGCGGAGCCAGCTGCTCACTGGCCGCTACCAGATCCGTACAGGTTTACAGCACCAAATAATCTGGCCCTGTCAGCCCAGCTGTGTTCCTCTGGATGAAAAACTCCTGCCCCAGCTCCTAAAAGA",
+                  "hseq": "GCTGGCCGCCGGCCACGTGCTGCTGGACAACTACTACACGCAGCCGCTGTGCACGCCGTCGCAGAGCCAGCTGCTCAGCGGCCGCTACCAGATCCGCACGGGGCTGCAGCACGAGGTCATCTGGCCCTGCCCGCCCAGCTGCCTTCCTCTGGAGGAGAAGCTCCTGCCCCAGCTGCTCAAGGA",
+                  "midline": "|||||| ||||||   ||||| |||||||||||||||||||||||||||||||||||||||| ||||||||||||||  ||||||||||||||||| || ||  | |||||| |  | ||||||||||| | |||||||||  |||||||||| || || |||||||||||||| || || ||"
+                }
+              ]
+            },
+            {
+              "num": 7,
+              "description": [
+                {
+                  "id": "gi|30959399|gb|AY217091.1|",
+                  "accession": "AY217091",
+                  "title": "Oryctolagus cuniculus immunoglobulin mu heavy chain gene, partial cds; and 3' Cmu region, complete sequence",
+                  "taxid": 9986,
+                  "sciname": "Oryctolagus cuniculus"
+                }
+              ],
+              "len": 14934,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 187.632,
+                  "score": 101,
+                  "evalue": 2.0934e-44,
+                  "identity": 156,
+                  "query_from": 284,
+                  "query_to": 466,
+                  "query_strand": "Plus",
+                  "hit_from": 6203,
+                  "hit_to": 6022,
+                  "hit_strand": "Minus",
+                  "align_len": 183,
+                  "gaps": 1,
+                  "qseq": "GCTGGCGGCCGGCGGGGTGCTCCTGGACAACTACTACACGCAGCCGCTGTGCACGCCGTCGCGGAGCCAGCTGCTCACTGGCCGCTACCAGATCCGTACAGGTTTACAGCACCAAATAATCTGGCCCTGTCAGCCCAGCTGTGTTCCTCTGGATGAAAAACTCCTGCCCCAGCTCCTAAAAGA",
+                  "hseq": "GCTGGCGGCCGGCCACGTGCTGCTGGACAACTACTACACGCAGCCGCTGTGCACGCCGTC-CAGAGCCAGCTGCTCAGCGGCCACTACCAGATCCGCACGGGGCTGCAGCACGAGGTCATCTGGCCCTGCCAGCCCAGCTGCCTTCCTCTGGAGGAGAAGCTCCTGCCCCAGCTGCTCAAGGA",
+                  "midline": "|||||||||||||   ||||| |||||||||||||||||||||||||||||||||||||| | ||||||||||||||  |||| |||||||||||| || ||  | |||||| |  | ||||||||||| |||||||||||  |||||||||| || || |||||||||||||| || || ||"
+                }
+              ]
+            },
+            {
+              "num": 8,
+              "description": [
+                {
+                  "id": "gi|1537016576|emb|LR131962.1|",
+                  "accession": "LR131962",
+                  "title": "Parambassis ranga genome assembly, chromosome: 12",
+                  "taxid": 210632,
+                  "sciname": "Parambassis ranga"
+                }
+              ],
+              "len": 17157085,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 183.939,
+                  "score": 99,
+                  "evalue": 2.70799e-43,
+                  "identity": 217,
+                  "query_from": 942,
+                  "query_to": 1207,
+                  "query_strand": "Plus",
+                  "hit_from": 15038375,
+                  "hit_to": 15038642,
+                  "hit_strand": "Plus",
+                  "align_len": 273,
+                  "gaps": 12,
+                  "qseq": "GTGTTCATCTTTTCT-ACAGATAACGGAGGGCAGACTTTGGCAGGGGGTAATAACTGGCCCCTTCGAGGAAGAAAATGGAGCCTGTGGGAAGGAGGCGTCCGAGGGGTGGGCTTTGTGGCAAGCCCCTTGCTGAAGCAGA--A-GG-GCGTGAAGAACCGGGAGCTCATCCACATCTCTGACTGGCTGCCAACACTCGTGAAGCTGGCCAGGGGACA-CACCAATGGCACAAAGCCTCTGGATGGCTTCGACGTGTGGAAAACCATCAG-TGA",
+                  "hseq": "GTCTTCATATTTTCTGACAGATAACGGGGGTCAGACTCTGTCTGGTGGCAGCAACTGGCCTCTCCGGGGGAGGAAGTGGTCCCTGTGGGAAGGAGGGGTCCGGGGAGTGGGATTTGTCACCGGCCCGCTGCTGAAGC-GACCAGGGAGCGT-CAG--CCGCGAGCTCATCCACATCTCTGACTGGCTGCCGACGCTCGTGGGCCTGGCCGGGGG-CAGCGCCAATGGCACCAAGCCGCTGGATGGATTCAATGTGTGGAACACCATCAGGTGA",
+                  "midline": "|| ||||| |||||| ||||||||||| || |||||| || | || || |  |||||||| || || || || || |||  ||||||||||||||| ||||| || ||||| |||||  |  ||||  ||||||||| ||  | || ||||  ||  ||| ||||||||||||||||||||||||||||| || ||||||   |||||| |||| || | |||||||||| ||||| |||||||| ||| | |||||||| |||||||| |||"
+                }
+              ]
+            }
+          ],
+          "stat": {
+            "db_num": 306075,
+            "db_len": 2042402763,
+            "hsp_len": 32,
+            "eff_space": 9797172309660,
+            "kappa": 0.46,
+            "lambda": 1.28,
+            "entropy": 0.85
+          }
+        }
+      }
+    }
+  }
+]
+}
+

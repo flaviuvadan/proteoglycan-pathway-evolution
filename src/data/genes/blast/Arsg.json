@@ -1,0 +1,114 @@
+{
+"BlastOutput2": [
+{
+    "report": {
+      "program": "blastn",
+      "version": "BLASTN 2.10.0+",
+      "reference": "Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), \"A greedy algorithm for aligning DNA sequences\", J Comput Biol 2000; 7(1-2):203-14.",
+      "search_target": {
+        "db": "nt_v5"
+      },
+      "params": {
+        "expect": 10,
+        "sc_match": 1,
+        "sc_mismatch": -2,
+        "gap_open": 0,
+        "gap_extend": 0,
+        "filter": "L;m;",
+        "entrez_query": "txid9258 [ORGN] OR txid51338 [ORGN] OR txid6239 [ORGN] OR txid7757 [ORGN] OR txid299321 [ORGN]"
+      },
+      "results": {
+        "search": {
+          "query_id": "NM_001267727.1",
+          "query_title": "Homo sapiens arylsulfatase G (ARSG), transcript variant 2, mRNA",
+          "query_len": 2614,
+          "query_masking": [
+            {
+              "from": 2599,
+              "to": 2613
+            }
+          ],
+          "hits": [
+            {
+              "num": 1,
+              "description": [
+                {
+                  "id": "gi|1147359350|ref|XM_020154270.1|",
+                  "accession": "XM_020154270",
+                  "title": "PREDICTED: Castor canadensis arylsulfatase G-like (LOC109678861), mRNA",
+                  "taxid": 51338,
+                  "sciname": "Castor canadensis"
+                }
+              ],
+              "len": 1135,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 1020.47,
+                  "score": 552,
+                  "evalue": 0,
+                  "identity": 844,
+                  "query_from": 624,
+                  "query_to": 1608,
+                  "query_strand": "Plus",
+                  "hit_from": 164,
+                  "hit_to": 1135,
+                  "hit_strand": "Plus",
+                  "align_len": 986,
+                  "gaps": 15,
+                  "qseq": "CCATGGGCTGGCTTTTTCTAAAGGTTTTGTTGGCGGGAGTGAGTTTCTCAGGATTTCTTTATCCTCTTGTGGATTTTTGCATCAGTGGGAAAACAAGAGGACAGAAGCCAAACTTTGTGATTATTTTGGCCGATGACATGGGGTGGGGTGACCTGGGAGCAAACTGGGCAGAAACAAAGGACACTGCCAACCTTGATAAGATGGCTTCGGAGGGAATGAGGTTTGTGGATTTCCATGCAGCTGCCTCCACCTGCTCACCCTCCCGGGCTTCCTTGCTCACCGGCCGGCTTGGCCTTCGCAATGGAGTCACACGCAACTTTGCAGTCACTTCTGTGGGAGGCCTTCCGCTCAACGAGACCACCTTGGCAGAGGTGCTGCAGCAGGCGGGTTACGTCACTGGGATAATAGGCAAATGGCATCTTGGACACCACGGCTCTTATCACCCCAACTTCCGTGGTTTTGATTACTACTTTGGAATCCCATATAGCCATGATATGGGCTGTACTGATACTCCAGGCTACAACCACCCTCCTTGTCCAGCGTGTCCACAGGGTGATGGACCATCAAGGAACCTTCAAAGAGACTGTTACACTGACGTGGCCCTCCCTCTTTATGAAAACCTCAACATTGTGGAGCAGCCGGTGAACTTGAGCAGCCTTGCCCAGAAGTATGCTGAGAAAGCAACCCAGTTCATCCAGCGTGCAAGCACCAGCGGGAGGCCCTTCCTGCTCTATGTGGCTCTGGCCCACATGCACGTGCCCTTACCTGTGACTCAGCTACCAGC-AGCGCCACGGGGCAGAAGCCTGTATGGTGCAGGGCTCTGGGAGATGGACAGTCTGGTGGGCCAGATCAAGGACAAAGTTGACCACACAGTGAAGGAAAACACATTCCTCTGGTTTACAGGAGACAATGGCCCGTGGGCTCAGAAGTGTGAGCTAGCGGGCAGTGTGGGTCCCTTCACTGGATTTTGGCAAACTCGTCAAGG",
+                  "hseq": "CCAT-GGCTTGTTTTTTCTAAAGGTTTTGTTGGTGGGAGTGAGTCTCTCTGGATTTCTT-ACCCTCTT-AGGATTTTTGTATCA--GCCAGAACAACAGGCCAGAAGCC-GATATCGTGATCATCTTGGCTGATG-CAT-GGATGGGGTGACC-GGGAGCAAACTGGGCAG--ACAAAGGACACTGCCAACCTTGATAAGATGGCTTCAGA-AGAATGAGGTTTGTGGACTTCCATGCCGCTGCCTCCACCTGCTCGCCCTCCCGAGCCTCCCTGCTCACTGGGCGGCTCGGCCTTCGCAATGGAGTCACGCACAACTTTGCAGTCACCTCTGTGGGGGGCCTTCCACTCAACGAGACCACACTGGCAGAGGTGCTGCAGCAGGCTGGCTACATCACTGGGATGATAGGCAAATGGCACCTTGGGCACCATGGCTCTTATCACCCCAACTTCCGTGGTTTTCATTACTACTTCGGGATCCCATACAGCCACGATATGGGTTGTACTGATACCCCTGGCTACAACCACCCTCCTTGTCCCTCATGTCCACGGGACAATGGCTCATTGAGGAACCTTGATAGGGACTGTTACACAGACATAGCCCTTCCTCTCTATGAAAACCTCAACATCGTGGAGCAGCCTGTGAACTTGAGCAGCCTTGTACAGAAGTACACTGAGAAGGCAACTGAGTTCATCCAGCAGGCAAGCATCAGCGGAAGACCCTTCCTGCTCTACGTGGGGCTGGCCCATATGCACGTGCCCTTATC-GTGAGCCAGCCATTGGCAAACG-CACAGAGCCGAAGACCATACCGGGCTGGTATCCGGGAGATGGACAGTCTGGTGGGTCAGATCAAACATAAACTTGACCACACAGCAAAAGAAAACACATTCCTCTGGTTTACAGGAGACAATGGCCCGTGGGCTCAGAAGTGTGAGCTGGCAGGCAGCGTGGGTCCCTTCACTGGATCATGGCAAACTCACCAAGG",
+                  "midline": "|||| |||| | ||||||||||||||||||||| |||||||||| |||| ||||||||| | ||||||  ||||||||| ||||  |  | ||||| ||| ||||||||  |  | ||||| || ||||| |||| ||| || |||||||||| |||||||||||||||||  ||||||||||||||||||||||||||||||||||| ||  |||||||||||||||| |||||||| ||||||||||||||||| |||||||| || ||| ||||||| || ||||| |||||||||||||||||||| | ||||||||||||||| |||||||| |||||||| ||||||||||||||  |||||||||||||||||||||| || ||| |||||||||| |||||||||||||| ||||| ||||| |||||||||||||||||||||||||||||| |||||||||| || |||||||| ||||| |||||||| ||||||||||| || |||||||||||||||||||||||  | ||||||| ||   ||||  |||  ||||||||| | || ||||||||||| ||| | ||||| ||||| ||||||||||||||||| ||||||||||| |||||||||||||||||||  ||||||||  ||||||| |||||  ||||||||||||  ||||||| |||||| || |||||||||||||| ||||  |||||||| ||||||||||||||| | ||||  |||| |   || | || ||| | || |||| |  ||  | || ||  || |||||||||||||||||||||| ||||||||  | ||| ||||||||||||  || ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| || ||||| |||||||||||||||||||  ||||||||||  |||||"
+                }
+              ]
+            },
+            {
+              "num": 2,
+              "description": [
+                {
+                  "id": "gi|1147359348|ref|XM_020154269.1|",
+                  "accession": "XM_020154269",
+                  "title": "PREDICTED: Castor canadensis arylsulfatase G-like (LOC109678860), partial mRNA",
+                  "taxid": 51338,
+                  "sciname": "Castor canadensis"
+                }
+              ],
+              "len": 680,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 388.917,
+                  "score": 210,
+                  "evalue": 3.01687e-105,
+                  "identity": 286,
+                  "query_from": 1608,
+                  "query_to": 1931,
+                  "query_strand": "Plus",
+                  "hit_from": 1,
+                  "hit_to": 324,
+                  "hit_strand": "Plus",
+                  "align_len": 324,
+                  "gaps": 0,
+                  "qseq": "GGGGAAGTCCAGCCAAGCAGACGACCTGGGAAGGAGGGCACCGGGTCCCAGCACTGGCTTACTGGCCTGGCAGAGTTCCAGTTAATGTCACCAGCACTGCCTTGTTAAGCGTGCTGGACATTTTTCCAACTGTGGTAGCCCTGGCCCAGGCCAGCTTACCTCAAGGACGGCGCTTTGATGGTGTGGACGTCTCCGAGGTGCTCTTTGGCCGGTCACAGCCTGGGCACAGGGTGCTGTTCCACCCCAACAGCGGGGCAGCTGGAGAGTTTGGAGCCCTGCAGACTGTCCGCCTGGAGCGTTACAAGGCCTTCTACATTACCGGTG",
+                  "hseq": "GGGGAAGTCCAGCCAAGCAGACCACCTGGGAAGGTGGGCACCGGGTCCCAGCACTGGCTTACTGGCCTGGCAGAGTTCCAGCCAATGTCACCAGCACCGCTCTGTTAAGTGTGCTGGACATTTTCCCTACTGTGGTAGCCCTGGCAGGAGCCAGCTTACCCCAAGGTCGACACTTTGATGGACTGGATGCCTCTGAGGTGCTCTTGGGCGGGTCACAGGTGGGGCACAGGGTGCTGTTCCACCCCAACAGTGGAGCAGCTGGGGAGTTCGGAGCCCTGCAAAGTGTCCGCCTGGAGTGTTACAAGGCCTTCTACGTCACAGGTG",
+                  "midline": "|||||||||||||||||||||| ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||  |||||||||||||| ||  ||||||| |||||||||||||| || |||||||||||||||||    ||||||||||| ||||| || | |||||||||  |||| | ||| ||||||||||| ||| ||||||||   ||||||||||||||||||||||||||||| || |||||||| ||||| ||||||||||| | ||||||||||||| ||||||||||||||||| | || ||||"
+                }
+              ]
+            }
+          ],
+          "stat": {
+            "db_num": 226859,
+            "db_len": 1274678639,
+            "hsp_len": 30,
+            "eff_space": 3276183493496,
+            "kappa": 0.46,
+            "lambda": 1.28,
+            "entropy": 0.85
+          }
+        }
+      }
+    }
+  }
+]
+}
+

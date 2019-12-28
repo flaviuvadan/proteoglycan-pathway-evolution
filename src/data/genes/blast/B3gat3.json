@@ -1,0 +1,480 @@
+{
+"BlastOutput2": [
+{
+    "report": {
+      "program": "blastn",
+      "version": "BLASTN 2.10.0+",
+      "reference": "Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), \"A greedy algorithm for aligning DNA sequences\", J Comput Biol 2000; 7(1-2):203-14.",
+      "search_target": {
+        "db": "nt_v5"
+      },
+      "params": {
+        "expect": 10,
+        "sc_match": 1,
+        "sc_mismatch": -2,
+        "gap_open": 0,
+        "gap_extend": 0,
+        "filter": "L;m;",
+        "entrez_query": "txid8502 [ORGN] OR txid132585 [ORGN] OR txid9103 [ORGN] OR txid156563 [ORGN] OR txid59729 [ORGN] OR txid44394 [ORGN] OR txid328815 [ORGN] OR txid30464 [ORGN] OR txid9593 [ORGN] OR txid591936 [ORGN] OR txid10036 [ORGN] OR txid6239 [ORGN] OR txid7918 [ORGN] OR txid8790 [ORGN] OR txid8823 [ORGN] OR txid9135 [ORGN]"
+      },
+      "results": {
+        "search": {
+          "query_id": "NM_012200.4",
+          "query_title": "Homo sapiens beta-1,3-glucuronyltransferase 3 (B3GAT3), transcript variant 1, mRNA",
+          "query_len": 1452,
+          "query_masking": [
+            {
+              "from": 222,
+              "to": 263
+            }
+          ],
+          "hits": [
+            {
+              "num": 1,
+              "description": [
+                {
+                  "id": "gi|1099097426|ref|XM_019035894.1|",
+                  "accession": "XM_019035894",
+                  "title": "PREDICTED: Gorilla gorilla gorilla beta-1,3-glucuronyltransferase 3 (B3GAT3), transcript variant X1, mRNA",
+                  "taxid": 9595,
+                  "sciname": "Gorilla gorilla gorilla"
+                }
+              ],
+              "len": 1641,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 2625.21,
+                  "score": 1421,
+                  "evalue": 0,
+                  "identity": 1441,
+                  "query_from": 2,
+                  "query_to": 1452,
+                  "query_strand": "Plus",
+                  "hit_from": 191,
+                  "hit_to": 1641,
+                  "hit_strand": "Plus",
+                  "align_len": 1451,
+                  "gaps": 0,
+                  "qseq": "CAGACCCCGCCTGCTCGGGCGCGGGCGGCGGCGCGGCCATGAAGCTGAAGCTGAAGAACGTGTTTCTCGCCTACTTCCTGGTGTCGATCGCCGGCCTCCTCTACGCGCTGGTACAGCTCGGCCAGCCATGTGACTGCCTTCCTCCCCTGCGGGCAGCAGCCGAGCAGCTACGGCAGAAGGATCTGAGGATTTCCCAGCTGCAAGCGGAACTCCGACGGCCAccccctgcccctgcccagccccctgaacccgaggccctgcctACTATCTATGTTGTTACCCCCACCTATGCCAGGCTGGTACAGAAGGCAGAGCTGGTACGACTGTCCCAGACACTGAGCCTGGTGCCCCGGCTGCATTGGCTGCTGGTGGAGGATGCTGAGGGTCCCACCCCGCTGGTCTCAGGGCTGCTGGCTGCCTCTGGCCTCCTCTTCACACACCTGGTGGTCCTCACGCCCAAAGCCCAGCGGCTTCGGGAGGGCGAGCCTGGCTGGGTTCATCCCCGTGGTGTCGAGCAGCGGAACAAGGCCCTGGACTGGCTCCGGGGCAGAGGGGGTGCTGTGGGTGGGGAGAAGGACCCACCACCACCAGGGACCCAAGGAGTCGTCTACTTTGCTGACGATGACAACACCTACAGCCGGGAGCTGTTTGAGGAGATGCGCTGGACCCGTGGTGTCTCAGTGTGGCCTGTGGGGCTGGTGGGCGGCCTGCGATTCGAGGGCCCTCAGGTACAGGACGGCCGGGTAGTGGGCTTCCACACAGCATGGGAGCCCAGCAGGCCCTTCCCTGTGGATATGGCTGGATTTGCCGTGGCCCTGCCCTTGCTGTTAGATAAGCCCAATGCCCAATTTGATTCCACCGCTCCCCGGGGCCACCTGGAGAGCAGTCTTCTGAGCCACCTTGTGGATCCCAAGGACCTGGAGCCACGGGCTGCCAACTGCACTCGGGTACTGGTGTGGCATACTCGGACAGAGAAGCCCAAGATGAAGCAGGAGGAGCAGCTGCAGCGGCAGGGCCGGGGCTCAGACCCAGCAATTGAGGTGTGATGGCGGCCCCACCCCAACTACCACCTCTTTTCAGGCACAGACCTTGTGGGACTGGGCCCCAGGCCTGCCCAGGATGTGGTTTTCCAAGTCCTGACCCTTGGAGCCAGAAGTGGCCCCTCTGCCCCTCCAGGCCCAGGGCATGGTCCTGCTGCTTCACCCCTCCCCTAGCCTGCCGTGTGGCACTGCCCACAGGCTGGGGACAAGCAGCCCTTGTGTTGAGTCAGGTTGGCCCTGTCTAGGGTGGAACAGAAGGACAGATGGACCCAGGAGGGAGGGCAGCTGAGTAACTGGGTAACTTATTGGGGCTGGGCATGCACTGGGGGGCTGGAGGAGCTGGGCTGGACCCTTCCCACCTGAGCATGCTGACCCCCTTCCTACCTCCAGAATAAAGAATCTCAACCTGGA",
+                  "hseq": "CAGACCCCGCCTGCTCGGGCGCGGGCGGCGGCGCGGCCATGAAGCTGAAGCTGAAGAACGTGTTTCTCGCCTACTTCCTGGTGTCGATCGCCGGCCTCCTCTACGCGCTGGTACAGCTCGGCCAGCCATGTGACTGCCTTCCTCCCCTGCGGGCAGCAGCCGAGCAGCTACGGCAGAAGGATCTGAGGATTTCCCAGCTGCAAGCGGAACTCCGACGGCCACCCCCTGCCCCTGCCCAGCCCCCTGAACCCGAGGCCCTGCCTACTATCTATGTTGTTACCCCCACCTATGCCAGGCTGGTACAGAAGGCAGAGCTGGTACGACTGTCCCAGACACTGAGCCTGGTGCCCCGGCTGCATTGGCTGCTGGTGGAGGATGCTGAGGGTCCCACCCCGCTGGTCTCAGGGCTGCTGGCTGCCTCTGGCCTCCTCTTCACACACCTGGTGGTCCTCACGCCCAAAGCCCAGCGGCTTCGGGAGGGCGAGCCTGGCTGGGTTCATCCCCGTGGTGTCGAGCAGCGGAACAAGGCCCTGGACTGGCTCCGGGGCAGAGGGGGTGCTGTGGGTGGGGAGAAGGACCCACCACCACCAGGGACCCAAGGAGTTGTCTACTTTGCTGACGATGACAACACCTACAGCCGGGAGCTGTTTGAGGAGATGCGCTGGACCCGTGCTGTCTCAGTGTGGCCTGTGGGGCTGGTGGGCGGCCTGCGATTCGAGGGCCCTCAGGTACAGGACGGCCGGGTAGTGGGCTTCCACACAGCATGGGAGCCCAACAGGCCCTTCCCTGTGGACATGGCTGGATTTGCTGTGGCCCTGCCCTTGCTGTTAGATAAGCCCAATGCCCAATTTGATTCCACCGCTCCCCGGGGCCACCTGGAGAGCAGTCTTCTGAGCCACCTTGTGGATCCCAAGGACCTGGAGCCACGGGCTGCCAACTGCACTCGGGTACTGGTGTGGCATACACGGACAGAGAAGCCCAAGATGAAGCAGGAGGAGCAGCTGCAGCGGCAGGGCCGGGGCTCAGACCCAGCAATTGAGGTGTGATGGCGGCCCCACCCCAACTACCACCTCTTTTCAGGCACAGACCTTGTGGGACTGGGCCCCAGGCCTGCCCAGGATGTGGTTTTCCAAGTCCTGACCCTTGGAGCCAGAAGTGGCCCCTCTGCCCCTCCAGGCCCAGGGCATGGTCCTGCTGCTTCACCCCTCCCCTAGCCTGCCGTGTGGCACTGCCCACAGGCTGGGGACAAGCAGCCCTTGTATTGAGTCAGGTTGGCCCTGTCTAGGTTGGAACAGAAGGACAGATGGACCCAGGAGGGAGGGCAGCTGAGTAACTGGGTAACTTATTGGGGCTGGGCATGCACTGGGGGGCTGGAGGAGCTGGGCTGGACCCTCCCCACCTGAGCATGCTGACCCCCTTCCTACCTCCAGAATAAAGAATTTCAACCTGGA",
+                  "midline": "|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| |||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||| ||||||||||"
+                }
+              ]
+            },
+            {
+              "num": 2,
+              "description": [
+                {
+                  "id": "gi|1753035203|ref|XM_031016479.1|",
+                  "accession": "XM_031016479",
+                  "title": "PREDICTED: Gorilla gorilla gorilla beta-1,3-glucuronyltransferase 3 (B3GAT3), transcript variant X3, mRNA",
+                  "taxid": 9595,
+                  "sciname": "Gorilla gorilla gorilla"
+                }
+              ],
+              "len": 1429,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 2405.46,
+                  "score": 1302,
+                  "evalue": 0,
+                  "identity": 1325,
+                  "query_from": 118,
+                  "query_to": 1452,
+                  "query_strand": "Plus",
+                  "hit_from": 94,
+                  "hit_to": 1429,
+                  "hit_strand": "Plus",
+                  "align_len": 1336,
+                  "gaps": 1,
+                  "qseq": "CTC-GGCCAGCCATGTGACTGCCTTCCTCCCCTGCGGGCAGCAGCCGAGCAGCTACGGCAGAAGGATCTGAGGATTTCCCAGCTGCAAGCGGAACTCCGACGGCCAccccctgcccctgcccagccccctgaacccgaggccctgcctACTATCTATGTTGTTACCCCCACCTATGCCAGGCTGGTACAGAAGGCAGAGCTGGTACGACTGTCCCAGACACTGAGCCTGGTGCCCCGGCTGCATTGGCTGCTGGTGGAGGATGCTGAGGGTCCCACCCCGCTGGTCTCAGGGCTGCTGGCTGCCTCTGGCCTCCTCTTCACACACCTGGTGGTCCTCACGCCCAAAGCCCAGCGGCTTCGGGAGGGCGAGCCTGGCTGGGTTCATCCCCGTGGTGTCGAGCAGCGGAACAAGGCCCTGGACTGGCTCCGGGGCAGAGGGGGTGCTGTGGGTGGGGAGAAGGACCCACCACCACCAGGGACCCAAGGAGTCGTCTACTTTGCTGACGATGACAACACCTACAGCCGGGAGCTGTTTGAGGAGATGCGCTGGACCCGTGGTGTCTCAGTGTGGCCTGTGGGGCTGGTGGGCGGCCTGCGATTCGAGGGCCCTCAGGTACAGGACGGCCGGGTAGTGGGCTTCCACACAGCATGGGAGCCCAGCAGGCCCTTCCCTGTGGATATGGCTGGATTTGCCGTGGCCCTGCCCTTGCTGTTAGATAAGCCCAATGCCCAATTTGATTCCACCGCTCCCCGGGGCCACCTGGAGAGCAGTCTTCTGAGCCACCTTGTGGATCCCAAGGACCTGGAGCCACGGGCTGCCAACTGCACTCGGGTACTGGTGTGGCATACTCGGACAGAGAAGCCCAAGATGAAGCAGGAGGAGCAGCTGCAGCGGCAGGGCCGGGGCTCAGACCCAGCAATTGAGGTGTGATGGCGGCCCCACCCCAACTACCACCTCTTTTCAGGCACAGACCTTGTGGGACTGGGCCCCAGGCCTGCCCAGGATGTGGTTTTCCAAGTCCTGACCCTTGGAGCCAGAAGTGGCCCCTCTGCCCCTCCAGGCCCAGGGCATGGTCCTGCTGCTTCACCCCTCCCCTAGCCTGCCGTGTGGCACTGCCCACAGGCTGGGGACAAGCAGCCCTTGTGTTGAGTCAGGTTGGCCCTGTCTAGGGTGGAACAGAAGGACAGATGGACCCAGGAGGGAGGGCAGCTGAGTAACTGGGTAACTTATTGGGGCTGGGCATGCACTGGGGGGCTGGAGGAGCTGGGCTGGACCCTTCCCACCTGAGCATGCTGACCCCCTTCCTACCTCCAGAATAAAGAATCTCAACCTGGA",
+                  "hseq": "CTCAGGCCAGCCATGTGACTGCCTTCCTCCCCTGCGGGCAGCAGCCGAGCAGCTACGGCAGAAGGATCTGAGGATTTCCCAGCTGCAAGCGGAACTCCGACGGCCACCCCCTGCCCCTGCCCAGCCCCCTGAACCCGAGGCCCTGCCTACTATCTATGTTGTTACCCCCACCTATGCCAGGCTGGTACAGAAGGCAGAGCTGGTACGACTGTCCCAGACACTGAGCCTGGTGCCCCGGCTGCATTGGCTGCTGGTGGAGGATGCTGAGGGTCCCACCCCGCTGGTCTCAGGGCTGCTGGCTGCCTCTGGCCTCCTCTTCACACACCTGGTGGTCCTCACGCCCAAAGCCCAGCGGCTTCGGGAGGGCGAGCCTGGCTGGGTTCATCCCCGTGGTGTCGAGCAGCGGAACAAGGCCCTGGACTGGCTCCGGGGCAGAGGGGGTGCTGTGGGTGGGGAGAAGGACCCACCACCACCAGGGACCCAAGGAGTTGTCTACTTTGCTGACGATGACAACACCTACAGCCGGGAGCTGTTTGAGGAGATGCGCTGGACCCGTGCTGTCTCAGTGTGGCCTGTGGGGCTGGTGGGCGGCCTGCGATTCGAGGGCCCTCAGGTACAGGACGGCCGGGTAGTGGGCTTCCACACAGCATGGGAGCCCAACAGGCCCTTCCCTGTGGACATGGCTGGATTTGCTGTGGCCCTGCCCTTGCTGTTAGATAAGCCCAATGCCCAATTTGATTCCACCGCTCCCCGGGGCCACCTGGAGAGCAGTCTTCTGAGCCACCTTGTGGATCCCAAGGACCTGGAGCCACGGGCTGCCAACTGCACTCGGGTACTGGTGTGGCATACACGGACAGAGAAGCCCAAGATGAAGCAGGAGGAGCAGCTGCAGCGGCAGGGCCGGGGCTCAGACCCAGCAATTGAGGTGTGATGGCGGCCCCACCCCAACTACCACCTCTTTTCAGGCACAGACCTTGTGGGACTGGGCCCCAGGCCTGCCCAGGATGTGGTTTTCCAAGTCCTGACCCTTGGAGCCAGAAGTGGCCCCTCTGCCCCTCCAGGCCCAGGGCATGGTCCTGCTGCTTCACCCCTCCCCTAGCCTGCCGTGTGGCACTGCCCACAGGCTGGGGACAAGCAGCCCTTGTATTGAGTCAGGTTGGCCCTGTCTAGGTTGGAACAGAAGGACAGATGGACCCAGGAGGGAGGGCAGCTGAGTAACTGGGTAACTTATTGGGGCTGGGCATGCACTGGGGGGCTGGAGGAGCTGGGCTGGACCCTCCCCACCTGAGCATGCTGACCCCCTTCCTACCTCCAGAATAAAGAATTTCAACCTGGA",
+                  "midline": "||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| |||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||| ||||||||||"
+                }
+              ]
+            },
+            {
+              "num": 3,
+              "description": [
+                {
+                  "id": "gi|1753035201|ref|XM_031016478.1|",
+                  "accession": "XM_031016478",
+                  "title": "PREDICTED: Gorilla gorilla gorilla beta-1,3-glucuronyltransferase 3 (B3GAT3), transcript variant X2, mRNA",
+                  "taxid": 9595,
+                  "sciname": "Gorilla gorilla gorilla"
+                }
+              ],
+              "len": 1024,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 1851.46,
+                  "score": 1002,
+                  "evalue": 0,
+                  "identity": 1017,
+                  "query_from": 18,
+                  "query_to": 1040,
+                  "query_strand": "Plus",
+                  "hit_from": 1,
+                  "hit_to": 1024,
+                  "hit_strand": "Plus",
+                  "align_len": 1024,
+                  "gaps": 1,
+                  "qseq": "GGGCGCGGGCGGCGGCGCGGCCATGAAGCTGAAGCTGAAGAACGTGTTTCTCGCCTACTTCCTGGTGTCGATCGCCGGCCTCCTCTACGCGCTGGTACAGCTCGGCCAGCCATGTGACTGCCTTCCTCCCCTGCGGGCAGCAGCCGAGCAGCTACGGCAGAAGGATCTGAGGATTTCCCAGCTGCAAGCGGAACTCCGACGGCCAccccctgcccctgcccagccccctgaacccgaggccctgcctACTATCTATGTTGTTACCCCCACCTATGCCAGGCTGGTACAGAAGGCAGAGCTGGTACGACTGTCCCAGACACTGAGCCTGGTGCCCCGGCTGCATTGGCTGCTGGTGGAGGATGCTGAGGGTCCCACCCCGCTGGTCTCAGGGCTGCTGGCTGCCTCTGGCCTCCTCTTCACACACCTGGTGGTCCTCACGCCCAAAGCCCAGCGGCTTCGGGAGGGCGAGCCTGGCTGGGTTCATCCCCGTGGTGTCGAGCAGCGGAACAAGGCCCTGGACTGGCTCCGGGGCAGAGGGGGTGCTGTGGGTGGGGAGAAGGACCCACCACCACCAGGGACCCAAGGAGTCGTCTACTTTGCTGACGATGACAACACCTACAGCCGGGAGCTGTTTGAGGAGATGCGCTGGACCCGTGGTGTCTCAGTGTGGCCTGTGGGGCTGGTGGGCGGCCTGCGATTCGAGGGCCCTCAGGTACAGGACGGCCGGGTAGTGGGCTTCCACACAGCATGGGAGCCCAGCAGGCCCTTCCCTGTGGATATGGCTGGATTTGCCGTGGCCCTGCCCTTGCTGTTAGATAAGCCCAATGCCCAATTTGATTCCACCGCTCCCCGGGGCCACCTGGAGAGCAGTCTTCTGAGCCACCTTGTGGATCCCAAGGACCTGGAGCCACGGGCTGCCAACTGCACTC-GGGTACTGGTGTGGCATACTCGGACAGAGAAGCCCAAGATGAAGCAGGAGGAGCAGCTGCAGCGGCAGGGCCGGGGCTCAGACCCAGCAATTGA",
+                  "hseq": "GGGCGCGGGCGGCGGCGCGGCCATGAAGCTGAAGCTGAAGAACGTGTTTCTCGCCTACTTCCTGGTGTCGATCGCCGGCCTCCTCTACGCGCTGGTACAGCTCGGCCAGCCATGTGACTGCCTTCCTCCCCTGCGGGCAGCAGCCGAGCAGCTACGGCAGAAGGATCTGAGGATTTCCCAGCTGCAAGCGGAACTCCGACGGCCACCCCCTGCCCCTGCCCAGCCCCCTGAACCCGAGGCCCTGCCTACTATCTATGTTGTTACCCCCACCTATGCCAGGCTGGTACAGAAGGCAGAGCTGGTACGACTGTCCCAGACACTGAGCCTGGTGCCCCGGCTGCATTGGCTGCTGGTGGAGGATGCTGAGGGTCCCACCCCGCTGGTCTCAGGGCTGCTGGCTGCCTCTGGCCTCCTCTTCACACACCTGGTGGTCCTCACGCCCAAAGCCCAGCGGCTTCGGGAGGGCGAGCCTGGCTGGGTTCATCCCCGTGGTGTCGAGCAGCGGAACAAGGCCCTGGACTGGCTCCGGGGCAGAGGGGGTGCTGTGGGTGGGGAGAAGGACCCACCACCACCAGGGACCCAAGGAGTTGTCTACTTTGCTGACGATGACAACACCTACAGCCGGGAGCTGTTTGAGGAGATGCGCTGGACCCGTGCTGTCTCAGTGTGGCCTGTGGGGCTGGTGGGCGGCCTGCGATTCGAGGGCCCTCAGGTACAGGACGGCCGGGTAGTGGGCTTCCACACAGCATGGGAGCCCAACAGGCCCTTCCCTGTGGACATGGCTGGATTTGCTGTGGCCCTGCCCTTGCTGTTAGATAAGCCCAATGCCCAATTTGATTCCACCGCTCCCCGGGGCCACCTGGAGAGCAGTCTTCTGAGCCACCTTGTGGATCCCAAGGACCTGGAGCCACGGGCTGCCAACTGCACTCGGGGTACTGGTGTGGCATACACGGACAGAGAAGCCCAAGATGAAGCAGGAGGAGCAGCTGCAGCGGCAGGGCCGGGGCTCAGACCCAGCAATTGA",
+                  "midline": "|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| |||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||"
+                }
+              ]
+            },
+            {
+              "num": 4,
+              "description": [
+                {
+                  "id": "gi|1482642080|ref|XM_023199456.2|",
+                  "accession": "XM_023199456",
+                  "title": "PREDICTED: Piliocolobus tephrosceles galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransferase 3 (LOC111532260), partial mRNA",
+                  "taxid": 591936,
+                  "sciname": "Piliocolobus tephrosceles"
+                }
+              ],
+              "len": 924,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 1127.58,
+                  "score": 610,
+                  "evalue": 0,
+                  "identity": 642,
+                  "query_from": 294,
+                  "query_to": 951,
+                  "query_strand": "Plus",
+                  "hit_from": 58,
+                  "hit_to": 715,
+                  "hit_strand": "Plus",
+                  "align_len": 658,
+                  "gaps": 0,
+                  "qseq": "CAGGCTGGTACAGAAGGCAGAGCTGGTACGACTGTCCCAGACACTGAGCCTGGTGCCCCGGCTGCATTGGCTGCTGGTGGAGGATGCTGAGGGTCCCACCCCGCTGGTCTCAGGGCTGCTGGCTGCCTCTGGCCTCCTCTTCACACACCTGGTGGTCCTCACGCCCAAAGCCCAGCGGCTTCGGGAGGGCGAGCCTGGCTGGGTTCATCCCCGTGGTGTCGAGCAGCGGAACAAGGCCCTGGACTGGCTCCGGGGCAGAGGGGGTGCTGTGGGTGGGGAGAAGGACCCACCACCACCAGGGACCCAAGGAGTCGTCTACTTTGCTGACGATGACAACACCTACAGCCGGGAGCTGTTTGAGGAGATGCGCTGGACCCGTGGTGTCTCAGTGTGGCCTGTGGGGCTGGTGGGCGGCCTGCGATTCGAGGGCCCTCAGGTACAGGACGGCCGGGTAGTGGGCTTCCACACAGCATGGGAGCCCAGCAGGCCCTTCCCTGTGGATATGGCTGGATTTGCCGTGGCCCTGCCCTTGCTGTTAGATAAGCCCAATGCCCAATTTGATTCCACCGCTCCCCGGGGCCACCTGGAGAGCAGTCTTCTGAGCCACCTTGTGGATCCCAAGGACCTGGAGCCACGGGCTGCCAACTGCACTCGGGTA",
+                  "hseq": "CAGGCTGGTACAGAAGGCAGAGCTGGTACGGCTGTCCCAGACACTGAGCCTGGTGCCCCGGCTGCATTGGCTGCTGGTGGAGGATGCTGAGAGTCCCACCCCGCTGGTCTCAGGGCTGCTGGCTGCCTCTGGTCTCCTCTTCACACACCTGGTGGTCCTCACACCCAAAGCGCAGCGGCTTAGGGAGGGCGAGCCTGGCTGGGTTCATCCCCGTGGTGTTGAGCAGCGGAACAAGGCCCTGGACTGGCTCCGGGGCAGAGGAGGTGCTGTGGGTGGGGAGAAGGACCCACCACCACCAGGGACCCAAGGAGTCGTGTACTTTGCTGACGATGACAACACCTACAGCCGGGAGCTGTTTGAGGAGATGCGCTGGACCCGTGGTGTCTCAGTGTGGCCTGTGGGGCTGGTGGGCGGCCTGCGATTTGAGGGCCCTCAGGTACAGGACGGCCGGGTAGTAGGCTTCCACACAGCATGGGAGCCCAACAGGCCCTTCCCTGTGGATATGGCTGGATTTGCTGTGGCCCTGCCCTTGCTGTTAGCTAAGCCCAATGCCCAGTTTGATTCCACTGCTCCCCGGGGCCACCTGGAGAGCAGTCTTCTGAGCCACCTTGTGGATCCCAAGGACCTGGAGCCACGGGCTGCCAACTGCACTCGGGTA",
+                  "midline": "|||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||| |||||||| ||||||||| ||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||||| ||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||| |||||||||||||||||||||| ||||||||||||||| ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||"
+                }
+              ]
+            },
+            {
+              "num": 5,
+              "description": [
+                {
+                  "id": "gi|1482635662|ref|XM_023189447.2|",
+                  "accession": "XM_023189447",
+                  "title": "PREDICTED: Piliocolobus tephrosceles galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransferase 3 (LOC111524301), transcript variant X2, mRNA",
+                  "taxid": 591936,
+                  "sciname": "Piliocolobus tephrosceles"
+                }
+              ],
+              "len": 1314,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 534.802,
+                  "score": 289,
+                  "evalue": 3.60493e-149,
+                  "identity": 293,
+                  "query_from": 3,
+                  "query_to": 297,
+                  "query_strand": "Plus",
+                  "hit_from": 741,
+                  "hit_to": 1035,
+                  "hit_strand": "Plus",
+                  "align_len": 295,
+                  "gaps": 0,
+                  "qseq": "AGACCCCGCCTGCTCGGGCGCGGGCGGCGGCGCGGCCATGAAGCTGAAGCTGAAGAACGTGTTTCTCGCCTACTTCCTGGTGTCGATCGCCGGCCTCCTCTACGCGCTGGTACAGCTCGGCCAGCCATGTGACTGCCTTCCTCCCCTGCGGGCAGCAGCCGAGCAGCTACGGCAGAAGGATCTGAGGATTTCCCAGCTGCAAGCGGAACTCCGACGGCCAccccctgcccctgcccagccccctgaacccgaggccctgcctACTATCTATGTTGTTACCCCCACCTATGCCAGG",
+                  "hseq": "AGACCCCGCCTGCTCGGGCGCGGGCGGCGGCGCGGCCATGAAGCTGAAGCTGAAGAACGTGTTTCTCGCCTACTTCCTGGTGTCGATCGCTGGCCTCCTCTACGCGCTGGTACAGCTCGGCCAGCCATGTGACTGCCTTCCTCCCCTGCGGGCAGCAGCCGAGCAGCTACGGCAGAAGGATCTGAGGATTTCGCAGCTGCAAGCGGAACTCCGACGGCCACCCCCTGCCCCTGCCCAGCCCCCTGAACCCGAGGCCCTGCCTACTATCTATGTTGTTACCCCCACCTATGCCAGG",
+                  "midline": "|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||"
+                }
+              ]
+            },
+            {
+              "num": 6,
+              "description": [
+                {
+                  "id": "gi|1297719092|ref|XM_023189446.1|",
+                  "accession": "XM_023189446",
+                  "title": "PREDICTED: Piliocolobus tephrosceles galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransferase 3 (LOC111524301), transcript variant X1, mRNA",
+                  "taxid": 591936,
+                  "sciname": "Piliocolobus tephrosceles"
+                }
+              ],
+              "len": 1388,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 322.437,
+                  "score": 174,
+                  "evalue": 3.05523e-85,
+                  "identity": 179,
+                  "query_from": 118,
+                  "query_to": 297,
+                  "query_strand": "Plus",
+                  "hit_from": 929,
+                  "hit_to": 1109,
+                  "hit_strand": "Plus",
+                  "align_len": 181,
+                  "gaps": 1,
+                  "qseq": "CTC-GGCCAGCCATGTGACTGCCTTCCTCCCCTGCGGGCAGCAGCCGAGCAGCTACGGCAGAAGGATCTGAGGATTTCCCAGCTGCAAGCGGAACTCCGACGGCCAccccctgcccctgcccagccccctgaacccgaggccctgcctACTATCTATGTTGTTACCCCCACCTATGCCAGG",
+                  "hseq": "CTCAGGCCAGCCATGTGACTGCCTTCCTCCCCTGCGGGCAGCAGCCGAGCAGCTACGGCAGAAGGATCTGAGGATTTCGCAGCTGCAAGCGGAACTCCGACGGCCACCCCCTGCCCCTGCCCAGCCCCCTGAACCCGAGGCCCTGCCTACTATCTATGTTGTTACCCCCACCTATGCCAGG",
+                  "midline": "||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||"
+                },
+                {
+                  "num": 2,
+                  "bit_score": 215.332,
+                  "score": 116,
+                  "evalue": 5.33417e-53,
+                  "identity": 121,
+                  "query_from": 3,
+                  "query_to": 125,
+                  "query_strand": "Plus",
+                  "hit_from": 746,
+                  "hit_to": 867,
+                  "hit_strand": "Plus",
+                  "align_len": 123,
+                  "gaps": 1,
+                  "qseq": "AGACCCCGCCTGCTCGGGCGCGGGCGGCGGCGCGGCCATGAAGCTGAAGCTGAAGAACGTGTTTCTCGCCTACTTCCTGGTGTCGATCGCCGGCCTCCTCTACGCGCTGGTACAGCTCGGCCA",
+                  "hseq": "AGACCCCGCCTGCTCGGGCGCGGGCGGCGGCGCGGCCATGAAGCTGAAGCTGAAGAACGTGTTTCTCGCCTACTTCCTGGTGTCGATCGCTGGCCTCCTCTACGCGCTGGTACAGCTCG-CCA",
+                  "midline": "|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||| |||"
+                }
+              ]
+            },
+            {
+              "num": 7,
+              "description": [
+                {
+                  "id": "gi|1482635664|ref|XR_003307747.1|",
+                  "accession": "XR_003307747",
+                  "title": "PREDICTED: Piliocolobus tephrosceles galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransferase 3 (LOC111524301), transcript variant X4, misc_RNA",
+                  "taxid": 591936,
+                  "sciname": "Piliocolobus tephrosceles"
+                }
+              ],
+              "len": 488,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 248.571,
+                  "score": 134,
+                  "evalue": 5.25923e-63,
+                  "identity": 139,
+                  "query_from": 118,
+                  "query_to": 257,
+                  "query_strand": "Plus",
+                  "hit_from": 348,
+                  "hit_to": 488,
+                  "hit_strand": "Plus",
+                  "align_len": 141,
+                  "gaps": 1,
+                  "qseq": "CTC-GGCCAGCCATGTGACTGCCTTCCTCCCCTGCGGGCAGCAGCCGAGCAGCTACGGCAGAAGGATCTGAGGATTTCCCAGCTGCAAGCGGAACTCCGACGGCCAccccctgcccctgcccagccccctgaacccgaggc",
+                  "hseq": "CTCAGGCCAGCCATGTGACTGCCTTCCTCCCCTGCGGGCAGCAGCCGAGCAGCTACGGCAGAAGGATCTGAGGATTTCGCAGCTGCAAGCGGAACTCCGACGGCCACCCCCTGCCCCTGCCCAGCCCCCTGAACCCGAGGC",
+                  "midline": "||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||"
+                },
+                {
+                  "num": 2,
+                  "bit_score": 196.865,
+                  "score": 106,
+                  "evalue": 1.93213e-47,
+                  "identity": 108,
+                  "query_from": 3,
+                  "query_to": 111,
+                  "query_strand": "Plus",
+                  "hit_from": 5,
+                  "hit_to": 113,
+                  "hit_strand": "Plus",
+                  "align_len": 109,
+                  "gaps": 0,
+                  "qseq": "AGACCCCGCCTGCTCGGGCGCGGGCGGCGGCGCGGCCATGAAGCTGAAGCTGAAGAACGTGTTTCTCGCCTACTTCCTGGTGTCGATCGCCGGCCTCCTCTACGCGCTG",
+                  "hseq": "AGACCCCGCCTGCTCGGGCGCGGGCGGCGGCGCGGCCATGAAGCTGAAGCTGAAGAACGTGTTTCTCGCCTACTTCCTGGTGTCGATCGCTGGCCTCCTCTACGCGCTG",
+                  "midline": "|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||"
+                }
+              ]
+            },
+            {
+              "num": 8,
+              "description": [
+                {
+                  "id": "gi|1482635663|ref|XR_003307746.1|",
+                  "accession": "XR_003307746",
+                  "title": "PREDICTED: Piliocolobus tephrosceles galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransferase 3 (LOC111524301), transcript variant X3, misc_RNA",
+                  "taxid": 591936,
+                  "sciname": "Piliocolobus tephrosceles"
+                }
+              ],
+              "len": 1017,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 248.571,
+                  "score": 134,
+                  "evalue": 5.25923e-63,
+                  "identity": 139,
+                  "query_from": 118,
+                  "query_to": 257,
+                  "query_strand": "Plus",
+                  "hit_from": 877,
+                  "hit_to": 1017,
+                  "hit_strand": "Plus",
+                  "align_len": 141,
+                  "gaps": 1,
+                  "qseq": "CTC-GGCCAGCCATGTGACTGCCTTCCTCCCCTGCGGGCAGCAGCCGAGCAGCTACGGCAGAAGGATCTGAGGATTTCCCAGCTGCAAGCGGAACTCCGACGGCCAccccctgcccctgcccagccccctgaacccgaggc",
+                  "hseq": "CTCAGGCCAGCCATGTGACTGCCTTCCTCCCCTGCGGGCAGCAGCCGAGCAGCTACGGCAGAAGGATCTGAGGATTTCGCAGCTGCAAGCGGAACTCCGACGGCCACCCCCTGCCCCTGCCCAGCCCCCTGAACCCGAGGC",
+                  "midline": "||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||"
+                }
+              ]
+            },
+            {
+              "num": 9,
+              "description": [
+                {
+                  "id": "gi|1121888182|ref|XM_019547038.1|",
+                  "accession": "XM_019547038",
+                  "title": "PREDICTED: Crocodylus porosus beta-1,3-glucuronyltransferase 1 (B3GAT1), transcript variant X4, mRNA",
+                  "taxid": 8502,
+                  "sciname": "Crocodylus porosus"
+                }
+              ],
+              "len": 5248,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 98.9927,
+                  "score": 53,
+                  "evalue": 5.60498e-18,
+                  "identity": 96,
+                  "query_from": 597,
+                  "query_to": 713,
+                  "query_strand": "Plus",
+                  "hit_from": 747,
+                  "hit_to": 862,
+                  "hit_strand": "Plus",
+                  "align_len": 117,
+                  "gaps": 1,
+                  "qseq": "CCAAGGAGTCGTCTACTTTGCTGACGATGACAACACCTACAGCCGGGAGCTGTTTGAGGAGATGCGCTGGACCCGTGGTGTCTCAGTGTGGCCTGTGGGGCTGGTGGGCGGCCTGCG",
+                  "hseq": "CCAGGGA-TTGTGTACTTTGCTGACGATGACAACACCTACAGCCTGGAGCTCTTTGAGGAGATGCGCACGACCAGGAAGGTGTCAGTGTGGCCGGTGGCCTTTGTGGGTGGCTTGCG",
+                  "midline": "||| ||| | || ||||||||||||||||||||||||||||||| |||||| |||||||||||||||  |||| |    || ||||||||||| ||||   | ||||| ||| ||||"
+                }
+              ]
+            },
+            {
+              "num": 10,
+              "description": [
+                {
+                  "id": "gi|1121888180|ref|XM_019547036.1|",
+                  "accession": "XM_019547036",
+                  "title": "PREDICTED: Crocodylus porosus beta-1,3-glucuronyltransferase 1 (B3GAT1), transcript variant X3, mRNA",
+                  "taxid": 8502,
+                  "sciname": "Crocodylus porosus"
+                }
+              ],
+              "len": 5438,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 98.9927,
+                  "score": 53,
+                  "evalue": 5.60498e-18,
+                  "identity": 96,
+                  "query_from": 597,
+                  "query_to": 713,
+                  "query_strand": "Plus",
+                  "hit_from": 937,
+                  "hit_to": 1052,
+                  "hit_strand": "Plus",
+                  "align_len": 117,
+                  "gaps": 1,
+                  "qseq": "CCAAGGAGTCGTCTACTTTGCTGACGATGACAACACCTACAGCCGGGAGCTGTTTGAGGAGATGCGCTGGACCCGTGGTGTCTCAGTGTGGCCTGTGGGGCTGGTGGGCGGCCTGCG",
+                  "hseq": "CCAGGGA-TTGTGTACTTTGCTGACGATGACAACACCTACAGCCTGGAGCTCTTTGAGGAGATGCGCACGACCAGGAAGGTGTCAGTGTGGCCGGTGGCCTTTGTGGGTGGCTTGCG",
+                  "midline": "||| ||| | || ||||||||||||||||||||||||||||||| |||||| |||||||||||||||  |||| |    || ||||||||||| ||||   | ||||| ||| ||||"
+                }
+              ]
+            },
+            {
+              "num": 11,
+              "description": [
+                {
+                  "id": "gi|1121888177|ref|XM_019547035.1|",
+                  "accession": "XM_019547035",
+                  "title": "PREDICTED: Crocodylus porosus beta-1,3-glucuronyltransferase 1 (B3GAT1), transcript variant X2, mRNA",
+                  "taxid": 8502,
+                  "sciname": "Crocodylus porosus"
+                }
+              ],
+              "len": 5602,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 98.9927,
+                  "score": 53,
+                  "evalue": 5.60498e-18,
+                  "identity": 96,
+                  "query_from": 597,
+                  "query_to": 713,
+                  "query_strand": "Plus",
+                  "hit_from": 1101,
+                  "hit_to": 1216,
+                  "hit_strand": "Plus",
+                  "align_len": 117,
+                  "gaps": 1,
+                  "qseq": "CCAAGGAGTCGTCTACTTTGCTGACGATGACAACACCTACAGCCGGGAGCTGTTTGAGGAGATGCGCTGGACCCGTGGTGTCTCAGTGTGGCCTGTGGGGCTGGTGGGCGGCCTGCG",
+                  "hseq": "CCAGGGA-TTGTGTACTTTGCTGACGATGACAACACCTACAGCCTGGAGCTCTTTGAGGAGATGCGCACGACCAGGAAGGTGTCAGTGTGGCCGGTGGCCTTTGTGGGTGGCTTGCG",
+                  "midline": "||| ||| | || ||||||||||||||||||||||||||||||| |||||| |||||||||||||||  |||| |    || ||||||||||| ||||   | ||||| ||| ||||"
+                }
+              ]
+            },
+            {
+              "num": 12,
+              "description": [
+                {
+                  "id": "gi|1121888173|ref|XM_019547034.1|",
+                  "accession": "XM_019547034",
+                  "title": "PREDICTED: Crocodylus porosus beta-1,3-glucuronyltransferase 1 (B3GAT1), transcript variant X1, mRNA",
+                  "taxid": 8502,
+                  "sciname": "Crocodylus porosus"
+                }
+              ],
+              "len": 5585,
+              "hsps": [
+                {
+                  "num": 1,
+                  "bit_score": 98.9927,
+                  "score": 53,
+                  "evalue": 5.60498e-18,
+                  "identity": 96,
+                  "query_from": 597,
+                  "query_to": 713,
+                  "query_strand": "Plus",
+                  "hit_from": 1084,
+                  "hit_to": 1199,
+                  "hit_strand": "Plus",
+                  "align_len": 117,
+                  "gaps": 1,
+                  "qseq": "CCAAGGAGTCGTCTACTTTGCTGACGATGACAACACCTACAGCCGGGAGCTGTTTGAGGAGATGCGCTGGACCCGTGGTGTCTCAGTGTGGCCTGTGGGGCTGGTGGGCGGCCTGCG",
+                  "hseq": "CCAGGGA-TTGTGTACTTTGCTGACGATGACAACACCTACAGCCTGGAGCTCTTTGAGGAGATGCGCACGACCAGGAAGGTGTCAGTGTGGCCGGTGGCCTTTGTGGGTGGCTTGCG",
+                  "midline": "||| ||| | || ||||||||||||||||||||||||||||||| |||||| |||||||||||||||  |||| |    || ||||||||||| ||||   | ||||| ||| ||||"
+                }
+              ]
+            }
+          ],
+          "stat": {
+            "db_num": 55358024,
+            "db_len": 253052128426,
+            "hsp_len": 30,
+            "eff_space": 3534708114036,
+            "kappa": 0.46,
+            "lambda": 1.28,
+            "entropy": 0.85
+          }
+        }
+      }
+    }
+  }
+]
+}
+
