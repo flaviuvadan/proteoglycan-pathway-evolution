@@ -31,3 +31,8 @@ class SpeciesRequestException(PGException):
 class ProjectedBuildOrganismException(PGException):
     """ An exception used for indicating an organism has a projected built genome in Ensembl """
     pass
+
+
+class BlastDictionaryAccessException(PGException):
+    """ An exception used for indicating that a BLAST dictionary does not have something stored at a passed key """
+    pas
