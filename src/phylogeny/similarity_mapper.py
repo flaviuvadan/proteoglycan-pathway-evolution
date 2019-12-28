@@ -1,5 +1,7 @@
 import os
 
+import ete3 as ete
+
 
 class Mapper:
     """ Responsible for finding similarities between phylogenetic trees and creating visualizations for the results """
@@ -7,7 +9,10 @@ class Mapper:
     GENE_IDX = 0
     ORGANISMS_IDX = 1
 
-    SIMILARITY_THRESHOLD = 0.85
+    GENUS_IDX = 0
+    SPECIES_IDX = 1
+
+    SIMILARITY_THRESHOLD = 0.80
 
     def __init__(self):
         self.genes_organisms = self._load_tree_data()
@@ -80,10 +85,59 @@ class Mapper:
                 new_trees.append((gene, set(orgs)))
         return new_trees
 
+    def _visualise_similarity_tree(self, newick_info, gene, organisms):
+        """
+        Creates the radial gene tree of each gene
+        :param newick_info - newick-formatted tree representation
+        :param gene - gene name
+        :param organisms - list of organisms that contain the given gene
+        """
+        t = ete.Tree(newick_info, format=1)
+
+        ts = ete.TreeStyle()
+        ts.show_leaf_name = True
+        ts.mode = 'c'
+        ts.arc_span = 360
+        ts.force_topology = True
+        ts.title.add_face(ete.TextFace(gene, fsize=150, bold=True), column=0)
+        ts.show_leaf_name = False
+        ts.show_scale = False
+
+        ns = ete.NodeStyle()
+        ns["hz_line_type"], ns["vt_line_type"] = 0, 0
+        ns["hz_line_color"], ns["vt_line_color"] = "black", "black"
+        ns["hz_line_width"], ns["vt_line_width"] = 1, 1
+
+        for node in t.traverse():
+            node.set_style(ns)
+            if node.is_leaf():
+                split_node_name = node.name.strip("'").split()
+                genus_species = " ".join([split_node_name[self.GENUS_IDX], split_node_name[self.SPECIES_IDX]])
+                found_in_orgs = False
+                for org in organisms:
+                    if genus_species.lower() in org.lower():
+                        found_in_orgs = True
+                        break
+                if found_in_orgs:
+                    node_face = ete.TextFace(node.name.strip("'"), fsize=60, penwidth=10)
+                    node.add_face(node_face, 1)
+                else:
+                    node_face = ete.TextFace(node.name.strip("'"), fsize=55, penwidth=10, fgcolor="blue")
+                    node.add_face(node_face, 1)
+        file_name = "_".join(gene.split("/"))
+        destination = os.path.join(os.getcwd(), "src", "data", "visualizations", "phylogeny", "similarity",
+                                   "{}.pdf".format(file_name))
+        t.render(destination, tree_style=ts)
+
     def visualize_trees(self):
+        """ Creates radial trees for visualising similar, combined, trees """
         similarity_trees = self._create_similarity_trees()
-        for st in similarity_trees:
-            print("{}\n{}".format(st[0], st[1]))
+        path_to_newick = os.path.join(os.getcwd(), "src", "data", "phylogeny", "all_orgs_phyliptree.phy")
+        with open(path_to_newick, "r") as f:
+            newick_info = f.read()
+            for idx, tree in enumerate(similarity_trees):
+                gene, orgs = tree[self.GENE_IDX], tree[self.ORGANISMS_IDX]
+                self._visualise_similarity_tree(newick_info, gene, orgs)
 
 
 if __name__ == "__main__":
