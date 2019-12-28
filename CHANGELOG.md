@@ -2,6 +2,8 @@
 
 ## Dec 27th, 2019
 - add more taxonomic details to the significant organisms phylogenetic tree
+- performed a comparison against BLAST of organisms that are reported to not have a gene
+- implemented a parser for the JSON files of the BLAST comparison
 
 ## Dec 26th, 2019
 - chose and added a subset of the organisms that represent the classes of bones/cartilage for the study
