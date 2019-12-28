@@ -2,6 +2,7 @@
 
 ## Dec 28th, 2019
 - implemented the similarity mapper (uses Jaccard's index for similarity)
+- implemented tree visualization for tree similarities 
 
 ## Dec 27th, 2019
 - add more taxonomic details to the significant organisms phylogenetic tree
