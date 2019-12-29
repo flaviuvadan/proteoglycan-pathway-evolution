@@ -1,5 +1,6 @@
 import os
 
+import numpy
 from rpy2 import robjects
 from rpy2.robjects import packages, vectors
 
@@ -18,6 +19,10 @@ class Visualizer:
         self.significant_orgs = self._get_significant_orgs()
         self.get_dnds = self._setup_R_access()
         self.scores = self._get_dnds_scores()
+
+    def _create_heatmap_csv(self):
+        """ Creates a heatmap CSV file for visualizing the results """
+        pass
 
     def _setup_R_access(self):
         """ Sets up the necessary R components such as libs and functions """
@@ -99,13 +104,13 @@ class Visualizer:
                             continue
                         seq1_clean, seq2_clean = self._clean_sequence(seq1, seq2)
                         try:
-                            score = self.get_dnds(seq1_clean, seq2_clean)
-                            final[org1][org2][gene] = round(score[0], 3)  # results come back as vectors
+                            score = self.get_dnds(seq1_clean, seq2_clean)[0]  # results come back as vectors
+                            # placing a 1 for neutrality when we get NaNs, based on docs, the sequences should be
+                            # highly divergent but don't know for sure, safer to place in neutral, might change
+                            # mind though...
+                            final[org1][org2][gene] = round(score, 3) if not numpy.isnan(score) else 1
                         except Exception:
                             final[org1][org2][gene] = 0
-                        # print("computed dnds for {} and {}, gene {}".format(org1, org2, gene))
-                        # print("seq org1: {}".format(seq1_clean))
-                        # print("seq org2: {}".format(seq2_clean))
             return final
 
     def _clean_sequence(self, seq1, seq2):
