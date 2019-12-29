@@ -3,6 +3,10 @@
 ## Dec 28th, 2019
 - implemented the similarity mapper (uses Jaccard's index for similarity)
 - implemented tree visualization for tree similarities 
+- reimplemented the dnds package, turns out the dnds library does not work properly, will have to use the 
+`ape` package in R (has 35 citations), turn the dnds package into a parsing and visualizing package, and
+construct a pipe that calls the parsing script, calls R on the resulting files, then visualizes the dnds results
+computed by the R `ape` package
 
 ## Dec 27th, 2019
 - add more taxonomic details to the significant organisms phylogenetic tree
