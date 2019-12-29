@@ -1,8 +1,11 @@
 import os
 
-import numpy
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
 from rpy2 import robjects
 from rpy2.robjects import packages, vectors
+import seaborn as sn
 
 
 class Visualizer:
@@ -19,10 +22,25 @@ class Visualizer:
         self.significant_orgs = self._get_significant_orgs()
         self.get_dnds = self._setup_R_access()
         self.scores = self._get_dnds_scores()
+        self._create_heatmap_csv()
 
     def _create_heatmap_csv(self):
         """ Creates a heatmap CSV file for visualizing the results """
-        pass
+        for sig_org in self.scores.keys():
+            sig_org_file_path = os.path.join(os.getcwd(), "src", "data", "dnds", "{}.csv".format(sig_org))
+            with open(sig_org_file_path, "w") as sof:
+                header = "organism,"
+                # each org will have itself in the dnds dictionary
+                # we only want this to build the header once
+                for k in self.scores[sig_org][sig_org].keys():
+                    header += "{},".format(k)
+                header = header[:len(header) - 1]  # remove the last ","
+                header += "\n"
+                sof.write(header)
+                for org in self.scores[sig_org].keys():
+                    vals = ",".join([str(x) for x in self.scores[sig_org][org].values()])
+                    line = "{},{}\n".format(org, vals)
+                    sof.write(line)
 
     def _setup_R_access(self):
         """ Sets up the necessary R components such as libs and functions """
@@ -108,10 +126,10 @@ class Visualizer:
                             # placing a 1 for neutrality when we get NaNs, based on docs, the sequences should be
                             # highly divergent but don't know for sure, safer to place in neutral, might change
                             # mind though...
-                            final[org1][org2][gene] = round(score, 3) if not numpy.isnan(score) else 1
+                            final[org1][org2][gene] = round(score, 2) if not np.isnan(score) else 1
                         except Exception:
                             final[org1][org2][gene] = 0
-            return final
+        return final
 
     def _clean_sequence(self, seq1, seq2):
         """
@@ -144,20 +162,32 @@ class Visualizer:
 
     def visualize(self):
         """ Creates the 2D dn/ds plots for each gene """
-        for k1 in self.alignments.keys():
-            for k2 in self.alignments.get(k1).keys():
-                print("{} -- {}".format(k1, k2))
-                print(self.alignments.get(k1).get(k2))
-            break
+        for sig_org in self.scores.keys():
+            sig_org_csv = os.path.join(os.getcwd(), "src", "data", "dnds", "{}.csv".format(sig_org))
+            df = pd.read_csv(sig_org_csv)
+            x_vals = df.columns[1:]
+            y_vals = df.organism
+            y_vals_clean = [" ".join(y.split("_")).capitalize() for y in y_vals]
+            df = df.drop(columns="organism")
+            plt.figure(figsize=(20, 20))
+            plt.title("{} DN/DS ratios".format(" ".join(sig_org.split("_")).capitalize()), fontsize=30)
+            plt.xticks(range(len(x_vals)), x_vals,
+                       rotation=45)
+            plt.yticks(range(len(y_vals_clean)), y_vals_clean,
+                       rotation=45)
+            sn.heatmap(df,
+                       cbar=True,
+                       xticklabels=x_vals,
+                       yticklabels=y_vals_clean,
+                       cmap="YlGnBu",
+                       fmt="f",
+                       linewidths=0.5)
+            save_fig_path = os.path.join(os.getcwd(), "src", "data", "visualizations", "dnds", "{}.pdf".format(sig_org))
+            plt.savefig(save_fig_path,
+                        quality=95,
+                        bbox_inches='tight')
 
 
 if __name__ == "__main__":
     visualizer = Visualizer()
-    hs = visualizer.scores.get("homo_sapiens")
-    print("homo_sapiens")
-    for h in hs:
-        print("{} | {}".format(h, hs.get(h)))
-    # aligns = visualizer.alignments.get("Fam20c")
-    # for k, v in aligns.items():
-    #     print("{} | {}".format(k, v))
-    # visualizer.visualize()
+    visualizer.visualize()
