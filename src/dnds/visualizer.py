@@ -9,10 +9,26 @@ class Visualizer:
 
     GENE_NAME_IDX = 0
 
+    ORG_CLASS_IDX = 0
+    ORG_NAME_IDX = 1
+
     def __init__(self):
         """ Constructor """
         self.alignments = self._parse_organisms_alignments()
-        # self.dnds_dataframes, self.error_log = self._get_gene_dnds_dataframes()
+        self.significant_orgs = self._get_significant_orgs()
+        self.scores = self._get_dnds_scores()
+
+    def _get_significant_orgs(self):
+        """ Reads in the significant organisms selected for this study """
+        orgs = {}
+        path = os.path.join(os.getcwd(), "src", "data", "phylogeny", "significant_organisms.txt")
+        with open(path, "r") as f:
+            f.readline()  # don't care about the top line
+            for line in f.readlines():
+                org_name = line.split(",")[self.ORG_NAME_IDX]
+                org = "_".join(org_name.lower().split())
+                orgs[org] = 1
+        return orgs
 
     def _parse_organisms_alignments(self):
         """ Reads in the organisms alignments """
@@ -35,48 +51,67 @@ class Visualizer:
                         alignments[gene_name][org] = alignments[gene_name][org] + line.strip()
         return alignments
 
-    def _get_gene_dnds_dataframes(self):
-        """ Builds and returns a list of dataframes that contain the dn/ds scores of each gene """
-        dfs = {}
-        went_wrong = []
-        for gene_key in self.alignments.keys():
-            gene = self.alignments.get(gene_key)
-            dfs[gene_key] = pd.DataFrame(index=list(gene.keys()), columns=list(gene.keys()))
-            for org_1 in gene.keys():
-                for org_2 in gene.keys():
-                    org_1_seq, org_2_seq = gene.get(org_1), gene.get(org_2)
-                    if org_1_seq == org_2_seq:
-                        orgs_dnds = 0
-                    elif self._contains_illegal_letters(org_1_seq) or self._contains_illegal_letters(org_2_seq):
-                        msg = "gene: {}, org1: {}, org2: {}, exception: {}".format(gene_key, org_1, org_2,
-                                                                                   "illegal characters")
-                        orgs_dnds = 0
+    def _get_dnds_scores(self):
+        """ Computes and returns a dictionary of all the dnds scores for each pair of organisms for a gene """
+        final = {}
+        # dnds < 1 = negative selection, dnds == 1 = neutral, dnds > 1 = positive selection
+        for org1 in self.significant_orgs.keys():
+            for org2 in self.significant_orgs.keys():
+                for gene in self.alignments.keys():
+                    if not final.get(org1):
+                        final[org1] = {}
+                    if not final.get(org1).get(org2):
+                        final[org1][org2] = {}
+                    if org1 == org2:
+                        final[org1][org2][gene] = 1  # neutral for the same organism
                     else:
-                        org_1_seq_list = list(org_1_seq)
-                        org_2_seq_list = list(org_2_seq)
-                        # expect these to be equal because of the MSA
-                        assert (len(org_1_seq_list) == len(org_2_seq_list))
-                        for i in range(len(org_1_seq_list)):
-                            if org_1_seq_list[i] == "-" or org_2_seq_list[i] == "-":
-                                org_1_seq_list[i], org_2_seq_list[i] = "*", "*"
-                        # these should have the same modulo remainder
-                        org_1_seq = "".join(org_1_seq_list).replace("*", "")
-                        org_2_seq = "".join(org_2_seq_list).replace("*", "")
-                        if len(org_1_seq) % 3 != 0:
-                            org_1_seq = org_1_seq[:-(len(org_1_seq) % 3)]
-                        if len(org_2_seq) % 3 != 0:
-                            org_2_seq = org_2_seq[:-(len(org_2_seq) % 3)]
-                        assert (len(org_1_seq) == len(org_2_seq))
+                        alignment = self.alignments.get(gene)
+                        seq1 = alignment.get(org1)
+                        seq2 = alignment.get(org2)
+                        if not seq1 or not seq2:
+                            final[org1][org2][gene] = 1
+                            # in this case, one of the organisms does not have a gene
+                            # assume the score is 1 for neutrality
+                            continue
+                        seq1_clean, seq2_clean = self._clean_sequence(seq1, seq2)
                         try:
-                            orgs_dnds = dnds.dnds(org_1_seq, org_2_seq)
-                        # a bunch of shit can go wrong..
-                        except Exception as e:
-                            msg = "gene: {}, org1: {}, org2: {}, exception: {}".format(gene_key, org_1, org_2, e)
-                            went_wrong.append(msg)
-                            orgs_dnds = 0
-                    dfs[gene_key][org_1][org_2] = orgs_dnds
-            break
-        return dfs, went_wrong
+                            score = dnds.dnds(seq1_clean, seq2_clean)
+                            final[org1][org2][gene] = score
+                        except Exception:
+                            final[org1][org2][gene] = 0
+                        print("computed dnds for {} and {}, gene {}".format(org1, org2, gene))
+                        print("seq org1: {}".format(seq1_clean))
+                        print("seq org2: {}".format(seq2_clean))
+            return final
+
+    def _clean_sequence(self, seq1, seq2):
+        """
+        Cleans the given pair of sequences such that dnds can be computed
+        :param str seq1: first sequence to clean
+        :param str seq2: second sequence to clean
+        """
+        assert (len(seq1) == len(seq2))
+        l_seq1 = list(seq1)
+        l_seq2 = list(seq2)
+        for i in range(len(l_seq1)):  # or whatever
+            if l_seq1[i] == "-" or l_seq2[i] == "-":
+                # mark characters for removal, this is necessary as strings are immutable
+                l_seq1[i], l_seq2[i] = "@", "@"
+        seq1, seq2 = "".join(l_seq1).replace("@", ""), "".join(l_seq2).replace("@", "")
+
+        trim_len = min(len(seq1), len(seq2))
+        seq1_trimmed = seq1[:trim_len]
+        seq2_trimmed = seq2[:trim_len]
+
+        seq1_remainder = len(seq1_trimmed) % 3
+        if not seq1_remainder == 0:
+            seq1_trimmed = seq1_trimmed[:len(seq1_trimmed) - seq1_remainder]
+
+        # these should be equal remainder-wise...
+        seq2_remainder = len(seq2_trimmed) % 3
+        if not seq2_remainder == 0:
+            seq2_trimmed = seq2_trimmed[:len(seq2_trimmed) - seq2_remainder]
+        return seq1_trimmed, seq2_trimmed
 
     def _contains_illegal_letters(self, seq):
         """ Check whether a given sequence contains non-ATCG letters (IUPAC accepted but cannot compute dn/ds with
@@ -98,11 +133,11 @@ class Visualizer:
 
 if __name__ == "__main__":
     visualizer = Visualizer()
-    for k in visualizer.alignments.keys():
-        algns = visualizer.alignments.get(k)
-        for a in algns.values():
-            print(a)
-        break
-    # for err in visualizer.error_log:
-    #     print(err)
+    hs = visualizer.scores.get("homo_sapiens")
+    print("homo_sapiens")
+    for h in hs:
+        print("{} | {}".format(h, hs.get(h)))
+    # aligns = visualizer.alignments.get("Fam20c")
+    # for k, v in aligns.items():
+    #     print("{} | {}".format(k, v))
     # visualizer.visualize()
