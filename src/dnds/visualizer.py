@@ -1,7 +1,7 @@
 import os
 
-import dnds
-import pandas as pd
+from rpy2 import robjects
+from rpy2.robjects import packages, vectors
 
 
 class Visualizer:
@@ -16,7 +16,31 @@ class Visualizer:
         """ Constructor """
         self.alignments = self._parse_organisms_alignments()
         self.significant_orgs = self._get_significant_orgs()
+        self.get_dnds = self._setup_R_access()
         self.scores = self._get_dnds_scores()
+
+    def _setup_R_access(self):
+        """ Sets up the necessary R components such as libs and functions """
+        utils = packages.importr('utils')
+        # select a mirror for R packages
+        utils.chooseCRANmirror(ind=1)  # select the first mirror in the list
+        # R package names
+        packnames = ['ape']
+        names_to_install = [x for x in packnames if not packages.isinstalled(x)]
+        if len(names_to_install) > 0:
+            utils.install_packages(vectors.StrVector(names_to_install))
+        robjects.r(
+            '''
+            # function to compute the DN/DS ratio of two sequences
+            library(ape)
+            get_dnds = function(seq1, seq2) {
+                mtx = c(strsplit(seq1, ""), strsplit(seq2, ""))
+                bin = as.DNAbin(mtx)
+                dnds(bin)
+            }
+            '''
+        )
+        return robjects.r['get_dnds']
 
     def _get_significant_orgs(self):
         """ Reads in the significant organisms selected for this study """
@@ -75,13 +99,13 @@ class Visualizer:
                             continue
                         seq1_clean, seq2_clean = self._clean_sequence(seq1, seq2)
                         try:
-                            score = dnds.dnds(seq1_clean, seq2_clean)
-                            final[org1][org2][gene] = score
+                            score = self.get_dnds(seq1_clean, seq2_clean)
+                            final[org1][org2][gene] = round(score[0], 3)  # results come back as vectors
                         except Exception:
                             final[org1][org2][gene] = 0
-                        print("computed dnds for {} and {}, gene {}".format(org1, org2, gene))
-                        print("seq org1: {}".format(seq1_clean))
-                        print("seq org2: {}".format(seq2_clean))
+                        # print("computed dnds for {} and {}, gene {}".format(org1, org2, gene))
+                        # print("seq org1: {}".format(seq1_clean))
+                        # print("seq org2: {}".format(seq2_clean))
             return final
 
     def _clean_sequence(self, seq1, seq2):
@@ -112,15 +136,6 @@ class Visualizer:
         if not seq2_remainder == 0:
             seq2_trimmed = seq2_trimmed[:len(seq2_trimmed) - seq2_remainder]
         return seq1_trimmed, seq2_trimmed
-
-    def _contains_illegal_letters(self, seq):
-        """ Check whether a given sequence contains non-ATCG letters (IUPAC accepted but cannot compute dn/ds with
-        those) """
-        unaccepted = ["W", "S", "M", "K", "R", "Y", "B", "D", "H", "V", "N", "Z"]
-        for u in unaccepted:
-            if u in seq:
-                return True
-        return False
 
     def visualize(self):
         """ Creates the 2D dn/ds plots for each gene """
