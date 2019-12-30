@@ -4,6 +4,7 @@
 - implemented the rest of the dnds visualizer
 - fixed the dnds package (inconsistent naming of organisms between alignments and dnds was causing dnds scores to look 
 odd)
+- implemented a distribution visualization for the dN/dS values of all the significant organisms
 
 ## Dec 28th, 2019
 - implemented the similarity mapper (uses Jaccard's index for similarity)
