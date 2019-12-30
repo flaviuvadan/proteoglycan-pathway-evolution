@@ -2,6 +2,8 @@
 
 ## Dec 29th, 2019
 - implemented the rest of the dnds visualizer
+- fixed the dnds package (inconsistent naming of organisms between alignments and dnds was causing dnds scores to look 
+odd)
 
 ## Dec 28th, 2019
 - implemented the similarity mapper (uses Jaccard's index for similarity)
