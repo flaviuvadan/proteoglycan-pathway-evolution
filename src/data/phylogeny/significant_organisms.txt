@@ -1,13 +1,13 @@
 Class,Chosen organism
 Mammalia,Homo Sapiens
 Actinopterygii,Danio Rerio
-Archelosauria,Anas Platyrhynchos
+Archelosauria,Anas Platyrhynchos Platyrhynchos
 Lepidosauria,Notechis Scutatus
-Amphibia,Silurana Tropicalis
-Holocephali,Callorhinchus Milli
+Amphibia,Xenopus Tropicalis
+Holocephali,Callorhinchus Milii
 Coelacanthiformes,Latimeria Chalumnae
 Hyperoartia,Petromyzon Marinus
 Hyperotreti,Eptatretus Burgeri
 Phlebobranchia,Ciona Intestinalis
-Pterygota,Sophophora Melanogaster
+Pterygota,Drosophila Melanogaster
 Rhabditina,Caenorhabditis Elegans

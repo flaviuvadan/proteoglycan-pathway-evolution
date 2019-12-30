@@ -1,5 +1,8 @@
 # Documentation of project progress
 
+## Dec 29th, 2019
+- implemented the rest of the dnds visualizer
+
 ## Dec 28th, 2019
 - implemented the similarity mapper (uses Jaccard's index for similarity)
 - implemented tree visualization for tree similarities 
