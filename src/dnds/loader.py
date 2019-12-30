@@ -101,8 +101,6 @@ class Loader:
                             continue
                         seq1_clean, seq2_clean = self._clean_sequence(seq1, seq2,
                                                                       check_chars=True)
-                        if not seq1_clean or not seq2_clean:
-                            print("FOUND EMPTY SEQS\n{}\n{}".format(seq1_clean, seq2_clean))
                         # apparently, it can happen that we get non-unique sequences after cleaning
                         if seq1_clean == seq2_clean:
                             final[org1][org2][gene] = 1

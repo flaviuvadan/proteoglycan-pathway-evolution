@@ -47,7 +47,7 @@ class Visualizer(loader.Loader):
             y_vals_clean = [" ".join(y.split("_")).capitalize() for y in y_vals]
             df = df.drop(columns="organism")
             plt.figure(figsize=(20, 20))
-            plt.title("{} DN/DS ratios".format(" ".join(sig_org.split("_")).capitalize()), fontsize=30)
+            plt.title("{} dN/dS ratios".format(" ".join(sig_org.split("_")).capitalize()), fontsize=30)
             plt.xticks(range(len(x_vals)), x_vals,
                        rotation=45)
             plt.yticks(range(len(y_vals_clean)), y_vals_clean,
@@ -56,7 +56,7 @@ class Visualizer(loader.Loader):
                        cbar=True,
                        xticklabels=x_vals,
                        yticklabels=y_vals_clean,
-                       cmap="YlGnBu",
+                       cmap="Blues",
                        fmt="f",
                        linewidths=0.5)
             save_fig_path = os.path.join(os.getcwd(), "src", "data", "visualizations", "dnds", "{}.pdf".format(sig_org))
