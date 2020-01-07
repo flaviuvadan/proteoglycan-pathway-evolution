@@ -36,14 +36,15 @@ class Distributor:
             histo_vals = []
             for x in df.values:
                 histo_vals = histo_vals + list(x[1:])
-            final[sig_org] = histo_vals
+            final[sig_org] = sorted(histo_vals)
         return final
 
     def visualize(self):
         """ Creates a collection of distributions, one for each significant organism. The distributions represent the
         pattern in dnds ratios for each organism """
-        fig, ax = plt.subplots(4, 3, figsize=(10, 10))
-        fig.subplots_adjust(hspace=0.5)
+        fig, ax = plt.subplots(4, 3,
+                               figsize=(10, 13))
+        # fig.subplots_adjust(hspace=0.5)
         fig.suptitle("Significant organisms' dN/dS distributions",
                      fontsize=15)
         for idx, k in enumerate(self.histogram_data.keys()):
@@ -54,8 +55,25 @@ class Distributor:
                 'verticalalignment': 'baseline',
                 'horizontalalignment': 'center'
             }
-            plt.title(" ".join(k.split("_")).capitalize(), fontdict=fonts)
-            plt.hist(self.histogram_data.get(k), bins=30)
+            plt.title(" ".join(k.split("_")[:2]).capitalize(), fontdict=fonts)
+            data = self.histogram_data.get(k)
+            lt_1 = len([x for x in data if x < 1])
+            gt_1 = len(data) - lt_1
+            plt.axis([0, 2.5, 0, 400])
+            # have to remove indices manually since I cannot figure out why sharex and sharey have no effect when used
+            # with plt.subplots
+            no_x_tick = [x for x in range(1, 10)]
+            if idx + 1 in no_x_tick:
+                plt.xticks([])
+            no_y_tick = [2, 3, 5, 6, 8, 9]
+            if idx + 1 in no_y_tick:
+                plt.yticks([])
+            plt.hist(self.histogram_data.get(k), bins=20)
+            plt.axvline(1,
+                        color='k',
+                        linestyle='dashed',
+                        linewidth=1)
+            plt.annotate("{} < 1\n{} >= 1".format(lt_1, gt_1), (1.6, 320))
         title = os.path.join(os.getcwd(), "src", "data", "visualizations", "dnds", "histograms.pdf")
         plt.savefig(title,
                     format="pdf",
