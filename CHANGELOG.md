@@ -1,5 +1,8 @@
 # Documentation of project progress
 
+## January 7th, 2020
+- added more significant organisms based on feedback
+
 ## Dec 29th, 2019
 - implemented the rest of the dnds visualizer
 - fixed the dnds package (inconsistent naming of organisms between alignments and dnds was causing dnds scores to look 
