@@ -1,0 +1,48 @@
+Title: 
+Mutation ratios of proteoglycan synthesis genes in organisms with 
+specific bone classifications
+
+Introduction: 
+Proteoglycans are a variety of carbohydrate-coated proteins. 
+Proteoglycans can be found in the extracellular matrix, where they are involved
+in synthesizing articular cartilage, and intracellularly where they have been
+recently identified to function in processes such as growth factor signalling.
+The loss of extracellular proteoglycans is associated with debilitating 
+diseases such as osteoarthritis and recent findings that suggest proteoglycan
+to be located intracellularly have helped with gaining a better understanding 
+of the consequences of proteoglycan loss. 
+
+Proteoglycans are composed of a core protein onto which different carbohydrates
+are attached. The function of the proteoglycan and its tissue presence is 
+dictated by the types of surface-attached carbohydrates. For example, 
+chondroitin sulfate has repeating disaccharides of glucoronic acid and 
+acetylgalactosamine whereas heparan sulfate has glucoronic acid and
+acetylgalactosamine repeats.
+
+Motivation: 
+As already mentioned, one of the core motivators for studying the
+synthesis and origins of proteoglycan is its association with diseases. 
+Further, according to recent findings that suggest proteoglycan to be secreted
+intracellularly, we have additional motivation for decoding whether 
+intracellular proteoglycan synthesis disruptions are associated with disease as 
+well. A better understanding of proteoglycan synthesis, as it occurs in
+different organisms, might help inform test organism choices for osteoarthritis
+research such as studying how organisms react to the onset of osteoarthritis or
+how they react to potential treatments.
+
+How to study this:
+A potential contributor to our overall knowledge of proteoglycan 
+synthesis is the understanding of the origins of proteoglycan synthesis pathway
+and how the genes in the pathway compare between organisms from different
+classifications. Since proteoglycan synthesis is associated with bone and 
+cartilage development, organisms can be classified according to bone presence - 
+there are organisms that synthesize bone and cartilage, only cartilage, 
+or neither of them - and environment - organisms from different 
+environments, such as terrestrial versus aquatic, may exhibit different 
+synthesis patterns as a consequence of genetic differences. 
+
+What we studied:
+As a consequence, we decided to test the hypothesis that genes in the 
+proteoglycan synthesis pathway exhibit higher non-synonymous vs. synonymous
+mutation ratios in organisms that have specific bone/cartilage traits and live
+in specific environments such as aquatic or terrestrial. 

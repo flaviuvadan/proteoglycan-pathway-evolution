@@ -1,0 +1,62 @@
+Mammalia,Homo Sapiens
+- has been a representative organism from the start of the study and has been
+used as a reference
+- a vertebrate organism that has all the 51 genes of the PG synthesis pathway
+- an organism that lives on land 
+
+Actinopterygii,Danio Rerio
+= the zebrafish is an important organism for the study of PG and bone synthesis
+- an organism that lives in water
+
+Archelosauria,Anas Platyrhynchos Platyrhynchos
+- mallard/dabbling duck
+- clade proposed in 2014 for turtles and archosaurs (birds and crocodilians)
+- 1000 ultra-conserved elements in genome that are unique relative to other
+clades
+- chosen organism lives on land and on water
+
+Lepidosauria,Notechis Scutatus
+- tiger snake
+- reptile with overlapping scales
+
+Amphibia,Xenopus Tropicalis
+- western clawed frog
+- amphibian that needs water, or a moist environment, to survive
+- because of the moist environment requirement, it may be the case that PG
+synthesis occurs differently (PG is highly negative and attracts water; since
+water is not always abundant, maybe the pathway genes changed slightly)
+
+Holocephali,Callorhinchus Milii
+- australian ghostshark
+- cartilagenous fish
+
+Coelacanthiformes,Latimeria Chalumnae
+- west indian ocean coelacanth
+- vertebrate fish that is more closely related to lungfish, amphibians, 
+reptiles, and mammals than common ray-finned fishes
+- organism may be a good model for better understanding of the transition from
+water to land
+
+Hyperoartia,Petromyzon Marinus
+- lamprey
+- jawless fish
+- devoid of mineralized skeleton, although traces of globular calcified 
+cartilage may occur in the endoskeleton 
+
+Hyperotreti,Eptatretus Burgeri
+- inshore hagfish
+- considered the most primitive living craniates
+- considered sister-group to lampreys
+
+Phlebobranchia,Ciona Intestinalis
+- sea vase
+- suborder of sea squirts
+- primitive organism
+
+Pterygota,Drosophila Melanogaster
+- fruit fly
+- important model organism for genetics
+
+Rhabditina,Caenorhabditis Elegans
+- nematode
+- has an pseudoexoskeleton (cuticle/tough outer covering)
