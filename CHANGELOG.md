@@ -2,6 +2,8 @@
 
 ## January 7th, 2020
 - added more significant organisms based on feedback
+- changed the logic of gaps vs. illegal characters in dnds/visualizer
+- run visualizer for all the significant organisms again
 
 ## Dec 29th, 2019
 - implemented the rest of the dnds visualizer
