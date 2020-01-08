@@ -3,7 +3,9 @@
 ## January 7th, 2020
 - added more significant organisms based on feedback
 - changed the logic of gaps vs. illegal characters in dnds/visualizer
-- run visualizer for all the significant organisms again
+- ran visualizer for all the significant organisms again
+- modified dnds/loader to account for inf values (possible due to divergence)
+- changed dnds/distributor to create subplots for all new orgs
 
 ## Dec 29th, 2019
 - implemented the rest of the dnds visualizer
