@@ -85,7 +85,7 @@ class Distributor:
                         linestyle='dashed',
                         linewidth=1)
             plt.annotate("{} < 1\n{} >= 1".format(lt_1, gt_1), (5, 550))  # I hate arbitrary numbers like this, Starman
-        title = os.path.join(os.getcwd(), "src", "data", "visualizations", "dnds", "histograms.pdf")
+        title = os.path.join(os.getcwd(), "src", "data", "visualizations", "dnds", "grouped_orgs", "histograms.pdf")
         print(max_so_far)
         plt.savefig(title,
                     format="pdf",

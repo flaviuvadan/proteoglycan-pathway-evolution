@@ -54,7 +54,8 @@ class Visualizer(loader.Loader):
                        yticklabels=y_vals_clean,
                        cmap="Blues",
                        linewidths=0.5)
-            save_fig_path = os.path.join(os.getcwd(), "src", "data", "visualizations", "dnds", "{}.pdf".format(sig_org))
+            save_fig_path = os.path.join(os.getcwd(), "src", "data", "visualizations", "dnds", "single_orgs",
+                                         "{}.pdf".format(sig_org))
             plt.savefig(save_fig_path,
                         quality=95,
                         bbox_inches='tight')
