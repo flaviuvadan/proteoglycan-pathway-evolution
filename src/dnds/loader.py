@@ -99,8 +99,7 @@ class Loader:
                             # in this case, one of the organisms does not have a gene
                             # assume the score is 1 for neutrality
                             continue
-                        seq1_clean, seq2_clean = self._clean_sequence(seq1, seq2,
-                                                                      check_chars=True)
+                        seq1_clean, seq2_clean = self._clean_sequence(seq1, seq2, check_chars=True)
                         # apparently, it can happen that we get non-unique sequences after cleaning
                         if seq1_clean == seq2_clean:
                             final[org1][org2][gene] = 1
@@ -112,7 +111,8 @@ class Loader:
                                 # mind though...
                                 final[org1][org2][gene] = round(score, 2) if not np.isnan(score) else 1
                             except Exception as e:
-                                print("CAUGHT EXCEPTION: {}".format(e))
+                                print("CAUGHT EXCEPTION -- {}".format(e))
+                                # exceptions can be thrown if two sequences are very divergent, assume a 1 for neutral
                                 final[org1][org2][gene] = 1
         return final
 
@@ -126,15 +126,14 @@ class Loader:
         l_seq1 = list(seq1)
         l_seq2 = list(seq2)
         for i in range(len(l_seq1)):  # or whatever
-            illegal = l_seq1[i] == "-" or l_seq2[i] == "-"
-            if check_chars:
+            gap = l_seq1[i] == "-" or l_seq2[i] == "-"
+            if gap:
+                l_seq1[i], l_seq2[i] = "@", "@"
+            elif check_chars:
                 # there are sequences that contain non-IUPAC char, which cannot be used for dnds evaluation
                 illegal = self._is_illegal_char(l_seq1[i]) or self._is_illegal_char(l_seq2[i])
                 if illegal:
                     l_seq1[i], l_seq2[i] = "@", "@"
-            elif illegal:
-                # mark characters for removal, this is necessary as strings are immutable
-                l_seq1[i], l_seq2[i] = "@", "@"
         seq1, seq2 = "".join(l_seq1).replace("@", ""), "".join(l_seq2).replace("@", "")
 
         trim_len = min(len(seq1), len(seq2))

@@ -13,8 +13,6 @@ class Visualizer(loader.Loader):
     def __init__(self):
         """ Constructor """
         super(Visualizer, self).__init__()
-        self.get_dnds = self._setup_R_access()
-        self.scores = self._get_dnds_scores()
         self._create_heatmap_csv()
 
     def _create_heatmap_csv(self):
@@ -39,6 +37,7 @@ class Visualizer(loader.Loader):
 
     def visualize(self):
         """ Creates the 2D dn/ds plots for each gene """
+        plt.figure(figsize=(20, 20))
         for sig_org in self.scores.keys():
             sig_org_csv = os.path.join(os.getcwd(), "src", "data", "dnds", "{}.csv".format(sig_org))
             df = pd.read_csv(sig_org_csv)
@@ -46,18 +45,14 @@ class Visualizer(loader.Loader):
             y_vals = df.organism
             y_vals_clean = [" ".join(y.split("_")).capitalize() for y in y_vals]
             df = df.drop(columns="organism")
-            plt.figure(figsize=(20, 20))
             plt.title("{} dN/dS ratios".format(" ".join(sig_org.split("_")).capitalize()), fontsize=30)
-            plt.xticks(range(len(x_vals)), x_vals,
-                       rotation=45)
-            plt.yticks(range(len(y_vals_clean)), y_vals_clean,
-                       rotation=45)
             sn.heatmap(df,
+                       vmin=0,
+                       vmax=5,
                        cbar=True,
                        xticklabels=x_vals,
                        yticklabels=y_vals_clean,
                        cmap="Blues",
-                       fmt="f",
                        linewidths=0.5)
             save_fig_path = os.path.join(os.getcwd(), "src", "data", "visualizations", "dnds", "{}.pdf".format(sig_org))
             plt.savefig(save_fig_path,

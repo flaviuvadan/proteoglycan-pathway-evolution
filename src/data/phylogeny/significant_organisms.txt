@@ -1,14 +1,14 @@
 Class,Chosen organism
 Mammalia,Homo Sapiens
 Mammalia,Mus Musculus
-Mammalia,Ornithorhynchus,Anatinus
+Mammalia,Ornithorhynchus Anatinus
 Actinopterygii,Danio Rerio
-Actinopterygii,Oryzias Latipes
+Actinopterygii,Oryzias Latipes Hsok
 Actinopterygii,Takifugu Rubripes
 Actinopterygii,Lepisosteus Oculatus
 Archelosauria,Anas Platyrhynchos Platyrhynchos
 Archelosauria,Gallus Gallus
-Archelosauria,Chrysemys Picta
+Archelosauria,Chrysemys Picta Bellii
 Archelosauria,Crocodylus Porosus
 Lepidosauria,Notechis Scutatus
 Lepidosauria,Anolis Carolinensis
