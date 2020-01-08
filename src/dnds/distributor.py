@@ -43,6 +43,12 @@ class Distributor:
         return final
 
     def visualize(self):
+        """ Creates a histogram of the independent significant organisms dN/dS distribution along with a histogram of
+        the binned version for visualizing the distribution per group """
+        self._visualize_independent_orgs()
+        self._visualize_grouped_orgs()
+
+    def _visualize_independent_orgs(self):
         """ Creates a collection of distributions, one for each significant organism. The distributions represent the
         pattern in dnds ratios for each organism """
         fig, ax = plt.subplots(7, 3,
@@ -84,6 +90,11 @@ class Distributor:
         plt.savefig(title,
                     format="pdf",
                     quality=95)
+
+    def _visualize_grouped_orgs(self):
+        """ Creates a collection of distributions for each organism bin. The bins are: bone, cartilage, neither,
+        terrestrial, aquatic, both, and airborne """
+        pass
 
 
 if __name__ == "__main__":
