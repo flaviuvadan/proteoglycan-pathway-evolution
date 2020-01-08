@@ -109,7 +109,10 @@ class Loader:
                                 # placing a 1 for neutrality when we get NaNs, based on docs, the sequences should be
                                 # highly divergent but don't know for sure, safer to place in neutral, might change
                                 # mind though...
-                                final[org1][org2][gene] = round(score, 2) if not np.isnan(score) else 1
+                                if np.isnan(score) or np.isinf(score):
+                                    final[org1][org2][gene] = 1
+                                else:
+                                    final[org1][org2][gene] = round(score, 2)
                             except Exception as e:
                                 print("CAUGHT EXCEPTION -- {}".format(e))
                                 # exceptions can be thrown if two sequences are very divergent, assume a 1 for neutral
