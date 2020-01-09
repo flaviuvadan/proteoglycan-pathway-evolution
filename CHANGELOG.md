@@ -1,5 +1,9 @@
 # Documentation of project progress
 
+## January 8th, 2020
+- started building the distributor package grouped visualizer method 
+- still have to figure out a nice way to aggregate data so that it's nice to create subplots of it
+
 ## January 7th, 2020
 - added more significant organisms based on feedback
 - changed the logic of gaps vs. illegal characters in dnds/visualizer
