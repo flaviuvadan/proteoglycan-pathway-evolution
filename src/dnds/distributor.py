@@ -4,6 +4,44 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 
+class OrganismGroups:
+    """ A namespace class that holds how organisms should be grouped """
+
+    TERR = "terrestrial"
+    AQUA = "aquatic"
+    TERR_AQUA = "terrestrial/aquatic"
+
+    def __init__(self):
+        """ Constructor """
+        self.org_map = self._get_mapping()
+
+    def _get_mapping(self):
+        """ Creates a mapping of organism genus and species to its group """
+        return {
+            "homo_sapiens": self.TERR,
+            "mus_musculus": self.TERR,
+            "ornithorhynchus_anatinus": self.TERR_AQUA,
+            "danio_rerio": self.AQUA,
+            "oryzias_latipes_hsok": self.AQUA,
+            "takifugu_rubripes": self.AQUA,
+            "lepisosteus_oculatus": self.AQUA,
+            "anas_platyrhynchos_platyrhynchos": self.TERR_AQUA,
+            "gallus_gallus": self.TERR,
+            "chrysemys_picta_bellii": self.AQUA,
+            "crocodylus_porosus": self.TERR_AQUA,
+            "notechis_scutatus": self.TERR,
+            "anolis_carolinensis": self.TERR,
+            "xenopus_tropicalis": self.TERR_AQUA,
+            "callorhinchus_milii": self.AQUA,
+            "latimeria_chalumnae": self.AQUA,
+            "petromyzon_marinus": self.AQUA,
+            "eptatretus_burgeri": self.AQUA,
+            "ciona_intestinalis": self.AQUA,
+            "drosophila_melanogaster": self.TERR,
+            "caenorhabditis_elegans": self.TERR_AQUA,
+        }
+
+
 class Distributor:
     """ Responsible for reading in the dnds data to create distributions """
 
@@ -16,7 +54,7 @@ class Distributor:
     def __init__(self):
         """ Constructor """
         self.sig_orgs = self._get_significant_orgs()
-        self.histogram_data = self._get_hg_data()
+        self.dnds_data = self._get_hg_data()
 
     def _get_significant_orgs(self):
         """ Reads in the significant organisms selected for this study """
@@ -55,8 +93,7 @@ class Distributor:
                                figsize=(12, 18))
         fig.suptitle("Significant organisms' dN/dS distributions",
                      fontsize=15)
-        max_so_far = float('-inf')
-        for idx, k in enumerate(self.histogram_data.keys()):
+        for idx, k in enumerate(self.dnds_data.keys()):
             plt.subplot(7, 3, idx + 1)
             fonts = {
                 'fontsize': 11,
@@ -66,7 +103,7 @@ class Distributor:
             }
             plt.title(" ".join(k.split("_")[:2]).capitalize(),
                       fontdict=fonts)
-            data = self.histogram_data.get(k)
+            data = self.dnds_data.get(k)
             lt_1 = len([x for x in data if x < 1])
             gt_1 = len(data) - lt_1
             plt.axis([0, 7, 0, 800])
@@ -78,15 +115,14 @@ class Distributor:
             y_tick = [y for y in range(1, 20, 3)]
             if idx + 1 not in y_tick:
                 plt.yticks([])
-            max_so_far = max(max_so_far, max(self.histogram_data.get(k)))
-            plt.hist(self.histogram_data.get(k), bins=21)
+            plt.hist(self.dnds_data.get(k), bins=21)
             plt.axvline(1,
                         color='k',
                         linestyle='dashed',
                         linewidth=1)
-            plt.annotate("{} < 1\n{} >= 1".format(lt_1, gt_1), (5, 550))  # I hate arbitrary numbers like this, Starman
+            # I hate arbitrary numbers like this, Starman
+            plt.annotate("{} < 1\n{} >= 1".format(lt_1, gt_1), (5, 550))
         title = os.path.join(os.getcwd(), "src", "data", "visualizations", "dnds", "grouped_orgs", "histograms.pdf")
-        print(max_so_far)
         plt.savefig(title,
                     format="pdf",
                     quality=95)
@@ -94,9 +130,26 @@ class Distributor:
     def _visualize_grouped_orgs(self):
         """ Creates a collection of distributions for each organism bin. The bins are: bone, cartilage, neither,
         terrestrial, aquatic, both, and airborne """
-        pass
+        binned = {}
+        groups = OrganismGroups()
+        for sig_org in self.sig_orgs.keys():
+            sig_org_csv = os.path.join(os.getcwd(), "src", "data", "dnds", "{}.csv".format(sig_org))
+            df = pd.read_csv(sig_org_csv)
+            group = groups.org_map.get(sig_org)
+            if not binned.get(group):
+                binned[group] = {}
+                binned[group][sig_org] = df
+            else:
+                binned[group][sig_org] = df
+        for k in binned.keys():
+            orgs = binned.get(k)
+            for idx, o in enumerate(orgs):
+                binned.get(k).get(o).plot(kind='box', rot=90, subplots=True, layout=(len(orgs), 1))
+            plt.savefig("{}.pdf".format(k.lower()))
+            plt.clf()
+            return
 
 
 if __name__ == "__main__":
     dist = Distributor()
-    dist.visualize()
+    dist._visualize_grouped_orgs()
