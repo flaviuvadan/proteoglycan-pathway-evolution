@@ -2,6 +2,7 @@ import os
 
 import matplotlib.pyplot as plt
 import pandas as pd
+import statistics
 
 
 class OrganismGroups:
@@ -13,10 +14,11 @@ class OrganismGroups:
 
     def __init__(self):
         """ Constructor """
-        self.org_map = self._get_mapping()
+        self.org_class_map = self._get_org_class_mapping()
+        self.class_org_map = self._get_class_org_mapping()
 
-    def _get_mapping(self):
-        """ Creates a mapping of organism genus and species to its group """
+    def _get_org_class_mapping(self):
+        """ Creates a mapping of organism genus and species to its class """
         return {
             "homo_sapiens": self.TERR,
             "mus_musculus": self.TERR,
@@ -40,6 +42,16 @@ class OrganismGroups:
             "drosophila_melanogaster": self.TERR,
             "caenorhabditis_elegans": self.TERR_AQUA,
         }
+
+    def _get_class_org_mapping(self):
+        """ Creates a mapping of org class to species """
+        final = {}
+        for k, v in self.org_class_map.items():
+            if not final.get(v):
+                final[v] = [k]
+            else:
+                final[v].append(k)
+        return final
 
 
 class Distributor:
@@ -129,25 +141,44 @@ class Distributor:
 
     def _visualize_grouped_orgs(self):
         """ Creates a collection of distributions for each organism bin. The bins are: bone, cartilage, neither,
-        terrestrial, aquatic, both, and airborne """
+        terrestrial, aquatic, both """
         binned = {}
         groups = OrganismGroups()
-        for sig_org in self.sig_orgs.keys():
-            sig_org_csv = os.path.join(os.getcwd(), "src", "data", "dnds", "{}.csv".format(sig_org))
-            df = pd.read_csv(sig_org_csv)
-            group = groups.org_map.get(sig_org)
-            if not binned.get(group):
-                binned[group] = {}
-                binned[group][sig_org] = df
-            else:
-                binned[group][sig_org] = df
-        for k in binned.keys():
-            orgs = binned.get(k)
-            for idx, o in enumerate(orgs):
-                binned.get(k).get(o).plot(kind='box', rot=90, subplots=True, layout=(len(orgs), 1))
-            plt.savefig("{}.pdf".format(k.lower()))
-            plt.clf()
-            return
+        x_labels = None  # this should only be set once, we need to preserve the order of the genes
+        for org_class, orgs in groups.class_org_map.items():
+            binned[org_class] = {}
+            for org in orgs:
+                org_csv = os.path.join(os.getcwd(), "src", "data", "dnds", "{}.csv".format(org))
+                df = pd.read_csv(org_csv)
+                if not x_labels:
+                    # first one is "organism", should be set on the first try
+                    x_labels = list(df.columns[1:])
+                for gene in x_labels:  # after all, those are genes...
+                    if not binned[org_class].get(gene):
+                        binned[org_class][gene] = list(df[gene])
+                    else:
+                        binned[org_class][gene].extend(list(df[gene]))
+        # go over each gene, grab average for each, plot, move on
+        # subplots 111
+        # +-=0.2 width for plots
+        x_range = list(range(1, len(x_labels) + 1))
+        plt.figure(figsize=(10, 10))
+        interval_width = 0.5
+        for idx, gene in enumerate(x_labels):
+            plt.bar(list(map(lambda x: x - interval_width, x_range)), statistics.mean(binned[groups.TERR][gene]),
+                    width=interval_width,
+                    color='b',
+                    align='center')
+            plt.bar(x_range, statistics.mean(binned[groups.AQUA][gene]),
+                    width=interval_width,
+                    color='g',
+                    align='center')
+            plt.bar(list(map(lambda x: x + interval_width, x_range)), statistics.mean(binned[groups.TERR_AQUA][gene]),
+                    width=interval_width,
+                    color='r',
+                    align='center')
+        plt.xticks(range(1, len(x_labels) + 1), x_labels, rotation=90)
+        plt.show()
 
 
 if __name__ == "__main__":
