@@ -1,5 +1,9 @@
 # Documentation of project progress
 
+## January 9th, 2020
+- found a way to showcase differences between grouped organisms
+- started implementing the visualizing function of the dnds/visualizer
+
 ## January 8th, 2020
 - started building the distributor package grouped visualizer method 
 - still have to figure out a nice way to aggregate data so that it's nice to create subplots of it
