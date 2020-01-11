@@ -140,7 +140,7 @@ class Distributor:
         plt.subplots_adjust(wspace=0.3)
         save_path = os.path.join(os.getcwd(), 'src', 'data', 'visualizations', 'dnds', 'grouped_orgs',
                                  'habitat_dist.pdf')
-        plt.savefig(save_path, dpi=95)
+        plt.savefig(save_path, dpi=95, bbox_inches='tight')
 
     def _visualize_by_bone_class(self):
         """ Creates a collection of distributions for each organism bin. The bins are: bone and cartilage, cartilage
@@ -169,7 +169,7 @@ class Distributor:
 
         plt.subplots_adjust(wspace=0.3)
         save_path = os.path.join(os.getcwd(), 'src', 'data', 'visualizations', 'dnds', 'grouped_orgs', 'bone_dist.pdf')
-        plt.savefig(save_path, dpi=95)
+        plt.savefig(save_path, dpi=95, bbox_inches='tight')
 
 
 if __name__ == "__main__":
