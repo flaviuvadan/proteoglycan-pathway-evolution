@@ -36,3 +36,8 @@ class ProjectedBuildOrganismException(PGException):
 class BlastDictionaryAccessException(PGException):
     """ An exception used for indicating that a BLAST dictionary does not have something stored at a passed key """
     pass
+
+
+class EmptyNamespaceClassException(PGException):
+    """ An exception used for indicating that no namespace class has been passed for binning organisms """
+    pass

@@ -94,6 +94,23 @@ class Distributor:
                     format="pdf",
                     quality=95)
 
+    def _get_binned_habitat_dataframe(self, class_type=None):
+        """ Constructs and returns the cumulative dataframes of the significant organisms based on the given class
+         namespace organization """
+        if not class_type:
+            raise
+        binned = {}
+        groups = organisms_classes.OrganismHabitatGroups()
+        for org_class, orgs in groups.class_org_map.items():
+            binned[org_class] = {}
+            main_df = pd.DataFrame()
+            for org in orgs:
+                org_csv = os.path.join(os.getcwd(), "src", "data", "dnds", "{}.csv".format(org))
+                df = pd.read_csv(org_csv)
+                main_df = pd.concat([main_df, df])
+            binned[org_class] = main_df
+        return binned
+
     def _get_binned_habitat_dataframes(self):
         """ Constructs and returns the cumulative dataframes of the significant organisms based on habitat """
         binned = {}
@@ -113,7 +130,8 @@ class Distributor:
         classification"""
         binned = {}
         groups = organisms_classes.OrganismBoneGroups()
-        for org_class, orgs in groups.class_org_map
+        for org_class, orgs in groups.class_org_map:
+            binned[org_class] =
 
     def _visualize_by_habitat(self):
         """ Creates a collection of distributions for each organism habitat. The bins are: terrestrial, aquatic,
