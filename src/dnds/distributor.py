@@ -1,6 +1,7 @@
 import os
 
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 import statistics
 
@@ -161,23 +162,34 @@ class Distributor:
         # go over each gene, grab average for each, plot, move on
         # subplots 111
         # +-=0.2 width for plots
-        x_range = list(range(1, len(x_labels) + 1))
-        plt.figure(figsize=(10, 10))
-        interval_width = 0.5
-        for idx, gene in enumerate(x_labels):
-            plt.bar(list(map(lambda x: x - interval_width, x_range)), statistics.mean(binned[groups.TERR][gene]),
-                    width=interval_width,
-                    color='b',
-                    align='center')
-            plt.bar(x_range, statistics.mean(binned[groups.AQUA][gene]),
-                    width=interval_width,
-                    color='g',
-                    align='center')
-            plt.bar(list(map(lambda x: x + interval_width, x_range)), statistics.mean(binned[groups.TERR_AQUA][gene]),
-                    width=interval_width,
-                    color='r',
-                    align='center')
-        plt.xticks(range(1, len(x_labels) + 1), x_labels, rotation=90)
+
+        y_pos = np.arange(len(x_labels))
+        fig, ax = plt.subplots(figsize=(5, 9))
+        terr_means = []
+        aqua_means = []
+        terr_aqua_means = []
+        for gene in x_labels:
+            terr_means.append(statistics.mean(binned[groups.TERR][gene]))
+            aqua_means.append(statistics.mean(binned[groups.AQUA][gene]))
+            terr_aqua_means.append(statistics.mean(binned[groups.TERR_AQUA][gene]))
+
+        terr_rects = ax.barh(y_pos, terr_means,
+                             label=groups.TERR,
+                             color='b')
+        ax.set_yticks(y_pos)
+        ax.set_yticklabels(x_labels)
+        ax.invert_yaxis()
+        # aqua_rects = ax.barh(aqua_means,
+        #                      interval_width,
+        #                      label=groups.AQUA,
+        #                      color='g')
+        # terr_aqua_rects = ax.barh(list(map(lambda x: x + interval_width, x_range)), terr_aqua_means, interval_width,
+        #                           label=groups.TERR_AQUA,
+        #                           color='r')
+        ax.legend()
+        # plt.yticks(range(1, 3 * len(x_labels) + 1, 3), x_labels)
+        # ax.set_yticklabels(x_labels)
+        fig.tight_layout()
         plt.show()
 
 
