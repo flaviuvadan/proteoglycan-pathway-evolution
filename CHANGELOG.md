@@ -1,5 +1,9 @@
 # Documentation of project progress
 
+## January 11th, 2020
+- created a visualization of the box plots of each gene per habitat organism collection
+- isolated organism classification namespaces into their own file 
+
 ## January 9th, 2020
 - found a way to showcase differences between grouped organisms
 - started implementing the visualizing function of the dnds/visualizer
