@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
+from src import exceptions
 from src.dnds import organisms_classes
 
 
@@ -20,7 +21,8 @@ class Distributor:
         """ Constructor """
         self.sig_orgs = self._get_significant_orgs()
         self.dnds_data = self._get_hg_data()
-        self.habitat_bins = self._get_binned_habitat_dataframes()
+        self.habitat_bins = self._get_binned_habitat_dataframe(class_type=organisms_classes.OrganismHabitatGroups())
+        self.bone_bins = self._get_binned_habitat_dataframe(class_type=organisms_classes.OrganismBoneGroups())
 
     def _get_significant_orgs(self):
         """ Reads in the significant organisms selected for this study """
@@ -98,10 +100,9 @@ class Distributor:
         """ Constructs and returns the cumulative dataframes of the significant organisms based on the given class
          namespace organization """
         if not class_type:
-            raise
+            raise exceptions.EmptyNamespaceClassException('namespace class not given')
         binned = {}
-        groups = organisms_classes.OrganismHabitatGroups()
-        for org_class, orgs in groups.class_org_map.items():
+        for org_class, orgs in class_type.class_org_map.items():
             binned[org_class] = {}
             main_df = pd.DataFrame()
             for org in orgs:
@@ -110,32 +111,11 @@ class Distributor:
                 main_df = pd.concat([main_df, df])
             binned[org_class] = main_df
         return binned
-
-    def _get_binned_habitat_dataframes(self):
-        """ Constructs and returns the cumulative dataframes of the significant organisms based on habitat """
-        binned = {}
-        groups = organisms_classes.OrganismHabitatGroups()
-        for org_class, orgs in groups.class_org_map.items():
-            binned[org_class] = {}
-            main_df = pd.DataFrame()
-            for org in orgs:
-                org_csv = os.path.join(os.getcwd(), "src", "data", "dnds", "{}.csv".format(org))
-                df = pd.read_csv(org_csv)
-                main_df = pd.concat([main_df, df])
-            binned[org_class] = main_df
-        return binned
-
-    def _get_binned_bone_class_dataframes(self):
-        """ Constructs and returns the cumulative dataframes of the significant organisms based on bone
-        classification"""
-        binned = {}
-        groups = organisms_classes.OrganismBoneGroups()
-        for org_class, orgs in groups.class_org_map:
-            binned[org_class] =
 
     def _visualize_by_habitat(self):
         """ Creates a collection of distributions for each organism habitat. The bins are: terrestrial, aquatic,
         terrestrial and aquatic """
+        groups = organisms_classes.OrganismHabitatGroups()
         fig, (ax1, ax2, ax3) = plt.subplots(1, 3,
                                             figsize=(15, 10))
         ax1.set_title('Terrestrial organisms\'\ndN/dS distribution')
@@ -165,6 +145,31 @@ class Distributor:
     def _visualize_by_bone_class(self):
         """ Creates a collection of distributions for each organism bin. The bins are: bone and cartilage, cartilage
         only, neither """
+        groups = organisms_classes.OrganismBoneGroups()
+        fig, (ax1, ax2, ax3) = plt.subplots(1, 3,
+                                            figsize=(15, 10))
+        ax1.set_title('Bony organisms\'\ndN/dS distribution')
+        ax2.set_title('Cartilaginous organisms\'\ndN/dS distribution')
+        ax3.set_title('Organisms w/o bone or cartilage\ndN/dS distribution')
+
+        ax1.set_xlim(0, 6)
+        ax2.set_xlim(0, 6)
+        ax3.set_xlim(0, 6)
+
+        terr_df = self.bone_bins.get(groups.BONE_CART)
+        terr_df = terr_df.drop(columns='organism')
+        aqua_df = self.bone_bins.get(groups.CART_ONLY)
+        aqua_df = aqua_df.drop(columns='organism')
+        traq_df = self.bone_bins.get(groups.NO_BONE_NO_CART)
+        traq_df = traq_df.drop(columns='organism')
+
+        sns.boxplot(data=terr_df, orient='h', color='deepskyblue', ax=ax1)
+        sns.boxplot(data=aqua_df, orient='h', color='deepskyblue', ax=ax2)
+        sns.boxplot(data=traq_df, orient='h', color='deepskyblue', ax=ax3)
+
+        plt.subplots_adjust(wspace=0.3)
+        save_path = os.path.join(os.getcwd(), 'src', 'data', 'visualizations', 'dnds', 'grouped_orgs', 'bone_dist.pdf')
+        plt.savefig(save_path, dpi=95)
 
 
 if __name__ == "__main__":

@@ -6,8 +6,8 @@ class OrganismBoneGroups:
 
     def __init__(self):
         """ Constructor """
-        self.org_class_map = {}
-        self.class_org_map = {}
+        self.org_class_map = self._get_org_class_map()
+        self.class_org_map = self._get_class_org_map()
 
     def _get_org_class_map(self):
         """ Creates a mapping of organism genus and species to its bone class """
