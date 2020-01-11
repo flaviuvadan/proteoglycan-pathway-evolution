@@ -5,8 +5,28 @@ import pandas as pd
 import seaborn as sns
 
 
+class OrganismBoneGroups:
+    """ A namespace class that holds how organisms should be grouped based on bone presence """
+    BONE_CART = "bone_cartilage"
+    CART_ONLY = "cartilage"
+    NO_BONE_NO_CART = "neither"
+
+    def __init__(self):
+        """ Constructor """
+        self.org_class_map = {}
+        self.class_org_map = {}
+
+    def _get_org_class_map(self):
+        """ Creates a mapping of organism genus and species to its bone class """
+        pass
+
+    def _get_class_org_map(self):
+        """ Creates a mapping of bone class to organisms """
+        pass
+
+
 class OrganismHabitatGroups:
-    """ A namespace class that holds how organisms should be grouped """
+    """ A namespace class that holds how organisms should be grouped based on habitat """
 
     TERR = "terrestrial"
     AQUA = "aquatic"
@@ -18,7 +38,7 @@ class OrganismHabitatGroups:
         self.class_org_map = self._get_class_org_mapping()
 
     def _get_org_class_mapping(self):
-        """ Creates a mapping of organism genus and species to its class """
+        """ Creates a mapping of organism genus and species to its habitat class """
         return {
             "homo_sapiens": self.TERR,
             "mus_musculus": self.TERR,
