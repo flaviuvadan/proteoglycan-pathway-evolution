@@ -3,6 +3,7 @@
 ## January 11th, 2020
 - created a visualization of the box plots of each gene per habitat organism collection
 - isolated organism classification namespaces into their own file 
+- implemented the visualization of the box plots for organisms binned by bone classification
 
 ## January 9th, 2020
 - found a way to showcase differences between grouped organisms

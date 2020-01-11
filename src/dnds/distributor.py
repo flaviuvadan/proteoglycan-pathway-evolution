@@ -174,4 +174,4 @@ class Distributor:
 
 if __name__ == "__main__":
     dist = Distributor()
-    dist._visualize_by_bone_class()
+    dist.visualize()
