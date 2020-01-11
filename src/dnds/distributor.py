@@ -20,7 +20,7 @@ class Distributor:
         """ Constructor """
         self.sig_orgs = self._get_significant_orgs()
         self.dnds_data = self._get_hg_data()
-        self.habitat_bins = self._get_binned_dataframes()
+        self.habitat_bins = self._get_binned_habitat_dataframes()
 
     def _get_significant_orgs(self):
         """ Reads in the significant organisms selected for this study """
@@ -51,6 +51,7 @@ class Distributor:
         the binned version for visualizing the distribution per group """
         self._visualize_independent_orgs()
         self._visualize_by_habitat()
+        self._visualize_by_bone_class()
 
     def _visualize_independent_orgs(self):
         """ Creates a collection of distributions, one for each significant organism. The distributions represent the
@@ -93,8 +94,8 @@ class Distributor:
                     format="pdf",
                     quality=95)
 
-    def _get_binned_dataframes(self):
-        """ Constructs and returns the cumulative dataframes of the significant organisms """
+    def _get_binned_habitat_dataframes(self):
+        """ Constructs and returns the cumulative dataframes of the significant organisms based on habitat """
         binned = {}
         groups = organisms_classes.OrganismHabitatGroups()
         for org_class, orgs in groups.class_org_map.items():
@@ -106,6 +107,13 @@ class Distributor:
                 main_df = pd.concat([main_df, df])
             binned[org_class] = main_df
         return binned
+
+    def _get_binned_bone_class_dataframes(self):
+        """ Constructs and returns the cumulative dataframes of the significant organisms based on bone
+        classification"""
+        binned = {}
+        groups = organisms_classes.OrganismBoneGroups()
+        for org_class, orgs in groups.class_org_map
 
     def _visualize_by_habitat(self):
         """ Creates a collection of distributions for each organism habitat. The bins are: terrestrial, aquatic,
@@ -143,4 +151,4 @@ class Distributor:
 
 if __name__ == "__main__":
     dist = Distributor()
-    dist._visualize_by_habitat()
+    dist._visualize_by_bone_class()
