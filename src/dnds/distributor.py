@@ -5,7 +5,7 @@ import pandas as pd
 import seaborn as sns
 
 
-class OrganismGroups:
+class OrganismHabitatGroups:
     """ A namespace class that holds how organisms should be grouped """
 
     TERR = "terrestrial"
@@ -67,7 +67,7 @@ class Distributor:
         """ Constructor """
         self.sig_orgs = self._get_significant_orgs()
         self.dnds_data = self._get_hg_data()
-        self.binned = self._get_binned_dataframes()
+        self.habitat_bins = self._get_binned_dataframes()
 
     def _get_significant_orgs(self):
         """ Reads in the significant organisms selected for this study """
@@ -143,7 +143,7 @@ class Distributor:
     def _get_binned_dataframes(self):
         """ Constructs and returns the cumulative dataframes of the significant organisms """
         binned = {}
-        groups = OrganismGroups()
+        groups = OrganismHabitatGroups()
         for org_class, orgs in groups.class_org_map.items():
             binned[org_class] = {}
             main_df = pd.DataFrame()
@@ -155,8 +155,8 @@ class Distributor:
         return binned
 
     def _visualize_by_habitat(self):
-        """ Creates a collection of distributions for each organism bin. The bins are: bone, cartilage, neither,
-        terrestrial, aquatic, both """
+        """ Creates a collection of distributions for each organism habitat. The bins are: terrestrial, aquatic,
+        terrestrial and aquatic """
         fig, (ax1, ax2, ax3) = plt.subplots(1, 3,
                                             figsize=(15, 10))
         ax1.set_title('Terrestrial organisms\'\ndN/dS distribution')
@@ -167,11 +167,11 @@ class Distributor:
         ax2.set_xlim(0, 6)
         ax3.set_xlim(0, 6)
 
-        terr_df = self.binned.get(groups.TERR)
+        terr_df = self.habitat_bins.get(groups.TERR)
         terr_df = terr_df.drop(columns='organism')
-        aqua_df = self.binned.get(groups.AQUA)
+        aqua_df = self.habitat_bins.get(groups.AQUA)
         aqua_df = aqua_df.drop(columns='organism')
-        traq_df = self.binned.get(groups.TERR_AQUA)
+        traq_df = self.habitat_bins.get(groups.TERR_AQUA)
         traq_df = traq_df.drop(columns='organism')
 
         sns.boxplot(data=terr_df, orient='h', color='deepskyblue', ax=ax1)
@@ -182,6 +182,10 @@ class Distributor:
         save_path = os.path.join(os.getcwd(), 'src', 'data', 'visualizations', 'dnds', 'grouped_orgs',
                                  'habitat_dist.pdf')
         plt.savefig(save_path, dpi=95)
+
+    def _visualize_by_bone_class(self):
+        """ Creates a collection of distributions for each organism bin. The bins are: bone and cartilage, cartilage
+        only, neither """
 
 
 if __name__ == "__main__":
