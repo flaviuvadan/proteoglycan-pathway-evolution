@@ -1,9 +1,8 @@
 import os
 
 import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
-import statistics
+import seaborn as sns
 
 
 class OrganismGroups:
@@ -97,7 +96,7 @@ class Distributor:
         """ Creates a histogram of the independent significant organisms dN/dS distribution along with a histogram of
         the binned version for visualizing the distribution per group """
         self._visualize_independent_orgs()
-        self._visualize_grouped_orgs()
+        self._visualize_by_habitat()
 
     def _visualize_independent_orgs(self):
         """ Creates a collection of distributions, one for each significant organism. The distributions represent the
@@ -140,59 +139,47 @@ class Distributor:
                     format="pdf",
                     quality=95)
 
-    def _visualize_grouped_orgs(self):
+    def _visualize_by_habitat(self):
         """ Creates a collection of distributions for each organism bin. The bins are: bone, cartilage, neither,
         terrestrial, aquatic, both """
         binned = {}
         groups = OrganismGroups()
-        x_labels = None  # this should only be set once, we need to preserve the order of the genes
         for org_class, orgs in groups.class_org_map.items():
             binned[org_class] = {}
+            main_df = pd.DataFrame()
             for org in orgs:
                 org_csv = os.path.join(os.getcwd(), "src", "data", "dnds", "{}.csv".format(org))
                 df = pd.read_csv(org_csv)
-                if not x_labels:
-                    # first one is "organism", should be set on the first try
-                    x_labels = list(df.columns[1:])
-                for gene in x_labels:  # after all, those are genes...
-                    if not binned[org_class].get(gene):
-                        binned[org_class][gene] = list(df[gene])
-                    else:
-                        binned[org_class][gene].extend(list(df[gene]))
-        # go over each gene, grab average for each, plot, move on
-        # subplots 111
-        # +-=0.2 width for plots
+                main_df = pd.concat([main_df, df])
+            binned[org_class] = main_df
 
-        y_pos = np.arange(len(x_labels))
-        fig, ax = plt.subplots(figsize=(5, 9))
-        terr_means = []
-        aqua_means = []
-        terr_aqua_means = []
-        for gene in x_labels:
-            terr_means.append(statistics.mean(binned[groups.TERR][gene]))
-            aqua_means.append(statistics.mean(binned[groups.AQUA][gene]))
-            terr_aqua_means.append(statistics.mean(binned[groups.TERR_AQUA][gene]))
+        fig, (ax1, ax2, ax3) = plt.subplots(1, 3,
+                                            figsize=(15, 10))
+        ax1.set_title('Terrestrial organisms\'\ndN/dS distribution')
+        ax2.set_title('Aquatic organisms\'\ndN/dS distribution')
+        ax3.set_title('Terrestrial/aquatic organisms\'\ndN/dS distribution')
 
-        terr_rects = ax.barh(y_pos, terr_means,
-                             label=groups.TERR,
-                             color='b')
-        ax.set_yticks(y_pos)
-        ax.set_yticklabels(x_labels)
-        ax.invert_yaxis()
-        # aqua_rects = ax.barh(aqua_means,
-        #                      interval_width,
-        #                      label=groups.AQUA,
-        #                      color='g')
-        # terr_aqua_rects = ax.barh(list(map(lambda x: x + interval_width, x_range)), terr_aqua_means, interval_width,
-        #                           label=groups.TERR_AQUA,
-        #                           color='r')
-        ax.legend()
-        # plt.yticks(range(1, 3 * len(x_labels) + 1, 3), x_labels)
-        # ax.set_yticklabels(x_labels)
-        fig.tight_layout()
-        plt.show()
+        ax1.set_xlim(0, 6)
+        ax2.set_xlim(0, 6)
+        ax3.set_xlim(0, 6)
+
+        terr_df = binned.get(groups.TERR)
+        terr_df = terr_df.drop(columns='organism')
+        aqua_df = binned.get(groups.AQUA)
+        aqua_df = aqua_df.drop(columns='organism')
+        traq_df = binned.get(groups.TERR_AQUA)
+        traq_df = traq_df.drop(columns='organism')
+
+        sns.boxplot(data=terr_df, orient='h', color='deepskyblue', ax=ax1)
+        sns.boxplot(data=aqua_df, orient='h', color='deepskyblue', ax=ax2)
+        sns.boxplot(data=traq_df, orient='h', color='deepskyblue', ax=ax3)
+
+        plt.subplots_adjust(wspace=0.3)
+        save_path = os.path.join(os.getcwd(), 'src', 'data', 'visualizations', 'dnds', 'grouped_orgs',
+                                 'habitat_dist.pdf')
+        plt.savefig(save_path, dpi=95)
 
 
 if __name__ == "__main__":
     dist = Distributor()
-    dist._visualize_grouped_orgs()
+    dist._visualize_by_habitat()
