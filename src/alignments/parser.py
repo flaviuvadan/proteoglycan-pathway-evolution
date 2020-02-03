@@ -72,12 +72,14 @@ class Parser:
                     f.write(">{}\n".format(org_key))
                     f.write("{}\n".format(self.alignments.get(align_key).get(org_key).replace("-", "")))
 
-    def build_frequency_plots(self):
+    def build_frequency_plots(self, subset=False, subset_num=0):
         """ Builds the frequency plots associated with the MSAs """
         num_plots = len(list(self.frequencies.keys()))
         fig = plt.figure(figsize=(8, 40))  # these were figured out by trial and error
         fig.subplots_adjust(hspace=2)
         for idx, gene in enumerate(list(self.frequencies.keys())):
+            if subset and idx == subset_num:
+                break
             values = self.frequencies.get(gene)
             x_vals = [x[0] for x in values]
             y_vals = [x[1] for x in values]
@@ -93,10 +95,10 @@ class Parser:
             plt.yticks([])
             title = "{}".format(gene.split('_')[0])
             plt.title(title)
-        plt.savefig("MSAs.pdf", format="pdf", quality=95, bbox_inches='tight')
+        plt.savefig("sample_msa.pdf", format="pdf", quality=95, bbox_inches='tight')
 
 
 if __name__ == "__main__":
     parser = Parser()
     parser.build_block_alignments()
-    # parser.build_frequency_plots()
+    parser.build_frequency_plots()
