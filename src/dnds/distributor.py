@@ -60,8 +60,8 @@ class Distributor:
         pattern in dnds ratios for each organism """
         fig, ax = plt.subplots(7, 3,
                                figsize=(12, 18))
-        fig.suptitle("Significant organisms' dN/dS distributions",
-                     fontsize=15)
+        # fig.suptitle("Significant organisms' dN/dS distributions",
+        #              fontsize=15)
         for idx, k in enumerate(self.dnds_data.keys()):
             plt.subplot(7, 3, idx + 1)
             fonts = {
@@ -92,9 +92,7 @@ class Distributor:
             # I hate arbitrary numbers like this, Starman
             plt.annotate("{} < 1\n{} >= 1".format(lt_1, gt_1), (5, 550))
         title = os.path.join(os.getcwd(), "src", "data", "visualizations", "dnds", "grouped_orgs", "histograms.pdf")
-        plt.savefig(title,
-                    format="pdf",
-                    quality=95)
+        plt.savefig(title, format="pdf", quality=95, bbox_inches='tight')
 
     def _get_binned_habitat_dataframe(self, class_type=None):
         """ Constructs and returns the cumulative dataframes of the significant organisms based on the given class
@@ -116,11 +114,10 @@ class Distributor:
         """ Creates a collection of distributions for each organism habitat. The bins are: terrestrial, aquatic,
         terrestrial and aquatic """
         groups = organisms_classes.OrganismHabitatGroups()
-        fig, (ax1, ax2, ax3) = plt.subplots(1, 3,
-                                            figsize=(15, 10))
-        ax1.set_title('Terrestrial organisms\'\ndN/dS distribution')
-        ax2.set_title('Aquatic organisms\'\ndN/dS distribution')
-        ax3.set_title('Terrestrial/aquatic organisms\'\ndN/dS distribution')
+        fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(15, 15))
+        ax1.set_title('Terrestrial organisms')
+        ax2.set_title('Aquatic organisms')
+        ax3.set_title('Terrestrial/aquatic organisms')
 
         ax1.set_xlim(0, 6)
         ax2.set_xlim(0, 6)
@@ -133,9 +130,9 @@ class Distributor:
         traq_df = self.habitat_bins.get(groups.TERR_AQUA)
         traq_df = traq_df.drop(columns='organism')
 
-        sns.boxplot(data=terr_df, orient='h', color='deepskyblue', ax=ax1)
-        sns.boxplot(data=aqua_df, orient='h', color='deepskyblue', ax=ax2)
-        sns.boxplot(data=traq_df, orient='h', color='deepskyblue', ax=ax3)
+        sns.violinplot(data=terr_df, orient='h', color='deepskyblue', ax=ax1)
+        sns.violinplot(data=aqua_df, orient='h', color='deepskyblue', ax=ax2)
+        sns.violinplot(data=traq_df, orient='h', color='deepskyblue', ax=ax3)
 
         plt.subplots_adjust(wspace=0.3)
         save_path = os.path.join(os.getcwd(), 'src', 'data', 'visualizations', 'dnds', 'grouped_orgs',
@@ -146,11 +143,10 @@ class Distributor:
         """ Creates a collection of distributions for each organism bin. The bins are: bone and cartilage, cartilage
         only, neither """
         groups = organisms_classes.OrganismBoneGroups()
-        fig, (ax1, ax2, ax3) = plt.subplots(1, 3,
-                                            figsize=(15, 10))
-        ax1.set_title('Bony organisms\'\ndN/dS distribution')
-        ax2.set_title('Cartilaginous organisms\'\ndN/dS distribution')
-        ax3.set_title('Organisms w/o bone or cartilage\ndN/dS distribution')
+        fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(15, 15))
+        ax1.set_title('Bony organisms')
+        ax2.set_title('Cartilaginous organisms')
+        ax3.set_title('Organisms without bone or cartilage')
 
         ax1.set_xlim(0, 6)
         ax2.set_xlim(0, 6)
@@ -163,9 +159,9 @@ class Distributor:
         traq_df = self.bone_bins.get(groups.NO_BONE_NO_CART)
         traq_df = traq_df.drop(columns='organism')
 
-        sns.boxplot(data=terr_df, orient='h', color='deepskyblue', ax=ax1)
-        sns.boxplot(data=aqua_df, orient='h', color='deepskyblue', ax=ax2)
-        sns.boxplot(data=traq_df, orient='h', color='deepskyblue', ax=ax3)
+        sns.violinplot(data=terr_df, orient='h', color='deepskyblue', ax=ax1)
+        sns.violinplot(data=aqua_df, orient='h', color='deepskyblue', ax=ax2)
+        sns.violinplot(data=traq_df, orient='h', color='deepskyblue', ax=ax3)
 
         plt.subplots_adjust(wspace=0.3)
         save_path = os.path.join(os.getcwd(), 'src', 'data', 'visualizations', 'dnds', 'grouped_orgs', 'bone_dist.pdf')
