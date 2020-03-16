@@ -1,0 +1,168 @@
+\begin{thebibliography}{10}
+
+\bibitem{pg_struct_func}
+A.~R. Poole.
+\newblock {P}roteoglycans in {H}ealth and {D}isease: {S}tructures and
+  {F}unctions.
+\newblock {\em Biochemistry}, 236:1--14, 1986.
+
+\bibitem{pg_chapter}
+D.~S. Brown and B.~F. Eames.
+\newblock Emerging {T}ools to {S}tudy {P}roteoglycan {F}unction {D}uring
+  {S}keletal {D}evelopment.
+\newblock In {\em Methods in Cell Biology}, chapter~15, pages 485--530.
+  Elsevier Press, Amsterdam, The Netherlands, 2016.
+
+\bibitem{pg_aggrecan}
+A.~Aspberg.
+\newblock {T}he {D}ifferent {R}oles of {A}ggrecan {I}nteraction {D}omains.
+\newblock {\em Journal of {H}ystochemistry \& {C}ytochemistry},
+  12(60):987--996, 2012.
+
+\bibitem{pg_intro}
+C.~A.~Pataki J.~R.~Couchman.
+\newblock {A}n {I}ntroduction to {P}roteoglycans and {T}heir {L}ocalization.
+\newblock {\em Journal of {H}ystochemistry \& {C}ytochemistry},
+  12(60):885--897, 2012.
+
+\bibitem{osteo1}
+D.~Chen et~al.
+\newblock {O}steoarthritis: {T}oward a {C}omprehensive {U}nderstanding of
+  {P}athological {M}echanism.
+\newblock {\em Bone Research}, 5, 2017.
+
+\bibitem{proteo_osteo1}
+T.~Hardingham and M.~Bayliss.
+\newblock {P}roteoglycans of {A}rticular {C}artilage: {C}hanges in {A}ging and
+  in {J}oint {D}isease.
+\newblock {\em Seminars in Arthritis and Rheumatism}, 20(3):12--33, 1990.
+
+\bibitem{proteo_osteo2}
+J.~Nam M.~Maldonado.
+\newblock {The Role of Changes in Extracellular Matrix of Cartilage in the
+  Presence of Inflammation on the Pathology of Osteoarthritis}.
+\newblock {\em BioMed Research International}, 2013.
+
+\bibitem{proteo_osteo3}
+et~al A.~A.~Young.
+\newblock {Regional Assessment of Articular Cartilage Gene Expression and Small
+  Proteoglycan Metabolism in an Animal Model of Osteoarthritis}.
+\newblock {\em Arthritis Research \& Therapy}, 7(4), 2005.
+
+\bibitem{proteo_form_function}
+L.~Schaefer R.~V.~Iozzo.
+\newblock {Proteoglycan Form and Function: A Comprehensive Nomenclature of
+  Proteoglycans}.
+\newblock {\em Matrix Biology}, 42:11--55, 2015.
+
+\bibitem{fam20}
+H.~Zhang et~al.
+\newblock {Structure and Evolution of the Fam20 Kinases}.
+\newblock {\em Nature Communications}, 9, 2018.
+
+\bibitem{evobio}
+M.~Heino et~al. A.~P.~Hendry, M. T.~Kinnison.
+\newblock Evolutionary {P}rinciples and {T}heir {P}ractical {A}pplication.
+\newblock {\em Evolutionary {A}pplications}, 4:159--183, 2011.
+
+\bibitem{msas}
+R.~D.~Sleator J.~Daugelaite, A.~O'Driscoll.
+\newblock {An Overview of Multiple Sequence Alignments and Cloud Computing in
+  Bioinformatics}.
+\newblock {\em International Scholarly Research Notices}, 13, 2013.
+
+\bibitem{protein_protein}
+O.~Keskin et~al.
+\newblock {P}redicting {P}rotein-{P}rotein {I}nteractions {F}rom the
+  {M}olecular to the {P}roteome {L}evel.
+\newblock {\em Chemical {R}eviews}, 116:4884--4909, 2016.
+
+\bibitem{graur}
+Jean-Francois Gout.
+\newblock {Molecular and Genome Evolution by Dan Graur}.
+\newblock {\em The Quarterly Review of Biology}, 92(4):476--477, 2017.
+
+\bibitem{dnds}
+Z.~Yang and J.~P. Bielawski.
+\newblock {S}tatistical {M}ethods for {D}etecting {M}olecular {A}daptation.
+\newblock {\em Trends in Ecology \& Evolution}, 15(12):496--503, 2000.
+
+\bibitem{kalign}
+J.~Lee et~al. F.~Madeira, Y. M.~Park.
+\newblock {T}he {EMBL-EBI} {S}earch and {S}equence {A}nalysis {T}ools {API}s in
+  2019.
+\newblock {\em Nucleic Acids Research}, 47:636--641, 2019.
+
+\bibitem{matplotlib}
+J.~D. Hunter.
+\newblock {M}atplotlib: {A} 2d {G}raphics {E}nvironment.
+\newblock {\em Computing in Science \& Engineering}, 9(3):90--95, 2007.
+
+\bibitem{ncbi_tax_1}
+D.~A. Benson et~al. E.~W.~Sayers, T.~Barrett.
+\newblock {D}atabase {R}esources of the {N}ational {C}enter for {B}iotechnology
+  {I}nformation.
+\newblock {\em Nucleic Acids Research}, 37:5--15, 2009.
+
+\bibitem{ncbi_tax_2}
+D.~J. Lipman et~al. D.A.~Benson, I. Karsch-Mizrachi.
+\newblock {GenBank}.
+\newblock {\em Nucleic Acids Research}, 37:26--31, 2009.
+
+\bibitem{jaccard}
+P.~Jaccard.
+\newblock {T}he {D}istribution of the {F}lora in the {A}lpine {Z}one.
+\newblock {\em New Phytologist}, 11:37--50, 1912.
+
+\bibitem{ape}
+J.~Claude et~al. E.~Paradis, B.~Bolker.
+\newblock {P}ackage 'ape'.
+\newblock {\em Online}, 2011.
+
+\bibitem{xylt}
+et~al R.~Hao, Z.~Zheng.
+\newblock {Cloning and characterization of O-xylosyltransferase gene from
+  \textit{Pinctada fucata martensii}}.
+\newblock {\em Journal of Applied Animal Research}, 47(1):408--416, 2019.
+
+\bibitem{galt}
+M.~Nakajima et~al.
+\newblock {Mutations in B3GALT6, which Encodes a Glycosaminoglycan Linker
+  Region Enzyme, Cause a Spectrum of Skeletal and Connective Tissue Disorders}.
+\newblock {\em American Journal of Human Genetics}, 92(6):927--934, 2013.
+
+\bibitem{ext}
+C.~McCormick et~al.
+\newblock {The putative tumor suppressors EXT1 and EXT2 form a stable complex
+  that accumulates in the Golgi apparatus and catalyzes the synthesis of
+  heparan sulfate}.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  97(2):668--673, 2000.
+
+\bibitem{chst}
+H.~Thiele et~al.
+\newblock {Loss of chondroitin 6-O-sulfotransferase-1 function results in
+  severe human chondrodysplasia with progressive spinal involvement}.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  101(27):10155--10160, 2004.
+
+\bibitem{galns}
+S.~Tomatsu et~al.
+\newblock {Mutation and polymorphism spectrum of the GALNS gene in
+  mucopolysaccharidosis IVA (Morquio A)}.
+\newblock {\em Human Mutation}, 26(6):500--512, 2005.
+
+\bibitem{gusb}
+R.~Vervoot et~al.
+\newblock {Molecular analysis of patients with beta-glucuronidase deficiency
+  presenting as hydros fettles or as early mucopolysaccharidosis VII}.
+\newblock {\em American Journal of Human Genetics}, 58(3):457--471, 1996.
+
+\bibitem{sgsh}
+A.~Meyer et~al.
+\newblock {The mutation p.Ser298Pro in the sulphamidase gene (SGSH) is
+  associated with a slowly progressive clinical phenotype in
+  mucopolysaccharidosis type IIIA (Sanfilippo A syndrome)}.
+\newblock {\em Human Mutations}, 29(5), 2008.
+
+\end{thebibliography}
