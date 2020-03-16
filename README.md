@@ -4,15 +4,26 @@
 A collection of files associated with a project I contributed to as as final-year Bioinformatics student at the 
 University of Saskatchewan.    
 
-### Summary
-The group hypothesized that organisms that synthesize proteoglycan, as part of collagen production, exhibit higher 
-non-synonymous vs. synonymous mutation ratios. There are 51 genes in the proteoglycan synthesizing pathway, which will 
-be used as a starting point. Orthologs will be identified for the 51 genes, which will help the group identify 
-organisms that are relevant for the study. The organisms will be grouped according to taxonomic information, such as 
-species, and further sub-divided into organisms that (1) produce cartilage, (2) do not produce cartilage, (3) 
-terrestrial, (4) non-terrestrial, and (5) organisms that have ancestors that made bone, but bone was lost secondarily. 
-By comparing the non-synonymous vs. synonymous mutations in a pair- wise fashion, the group will be able to suggest 
-potential biological conclusions regarding the evolution of the proteoglycan synthesizing pathway, such as whether the 
-proteoglycan synthesizing pathway is selected for in organisms that produce collagen.
+### Abstract
+Proteoglycans are a class of macromolecules comprised of proteins to which 
+carbohydrate groups are attached. They serve important functions in the 
+synthesis of cartilage as they bind collagen and are part of bone formation. 
+In addition, proteoglycans are known to function as signal molecules as they 
+are present both intracellularly and extracellularly. The loss of 
+proteoglycans is associated with debilitating diseases such as osteoarthritis. 
+Therefore, an enriched knowledge of proteoglycans may aid osteoarthritis 
+research by suggesting significant genes of the pathway, which can become 
+subjects for more detailed studies. This research focused on collecting 
+*Homo sapiens* orthologs of the proteoglycan pathway genes. Data for this 
+study were collected from Ensembl. Multiple sequence alignments were performed
+ to investigate sequence conservation. Phylogenetic analyses and an 
+investigation of non-synonymous vs. synonymous mutation ratios of proteoglycan
+ synthesis genes were conducted with the intent of verifying whether organisms
+ that synthesize bone and cartilage exhibit higher mutation ratios compared to
+ organisms that do not synthesize bone and cartilage. Contrary to expectation,
+ the research identified that organisms that synthesize bone and cartilage
+ exhibit lower non-synonymous vs. synonymous mutation ratios compared to
+ organism that do not synthesize bone and cartilage. 
 
+#### Presentations
 See first presentation [here](https://github.com/flaviuvadan/proteoglycan-pathway-evolution/blob/master/presentations/proteglycan_pathway_conservation_part_1.pdf).
