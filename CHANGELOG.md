@@ -1,5 +1,9 @@
 # Documentation of project progress
 
+## March 19th, 2020
+- forgot to update the log so I am doing this today
+- worked on writing the paper and uploaded to git
+
 ## January 11th, 2020
 - created a visualization of the box plots of each gene per habitat organism collection
 - isolated organism classification namespaces into their own file 
