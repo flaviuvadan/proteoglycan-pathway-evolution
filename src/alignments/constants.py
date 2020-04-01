@@ -58,7 +58,7 @@ class Genes:
 
 class GeneFunctions:
     """ A namespace of gene functions """
-    CORE_PROTEIN = "Core Protein"
+    CORE_PROTEIN = "CoreProtein"
     XYLOSYLTRANSFERASE = "Xylosyltransferase"
     GALACTOSYLTRANSFERASE = "Galactosyltransferase"
     GLUCURONYLTRANSFERASE = "Glucuronyltransferase"
@@ -110,7 +110,7 @@ GENE_FUNCTIONS = {
     Genes.FAM20A: GeneFunctions.KINASE,
     Genes.FAM20B: GeneFunctions.KINASE,
     Genes.FAM20C: GeneFunctions.KINASE,
-    Genes.GALNS: GeneFunctions.KINASE,
+    Genes.GALNS: GeneFunctions.SULFATASE,
     Genes.GLB1: GeneFunctions.GLYCOSIDASE,
     Genes.GNS: GeneFunctions.SULFATASE,
     Genes.GUSB: GeneFunctions.GLYCOSIDASE,
