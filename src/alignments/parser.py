@@ -66,6 +66,7 @@ class Parser:
     def build_block_alignments(self):
         """ Reads the parsed multiple sequence alignments and prints to a file in block format """
         for align_key in self.alignments.keys():
+            # I do not remember why I've put this in src/data/organisms... -.-
             path = os.path.join(os.getcwd(), "src", "data", "organisms", align_key)
             with open(path, "w") as f:
                 for org_key in self.alignments.get(align_key).keys():
@@ -100,5 +101,5 @@ class Parser:
 
 if __name__ == "__main__":
     parser = Parser()
-    parser.build_block_alignments()
+    # parser.build_block_alignments()
     parser.build_frequency_plots()
