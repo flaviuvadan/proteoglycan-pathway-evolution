@@ -1,6 +1,7 @@
 import os
 
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 import seaborn as sn
 
@@ -41,18 +42,28 @@ class Visualizer(loader.Loader):
         for sig_org in self.scores.keys():
             sig_org_csv = os.path.join(os.getcwd(), "src", "data", "dnds", "{}.csv".format(sig_org))
             df = pd.read_csv(sig_org_csv)
+
             x_vals = df.columns[1:]
             y_vals = df.organism
             y_vals_clean = [" ".join(y.split("_")).capitalize() for y in y_vals]
+
             df = df.drop(columns="organism")
-            plt.title("{} dN/dS ratios".format(" ".join(sig_org.split("_")).capitalize()), fontsize=30)
+            annot = np.where(df.values == 1, 'X', '')  # annotation
+            annot_kws = {"size": 15}  # font size of the annotation labels
+
+            plt.title("{}".format(" ".join(sig_org.split("_")).capitalize()),
+                      fontsize=30,
+                      style='italic')
             sn.heatmap(df,
                        vmin=0,
                        vmax=5,
                        cbar=True,
+                       cmap="coolwarm",
+                       annot=annot,
+                       annot_kws=annot_kws,
+                       fmt='',
                        xticklabels=x_vals,
                        yticklabels=y_vals_clean,
-                       cmap="Blues",
                        linewidths=0.5)
             save_fig_path = os.path.join(os.getcwd(), "src", "data", "visualizations", "dnds", "single_orgs",
                                          "{}.pdf".format(sig_org))
