@@ -1,6 +1,7 @@
 import os
 
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 import seaborn as sns
 
@@ -58,10 +59,9 @@ class Distributor:
     def _visualize_independent_orgs(self):
         """ Creates a collection of distributions, one for each significant organism. The distributions represent the
         pattern in dnds ratios for each organism """
-        fig, ax = plt.subplots(7, 3,
-                               figsize=(12, 18))
-        # fig.suptitle("Significant organisms' dN/dS distributions",
-        #              fontsize=15)
+        _, _ = plt.subplots(7, 3, figsize=(12, 18))
+        no_x_tick = [x for x in range(1, 19)]
+        y_tick = [y for y in range(1, 20, 3)]
         for idx, k in enumerate(self.dnds_data.keys()):
             plt.subplot(7, 3, idx + 1)
             fonts = {
@@ -70,29 +70,33 @@ class Distributor:
                 'verticalalignment': 'baseline',
                 'horizontalalignment': 'center'
             }
-            plt.title(" ".join(k.split("_")[:2]).capitalize(),
-                      fontdict=fonts)
+            plt.title(" ".join(k.split("_")[:2]).capitalize(), fontdict=fonts)
             data = self.dnds_data.get(k)
-            lt_1 = len([x for x in data if x < 1])
-            gt_1 = len(data) - lt_1
+            ones = np.array([[x < 1, x == 1, x > 1] for x in data])
+            lt_1 = sum(ones[:, 0])
+            eq_1 = sum(ones[:, 1])
+            gt_1 = sum(ones[:, 2])
+
             plt.axis([0, 7, 0, 800])
             # have to remove indices manually since I cannot figure out why sharex and sharey have no effect when used
             # with plt.subplots
-            no_x_tick = [x for x in range(1, 19)]
             if idx + 1 in no_x_tick:
                 plt.xticks([])
-            y_tick = [y for y in range(1, 20, 3)]
             if idx + 1 not in y_tick:
                 plt.yticks([])
-            plt.hist(self.dnds_data.get(k), bins=21)
+            plt.hist(self.dnds_data.get(k),
+                     bins=21)  # attempted multiple bins, 21 seems ok
             plt.axvline(1,
                         color='k',
                         linestyle='dashed',
                         linewidth=1)
-            # I hate arbitrary numbers like this, Starman
-            plt.annotate("{} < 1\n{} >= 1".format(lt_1, gt_1), (5, 550))
+            # I hate arbitrary numbers like this, Starman, 5 and 550, wth
+            plt.annotate("{} < 1\n{} == 1\n{} > 1".format(lt_1, eq_1, gt_1), (5, 550))
         title = os.path.join(os.getcwd(), "src", "data", "visualizations", "dnds", "grouped_orgs", "histograms.pdf")
-        plt.savefig(title, format="pdf", quality=95, bbox_inches='tight')
+        plt.savefig(title,
+                    format="pdf",
+                    quality=95,
+                    bbox_inches='tight')
 
     def _get_binned_habitat_dataframe(self, class_type=None):
         """ Constructs and returns the cumulative dataframes of the significant organisms based on the given class
@@ -137,7 +141,9 @@ class Distributor:
         plt.subplots_adjust(wspace=0.3)
         save_path = os.path.join(os.getcwd(), 'src', 'data', 'visualizations', 'dnds', 'grouped_orgs',
                                  'habitat_dist.pdf')
-        plt.savefig(save_path, dpi=95, bbox_inches='tight')
+        plt.savefig(save_path,
+                    dpi=95,
+                    bbox_inches='tight')
 
     def _visualize_by_bone_class(self):
         """ Creates a collection of distributions for each organism bin. The bins are: bone and cartilage, cartilage
