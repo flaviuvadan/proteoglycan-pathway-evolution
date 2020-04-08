@@ -2,6 +2,7 @@ import csv
 import os
 
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 import seaborn as sn
 
@@ -12,12 +13,14 @@ class Parser:
     GENE_NAME_IDX = 0
     GENE_ID_IDX = 1
     GENE_IDX = 2
+    ORG_NAME_IDX = 1
 
     def __init__(self):
         """ Constructor """
         self.genes, self.gene_indices = self._load_genes()
         self.gene_freqs = self._parse_gene_freqs()
         self.org_genes = self._parse_organisms_genes()
+        #self._create_organisms_genes_csv()
 
     def _load_genes(self):
         """ Reads in the genes """
@@ -35,9 +38,9 @@ class Parser:
     def _parse_gene_freqs(self):
         """ Parses the gene frequencies file """
         frequencies = {}
-        with open(os.path.join(os.getcwd(), "src", "data", "genes", "gene_frequencies.txt"), "r") as freqs:
-            freqs.readline()  # omit the first line
-            for line in freqs.readlines():
+        with open(os.path.join(os.getcwd(), "src", "data", "genes", "gene_frequencies.txt"), "r") as f:
+            f.readline()  # omit the first line
+            for line in f.readlines():
                 split_line = line.split(",")
                 org_name, gene_freq = split_line[0], int(split_line[1].replace("\n", ""))
                 frequencies[org_name] = gene_freq
@@ -60,6 +63,42 @@ class Parser:
         plt.savefig("gene_frequencies.pdf", format="pdf", quality=95, bbox_inches="tight")
         plt.close()
 
+    def _get_sig_org_gene_freq_subset(self):
+        """ Creates and returns the subset of gene frequencies for significant organisms """
+        freqs = {}
+        sig_orgs_file_path = os.path.join(os.getcwd(), "src", "data", "phylogeny", "significant_organisms.txt")
+        with open(sig_orgs_file_path, 'r') as f:
+            f.readline()  # omit the header
+            for line in f.readlines():
+                split_line = line.split(",")
+                org_name = split_line[self.ORG_NAME_IDX].strip("\n")
+                freqs[org_name] = self.gene_freqs[org_name]
+        return freqs
+
+    def create_sig_org_freq_plot(self):
+        """ Creates a plot of gene frequencies for significant organisms """
+        sig_orgs_freqs = self._get_sig_org_gene_freq_subset()
+        xs = sig_orgs_freqs.values()
+        ys = sig_orgs_freqs.keys()
+        xy_pairs = list(zip(xs, ys))
+        xy_pairs_sorted = sorted(xy_pairs, key=lambda k: k[0])
+        xs = [k[0] for k in xy_pairs_sorted]
+        ys = [k[1] for k in xy_pairs_sorted]
+        fig, ax = plt.subplots()
+        y_pos = np.arange(len(ys))
+        ax.barh(y_pos, xs, align='center')
+        ax.set_xlim(20, max(xs) + 4)
+        ax.set_yticks(y_pos)
+        ax.set_yticklabels(ys)
+        ax.invert_yaxis()
+        ax.set_xlabel('Frequency')
+        ax.set_title('Significant organisms\' gene frequencies')
+        for i, v in enumerate(xs):
+            ax.text(v + 0.5, i + .25, str(v))
+        fig_path = "src/data/visualizations/genes/sig_org_frequencies.pdf"
+        plt.savefig(fig_path, format="pdf", quality=95, bbox_inches="tight")
+        plt.close()
+
     def _get_genes_vector(self):
         """ Builds and returns a gene binary vector indicating the presence or absence of a gene. The indices
         correspond to the way genes are loaded from genes.txt """
@@ -68,8 +107,9 @@ class Parser:
     def _parse_organisms_genes(self):
         """ Parses the organisms genes file """
         org_genes = {}
+        org_gene_file_path = os.path.join(os.getcwd(), "src", "data", "genes", "organisms_genes.txt")
         # add each org to dict, each pointing to another dict that's a binary gene representation
-        with open(os.path.join(os.getcwd(), "src", "data", "genes", "organisms_genes.txt"), "r") as orgs:
+        with open(org_gene_file_path, "r") as orgs:
             orgs.readline()  # omit the first line
             for line in orgs.readlines():
                 split_line = line.split(",")
@@ -125,6 +165,6 @@ class Parser:
 
 if __name__ == "__main__":
     parser = Parser()
+    parser.create_sig_org_freq_plot()
     parser.create_gene_freq_plot()
-    # parser.create_organisms_genes_matrix()
-    # parser._create_organisms_genes_csv()
+    parser.create_organisms_genes_matrix()
