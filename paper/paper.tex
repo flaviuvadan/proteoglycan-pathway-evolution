@@ -126,52 +126,120 @@ The ape package in R was used to compute mutation ratios \cite{ape}. ape was acc
 This section offers a description of how many organisms were collected, along with the reasoning behind removing some of them. The MSAs of all the genes will be described by offering a intra-group comparison between genes that have similar function e.g sulfatases. An outline of an observation of the types of organisms the scientific community has access to through Ensembl will be constructed. The phylogenetic relationships between clades of organisms with different genetic traits will be described. All the generated trees are available as supplementary information. Lastly, the differences in dN/dS ratio distributions of different organism groups will be described. 
 
 \subsection{Collection of orthologs}
-
 The collection of orthologs from Ensembl resulted in 199 unique organisms. Of 199 collected organisms, 187 were used. The 12 organisms that were not used represented Ensembl genome records that are projection builds, which are low coverage genomes that have genes annotated by mapping to the human genome. 
 
 \subsection{Multiple sequence alignments (MSAs)}
+The genetic sequences were grouped based on the 51 genes of the proteoglycan synthesis pathway. An MSA of the ortholog sequences for each gene was constructed, which resulted in 51 MSA plots. 
 
-The genetic sequences were grouped based on the 51 genes of the proteoglycan synthesis pathway. An MSA of the ortholog sequences for each gene was constructed, which resulted in 51 MSA plots. Figure \ref{fig_1} shows a subset of the generated MSAs; the entire set of MSAs is available as supplementary information.
+\subsubsection{Core proteins}
+The two core genes that were evaluated are \textit{Acan} and \textit{Prg4}. The MSA of \textit{Acan} contains regions that were successfully aligned across the entire length of the gene. Multiple column similarities values that are not higher than 50\% are present throughout the alignment (Figure \ref{msa_fig_1}). The MSA of \textit{Prg4} showcases similarities with the MSA of \textit{Acan} but contains a higher proportion of regions of column similarities that are less than 50\%.
 
 \begin{figure*}
 \centering
-\includegraphics[height=5.5in]{./images/sample_msa.pdf}
-\caption{\textbf{A subset of a representation of the gene MSAs.} The \textit{x} axis represents the length of the alignment (number of nucleotides) whereas the \textit{y} axis represents the column similarity, which is the ratio between the number of non-gap characters in a sequence alignment column and the total number of characters in the column. The column similarity is calculated from the MSA of all the organisms whose genomes contain the gene that an MSA represents.}
-\label{fig_1}
+\includegraphics[width=\textwidth]{./images/coreprotein_msa.pdf}
+\caption{\textbf{Multiple sequence alignments of the core protein genes.} The \textit{x} axis represents the length of the alignment (number of nucleotides) whereas the \textit{y} axis represents the column similarity - the ratio between the number of non-gap characters in a sequence alignment column and the total number of characters in the column.}
+\label{msa_fig_1}
 \end{figure*}
 
-\subsubsection{Core proteins}
-The two core genes that were evaluated are \textit{Acan} and \textit{Prg4}. The MSA of \textit{Acan} contains regions that were successfully aligned across the entire length of the gene. Multiple column similarities values that are not higher than 50\% are present throughout the alignment. The MSA of \textit{Prg4} showcases similarities with the MSA of \textit{Acan} but contains a higher proportion of regions of column similarities that are less than 50\%.
-
 \subsubsection{Xylosyltransferases}
-The two xylosyltransferase genes that were evaluated are \textit{Xylt1} and \textit{Xylt2}. The MSA of \textit{Xylt1} and \textit{Xylt2} showcase similar patterns. Both MSAs showcase regions that exhibit high conservation based on column similarity indices but have flanking regions with low similarity/a large number of alignment gaps.
+The two xylosyltransferase genes that were evaluated are \textit{Xylt1} and \textit{Xylt2}. The MSA of \textit{Xylt1} and \textit{Xylt2} showcase similar patterns (Figure \ref{msa_fig_2}). Both MSAs showcase regions that exhibit high conservation based on column similarity indices but have flanking regions with low similarity/a large number of alignment gaps.
+
+\begin{figure*}
+\centering
+\includegraphics[width=\textwidth]{./images/xylosyltransferase_msa.pdf}
+\caption{\textbf{Multiple sequence alignments of the xylosyltransferase genes.} The \textit{x} axis represents the length of the alignment (number of nucleotides) whereas the \textit{y} axis represents the column similarity - the ratio between the number of non-gap characters in a sequence alignment column and the total number of characters in the column.}
+\label{msa_fig_2}
+\end{figure*}
 
 \subsubsection{Galactosyltransferases}
-The evaluated galactosyltransferase genes are \textit{B3galt6, B4galt7, Chsy1, Chsy3, Csgalnact1,} and \textit{Csgalnact2}. The MSA of \textit{B3galt6} showcases two regions of high conservation between nucleotide 1500 and the end of the sequence. The MSA of \textit{B4galt7} exhibits four regions of high conservation, which are separated by shorter regions of several hundreds of nucleotides. The MSA of \textit{Chsy1} showcases high conservation based on the number of regions that are conserved and the consistently high ratio of column similarity. In addition, the region spanning the first 600 nucleotides showcases low column similarity. The MSA of \textit{Chsy3} showcases similar conservation patterns to \textit{Chsy1} as both genes have a starting region spanning several hundreds of nucleotides with low column similarity but exhibit wide regions of conservation. The alignments of \textit{Csgalnact1} and \textit{Csgalnact2} exhibit wide regions of similarity. However, \textit{Csgalnact2} contains a region of low similarity from position 0 to position 100 of the alignment. In addition, \textit{Csgalnact2} contains 3 regions of low similarity within the alignment. 
+The evaluated galactosyltransferase genes are \textit{B3galt6, B4galt7, Chsy1, Chsy3, Csgalnact1,} and \textit{Csgalnact2}. The MSA of \textit{B3galt6} showcases two regions of high conservation between nucleotide 1500 and the end of the sequence (Figure \ref{msa_fig_3}). The MSA of \textit{B4galt7} exhibits four regions of high conservation, which are separated by shorter regions of several hundreds of nucleotides. The MSA of \textit{Chsy1} showcases high conservation based on the number of regions that are conserved and the consistently high ratio of column similarity. In addition, the region spanning the first 600 nucleotides showcases low column similarity. The MSA of \textit{Chsy3} showcases similar conservation patterns to \textit{Chsy1} as both genes have a starting region spanning several hundreds of nucleotides with low column similarity but exhibit wide regions of conservation. The alignments of \textit{Csgalnact1} and \textit{Csgalnact2} exhibit wide regions of similarity. However, \textit{Csgalnact2} contains a region of low similarity from position 0 to position 100 of the alignment. In addition, \textit{Csgalnact2} contains 3 regions of low similarity within the alignment. 
+
+\begin{figure*}
+\centering
+\includegraphics[width=\textwidth]{./images/galactosyltransferase_msa.pdf}
+\caption{\textbf{Multiple sequence alignments of the galactosyltransferase genes.} The \textit{x} axis represents the length of the alignment (number of nucleotides) whereas the \textit{y} axis represents the column similarity - the ratio between the number of non-gap characters in a sequence alignment column and the total number of characters in the column.}
+\label{msa_fig_3}
+\end{figure*}
 
 \subsubsection{Glucuronyltransferases}
-The evaluated glucuronyltransferase genes are \textit{B3gat3, Chpf,} and \textit{Chst1}. The alignment of \textit{B3gat3} contains two regions of approximately 400 nucleotides that are conserved across all organisms' genes. In addition, the alignment showcases interspersed short regions that are conserved - approximately 50-100 nucleotides - with varying column similarities. The MSA of \textit{Chpf} showcases conserved regions across the lengths of the aligned genes. However, the first 250 nucleotides were either not aligned and resulted in multiple gaps or were aligned but resulted in low similarity scores. Lastly, the alignment of \textit{Chst1} showcases a conserved region of approximately 750 nucleotides with the rest of the alignment containing short regions of approximately 50 nucleotides that were aligned.
+The evaluated glucuronyltransferase genes are \textit{B3gat3, Chpf,} and \textit{Chst1}. The alignment of \textit{B3gat3} contains two regions of approximately 400 nucleotides that are conserved across all organisms' genes (Figure \ref{msa_fig_4}). In addition, the alignment showcases interspersed short regions that are conserved - approximately 50-100 nucleotides - with varying column similarities. The MSA of \textit{Chpf} showcases conserved regions across the lengths of the aligned genes. However, the first 250 nucleotides were either not aligned and resulted in multiple gaps or were aligned but resulted in low similarity scores. Lastly, the alignment of \textit{Chst1} showcases a conserved region of approximately 750 nucleotides with the rest of the alignment containing short regions of approximately 50 nucleotides that were aligned.
+
+\begin{figure*}
+\centering
+\includegraphics[width=\textwidth]{./images/glucuronyltransferase_msa.pdf}
+\caption{\textbf{Multiple sequence alignments of the glucuronyltransferase genes.} The \textit{x} axis represents the length of the alignment (number of nucleotides) whereas the \textit{y} axis represents the column similarity - the ratio between the number of non-gap characters in a sequence alignment column and the total number of characters in the column.}
+\label{msa_fig_4}
+\end{figure*}
 
 \subsubsection{Glycosyltransferases}
-The evaluated glycosyltransferase genes are \textit{Ext1} and \textit{Ext2}. The MSA of \textit{Ext1} showcases conservation across the gene with the exception of a short region of approximately 400 nucleotides at the beginning of the alignment. The alignment of \textit{Ext2} exhibits conservation across the second half of the gene with the first half of approximately 2000 nucleotides showcasing low or not conservation - low column similarity score or gaps across the entire column.
+The evaluated glycosyltransferase genes are \textit{Ext1} and \textit{Ext2}. The MSA of \textit{Ext1} showcases conservation across the gene with the exception of a short region of approximately 400 nucleotides at the beginning of the alignment (Figure \ref{msa_fig_5}). The alignment of \textit{Ext2} exhibits conservation across the second half of the gene with the first half of approximately 2000 nucleotides showcasing low or not conservation - low column similarity score or gaps across the entire column.
+
+\begin{figure*}
+\centering
+\includegraphics[width=\textwidth]{./images/glycosyltransferase_msa.pdf}
+\caption{\textbf{Multiple sequence alignments of the glycosyltransferase genes.} The \textit{x} axis represents the length of the alignment (number of nucleotides) whereas the \textit{y} axis represents the column similarity - the ratio between the number of non-gap characters in a sequence alignment column and the total number of characters in the column.}
+\label{msa_fig_5}
+\end{figure*}
 
 \subsubsection{Sulfotransferases}
-The evaluated sulfotransferase genes are \textit{Chst1, Chst11, Chst12, Chst13, Chst14, Chst15, Chst2, Chst3, Chst4, Chst7, Chst9,} and \textit{Ust}. The alignment of \textit{Chst1} presents a conserved region from nucleotide 2200 to 3100 with the rest of the alignment showcasing either low column similarity or no conservation. \textit{Chst11} exhibits a conserved region from nucleotide 1000 to approximately 1800 with the rest of the alignment containing short regions of high similarity interspersed between regions of low or non-existing column similarity. The alignment of \textit{Chst12} showcases conservation from location 1600 to the end of the gene sequence with multiple short regions of several hundreds of nucleotides that are conserved. \textit{Chst13}'s alignment contains a conserved region from nucleotide 1600 towards the end of the gene alignment. The first half of the alignment showcases 6 short regions that exhibit conservation with the rest being either low conservation or no conservation. The alignment of \textit{Chst14} showcases a conserved region of approximately 750 nucleotides towards the end of the alignment with the first half containing either non-existing or low conservation patterns. The MSA of \textit{Chst15} showcases long conserved regions of approximately 1500 and 500 nucleotides, respectively, separated by a short region of low column similarity of approximately 100 nucleotides. In addition, the beginning of the alignment contains a region of approximately 300 nucleotides that showcase low column similarity. The alignment of \textit{Chst2} showcases a continuous region of high similarity between nucleotides 1000 and approximately 2600. The alignment region before nucleotide 1000 showcases column similarity values between 50 and approximately 80\%. The alignment of \textit{Chst3} showcases a conserved region from nucleotide 1000 to approximately 2400 with the region between nucleotide 500 and 1000 showcasing high and low column similarity ranging from approximately 10 to 80\%. The alignment of \textit{Chst4} showcases 3 highly conserved regions between nucleotide 750 and 1000, 1100 and 1250, and 1300 and 2000, respectively. The first 500 nucleotides in the alignment showcase low to no column similarity. The alignment of \textit{Chst7} showcases regions of similarity clustered towards the middle of the alignment from nucleotide 400 to 2200. The conserved regions contain column similarity values ranging from approximately 10 to 100\%. Lastly, the alignment of \textit{Chst9} showcases a conserved region from nucleotide 800 to 1750 and from nucleotide 1800 to 2200. The first 800 nucleotides contain short conserved regions with length ranging from 20 to 100 nucleotides. 
+The evaluated sulfotransferase genes are \textit{Chst1, Chst11, Chst12, Chst13, Chst14, Chst15, Chst2, Chst3, Chst4, Chst7, Chst9,} and \textit{Ust}. The alignment of \textit{Chst1} presents a conserved region from nucleotide 2200 to 3100 with the rest of the alignment showcasing either low column similarity or no conservation (Figure \ref{msa_fig_6}). \textit{Chst11} exhibits a conserved region from nucleotide 1000 to approximately 1800 with the rest of the alignment containing short regions of high similarity interspersed between regions of low or non-existing column similarity. The alignment of \textit{Chst12} showcases conservation from location 1600 to the end of the gene sequence with multiple short regions of several hundreds of nucleotides that are conserved. \textit{Chst13}'s alignment contains a conserved region from nucleotide 1600 towards the end of the gene alignment. The first half of the alignment showcases 6 short regions that exhibit conservation with the rest being either low conservation or no conservation. The alignment of \textit{Chst14} showcases a conserved region of approximately 750 nucleotides towards the end of the alignment with the first half containing either non-existing or low conservation patterns. The MSA of \textit{Chst15} showcases long conserved regions of approximately 1500 and 500 nucleotides, respectively, separated by a short region of low column similarity of approximately 100 nucleotides. In addition, the beginning of the alignment contains a region of approximately 300 nucleotides that showcase low column similarity. The alignment of \textit{Chst2} showcases a continuous region of high similarity between nucleotides 1000 and approximately 2600. The alignment region before nucleotide 1000 showcases column similarity values between 50 and approximately 80\%. The alignment of \textit{Chst3} showcases a conserved region from nucleotide 1000 to approximately 2400 with the region between nucleotide 500 and 1000 showcasing high and low column similarity ranging from approximately 10 to 80\%. The alignment of \textit{Chst4} showcases 3 highly conserved regions between nucleotide 750 and 1000, 1100 and 1250, and 1300 and 2000, respectively. The first 500 nucleotides in the alignment showcase low to no column similarity. The alignment of \textit{Chst7} showcases regions of similarity clustered towards the middle of the alignment from nucleotide 400 to 2200. The conserved regions contain column similarity values ranging from approximately 10 to 100\%. Lastly, the alignment of \textit{Chst9} showcases a conserved region from nucleotide 800 to 1750 and from nucleotide 1800 to 2200. The first 800 nucleotides contain short conserved regions with length ranging from 20 to 100 nucleotides. 
+
+\begin{figure*}
+\centering
+\includegraphics[width=\textwidth]{./images/sulfotransferase_msa.pdf}
+\caption{\textbf{Multiple sequence alignments of the sulfotransferase genes.} The \textit{x} axis represents the length of the alignment (number of nucleotides) whereas the \textit{y} axis represents the column similarity - the ratio between the number of non-gap characters in a sequence alignment column and the total number of characters in the column.}
+\label{msa_fig_6}
+\end{figure*}
 
 \subsubsection{Sulfatases}
-The evaluated sulfatase genes are \textit{Arsa, Arsb, Arsc, Arsd, Arse, Arsf, Arsg, Arsi, Arsj, Arsk, Galns, Gns, Ids, Sulf1, Sumf1,} and \textit{Sumf2}. The alignment of \textit{Arsa} showcases multiple short conserved regions ranging in length from approximately 50 nucleotides  to 400 nucleotides. The beginning of the alignment contains a region of 500 nucleotides that showcase low conservation while the end of the alignment showcases a region of approximately 300 nucleotides with low conservation. The MSA of \textit{Arsb} showcases long conserved regions from nucleotide 500 to approximately 2700 with the first 400 and the last 300 nucleotide regions showcasing low similarity. The MSA of \textit{Arsc} showcases interspersed regions of high similarity between nucleotide 1100 and 4000 with the start and end regions of the alignment showcasing low similarity ranging from approximately 10 to 40\%. The alignment of \textit{Arsd} exhibits a conserved region from nucleotide 1500 towards the end of the sequence. The first 1500 nucleotides showcase low similarity ranging from approximately 10 to 80\%. The alignment of \textit{Arse} showcases conserved regions ranging from approximately 10 to 100\% across a region from nucleotide 500 to 5200 with the flanking regions of the alignment showcasing no similarity. The alignment of \textit{Arsf} showcases similar patterns to the alignment of \textit{Arse} with conserved regions from nucleotide 500 to 4500 and flanking regions of low similarity. The alignment of \textit{Arsg} showcases multiple conserved regions. The conserved regions range from nucleotide 500 to 1500 and 2200 to 4500 with interspersed regions of low similarity. The alignment of \textit{Arsi} showcases 9 regions of high similarity separated by a region of no similarity from nucleotide 2500 to approximately 3800. The MSA of \textit{Arsj} showcases high similarity spread throughout the alignment with short regions of low similarity of lengths ranging from 10 to 50 nucleotides. The alignment of \textit{Arsk} showcases multiple regions of high similarity ranging from nucleotide 1500 to 3300 with multiple short regions of lengths ranging from 20 to 50 nucleotides surrounding the regions of high similarity. The flanking regions of the alignment represent conservation regions of 500 nucleotides. The MSA of \textit{Galns} showcases a conserved region from nucleotide 1000 to approximately 3000, which are separated by approximately 8 regions of low similarity of length 10 to 50 nucleotides. The rest of the alignment showcases multiple short regions of 10 to 40 nucleotides that showcase high similarity across the alignment. The MSA of \textit{Gns} showcases a conserved gene region from nucleotide 1700 to 3500. The first half of the alignment contains a highly conserved region from nucleotide 1000 to 1400 with the rest of the alignment showcasing low to no similarity. The MSA of \textit{Ids} showcases multiple regions that are highly conserved across the gene with lengths ranging from 50 to 200 nucleotides. The first 1800 nucleotides of the alignment showcase column similarity values ranging from approximately 10 to 50\%. The alignment of \textit{Sulf1} showcases 3 highly conserved regions of approximately 500 nucleotides with multiple, short, highly conserved regions spread throughout the alignment. The region from nucleotide 5000 to 7000 contains similarity values ranging from 40 to approximately 80\%. The MSA of \textit{Sumf1} contains two regions of high similarity from nucleotide 1500 to 2000 and 2200 to 2400, respectively. The region from nucleotide 500 to 1500 showcases similarity values ranging from 20 to 80\% with the flanking regions of the alignment showcasing low column similarity values of approximately 10\%. Lastly, the MSA of \textit{Sumf2} showcases conserved regions ranging from the start of the gene alignment to nucleotide 2000. The second half of the alignment contains either low similarity or no similarities. 
+The evaluated sulfatase genes are \textit{Arsa, Arsb, Arsc, Arsd, Arse, Arsf, Arsg, Arsi, Arsj, Arsk, Galns, Gns, Ids, Sulf1, Sumf1,} and \textit{Sumf2}. The alignment of \textit{Arsa} showcases multiple short conserved regions ranging in length from approximately 50 nucleotides  to 400 nucleotides (Figure \ref{msa_fig_7}). The beginning of the alignment contains a region of 500 nucleotides that showcase low conservation while the end of the alignment showcases a region of approximately 300 nucleotides with low conservation. The MSA of \textit{Arsb} showcases long conserved regions from nucleotide 500 to approximately 2700 with the first 400 and the last 300 nucleotide regions showcasing low similarity. The MSA of \textit{Arsc} showcases interspersed regions of high similarity between nucleotide 1100 and 4000 with the start and end regions of the alignment showcasing low similarity ranging from approximately 10 to 40\%. The alignment of \textit{Arsd} exhibits a conserved region from nucleotide 1500 towards the end of the sequence. The first 1500 nucleotides showcase low similarity ranging from approximately 10 to 80\%. The alignment of \textit{Arse} showcases conserved regions ranging from approximately 10 to 100\% across a region from nucleotide 500 to 5200 with the flanking regions of the alignment showcasing no similarity. The alignment of \textit{Arsf} showcases similar patterns to the alignment of \textit{Arse} with conserved regions from nucleotide 500 to 4500 and flanking regions of low similarity. The alignment of \textit{Arsg} showcases multiple conserved regions. The conserved regions range from nucleotide 500 to 1500 and 2200 to 4500 with interspersed regions of low similarity. The alignment of \textit{Arsi} showcases 9 regions of high similarity separated by a region of no similarity from nucleotide 2500 to approximately 3800. The MSA of \textit{Arsj} showcases high similarity spread throughout the alignment with short regions of low similarity of lengths ranging from 10 to 50 nucleotides. The alignment of \textit{Arsk} showcases multiple regions of high similarity ranging from nucleotide 1500 to 3300 with multiple short regions of lengths ranging from 20 to 50 nucleotides surrounding the regions of high similarity. The flanking regions of the alignment represent conservation regions of 500 nucleotides. The MSA of \textit{Galns} showcases a conserved region from nucleotide 1000 to approximately 3000, which are separated by approximately 8 regions of low similarity of length 10 to 50 nucleotides. The rest of the alignment showcases multiple short regions of 10 to 40 nucleotides that showcase high similarity across the alignment. The MSA of \textit{Gns} showcases a conserved gene region from nucleotide 1700 to 3500. The first half of the alignment contains a highly conserved region from nucleotide 1000 to 1400 with the rest of the alignment showcasing low to no similarity. The MSA of \textit{Ids} showcases multiple regions that are highly conserved across the gene with lengths ranging from 50 to 200 nucleotides. The first 1800 nucleotides of the alignment showcase column similarity values ranging from approximately 10 to 50\%. The alignment of \textit{Sulf1} showcases 3 highly conserved regions of approximately 500 nucleotides with multiple, short, highly conserved regions spread throughout the alignment. The region from nucleotide 5000 to 7000 contains similarity values ranging from 40 to approximately 80\%. The MSA of \textit{Sumf1} contains two regions of high similarity from nucleotide 1500 to 2000 and 2200 to 2400, respectively. The region from nucleotide 500 to 1500 showcases similarity values ranging from 20 to 80\% with the flanking regions of the alignment showcasing low column similarity values of approximately 10\%. Lastly, the MSA of \textit{Sumf2} showcases conserved regions ranging from the start of the gene alignment to nucleotide 2000. The second half of the alignment contains either low similarity or no similarities. 
+
+\begin{figure*}
+\centering
+\includegraphics[width=\textwidth,height=8in]{./images/sulfatase_msa.pdf}
+\caption{\textbf{Multiple sequence alignments of the sulfatase genes.} The \textit{x} axis represents the length of the alignment (number of nucleotides) whereas the \textit{y} axis represents the column similarity - the ratio between the number of non-gap characters in a sequence alignment column and the total number of characters in the column.}
+\label{msa_fig_7}
+\end{figure*}
 
 \subsubsection{Kinases}
-The evaluated kinase genes are \textit{Fam20a, Fam20b,} and \textit{Fam20c}. The MSA of \textit{Fam20a} contains a highly conserved region from nucleotide 4000 to the end of the alignment. The first 4000 nucleotides contain interspersed regions of short length - approximately 50 nucleotides - but high column similarity values - approximately 80\%. The alignment of \textit{Fam20b} showcases 9 distinct nucleotide regions that are highly conserved with regions of low conservation scattered between. The longest region of low similarity ranges from nucleotide 400 to approximately 800. The alignment of \textit{Fam20c} showcases three regions of high similarity with length ranging from 200 to 400 nucleotides. The rest of the alignment contains short regions of 20 to 100 nucleotides that are highly conserved.
+The evaluated kinase genes are \textit{Fam20a, Fam20b,} and \textit{Fam20c}. The MSA of \textit{Fam20a} contains a highly conserved region from nucleotide 4000 to the end of the alignment (Figure \ref{msa_fig_8}). The first 4000 nucleotides contain interspersed regions of short length - approximately 50 nucleotides - but high column similarity values - approximately 80\%. The alignment of \textit{Fam20b} showcases 9 distinct nucleotide regions that are highly conserved with regions of low conservation scattered between. The longest region of low similarity ranges from nucleotide 400 to approximately 800. The alignment of \textit{Fam20c} showcases three regions of high similarity with length ranging from 200 to 400 nucleotides. The rest of the alignment contains short regions of 20 to 100 nucleotides that are highly conserved.
+
+\begin{figure*}
+\centering
+\includegraphics[width=\textwidth]{./images/kinase_msa.pdf}
+\caption{\textbf{Multiple sequence alignments of the kinase genes.} The \textit{x} axis represents the length of the alignment (number of nucleotides) whereas the \textit{y} axis represents the column similarity - the ratio between the number of non-gap characters in a sequence alignment column and the total number of characters in the column.}
+\label{msa_fig_8}
+\end{figure*}
 
 \subsubsection{Epimerases}
-The evaluated epimerase gene is \textit{Dse}. The MSA of \textit{Dse} showcases a highly conserved region of approximately 3000 nucleotides. In addition, the alignment showcases multiple short regions ranging from 50 to 200 nucleotides that are highly conserved. The first 600 nucleotides showcase low similarity across the alignment. 
+The evaluated epimerase gene is \textit{Dse}. The MSA of \textit{Dse} showcases a highly conserved region of approximately 3000 nucleotides. In addition, the alignment showcases multiple short regions ranging from 50 to 200 nucleotides that are highly conserved (Figure \ref{msa_fig_9}). The first 600 nucleotides showcase low similarity across the alignment. 
+
+\begin{figure*}
+\centering
+\includegraphics[width=\textwidth]{./images/epimerase_msa.pdf}
+\caption{\textbf{Multiple sequence alignments of the epimerase gene.} The \textit{x} axis represents the length of the alignment (number of nucleotides) whereas the \textit{y} axis represents the column similarity - the ratio between the number of non-gap characters in a sequence alignment column and the total number of characters in the column.}
+\label{msa_fig_9}
+\end{figure*}
 
 \subsubsection{Glycosidases}
-The evaluated glycosides gene is \textit{Gusb}. The alignment of \textit{Gusb} contains several highly conserved regions. Specifically, the alignment showcases 4 regions of lengths ranging from 200 to 600 nucleotides that are highly conserved. In addition, the alignment showcases multiple short regions of length ranging from 20 to 100 nucleotides that are highly conserved.
+The evaluated glycosides gene is \textit{Gusb}. The alignment of \textit{Gusb} contains several highly conserved regions. Specifically, the alignment showcases 4 regions of lengths ranging from 200 to 600 nucleotides that are highly conserved (Figure \ref{msa_fig_10}). In addition, the alignment showcases multiple short regions of length ranging from 20 to 100 nucleotides that are highly conserved.
+
+\begin{figure*}
+\centering
+\includegraphics[width=\textwidth]{./images/glycosidase_msa.pdf}
+\caption{\textbf{Multiple sequence alignments of the glycosidase genes.} The \textit{x} axis represents the length of the alignment (number of nucleotides) whereas the \textit{y} axis represents the column similarity - the ratio between the number of non-gap characters in a sequence alignment column and the total number of characters in the column.}
+\label{msa_fig_10}
+\end{figure*}
 
 \subsubsection{Sulfohydrolases}
-The evaluated sulfohydrolase gene is \textit{Sgsh}. The MSA of \textit{Sgsh} contains a region that is highly conserved between nucleotide 2800 to 3700. In addition, the alignment showcases 4 regions that are approximately 200 nucleotides in length and showcase high similarity. The rest of the alignment contains scattered regions of low column similarity. 
+The evaluated sulfohydrolase gene is \textit{Sgsh}. The MSA of \textit{Sgsh} contains a region that is highly conserved between nucleotide 2800 to 3700 (Figure \ref{msa_fig_11}). In addition, the alignment showcases 4 regions that are approximately 200 nucleotides in length and showcase high similarity. The rest of the alignment contains scattered regions of low column similarity.
+
+\begin{figure*}
+\centering
+\includegraphics[width=\textwidth]{./images/sulfohydrolase_msa.pdf}
+\caption{\textbf{Multiple sequence alignments of the sulfohydrolase gene.} The \textit{x} axis represents the length of the alignment (number of nucleotides) whereas the \textit{y} axis represents the column similarity - the ratio between the number of non-gap characters in a sequence alignment column and the total number of characters in the column.}
+\label{msa_fig_11}
+\end{figure*}
 
 \subsection{Taxonomic information}
 The collection of taxonomic information resulted in a record being produced for every organism used in this study. Organisms were grouped by taxonomic class. Figure \ref{fig_2} provides a summary of the number of organisms in each taxonomic category that was used for categorizing organisms. Significant organisms were selected from each taxonomic group outlined in Figure \ref{fig_2}, which resulted in the 21 organisms outlined in Table \ref{tab_2}.
@@ -191,13 +259,14 @@ The phylogenetic relationships between all the genes used in this study were cap
 \hline
 Class             		& Organism                          		& Terrestrial	& Aquatic		& Cartilage                 & Bone	\\ 
 \hline
+\hline
 Mammalia        		& \textit{Homo sapiens}             		& \checkmark 	&              		& \checkmark & \checkmark 	\\
                   		& \textit{Mus musculus}             		& \checkmark 	&              		& \checkmark & \checkmark 	\\
                   		& \textit{Ornithorhynchus anatinus} 	& \checkmark 	&			& \checkmark & \checkmark 	\\
 Actinopterygii    	& \textit{Danio rerio}              		&                       & \checkmark 	& \checkmark & \checkmark 	\\
-                  		& \textit{Oryzias latipes}          		&                       & \checkmark 	& \checkmark &                    	\\
-                  		& \textit{Takifugu rubripes}        		&                       & \checkmark 	& \checkmark &                       	\\
-                  		& \textit{Lepisosteus oculatus}     	&                       & \checkmark 	& \checkmark &                        	\\
+                  		& \textit{Oryzias latipes}          		&                       & \checkmark 	& \checkmark & \checkmark	\\
+                  		& \textit{Takifugu rubripes}        		&                       & \checkmark 	& \checkmark & \checkmark 	\\
+                  		& \textit{Lepisosteus oculatus}     	&                       & \checkmark 	& \checkmark & \checkmark	\\
 Archelosauria   		& \textit{Anas platyrhynchos}       	& \checkmark 	& \checkmark 	& \checkmark & \checkmark 	\\
                   		& \textit{Gallus gallus}            		& \checkmark 	&                       & \checkmark & \checkmark 	\\
                   		& \textit{Chrysemys picta bellii}   	&                       & \checkmark 	& \checkmark & \checkmark 	\\
@@ -205,10 +274,12 @@ Archelosauria   		& \textit{Anas platyrhynchos}       	& \checkmark 	& \checkmar
 Lepidosauria    		& \textit{Notechis scutatus}        	& \checkmark 	&                       & \checkmark & \checkmark 	\\
                   		& \textit{Anolis carolinensis}      		& \checkmark 	&                       & \checkmark & \checkmark 	\\
 Amphibia          		& \textit{Xenopus tropicalis}       	& \checkmark 	& \checkmark 	& \checkmark & \checkmark 	\\
+\hline
 Holocephali      		& \textit{Callorhinchus milii}      		&                       & \checkmark 	& \checkmark &                 	\\
-Coelacanthiformes 	& \textit{Latimeria chalumnae}      	&                       & \checkmark 	& \checkmark & \checkmark 	\\
-Hyperoartia       	& \textit{Petromyzon marinus}       	&                       & \checkmark 	& \checkmark & \checkmark 	\\
-Hyperotreti       		& \textit{Eptatretus burgeri}       		&                       & \checkmark 	& \checkmark & \checkmark 	\\
+Coelacanthiformes 	& \textit{Latimeria chalumnae}      	&                       & \checkmark 	& \checkmark & 			\\
+Hyperoartia       	& \textit{Petromyzon marinus}       	&                       & \checkmark 	& \checkmark & 			\\
+Hyperotreti       		& \textit{Eptatretus burgeri}       		&                       & \checkmark 	& \checkmark & 			\\
+\hline
 Phlebobranchia    	& \textit{Ciona intestinalis}       		&                       & \checkmark 	&                           &                  	\\
 Pterygota         		& \textit{Drosophila melanogaster}  	& \checkmark 	&                       &                           &                 	\\
 Rhabditina        		& \textit{Caenorhabditis elegans}   	& \checkmark 	& \checkmark 	&                           &                   \\
@@ -222,6 +293,7 @@ Rhabditina        		& \textit{Caenorhabditis elegans}   	& \checkmark 	& \checkm
 \begin{tabular}{ll}
 \hline
 \textbf{Tree} & \textbf{Genes}													\\ 
+\hline
 \hline
 1             & \textit{Arsc, Arsi, Dse, Ext1}                                               						\\
 2             & \textit{Arsd, Arsj}                                                          						\\
@@ -243,7 +315,6 @@ Rhabditina        		& \textit{Caenorhabditis elegans}   	& \checkmark 	& \checkm
 \caption{\textbf{An outline of the gene trees that were combined based on organisms' similarity.}}
 \label{tab_1}
 \end{table}
-
 
 \begin{figure}[]
 \centering
@@ -285,8 +356,8 @@ The genes dN/dS distributions illustrated by the classification of organisms bas
 
 \begin{figure}[]
 \centering
-\makebox[\textwidth][c]{\includegraphics[height=7in,trim={0 0 0 0in},clip]{./images/homo_sapiens_dnds.pdf}}
-\caption{\textbf{A sample dN/dS 2D grid for \textit{Homo sapiens} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection.}
+\makebox[\textwidth][c]{\includegraphics[height=7in,trim={0 0 0 0in},clip]{./appendix_images/dnds/homo_sapiens.pdf}}
+\caption{\textbf{A sample dN/dS 2D grid for \textit{Homo sapiens} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection. Grid boxes that are marked with "X" indicate that either the organism the grid represents, or the organism that dN/dS is computed against, does not have the gene associated with the box.}
 \label{fig_4}
 \end{figure}
 
@@ -311,9 +382,6 @@ In light of current results, it may be beneficial for future work to investigate
 \bibliography{paper.bib}
 
 \appendix
-
-\section{Alignments}
-The complete MSA that includes all the genes is available at: \url{https://github.com/flaviuvadan/proteoglycan-pathway-evolution/blob/master/src/data/visualizations/alignments/MSAs.pdf}
 
 \section{Genes}
 This section includes supplementary material generated for visualizing organism gene frequencies, gene functions, and genes' clustering.
@@ -454,14 +522,14 @@ This section includes supplementary material generated for visualizing the dN/dS
 \begin{figure}[H]
 \centering
 \makebox[\textwidth][c]{\includegraphics[height=7in,trim={0 0 0 0in},clip]{./appendix_images/dnds/anas_platyrhynchos_platyrhynchos.pdf}}
-\caption{\textbf{dN/dS 2D grid for \textit{Anas platyrhynchos} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection.}
+\caption{\textbf{dN/dS 2D grid for \textit{Anas platyrhynchos} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection. Grid boxes that are marked with "X" indicate that either the organism the grid represents, or the organism that dN/dS is computed against, does not have the gene associated with the box.}
 \label{sup_fig_19}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \makebox[\textwidth][c]{\includegraphics[height=7in,trim={0 0 0 0in},clip]{./appendix_images/dnds/anolis_carolinensis.pdf}}
-\caption{\textbf{dN/dS 2D grid for \textit{Anolis Carolinensis} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection.}
+\caption{\textbf{dN/dS 2D grid for \textit{Anolis Carolinensis} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection. Grid boxes that are marked with "X" indicate that either the organism the grid represents, or the organism that dN/dS is computed against, does not have the gene associated with the box.}
 \label{sup_fig_20}
 \end{figure}
 
@@ -475,112 +543,112 @@ This section includes supplementary material generated for visualizing the dN/dS
 \begin{figure}[H]
 \centering
 \makebox[\textwidth][c]{\includegraphics[height=7in,trim={0 0 0 0in},clip]{./appendix_images/dnds/callorhinchus_milii.pdf}}
-\caption{\textbf{dN/dS 2D grid for \textit{Callorhinchus millii} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection.}
+\caption{\textbf{dN/dS 2D grid for \textit{Callorhinchus millii} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection. Grid boxes that are marked with "X" indicate that either the organism the grid represents, or the organism that dN/dS is computed against, does not have the gene associated with the box.}
 \label{sup_fig_19}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \makebox[\textwidth][c]{\includegraphics[height=7in,trim={0 0 0 0in},clip]{./appendix_images/dnds/chrysemys_picta_bellii.pdf}}
-\caption{\textbf{dN/dS 2D grid for \textit{Chrysemys picta bellii} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection.}
+\caption{\textbf{dN/dS 2D grid for \textit{Chrysemys picta bellii} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection. Grid boxes that are marked with "X" indicate that either the organism the grid represents, or the organism that dN/dS is computed against, does not have the gene associated with the box.}
 \label{sup_fig_20}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \makebox[\textwidth][c]{\includegraphics[height=7in,trim={0 0 0 0in},clip]{./appendix_images/dnds/ciona_intestinalis.pdf}}
-\caption{\textbf{dN/dS 2D grid for \textit{Ciona intestinalis} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection.}
+\caption{\textbf{dN/dS 2D grid for \textit{Ciona intestinalis} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection. Grid boxes that are marked with "X" indicate that either the organism the grid represents, or the organism that dN/dS is computed against, does not have the gene associated with the box.}
 \label{sup_fig_21}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \makebox[\textwidth][c]{\includegraphics[height=7in,trim={0 0 0 0in},clip]{./appendix_images/dnds/crocodylus_porosus.pdf}}
-\caption{\textbf{dN/dS 2D grid for \textit{Crocodylus porosus} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection.}
+\caption{\textbf{dN/dS 2D grid for \textit{Crocodylus porosus} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection. Grid boxes that are marked with "X" indicate that either the organism the grid represents, or the organism that dN/dS is computed against, does not have the gene associated with the box.}
 \label{sup_fig_22}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \makebox[\textwidth][c]{\includegraphics[height=7in,trim={0 0 0 0in},clip]{./appendix_images/dnds/danio_rerio.pdf}}
-\caption{\textbf{dN/dS 2D grid for \textit{Danio rerio} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection.}
+\caption{\textbf{dN/dS 2D grid for \textit{Danio rerio} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection. Grid boxes that are marked with "X" indicate that either the organism the grid represents, or the organism that dN/dS is computed against, does not have the gene associated with the box.}
 \label{sup_fig_23}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \makebox[\textwidth][c]{\includegraphics[height=7in,trim={0 0 0 0in},clip]{./appendix_images/dnds/drosophila_melanogaster.pdf}}
-\caption{\textbf{dN/dS 2D grid for \textit{Drosophila melanogaster} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection.}
+\caption{\textbf{dN/dS 2D grid for \textit{Drosophila melanogaster} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection. Grid boxes that are marked with "X" indicate that either the organism the grid represents, or the organism that dN/dS is computed against, does not have the gene associated with the box.}
 \label{sup_fig_24}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \makebox[\textwidth][c]{\includegraphics[height=7in,trim={0 0 0 0in},clip]{./appendix_images/dnds/eptatretus_burgeri.pdf}}
-\caption{\textbf{dN/dS 2D grid for \textit{Eptatretus burgeri} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection.}
+\caption{\textbf{dN/dS 2D grid for \textit{Eptatretus burgeri} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection. Grid boxes that are marked with "X" indicate that either the organism the grid represents, or the organism that dN/dS is computed against, does not have the gene associated with the box.}
 \label{sup_fig_25}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \makebox[\textwidth][c]{\includegraphics[height=7in,trim={0 0 0 0in},clip]{./appendix_images/dnds/gallus_gallus.pdf}}
-\caption{\textbf{dN/dS 2D grid for \textit{Gallus gallus} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection.}
+\caption{\textbf{dN/dS 2D grid for \textit{Gallus gallus} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection. Grid boxes that are marked with "X" indicate that either the organism the grid represents, or the organism that dN/dS is computed against, does not have the gene associated with the box.}
 \label{sup_fig_26}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \makebox[\textwidth][c]{\includegraphics[height=7in,trim={0 0 0 0in},clip]{./appendix_images/dnds/latimeria_chalumnae.pdf}}
-\caption{\textbf{dN/dS 2D grid for \textit{Latimeria chalumnae} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection.}
+\caption{\textbf{dN/dS 2D grid for \textit{Latimeria chalumnae} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection. Grid boxes that are marked with "X" indicate that either the organism the grid represents, or the organism that dN/dS is computed against, does not have the gene associated with the box.}
 \label{sup_fig_27}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \makebox[\textwidth][c]{\includegraphics[height=7in,trim={0 0 0 0in},clip]{./appendix_images/dnds/mus_musculus.pdf}}
-\caption{\textbf{dN/dS 2D grid for \textit{Mus musculus} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection.}
+\caption{\textbf{dN/dS 2D grid for \textit{Mus musculus} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection. Grid boxes that are marked with "X" indicate that either the organism the grid represents, or the organism that dN/dS is computed against, does not have the gene associated with the box.}
 \label{sup_fig_28}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \makebox[\textwidth][c]{\includegraphics[height=7in,trim={0 0 0 0in},clip]{./appendix_images/dnds/notechis_scutatus.pdf}}
-\caption{\textbf{dN/dS 2D grid for \textit{Notetis scutatus} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection.}
+\caption{\textbf{dN/dS 2D grid for \textit{Notetis scutatus} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection. Grid boxes that are marked with "X" indicate that either the organism the grid represents, or the organism that dN/dS is computed against, does not have the gene associated with the box.}
 \label{sup_fig_29}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \makebox[\textwidth][c]{\includegraphics[height=7in,trim={0 0 0 0in},clip]{./appendix_images/dnds/ornithorhynchus_anatinus.pdf}}
-\caption{\textbf{dN/dS 2D grid for \textit{Ornithorhynchus anatinus} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection.}
+\caption{\textbf{dN/dS 2D grid for \textit{Ornithorhynchus anatinus} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection. Grid boxes that are marked with "X" indicate that either the organism the grid represents, or the organism that dN/dS is computed against, does not have the gene associated with the box.}
 \label{sup_fig_30}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \makebox[\textwidth][c]{\includegraphics[height=7in,trim={0 0 0 0in},clip]{./appendix_images/dnds/oryzias_latipes_hsok.pdf}}
-\caption{\textbf{dN/dS 2D grid for \textit{Oryzias latipes} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection.}
+\caption{\textbf{dN/dS 2D grid for \textit{Oryzias latipes} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection. Grid boxes that are marked with "X" indicate that either the organism the grid represents, or the organism that dN/dS is computed against, does not have the gene associated with the box.}
 \label{sup_fig_31}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \makebox[\textwidth][c]{\includegraphics[height=7in,trim={0 0 0 0in},clip]{./appendix_images/dnds/petromyzon_marinus.pdf}}
-\caption{\textbf{dN/dS 2D grid for \textit{Petromyzon marinus} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection.}
+\caption{\textbf{dN/dS 2D grid for \textit{Petromyzon marinus} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection. Grid boxes that are marked with "X" indicate that either the organism the grid represents, or the organism that dN/dS is computed against, does not have the gene associated with the box.}
 \label{sup_fig_32}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \makebox[\textwidth][c]{\includegraphics[height=7in,trim={0 0 0 0in},clip]{./appendix_images/dnds/takifugu_rubripes.pdf}}
-\caption{\textbf{dN/dS 2D grid for \textit{Takifugu rubripes} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection.}
+\caption{\textbf{dN/dS 2D grid for \textit{Takifugu rubripes} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection. Grid boxes that are marked with "X" indicate that either the organism the grid represents, or the organism that dN/dS is computed against, does not have the gene associated with the box.}
 \label{sup_fig_33}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \makebox[\textwidth][c]{\includegraphics[height=7in,trim={0 0 0 0in},clip]{./appendix_images/dnds/xenopus_tropicalis.pdf}}
-\caption{\textbf{dN/dS 2D grid for \textit{Xenopus tropicalis} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection.}
+\caption{\textbf{dN/dS 2D grid for \textit{Xenopus tropicalis} computed against the other significant organisms.} The intensity values represent the dN/dS ratio - values lighter in colour are less than 1 and purifying selection while values darker in colour are greater than 1 and represent positive selection. Grid boxes that are marked with "X" indicate that either the organism the grid represents, or the organism that dN/dS is computed against, does not have the gene associated with the box.}
 \label{sup_fig_34}
 \end{figure}
 
